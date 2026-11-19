@@ -1,29 +1,30 @@
 "use client";
 
-import Script from "next/script";
 import { useEffect, useState } from "react";
 import serviceDefinitions from "./services.json";
 import { locales, localePaths, type Locale } from "./locales";
 import type { Messages } from "./messages";
+import InquiryForm, { type ServiceOption } from "./inquiry-form";
 
 type Service = (typeof serviceDefinitions)[number] & Messages["services"][number];
 type Category = "all" | "ai" | "dev" | "consulting";
-type PickedService = { name: string; formValue: string };
 
-declare global {
-  interface Window {
-    jotformEmbedHandler?: (selector: string, origin: string) => void;
-  }
-}
+/** Hodnoty `formValue` školení – ukládají se česky, stejně jako služby. */
+const trainings = [
+  { value: "Firemní školení — AI Start", name: () => "AI Start" },
+  { value: "Firemní školení — AI Prakticky", name: (t: Messages) => t.practicalTraining },
+  { value: "Firemní školení — Automation Workshop", name: () => "Automation Workshop" },
+];
 
 export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
   const services: Service[] = serviceDefinitions.map((definition, index) => ({ ...definition, ...t.services[index] }));
   const [filter, setFilter] = useState<Category>("all");
   const [detail, setDetail] = useState<Service | null>(null);
-  const [picked, setPicked] = useState<PickedService | null>(null);
-  const formUrl = new URL("https://form.jotform.com/262923259893067");
-  if (locale !== "cs") formUrl.searchParams.set("language", locale);
-  if (picked) formUrl.searchParams.set("sluzba", picked.formValue);
+  const [pickedService, setPickedService] = useState("");
+  const serviceOptions: ServiceOption[] = [
+    ...services.map((service) => ({ label: service.name, value: service.formValue })),
+    ...trainings.map((training) => ({ label: `${t.trainingLabel} — ${training.name(t)}`, value: training.value })),
+  ];
 
   useEffect(() => {
     if (!detail) return;
@@ -34,8 +35,8 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [detail]);
 
-  function pickService(name: string, formValue: string) {
-    setPicked({ name, formValue });
+  function pickService(formValue: string) {
+    setPickedService(formValue);
     document.getElementById("poptavka")?.scrollIntoView({ behavior: "smooth" });
   }
 
@@ -200,19 +201,19 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                   <span className="duration">{t.threeHours}</span>
                   <h3>AI Start</h3>
                   <ul><li>ChatGPT / Claude</li><li>{t.prompting}</li><li>{t.research}</li><li>{t.safety}</li></ul>
-                  <button className="btn btn-secondary" onClick={() => pickService(t.trainingLabel + " — " + 'AI Start', "Firemní školení — AI Start")}>{t.request}</button>
+                  <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — AI Start")}>{t.request}</button>
                 </div>
                 <div className="training-card">
                   <span className="duration">{t.oneDay}</span>
                   <h3>{t.practicalTraining}</h3>
                   <ul><li>{t.workExamples}</li><li>{t.routine}</li><li>{t.workflows}</li><li>{t.trainingQuestions}</li></ul>
-                  <button className="btn btn-secondary" onClick={() => pickService(t.trainingLabel + " — " + t.practicalTraining, "Firemní školení — AI Prakticky")}>{t.request}</button>
+                  <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — AI Prakticky")}>{t.request}</button>
                 </div>
                 <div className="training-card">
                   <span className="duration">{t.oneDay}</span>
                   <h3>Automation Workshop</h3>
                   <ul><li>{t.processMapping}</li><li>{t.selectAutomation}</li><li>{t.solutionDesign}</li><li>{t.implementationPlan}</li></ul>
-                  <button className="btn btn-secondary" onClick={() => pickService(t.trainingLabel + " — " + 'Automation Workshop', "Firemní školení — Automation Workshop")}>{t.request}</button>
+                  <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — Automation Workshop")}>{t.request}</button>
                 </div>
               </div>
             </div>
@@ -308,12 +309,8 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                   <p>{t.contactBody}</p>
                   <p>{t.call}{" "}<a href="tel:+420604257866" style={{ color: "white", fontWeight: "700" }}>+420 604 257 866</a></p>
                 </div>
-                <div className="jotform-slot">
-                  <div className={picked ? 'picked show' : 'picked'}>{t.selected}{" "}<strong>{picked?.name}</strong> <button type="button" onClick={() => setPicked(null)}>{t.clear}</button></div>
-                  <iframe id="jotform" className="jotform-frame" title={t.formTitle}
-                          src={formUrl.toString()} loading="lazy"
-                          allow="geolocation; microphone; camera; fullscreen" scrolling="no"></iframe>
-                </div>
+                <InquiryForm locale={locale} t={t} options={serviceOptions}
+                  service={pickedService} onServiceChange={setPickedService} />
               </div>
             </div>
           </section>
@@ -349,13 +346,9 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
               <li>{t.deliverableResult}</li>
               <li>{t.deliverableFollowUp}</li>
             </ul>
-            <button className="btn btn-primary" onClick={() => { if (detail) pickService(detail.name, detail.formValue); setDetail(null); }}>{t.requestService}</button>
+            <button className="btn btn-primary" onClick={() => { if (detail) pickService(detail.formValue); setDetail(null); }}>{t.requestService}</button>
           </div>
         </div>
-      <Script
-        src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"
-        onReady={() => window.jotformEmbedHandler?.("iframe[id='jotform']", "https://form.jotform.com/")}
-      />
     </>
   );
 }
