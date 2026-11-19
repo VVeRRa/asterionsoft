@@ -153,8 +153,165 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
+            "name": "Napojení na ChatGPT a Claude (MCP)",
+            "description": "Vlastní MCP server nad ERP, CRM nebo dokumenty pro práci z ChatGPT a Claude s přístupovými právy."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 40000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI funkce do vaší aplikace",
+            "description": "Generování textu, obrázků, hlasu a videa v existujícím produktu; více modelů, asynchronní úlohy, kredity."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 60000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Interní kurz z firemních dokumentů",
+            "description": "Onboardingový kurz z manuálů a směrnic s lekcemi, obrázky a namluveným výkladem."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 20000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Provoz a ladění AI řešení",
+            "description": "Měsíční dohled, úpravy promptů, přechod na nové modely a hlídání nákladů na API."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 4900,
+            "priceCurrency": "CZK",
+            "unitText": "měsíc"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
             "name": "Firemní školení AI",
-            "description": "Praktická školení AI pro zaměstnance: AI Start (3 h), AI Prakticky (1 den), Automation Workshop (1 den)."
+            "description": "Praktická školení AI pro zaměstnance: AI Start (3 h), AI Prakticky (1 den), Automation Workshop (1 den), AI gramotnost podle AI Actu (3 h)."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Poptávka → karta zakázky – Zakázková výroba a CNC",
+            "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 39000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Oběh dokladů bez urgencí – Účetní a daňové kanceláře",
+            "description": "Méně dohledávání příloh a ručních upomínek před uzávěrkou. Začínáme krátkým auditem, který spočítá, kolik hodin vás to dnes stojí."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 14900,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hlášení závad pod kontrolou – Správa domů a SVJ",
+            "description": "Hlášení z e‑mailu nebo formuláře se samo zařadí k domu, typu závady a technikovi. Výbor SVJ dostane přehled bez ručního psaní."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 45000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Vratky a výjimky ve fulfillmentu – Fulfillment a sklady pro e‑shopy",
+            "description": "Vratka bez čísla objednávky nebo dotaz na stav zásilky už nemusí čekat na člověka, který to dohledá ručně."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 39000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Objednávky z e‑mailu rovnou do ERP – Velkoobchod, distribuce a spedice",
+            "description": "Objednávky v PDF, Excelu nebo textu e‑mailu se přepíšou do ERP samy. Obchodník řeší jen nejasné řádky."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 39000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Předvýběr kandidátů – Personální agentury",
+            "description": "Desítky životopisů na pozici seřazené podle požadavků, s krátkým odůvodněním. Rozhoduje vždy recruiter."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 45000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI pro advokátní kanceláře – Menší advokátní kanceláře",
+            "description": "Vyhledávání ve vlastních smlouvách, vzorech a podáních s odkazem na zdroj. Přístup jen ke spisům, ke kterým má uživatel právo."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 35000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Produktový obsah ve velkém – E‑shopy",
+            "description": "Popisky, překlady a vizuály pro stovky produktů najednou, rovnou ve feedu. Na stejných stavebních blocích, na kterých běží Studijo."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 25000,
+            "priceCurrency": "CZK"
           }
         }
       ]
@@ -209,6 +366,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kam putují naše data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Řešení navrhujeme tak, aby data zůstala v EU a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých podmínek data k tréninku nepoužívá. Hosting a přístupová práva popíšeme v návrhu řešení."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Funguje to s naším systémem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Co když AI udělá chybu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh nebo předvyplněný záznam a člověk ho potvrdí. Nejisté případy systém označí a každá akce se zaznamená, takže je dohledatelné, co se stalo a proč."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kolik stojí provoz po spuštění?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušálu za provoz a ladění od 4 900 Kč měsíčně. Odhad provozních nákladů dostanete předem jako součást návrhu řešení."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Týká se nás AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Povinnost zajistit dostatečnou AI gramotnost lidí, kteří s AI pracují, platí od února 2025 pro firmy, které AI používají. Pomůže s ní školení AI gramotnosti. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení."
           }
         },
         {

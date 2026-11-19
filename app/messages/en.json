@@ -127,6 +127,43 @@
   "deliverableFollowUp": "the option to continue with implementation or long-term support.",
   "requestService": "Enquire about this service",
   "language": "Website language",
+  "industriesNav": "By Industry",
+  "industriesLabel": "Industry solutions",
+  "industriesTitle": "Concrete use cases for your industry",
+  "industriesBody": "Every solution starts with a pilot on your historical data. We measure the time before and after, and if the savings don’t materialise, we stop there.",
+  "audienceLabel": "Who it’s for",
+  "scopeLabel": "What’s included",
+  "exampleLink": "Illustrative example →",
+  "exampleLabel": "Illustrative example",
+  "exampleNote": "An illustrative example of a typical company in the industry, not a specific client. The figures are estimates that the pilot will verify.",
+  "calcLabel": "Savings calculator",
+  "calcTitle": "How much does manual work cost you today?",
+  "calcBody": "Enter how often the task comes up and how long it takes. The calculation assumes automation saves roughly two thirds of the time, which is a typical pilot target.",
+  "calcCases": "Cases per month",
+  "calcMinutes": "Minutes per case",
+  "calcRate": "Hourly cost per person",
+  "calcCurrency": "CZK",
+  "calcHoursNow": "Manual work today",
+  "calcSaved": "Estimated savings",
+  "calcPerMonth": "h per month",
+  "calcPerYear": "per year",
+  "calcCta": "Discuss it using your data",
+  "aiLiteracyTraining": "AI literacy (AI Act)",
+  "aiLiteracyDuty": "duty under Art. 4 of the AI Act",
+  "aiLiteracyRules": "rules for company data",
+  "aiLiteracyLimits": "AI risks and limitations",
+  "aiLiteracyRecord": "training record",
+  "trainingIndustryNote": "We can also tailor Practical AI to your industry, for example for accounting firms, law firms or e‑shops.",
+  "dataQuestion": "Where does our data go?",
+  "dataAnswer": "We design solutions so that data stays in the EU and the AI only works with what it needs for the task. We use business API access to AI models whose providers, under their terms, do not use the data for training. Hosting and access permissions are described in the solution proposal.",
+  "systemsQuestion": "Will it work with our system?",
+  "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. During the initial consultation, we check which integration options your system offers.",
+  "mistakesQuestion": "What if the AI makes a mistake?",
+  "mistakesAnswer": "That’s why a person makes the call on important steps. The AI prepares the groundwork, a draft or a pre-filled record, and a person confirms it. The system flags uncertain cases and logs every action, so you can always trace what happened and why.",
+  "runningQuestion": "How much does it cost to run after launch?",
+  "runningAnswer": "Running costs consist of usage-based AI model fees and an optional flat fee for operation and tuning, from CZK 4,900/month. You get an estimate of running costs up front as part of the solution proposal.",
+  "aiActQuestion": "Does the AI Act apply to us?",
+  "aiActAnswer": "Since February 2025, companies that use AI must ensure sufficient AI literacy among the people who work with it. AI literacy training helps you meet this duty. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
   "services": [
     {
       "name": "Business AI audit",
@@ -196,6 +233,208 @@
         "backend"
       ],
       "priceLabel": "consulting"
+    },
+    {
+      "name": "ChatGPT and Claude integration (MCP)",
+      "price": "from CZK 40,000",
+      "description": "A custom MCP server on top of your ERP, CRM or documents. Employees ask questions and assign tasks directly from ChatGPT or Claude, with permissions and an action log.",
+      "title": "ChatGPT and Claude integration",
+      "chips": [
+        "MCP",
+        "ERP / CRM",
+        "permissions"
+      ],
+      "priceLabel": "typical starting price"
+    },
+    {
+      "name": "AI features for your app",
+      "price": "from CZK 60,000",
+      "description": "Text, image, voice or video generation built into your product. Multiple models, asynchronous jobs, credits and upfront pricing, just like in Studijo.",
+      "title": "AI features for your app",
+      "chips": [
+        "multi‑model",
+        "async jobs",
+        "billing"
+      ],
+      "priceLabel": "typical starting price"
+    },
+    {
+      "name": "Internal course from company documents",
+      "price": "from CZK 20,000",
+      "description": "We turn manuals and policies into an onboarding course with lessons, images and narrated explanations.",
+      "title": "Internal course from documents",
+      "chips": [
+        "onboarding",
+        "voiceover",
+        "e‑learning"
+      ],
+      "priceLabel": "typical starting price"
+    },
+    {
+      "name": "AI solution operation and tuning",
+      "price": "from CZK 4,900/month",
+      "description": "Monitoring, prompt adjustments, migration to new models and API cost control. A monthly report on what the solution has saved.",
+      "title": "AI operation and tuning",
+      "chips": [
+        "monitoring",
+        "costs",
+        "report"
+      ],
+      "priceLabel": "flat fee"
+    }
+  ],
+  "industries": [
+    {
+      "name": "Enquiry → job card",
+      "audience": "Contract manufacturing and CNC",
+      "description": "Enquiries arrive by email with drawings in PDF and STEP. AI turns them into a job card, and the engineer just reviews and prices it.",
+      "scope": [
+        "material, quantity, deadline and list of attachments",
+        "missing details and a draft follow-up question",
+        "lookup of similar past quotes",
+        "handover to the ERP"
+      ],
+      "price": "from CZK 39,000",
+      "priceLabel": "pilot",
+      "chips": [
+        "drawings",
+        "ERP",
+        "pilot on your data"
+      ],
+      "example": "A 15-person workshop receives about 60 enquiries a month, each with an email and several drawings. Today an engineer spends roughly 30 minutes preparing each one and has to follow up with the customer on a third of them. After rollout, they get a ready job card with a list of missing details and links to similar past jobs. The pilot target is to cut preparation to 10 minutes, saving around 20 hours a month and getting back to customers sooner."
+    },
+    {
+      "name": "Document flow without chasing",
+      "audience": "Accounting and tax firms",
+      "description": "Less hunting for attachments and fewer manual reminders before month-end. We start with a short audit that calculates how many hours this costs you today.",
+      "scope": [
+        "document flow audit with quantified savings",
+        "completeness checks of client folders",
+        "reminders with a specific list of missing documents",
+        "invoice data extraction and payment matching"
+      ],
+      "price": "from CZK 14,900",
+      "priceLabel": "audit",
+      "chips": [
+        "audit",
+        "data extraction",
+        "reminders"
+      ],
+      "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. The audit shows where that time goes. The automation then checks client folders every week and sends each client an exact list of what is missing. The goal is to cut chasing from 2 days to half a day a month."
+    },
+    {
+      "name": "Fault reports under control",
+      "audience": "Property management and owners’ associations",
+      "description": "Reports from email or a form are automatically assigned to the building, fault type and technician. The owners’ association board gets an overview without anyone writing it by hand.",
+      "scope": [
+        "intake of reports from your existing email or form",
+        "duplicate alerts",
+        "tasks for technicians and updates for residents",
+        "monthly summary for the board and an overview of recurring faults"
+      ],
+      "price": "from CZK 45,000",
+      "priceLabel": "typical starting price",
+      "chips": [
+        "email",
+        "tasks",
+        "board summaries"
+      ],
+      "example": "A manager with 40 buildings receives about 150 reports a month by email and phone. The same fault is often reported by several residents, and boards keep asking for status updates. After rollout, reports are sorted automatically, duplicates are merged and the board gets a monthly summary. The goal is fewer status enquiries and a repair plan based on data about recurring faults."
+    },
+    {
+      "name": "Returns and exceptions in fulfilment",
+      "audience": "Fulfilment and warehousing for e‑shops",
+      "description": "A return without an order number or a shipment status query no longer has to wait for someone to look it up manually.",
+      "scope": [
+        "lookup of likely orders from the available details",
+        "a prepared case ready for review",
+        "handover of the confirmed status to the e‑shop",
+        "draft customer reply following the client’s rules"
+      ],
+      "price": "from CZK 39,000",
+      "priceLabel": "pilot",
+      "chips": [
+        "returns",
+        "e‑shop integration",
+        "support"
+      ],
+      "example": "A warehouse serving 25 e‑shops processes around 800 returns a month, and about 120 of them arrive without an order number. Today someone spends 10–15 minutes tracking down each one. The system suggests the most likely orders based on name, address and parcel contents, and a person just confirms. The goal is 2–3 minutes per return, saving around 18 hours a month."
+    },
+    {
+      "name": "Email orders straight into the ERP",
+      "audience": "Wholesale, distribution and freight forwarding",
+      "description": "Orders in PDF, Excel or the email body are entered into the ERP automatically. Sales staff only deal with unclear lines.",
+      "scope": [
+        "extraction of items, quantities and customer",
+        "matching against the catalogue and price list",
+        "order creation in the ERP",
+        "for forwarders, transcription of transport orders and CMR paperwork"
+      ],
+      "price": "from CZK 39,000",
+      "priceLabel": "typical starting price",
+      "chips": [
+        "PDF",
+        "ERP",
+        "catalogue"
+      ],
+      "example": "A distributor receives 300 orders a month by email. Entering one takes 5–10 minutes, and product codes occasionally get mixed up. After rollout, the order is created in the ERP automatically and sales staff only check lines the system cannot match with confidence. The goal is to process over 80% of orders without manual entry and save around 30 hours a month."
+    },
+    {
+      "name": "Candidate pre-screening",
+      "audience": "Recruitment agencies",
+      "description": "Dozens of CVs per position, ranked against the requirements with a short rationale. The recruiter always makes the decision.",
+      "scope": [
+        "sorting and summarising CVs",
+        "matching to open positions",
+        "draft personalised outreach and ATS integration",
+        "a record of why each candidate was recommended (AI Act)"
+      ],
+      "price": "from CZK 45,000",
+      "priceLabel": "typical starting price",
+      "chips": [
+        "ATS",
+        "GDPR",
+        "AI Act"
+      ],
+      "example": "An agency with 6 recruiters receives 80–150 CVs per position, and the first screening takes a recruiter half a day. The system ranks candidates against the requirements and writes two sentences on why each one is or isn’t a fit. The recruiter starts from a shortlist and decides on every candidate personally. The goal is a first screening in an hour instead of half a day."
+    },
+    {
+      "name": "AI for law firms",
+      "audience": "Smaller law firms",
+      "description": "Search across your own contracts, templates and filings, with links to sources. Users only see the case files they have access to.",
+      "scope": [
+        "internal assistant for templates and the archive",
+        "first drafts of documents from templates",
+        "new client intake with ARES verification",
+        "access permissions by case file"
+      ],
+      "price": "from CZK 35,000",
+      "priceLabel": "pilot",
+      "chips": [
+        "contracts",
+        "confidentiality",
+        "sources"
+      ],
+      "example": "A firm with 10 lawyers has thousands of contracts and templates on a shared drive. Today a trainee lawyer can spend up to an hour looking for the right template or an earlier solution to a similar clause. The assistant answers with a link to the specific document and prepares a first draft from a template. The goal is finding things in minutes, with users only able to access the case files they have rights to."
+    },
+    {
+      "name": "Product content at scale",
+      "audience": "E‑shops",
+      "description": "Descriptions, translations and visuals for hundreds of products at once, straight into your feed. Built on the same building blocks that power Studijo.",
+      "scope": [
+        "bulk descriptions from specifications and photos",
+        "translations into SK, PL, DE and HU",
+        "feed optimisation for price comparison sites and Google",
+        "a consistent brand voice"
+      ],
+      "price": "from CZK 25,000",
+      "priceLabel": "setup",
+      "chips": [
+        "feed",
+        "translations",
+        "Studijo"
+      ],
+      "example": "An e‑shop with 2,000 products wants to start selling in Slovakia and Poland. Writing descriptions and translations by hand would mean hundreds of hours of work or an expensive agency. Bulk generation produces descriptions and translations in a consistent tone, and the team reviews them in batches. The goal is to have the entire catalogue in three languages within a few weeks."
     }
   ]
 }

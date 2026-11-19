@@ -3,7 +3,16 @@ import { localePaths, type Locale } from "./locales";
 import type { Messages } from "./messages";
 import structuredData from "./structured-data.json";
 
-const faqTopics = ["audit", "assistant", "process", "contact", "excel", "training", "idea"] as const;
+const faqTopics = [
+  "audit", "assistant", "process", "contact", "excel", "training",
+  "data", "systems", "mistakes", "running", "aiAct", "idea",
+] as const;
+
+/** Jednotky cen ve structured-data.json (česky) → překlad pro ostatní jazyky. */
+const unitTexts: Record<string, Record<Exclude<Locale, "cs">, string>> = {
+  hodina: { en: "hour", de: "Stunde" },
+  "měsíc": { en: "month", de: "Monat" },
+};
 
 type LandingPageProps = { locale: Locale; messages: Messages };
 
@@ -23,7 +32,9 @@ function schemaFor(locale: Locale, messages: Messages) {
           "@id": url + "#sluzby",
           name: messages.catalog,
           itemListElement: node.itemListElement?.map((offer, index) => {
-            const item = messages.services[index] as Messages["services"][number] | undefined;
+            const services = messages.services.length;
+            const item = (index < services ? messages.services[index]
+              : messages.industries[index - services - 1]) as Messages["services"][number] | undefined;
             const price = offer.priceSpecification;
             return {
               ...offer,
@@ -33,7 +44,7 @@ function schemaFor(locale: Locale, messages: Messages) {
                 description: item?.description ?? messages.trainingIntro,
               },
               ...(price?.unitText && {
-                priceSpecification: { ...price, unitText: locale === "de" ? "Stunde" : "hour" },
+                priceSpecification: { ...price, unitText: unitTexts[price.unitText]?.[locale] ?? price.unitText },
               }),
             };
           }),

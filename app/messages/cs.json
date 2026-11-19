@@ -127,6 +127,43 @@
   "deliverableFollowUp": "možnost navázat implementací nebo dlouhodobou spoluprací.",
   "requestService": "Poptat tuto službu",
   "language": "Jazyk webu",
+  "industriesNav": "Pro obory",
+  "industriesLabel": "Řešení pro obory",
+  "industriesTitle": "Konkrétní scénáře pro váš obor",
+  "industriesBody": "Každé řešení začíná pilotem na vašich historických datech. Změříme čas před a po, a když se úspora nepotvrdí, dál nepokračujeme.",
+  "audienceLabel": "Pro koho",
+  "scopeLabel": "Co obsahuje",
+  "exampleLink": "Modelový příklad →",
+  "exampleLabel": "Modelový příklad",
+  "exampleNote": "Ilustrativní příklad typické firmy z oboru, ne konkrétní klient. Čísla jsou odhad, který ověří pilot.",
+  "calcLabel": "Kalkulačka úspory",
+  "calcTitle": "Kolik vás dnes stojí ruční práce?",
+  "calcBody": "Zadejte, jak často se úkol opakuje a jak dlouho trvá. Výpočet počítá s tím, že automatizace ušetří zhruba dvě třetiny času, což je typický cíl pilotu.",
+  "calcCases": "Případů za měsíc",
+  "calcMinutes": "Minut na jeden případ",
+  "calcRate": "Hodinové náklady na člověka",
+  "calcCurrency": "Kč",
+  "calcHoursNow": "Ruční práce dnes",
+  "calcSaved": "Odhad úspory",
+  "calcPerMonth": "h měsíčně",
+  "calcPerYear": "ročně",
+  "calcCta": "Probrat to nad vašimi daty",
+  "aiLiteracyTraining": "AI gramotnost (AI Act)",
+  "aiLiteracyDuty": "povinnost podle čl. 4 AI Actu",
+  "aiLiteracyRules": "pravidla pro firemní data",
+  "aiLiteracyLimits": "rizika a limity AI",
+  "aiLiteracyRecord": "záznam o proškolení",
+  "trainingIndustryNote": "AI Prakticky připravíme i v oborové verzi, například pro účetní kanceláře, advokáty nebo e-shopy.",
+  "dataQuestion": "Kam putují naše data?",
+  "dataAnswer": "Řešení navrhujeme tak, aby data zůstala v EU a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých podmínek data k tréninku nepoužívá. Hosting a přístupová práva popíšeme v návrhu řešení.",
+  "systemsQuestion": "Funguje to s naším systémem?",
+  "systemsAnswer": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.",
+  "mistakesQuestion": "Co když AI udělá chybu?",
+  "mistakesAnswer": "U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh nebo předvyplněný záznam a člověk ho potvrdí. Nejisté případy systém označí a každá akce se zaznamená, takže je dohledatelné, co se stalo a proč.",
+  "runningQuestion": "Kolik stojí provoz po spuštění?",
+  "runningAnswer": "Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušálu za provoz a ladění od 4 900 Kč měsíčně. Odhad provozních nákladů dostanete předem jako součást návrhu řešení.",
+  "aiActQuestion": "Týká se nás AI Act?",
+  "aiActAnswer": "Povinnost zajistit dostatečnou AI gramotnost lidí, kteří s AI pracují, platí od února 2025 pro firmy, které AI používají. Pomůže s ní školení AI gramotnosti. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.",
   "services": [
     {
       "name": "AI audit firmy",
@@ -196,6 +233,208 @@
         "backend"
       ],
       "priceLabel": "konzultace"
+    },
+    {
+      "name": "Napojení na ChatGPT a Claude (MCP)",
+      "price": "od 40 000 Kč",
+      "description": "Vlastní MCP server nad vaším ERP, CRM nebo dokumenty. Zaměstnanci se ptají a zadávají úkoly přímo z ChatGPT nebo Claude, s právy a záznamem akcí.",
+      "title": "Napojení na ChatGPT a Claude",
+      "chips": [
+        "MCP",
+        "ERP / CRM",
+        "práva"
+      ],
+      "priceLabel": "typicky"
+    },
+    {
+      "name": "AI funkce do vaší aplikace",
+      "price": "od 60 000 Kč",
+      "description": "Generování textu, obrázků, hlasu nebo videa přímo ve vašem produktu. Více modelů, asynchronní úlohy, kredity a cena předem, stejně jako ve Studiju.",
+      "title": "AI funkce do vaší aplikace",
+      "chips": [
+        "multi‑model",
+        "async joby",
+        "billing"
+      ],
+      "priceLabel": "typicky"
+    },
+    {
+      "name": "Interní kurz z firemních dokumentů",
+      "price": "od 20 000 Kč",
+      "description": "Z manuálů a směrnic vznikne onboardingový kurz s lekcemi, obrázky a namluveným výkladem.",
+      "title": "Interní kurz z dokumentů",
+      "chips": [
+        "onboarding",
+        "voiceover",
+        "e‑learning"
+      ],
+      "priceLabel": "typicky"
+    },
+    {
+      "name": "Provoz a ladění AI řešení",
+      "price": "od 4 900 Kč/měs.",
+      "description": "Dohled, úpravy promptů, přechod na nové modely a hlídání nákladů na API. Jednou měsíčně report, co řešení ušetřilo.",
+      "title": "Provoz a ladění AI",
+      "chips": [
+        "monitoring",
+        "náklady",
+        "report"
+      ],
+      "priceLabel": "paušál"
+    }
+  ],
+  "industries": [
+    {
+      "name": "Poptávka → karta zakázky",
+      "audience": "Zakázková výroba a CNC",
+      "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení.",
+      "scope": [
+        "materiál, počet kusů, termín a seznam příloh",
+        "chybějící údaje a návrh doplňujícího dotazu",
+        "dohledání podobných historických kalkulací",
+        "předání do ERP"
+      ],
+      "price": "od 39 000 Kč",
+      "priceLabel": "pilot",
+      "chips": [
+        "výkresy",
+        "ERP",
+        "pilot na datech"
+      ],
+      "example": "Dílna s 15 lidmi dostává asi 60 poptávek měsíčně, každou s e‑mailem a několika výkresy. Technik dnes stráví přípravou podkladů zhruba 30 minut a u třetiny se musí zákazníka doptávat. Po nasazení dostane hotovou kartu se seznamem chybějících údajů a odkazem na podobné starší zakázky. Cíl pilotu je zkrátit přípravu na 10 minut, tedy ušetřit kolem 20 hodin měsíčně a odpovídat zákazníkům dřív."
+    },
+    {
+      "name": "Oběh dokladů bez urgencí",
+      "audience": "Účetní a daňové kanceláře",
+      "description": "Méně dohledávání příloh a ručních upomínek před uzávěrkou. Začínáme krátkým auditem, který spočítá, kolik hodin vás to dnes stojí.",
+      "scope": [
+        "audit oběhu dokladů s vyčíslením úspory",
+        "kontrola úplnosti klientských složek",
+        "urgence s konkrétním seznamem chybějících dokladů",
+        "vytěžování faktur a párování plateb"
+      ],
+      "price": "od 14 900 Kč",
+      "priceLabel": "audit",
+      "chips": [
+        "audit",
+        "vytěžování",
+        "urgence"
+      ],
+      "example": "Kancelář s 8 účetními a 120 klienty tráví před každou měsíční uzávěrkou asi 2 dny dohledáváním chybějících dokladů a psaním upomínek. Audit ukáže, kde ten čas mizí. Automatizace pak každý týden projde klientské složky a každému klientovi pošle přesný seznam toho, co chybí. Cíl je dostat urgence ze 2 dnů na půl dne měsíčně."
+    },
+    {
+      "name": "Hlášení závad pod kontrolou",
+      "audience": "Správa domů a SVJ",
+      "description": "Hlášení z e‑mailu nebo formuláře se samo zařadí k domu, typu závady a technikovi. Výbor SVJ dostane přehled bez ručního psaní.",
+      "scope": [
+        "příjem hlášení ze stávajícího e‑mailu či formuláře",
+        "upozornění na duplicity",
+        "úkoly pro techniky a informace obyvatelům",
+        "měsíční souhrn pro výbor a přehled opakujících se závad"
+      ],
+      "price": "od 45 000 Kč",
+      "priceLabel": "typicky",
+      "chips": [
+        "e‑mail",
+        "úkoly",
+        "souhrny pro výbor"
+      ],
+      "example": "Správce se 40 domy dostává asi 150 hlášení měsíčně e‑mailem a telefonem. Stejnou závadu často nahlásí víc obyvatel a výbory se opakovaně ptají na stav. Po nasazení se hlášení samo zařadí, duplicity se sloučí a výbor dostane měsíční souhrn. Cíl je méně dotazů na stav a plán oprav postavený na datech o opakujících se závadách."
+    },
+    {
+      "name": "Vratky a výjimky ve fulfillmentu",
+      "audience": "Fulfillment a sklady pro e‑shopy",
+      "description": "Vratka bez čísla objednávky nebo dotaz na stav zásilky už nemusí čekat na člověka, který to dohledá ručně.",
+      "scope": [
+        "dohledání možných objednávek podle dostupných údajů",
+        "připravený případ ke kontrole",
+        "předání potvrzeného stavu do e‑shopu",
+        "návrh odpovědi zákazníkovi podle pravidel klienta"
+      ],
+      "price": "od 39 000 Kč",
+      "priceLabel": "pilot",
+      "chips": [
+        "vratky",
+        "integrace e‑shopu",
+        "podpora"
+      ],
+      "example": "Sklad pro 25 e‑shopů zpracuje měsíčně kolem 800 vratek a asi 120 z nich přijde bez čísla objednávky. Každou takovou dnes někdo dohledává 10–15 minut. Systém navrhne nejpravděpodobnější objednávky podle jména, adresy a obsahu balíku a člověk jen potvrdí. Cíl jsou 2–3 minuty na vratku, tedy úspora kolem 18 hodin měsíčně."
+    },
+    {
+      "name": "Objednávky z e‑mailu rovnou do ERP",
+      "audience": "Velkoobchod, distribuce a spedice",
+      "description": "Objednávky v PDF, Excelu nebo textu e‑mailu se přepíšou do ERP samy. Obchodník řeší jen nejasné řádky.",
+      "scope": [
+        "vytěžení položek, množství a odběratele",
+        "spárování s katalogem a ceníkem",
+        "založení objednávky v ERP",
+        "u spedice přepis přepravních objednávek a podklady pro CMR"
+      ],
+      "price": "od 39 000 Kč",
+      "priceLabel": "typicky",
+      "chips": [
+        "PDF",
+        "ERP",
+        "katalog"
+      ],
+      "example": "Distributor dostává 300 objednávek měsíčně e‑mailem. Přepis jedné trvá 5–10 minut a občas se splete kód zboží. Po nasazení se objednávka založí v ERP sama a obchodník kontroluje jen řádky, které systém nedokáže jistě spárovat. Cíl je zpracovat přes 80 % objednávek bez ručního přepisu a ušetřit kolem 30 hodin měsíčně."
+    },
+    {
+      "name": "Předvýběr kandidátů",
+      "audience": "Personální agentury",
+      "description": "Desítky životopisů na pozici seřazené podle požadavků, s krátkým odůvodněním. Rozhoduje vždy recruiter.",
+      "scope": [
+        "třídění a shrnutí životopisů",
+        "párování na otevřené pozice",
+        "návrh osobního oslovení a napojení na ATS",
+        "záznam, proč byl kandidát doporučen (AI Act)"
+      ],
+      "price": "od 45 000 Kč",
+      "priceLabel": "typicky",
+      "chips": [
+        "ATS",
+        "GDPR",
+        "AI Act"
+      ],
+      "example": "Agentura se 6 recruitery dostává na jednu pozici 80–150 životopisů a první třídění zabere recruiterovi půl dne. Systém kandidáty seřadí podle požadavků a ke každému napíše dvě věty, proč se hodí nebo nehodí. Recruiter začíná od krátkého seznamu a o každém kandidátovi rozhoduje sám. Cíl je první třídění za hodinu místo půl dne."
+    },
+    {
+      "name": "AI pro advokátní kanceláře",
+      "audience": "Menší advokátní kanceláře",
+      "description": "Vyhledávání ve vlastních smlouvách, vzorech a podáních s odkazem na zdroj. Přístup jen ke spisům, ke kterým má uživatel právo.",
+      "scope": [
+        "interní asistent nad vzory a archivem",
+        "první návrh dokumentu ze šablony",
+        "příjem nového klienta s ověřením v ARES",
+        "přístupová práva podle spisů"
+      ],
+      "price": "od 35 000 Kč",
+      "priceLabel": "pilot",
+      "chips": [
+        "smlouvy",
+        "důvěrnost",
+        "zdroje"
+      ],
+      "example": "Kancelář s 10 advokáty má tisíce smluv a vzorů na sdíleném disku. Koncipient dnes hledá vhodný vzor nebo dřívější řešení podobné klauzule i hodinu. Asistent odpoví s odkazem na konkrétní dokument a připraví první návrh ze šablony. Cíl je dohledání v minutách a přístup jen ke spisům, ke kterým má uživatel právo."
+    },
+    {
+      "name": "Produktový obsah ve velkém",
+      "audience": "E‑shopy",
+      "description": "Popisky, překlady a vizuály pro stovky produktů najednou, rovnou ve feedu. Na stejných stavebních blocích, na kterých běží Studijo.",
+      "scope": [
+        "hromadné popisky z parametrů a fotek",
+        "překlady do SK, PL, DE a HU",
+        "úprava feedu pro srovnávače a Google",
+        "jednotný tón značky"
+      ],
+      "price": "od 25 000 Kč",
+      "priceLabel": "nastavení",
+      "chips": [
+        "feed",
+        "překlady",
+        "Studijo"
+      ],
+      "example": "E‑shop se 2 000 produkty chce začít prodávat na Slovensku a v Polsku. Ruční popisky a překlady by znamenaly stovky hodin práce nebo drahou agenturu. Hromadné generování připraví popisky a překlady v jednotném tónu a tým je kontroluje po dávkách. Cíl je mít celý katalog ve třech jazycích během několika týdnů."
     }
   ]
 }

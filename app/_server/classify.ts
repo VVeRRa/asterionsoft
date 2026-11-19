@@ -34,6 +34,19 @@ const categoryByService: Record<string, (typeof serviceCategories)[number]> = {
   "Webová aplikace na míru": "web_app",
   "Excel → aplikace": "excel_to_app",
   "Java / Spring konzultace": "java_consulting",
+  "Napojení na ChatGPT a Claude (MCP)": "ai_assistant",
+  "AI funkce do vaší aplikace": "web_app",
+  "Interní kurz z firemních dokumentů": "training",
+  "Provoz a ladění AI řešení": "process_automation",
+  // Oborová řešení (industries.json)
+  "Obor: zpracování poptávek (výroba, CNC)": "process_automation",
+  "Obor: oběh dokladů (účetní kanceláře)": "process_automation",
+  "Obor: hlášení závad (správa domů, SVJ)": "process_automation",
+  "Obor: vratky a výjimky (fulfillment)": "process_automation",
+  "Obor: objednávky do ERP (velkoobchod, spedice)": "process_automation",
+  "Obor: předvýběr kandidátů (personální agentury)": "process_automation",
+  "Obor: AI pro advokátní kanceláře": "ai_assistant",
+  "Obor: produktový obsah (e-shopy)": "process_automation",
 };
 
 const keywordRules: [RegExp, (typeof serviceCategories)[number]][] = [
