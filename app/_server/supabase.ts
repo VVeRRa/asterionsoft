@@ -35,39 +35,55 @@ export async function recentInquiryCount(ipHash: string, minutes: number): Promi
   return total ? Number(total) || 0 : 0;
 }
 
-export type StoredInquiry = { id: string };
+/** Výsledek uložení; `reason` je krátký kód bez citlivých údajů (jde i do odpovědi API). */
+export type StoreResult = { ok: true; id: string } | { ok: false; reason: string };
+
+async function errorCode(response: Response): Promise<string> {
+  const body = await response.text();
+  console.error("Uložení poptávky do Supabase selhalo:", response.status, body);
+  try {
+    const parsed = JSON.parse(body) as { code?: string };
+    return parsed.code ? `http_${response.status}_${parsed.code}` : `http_${response.status}`;
+  } catch {
+    return `http_${response.status}`;
+  }
+}
 
 export async function storeInquiry(
   inquiry: Inquiry,
   classification: Classification,
   meta: { ipHash: string | null; userAgent: string | null },
-): Promise<StoredInquiry | null> {
+): Promise<StoreResult> {
   const supabase = config();
-  if (!supabase) return null;
+  if (!supabase) return { ok: false, reason: "not_configured" };
   const { classified_by, service_category, urgency, summary, is_spam, ...rest } = classification;
-  const response = await fetch(`${supabase.endpoint}?select=id`, {
-    method: "POST",
-    headers: { ...supabase.headers, Prefer: "return=representation" },
-    body: JSON.stringify({
-      ...inquiry,
-      service_category,
-      urgency,
-      summary,
-      is_spam,
-      status: is_spam ? "spam" : "new",
-      classified_by,
-      classification: { ...rest, service_category, urgency, summary, is_spam },
-      ip_hash: meta.ipHash,
-      user_agent: meta.userAgent?.slice(0, 300) ?? null,
-    }),
-    cache: "no-store",
-  });
-  if (!response.ok) {
-    console.error("Uložení poptávky do Supabase selhalo:", response.status, await response.text());
-    return null;
+  let response: Response;
+  try {
+    response = await fetch(`${supabase.endpoint}?select=id`, {
+      method: "POST",
+      headers: { ...supabase.headers, Prefer: "return=representation" },
+      body: JSON.stringify({
+        ...inquiry,
+        service_category,
+        urgency,
+        summary,
+        is_spam,
+        status: is_spam ? "spam" : "new",
+        classified_by,
+        classification: { ...rest, service_category, urgency, summary, is_spam },
+        ip_hash: meta.ipHash,
+        user_agent: meta.userAgent?.slice(0, 300) ?? null,
+      }),
+      cache: "no-store",
+      signal: AbortSignal.timeout(10_000),
+    });
+  } catch (error) {
+    console.error("Supabase není dostupný (zkontrolujte SUPABASE_URL):", error);
+    return { ok: false, reason: "network" };
   }
-  const rows = (await response.json()) as StoredInquiry[];
-  return rows[0] ?? null;
+  if (!response.ok) return { ok: false, reason: await errorCode(response) };
+  const rows = (await response.json()) as { id: string }[];
+  return rows[0] ? { ok: true, id: rows[0].id } : { ok: false, reason: "no_row" };
 }
 
 export async function markInquiry(id: string, fields: { notified_at?: string; auto_replied_at?: string }) {

@@ -62,15 +62,23 @@ export async function POST(request: Request) {
 
   const classification = await classifyInquiry(inquiry);
   const stored = await storeInquiry(inquiry, classification, { ipHash, userAgent: request.headers.get("user-agent") });
-  const notified = await sendOwnerNotification(inquiry, classification, stored?.id ?? null);
+  const notification = await sendOwnerNotification(inquiry, classification, stored.ok ? stored.id : null);
+  const notified = notification.ok;
 
   // Poptávka se nesmí ztratit: když se neuložila ani neodeslala, ať to zákazník ví.
-  if (!stored && !notified) return json({ ok: false, error: "server" }, 500);
+  // Kódy příčin (např. not_configured, http_404_42P01) neobsahují tajné údaje a usnadní ladění.
+  if (!stored.ok && !notified) {
+    const details = { store: stored.reason, notify: notification.reason };
+    console.error("Poptávka se neuložila ani neodeslala:", details);
+    return json({ ok: false, error: "server", details }, 500);
+  }
+  if (!stored.ok) console.error("Poptávka se neuložila do Supabase, upozornění ale odešlo:", stored.reason);
+  if (!notified) console.error("Upozornění majiteli se neodeslalo, poptávka je ale v Supabase:", notification.reason);
 
   const now = new Date().toISOString();
   after(async () => {
-    const replied = classification.is_spam ? false : await sendAutoReply(inquiry);
-    if (stored) {
+    const replied = classification.is_spam ? false : (await sendAutoReply(inquiry)).ok;
+    if (stored.ok) {
       await markInquiry(stored.id, {
         ...(notified && { notified_at: now }),
         ...(replied && { auto_replied_at: new Date().toISOString() }),

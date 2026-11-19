@@ -64,14 +64,17 @@ function layout(content: string): string {
 <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:28px;border:1px solid #e3e7f0">${content}</div></body></html>`;
 }
 
+/** Výsledek odeslání; `reason` je krátký kód bez citlivých údajů. */
+export type SendResult = { ok: true } | { ok: false; reason: string };
+
 type Email = { to: string; subject: string; html: string; text: string; replyTo: string };
 
-async function send(email: Email): Promise<boolean> {
+async function send(email: Email): Promise<SendResult> {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.INQUIRY_FROM_EMAIL;
   if (!apiKey || !from) {
     console.error("Chybí RESEND_API_KEY nebo INQUIRY_FROM_EMAIL, e-mail se neodeslal.");
-    return false;
+    return { ok: false, reason: "not_configured" };
   }
   // Chyba jednoho e-mailu (např. testovací odesílatel onboarding@resend.dev smí psát
   // jen na adresu účtu) nesmí shodit odeslání formuláře ani druhý e-mail.
@@ -83,11 +86,15 @@ async function send(email: Email): Promise<boolean> {
       cache: "no-store",
       signal: AbortSignal.timeout(10_000),
     });
-    if (!response.ok) console.error(`Resend odmítl e-mail pro ${email.to}:`, response.status, await response.text());
-    return response.ok;
+    if (response.ok) return { ok: true };
+    const body = await response.text();
+    console.error(`Resend odmítl e-mail pro ${email.to}:`, response.status, body);
+    let name = "";
+    try { name = (JSON.parse(body) as { name?: string }).name ?? ""; } catch {}
+    return { ok: false, reason: name ? `http_${response.status}_${name}` : `http_${response.status}` };
   } catch (error) {
     console.error(`Odeslání e-mailu pro ${email.to} přes Resend selhalo:`, error);
-    return false;
+    return { ok: false, reason: "network" };
   }
 }
 
@@ -96,7 +103,7 @@ export function sendOwnerNotification(inquiry: Inquiry, classification: Classifi
   const to = process.env.INQUIRY_NOTIFY_EMAIL;
   if (!to) {
     console.error("Chybí INQUIRY_NOTIFY_EMAIL, upozornění se neodeslalo.");
-    return Promise.resolve(false);
+    return Promise.resolve<SendResult>({ ok: false, reason: "not_configured" });
   }
   const prefix = classification.is_spam ? "[SPAM?] " : classification.urgency === "high" ? "[SPĚCHÁ] " : "";
   const subject = `${prefix}Nová poptávka: ${categoryLabels[classification.service_category]} – ${inquiry.name}`;
