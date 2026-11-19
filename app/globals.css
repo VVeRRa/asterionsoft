@@ -26,7 +26,7 @@
         var(--bg);
       /* Match the gradient geometry in the original desktop reference.
          Translations and the embedded form can change the document height. */
-      background-size: 100% 7120px;
+      background-size: 100% 7000px;
       background-repeat: no-repeat;
       color: var(--text);
       line-height: 1.55;
