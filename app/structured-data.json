@@ -1,0 +1,236 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "Organization",
+        "ProfessionalService"
+      ],
+      "@id": "https://asterionsoft.cz/#org",
+      "name": "Asterion Software, s.r.o.",
+      "url": "https://asterionsoft.cz/",
+      "telephone": "+420604257866",
+      "vatID": "CZ10736697",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bělehradská 858/23",
+        "postalCode": "120 00",
+        "addressLocality": "Praha 2",
+        "addressCountry": "CZ"
+      },
+      "knowsAbout": [
+        "umělá inteligence",
+        "automatizace procesů",
+        "vývoj webových aplikací",
+        "Java",
+        "Spring Boot",
+        "LLM",
+        "RAG"
+      ],
+      "areaServed": "CZ",
+      "hasOfferCatalog": {
+        "@id": "https://asterionsoft.cz/#sluzby"
+      },
+      "founder": {
+        "@id": "https://asterionsoft.cz/#jan-marcis"
+      },
+      "sameAs": [
+        "https://studijo.io"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://asterionsoft.cz/#jan-marcis",
+      "name": "Jan Marcis",
+      "jobTitle": "Zakladatel a senior vývojář",
+      "worksFor": {
+        "@id": "https://asterionsoft.cz/#org"
+      },
+      "knowsAbout": [
+        "Java",
+        "Spring Boot",
+        "AI integrace",
+        "LLM",
+        "automatizace procesů"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/jan-marcis-b8335111/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://asterionsoft.cz/#web",
+      "url": "https://asterionsoft.cz/",
+      "name": "Asterion Software",
+      "inLanguage": "cs",
+      "publisher": {
+        "@id": "https://asterionsoft.cz/#org"
+      }
+    },
+    {
+      "@type": "OfferCatalog",
+      "@id": "https://asterionsoft.cz/#sluzby",
+      "name": "Služby Asterion Software",
+      "provider": {
+        "@id": "https://asterionsoft.cz/#org"
+      },
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI audit firmy",
+            "description": "Analýza procesů, kde AI nebo automatizace šetří čas a náklady; report a roadmapa."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 14900,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Automatizace firemního procesu",
+            "description": "Návrh a implementace automatizace workflow, integrace přes API a LLM."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Interní AI asistent",
+            "description": "Chat nad firemní dokumentací a daty (RAG) s přístupovými právy a citací zdrojů."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 35000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Webová aplikace na míru",
+            "description": "MVP, interní systém nebo zákaznický portál — backend, databáze, integrace, nasazení."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 80000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Excel → aplikace",
+            "description": "Převod kritické tabulky nebo ruční agendy na webovou aplikaci s uživateli a historií."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 45000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Java / Spring konzultace",
+            "description": "Architektura, výkon, code review, legacy systémy a integrace."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2500,
+            "priceCurrency": "CZK",
+            "unitText": "hodina"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Firemní školení AI",
+            "description": "Praktická školení AI pro zaměstnance: AI Start (3 h), AI Prakticky (1 den), Automation Workshop (1 den)."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://asterionsoft.cz/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Kolik stojí AI audit firmy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI audit firmy stojí od 14 900 Kč a trvá 1–2 dny. Projdeme vaše procesy, najdeme místa, kde AI nebo automatizace reálně šetří čas či náklady, a výstupem je report s doporučeními a roadmapou dalších kroků."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kolik stojí interní AI asistent nad firemními dokumenty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pilotní verze interního AI asistenta stojí od 35 000 Kč. Výsledná cena závisí hlavně na počtu a typu zdrojů dat, potřebných integracích a nastavení přístupových práv. Asistent odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak probíhá spolupráce?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Začínáme krátkou nezávaznou konzultací, kde upřesníme cíl. Pak navrhneme řešení a rozsah s jasně definovaným výstupem. Po dodání můžeme navázat další implementací nebo dlouhodobou spoluprací."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "S kým budu během projektu komunikovat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Přímo se seniorním vývojářem, který řešení navrhuje a staví. Mezi vámi a vývojem není žádná obchodní ani projektová mezivrstva, takže otázky se řeší rychle a bez tichých telefonů."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Můžete převést firemní Excel na aplikaci?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč podle složitosti datového modelu a workflow."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pro koho je firemní školení AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mám jen nápad, ne hotové zadání. Je to problém?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovím, zda je to vhodné zadání pro Asterion, a navrhnu další krok."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Studijo",
+      "url": "https://studijo.io",
+      "applicationCategory": "DesignApplication",
+      "operatingSystem": "Web",
+      "description": "AI content studio pro tvorbu textu, grafiky, voiceoveru, videa, překladů a kurzů z jednoho zadání.",
+      "creator": {
+        "@id": "https://asterionsoft.cz/#org"
+      }
+    }
+  ]
+}

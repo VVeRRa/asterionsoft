@@ -1,0 +1,100 @@
+[
+  {
+    "name": "AI audit firmy",
+    "price": "od 14 900 Kč",
+    "description": "Najdeme procesy, kde AI nebo automatizace mohou reálně šetřit čas, náklady nebo zvýšit výkon týmu.",
+    "categories": [
+      "ai",
+      "consulting"
+    ],
+    "icon": "/img/icon-ai-audit.webp",
+    "title": "AI audit firmy",
+    "chips": [
+      "1–2 dny",
+      "report + roadmapa"
+    ],
+    "priceLabel": "orientačně"
+  },
+  {
+    "name": "Automatizace firemního procesu",
+    "price": "individuálně",
+    "description": "Máte workflow plné e‑mailů, Excelů a copy‑paste? Navrhneme a postavíme jednodušší cestu.",
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "icon": "/img/icon-automatizace.webp",
+    "title": "Automatizace procesu",
+    "chips": [
+      "integrace",
+      "API",
+      "LLM"
+    ],
+    "priceLabel": "podle rozsahu"
+  },
+  {
+    "name": "Interní AI asistent",
+    "price": "od 35 000 Kč",
+    "description": "Chat nad firemní dokumentací, know‑how a daty. S důrazem na přístupová práva a dohledatelnost zdrojů.",
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "icon": "/img/icon-ai-asistent.webp",
+    "title": "Interní AI asistent",
+    "chips": [
+      "RAG",
+      "dokumenty",
+      "API"
+    ],
+    "priceLabel": "pilot"
+  },
+  {
+    "name": "Webová aplikace na míru",
+    "price": "od 80 000 Kč",
+    "description": "MVP, interní systém nebo zákaznický portál. Backend, databáze, integrace i nasazení.",
+    "categories": [
+      "dev"
+    ],
+    "icon": "/img/icon-webova-aplikace.webp",
+    "title": "Webová aplikace na míru",
+    "chips": [
+      "Java",
+      "Spring Boot",
+      "cloud"
+    ],
+    "priceLabel": "MVP"
+  },
+  {
+    "name": "Excel → aplikace",
+    "price": "od 45 000 Kč",
+    "description": "Kritický Excel, tabulka nebo ruční agenda se změní v normální webovou aplikaci s uživateli a historií.",
+    "categories": [
+      "dev",
+      "consulting"
+    ],
+    "icon": "/img/icon-excel-aplikace.webp",
+    "title": "Excel → aplikace",
+    "chips": [
+      "workflow",
+      "datový model"
+    ],
+    "priceLabel": "typicky"
+  },
+  {
+    "name": "Java / Spring konzultace",
+    "price": "od 2 500 Kč/h",
+    "description": "Architektura, výkon, code review, legacy systémy, integrace a řešení problémů v produkci.",
+    "categories": [
+      "consulting",
+      "dev"
+    ],
+    "icon": "/img/icon-java-spring.webp",
+    "title": "Java / Spring konzultace",
+    "chips": [
+      "senior review",
+      "backend"
+    ],
+    "priceLabel": "konzultace"
+  }
+]
