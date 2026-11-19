@@ -260,6 +260,7 @@
     ::selection { background:var(--accent-3); color:#0b1020; }
     .accent-dot { color:var(--accent-3); -webkit-text-fill-color:var(--accent-3); }
     .badge-orange { background:rgba(255,138,61,.14); color:#ffc29a; border-color:rgba(255,138,61,.32); }
+    .section-head .eyebrow { margin-bottom:12px; }
     .section-head .eyebrow::before { content:""; width:7px; height:7px; border-radius:2px; background:var(--accent-3); box-shadow:0 0 12px rgba(255,138,61,.7); }
     .strip-item strong::before { content:""; display:block; width:22px; height:3px; border-radius:3px; background:var(--accent-3); margin-bottom:10px; }
     .training-card .duration { color:var(--accent-3); }
