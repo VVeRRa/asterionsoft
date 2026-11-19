@@ -219,8 +219,8 @@ export default function Home({ locale, t }) {
                       <a href="https://www.linkedin.com/in/jan-marcis-b8335111/" className="person-link" target="_blank" rel="noopener">LinkedIn ↗</a>
                     </div>
                   </div>
-                  <strong style={{ fontSize: "20px", color: "white", display: "block" }}>Asterion Software, s.r.o.</strong>
-                  <span style={{ fontSize: "13px" }}>{t.companyId}: 10736697 · {t.vatId}: CZ10736697</span>
+                  <strong style={{ fontSize: "1.25rem", color: "white", display: "block" }}>Asterion Software, s.r.o.</strong>
+                  <span style={{ fontSize: "0.8125rem" }}>{t.companyId}: 10736697 · {t.vatId}: CZ10736697</span>
                   <div className="contact-list">
                     <div className="contact-row">
                       <svg className="contact-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -325,7 +325,7 @@ export default function Home({ locale, t }) {
             <div className="modal-head">
               <div>
                 <span className="badge">{t.detailLabel}</span>
-                <h2 id="modalTitle" style={{ margin: "12px 0 6px" }}>{detail?.name}</h2>
+                <h2 id="modalTitle" style={{ margin: "0.75rem 0 0.375rem" }}>{detail?.name}</h2>
                 <strong>{detail?.price}</strong>
               </div>
               <button className="modal-close" onClick={() => setDetail(null)} aria-label={t.close}>×</button>
