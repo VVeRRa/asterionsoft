@@ -2,11 +2,8 @@ import Home from "./home";
 import { localePaths, type Locale } from "./locales";
 import type { Messages } from "./messages";
 import structuredData from "./structured-data.json";
+import { faqTopics } from "./faq-topics";
 
-const faqTopics = [
-  "audit", "assistant", "process", "contact", "excel", "training",
-  "data", "systems", "mistakes", "running", "aiAct", "idea",
-] as const;
 
 /** Jednotky cen ve structured-data.json (česky) → překlad pro ostatní jazyky. */
 const unitTexts: Record<string, Record<Exclude<Locale, "cs">, string>> = {
