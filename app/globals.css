@@ -24,6 +24,10 @@
         radial-gradient(circle at 10% 0%, rgba(124,92,255,.20), transparent 30%),
         radial-gradient(circle at 90% 10%, rgba(49,215,198,.12), transparent 30%),
         var(--bg);
+      /* Match the gradient geometry in the original desktop reference.
+         Translations and the embedded form can change the document height. */
+      background-size: 100% 7120px;
+      background-repeat: no-repeat;
       color: var(--text);
       line-height: 1.55;
     }
@@ -106,8 +110,7 @@
     .preview-item strong { display:block; margin-bottom:4px; }
     .preview-meta { color:var(--muted); font-size:13px; display:flex; justify-content:space-between; gap:12px; }
 
-    .strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(197,211,255,.035); }
-    #sluzby { background-color:rgba(87,112,174,.025); }
+    .strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(255,255,255,.02); }
     .strip-grid { display:grid; grid-template-columns:repeat(4,1fr); }
     .strip-item { padding:20px; border-right:1px solid var(--line); }
     .strip-item:last-child { border-right:0; }
