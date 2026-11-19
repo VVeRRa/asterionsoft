@@ -134,15 +134,13 @@
     .service-card {
       border:0.0625rem solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.02));
       border-radius:var(--radius); padding:1.375rem; display:flex; flex-direction:column; min-height:19.375rem;
-      transition:.22s ease;
     }
-    .service-card:hover { transform:translateY(-0.25rem); border-color:rgba(255,255,255,.20); box-shadow:var(--shadow); }
     .service-icon {
       width:6rem; height:6rem; margin:-0.625rem 0 0.5rem -0.75rem; mix-blend-mode:screen;
       -webkit-mask-image:radial-gradient(circle, #000 58%, transparent 71%); mask-image:radial-gradient(circle, #000 58%, transparent 71%);
       transition:transform .3s ease;
     }
-    .service-card:hover .service-icon { transform:translateY(-0.1875rem) scale(1.04); }
+
     .service-card h3 { margin:0 0 0.625rem; font-size:1.375rem; letter-spacing:-.025em; }
     .service-card p { color:var(--muted); margin:0 0 1.125rem; }
     .chips { display:flex; flex-wrap:wrap; gap:0.4375rem; margin-bottom:1.125rem; }
@@ -328,6 +326,40 @@
     .nav-cta { transition:box-shadow .2s ease; }
     .nav-cta:hover { box-shadow:0 0 0 0.1875rem rgba(255,138,61,.45); }
 
+
+    /* Animace karet: jen transform a opacity, aby to běželo plynule i na slabších zařízeních. */
+    .service-card, .training-card { position:relative; transition:transform .25s cubic-bezier(.2,.7,.3,1); }
+    .service-card::after, .training-card::after {
+      content:""; position:absolute; inset:-0.0625rem; border-radius:inherit; pointer-events:none;
+      border:0.0625rem solid rgba(255,138,61,.38);
+      box-shadow:var(--shadow), 0 0 2.25rem rgba(124,92,255,.16);
+      opacity:0; transition:opacity .25s ease;
+    }
+    .service-card:focus-within::after, .training-card:focus-within::after { opacity:1; }
+    @media (hover: hover) {
+      .service-card:hover, .training-card:hover { transform:translateY(-0.25rem); }
+      .service-card:hover::after, .training-card:hover::after { opacity:1; }
+      .service-card:hover .service-icon { transform:translateY(-0.1875rem) scale(1.04); }
+    }
+
+    /* Celá karta otevírá detail: tlačítko „Detail“/„Příklad“ se roztáhne přes kartu (jeden ovládací prvek, funguje i z klávesnice). */
+    .service-card { cursor:pointer; }
+    .service-card .text-link::before { content:""; position:absolute; inset:0; border-radius:var(--radius); z-index:1; }
+    .service-card .text-link:focus-visible { outline:none; }
+    .service-card .text-link:focus-visible::before { outline:0.125rem solid var(--accent-3); outline-offset:0.1875rem; }
+
+    /* Postupný náběh při scrollu – skrytý stav platí, až když ho zapne skript (bez JS je vše vidět). */
+    .reveal {
+      --reveal-delay:calc(var(--reveal-index, 0) * 90ms);
+      transition:opacity .55s ease var(--reveal-delay), translate .55s cubic-bezier(.2,.7,.3,1) var(--reveal-delay), transform .25s cubic-bezier(.2,.7,.3,1);
+    }
+    .reveal-ready .reveal:not(.is-visible) { opacity:0; translate:0 1.5rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal, .service-card, .training-card, .service-icon { transition:none; }
+      .reveal-ready .reveal:not(.is-visible) { opacity:1; translate:none; }
+      .service-card:hover, .training-card:hover, .service-card:hover .service-icon { transform:none; }
+    }
 
     @media (max-width: 57.5em) {
       .hero-grid, .case-study, .about-grid, .cta-box { grid-template-columns:1fr; }
