@@ -14,12 +14,30 @@ Ceny jsou orientační, bez DPH; finální cena závisí na rozsahu.
 - [Webová aplikace na míru](https://asterionsoft.cz/#sluzby): MVP, interní systém nebo zákaznický portál — backend, databáze, integrace i nasazení. MVP od 80 000 Kč.
 - [Excel → aplikace](https://asterionsoft.cz/#sluzby): Kritická tabulka nebo ruční agenda převedená na webovou aplikaci s uživateli a historií změn. Typicky od 45 000 Kč.
 - [Java / Spring konzultace](https://asterionsoft.cz/#sluzby): Architektura, výkon, code review, legacy systémy, integrace a řešení problémů v produkci. Od 2 500 Kč/h.
+- [Napojení na ChatGPT a Claude (MCP)](https://asterionsoft.cz/#sluzby): Vlastní MCP server nad ERP, CRM nebo dokumenty, aby zaměstnanci pracovali s firemními daty přímo z ChatGPT nebo Claude, s právy a záznamem akcí. Od 40 000 Kč.
+- [AI funkce do vaší aplikace](https://asterionsoft.cz/#sluzby): Generování textu, obrázků, hlasu nebo videa v existujícím produktu — více modelů, asynchronní úlohy, kredity a cena předem. Od 60 000 Kč.
+- [Interní kurz z firemních dokumentů](https://asterionsoft.cz/#sluzby): Onboardingový kurz z manuálů a směrnic s lekcemi, obrázky a namluveným výkladem. Od 20 000 Kč.
+- [Provoz a ladění AI řešení](https://asterionsoft.cz/#sluzby): Měsíční dohled, úpravy promptů, přechod na nové modely, hlídání nákladů na API a report úspor. Od 4 900 Kč měsíčně.
+
+## Řešení pro obory
+
+Každé řešení začíná pilotem na historických datech klienta; měří se čas před a po. Modelové příklady na webu jsou ilustrativní, ne konkrétní klienti.
+
+- [Poptávka → karta zakázky — Zakázková výroba a CNC](https://asterionsoft.cz/#obory): Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení. Od 39 000 Kč (pilot).
+- [Oběh dokladů bez urgencí — Účetní a daňové kanceláře](https://asterionsoft.cz/#obory): Méně dohledávání příloh a ručních upomínek před uzávěrkou. Začínáme krátkým auditem, který spočítá, kolik hodin vás to dnes stojí. Od 14 900 Kč (audit).
+- [Hlášení závad pod kontrolou — Správa domů a SVJ](https://asterionsoft.cz/#obory): Hlášení z e‑mailu nebo formuláře se samo zařadí k domu, typu závady a technikovi. Výbor SVJ dostane přehled bez ručního psaní. Od 45 000 Kč (typicky).
+- [Vratky a výjimky ve fulfillmentu — Fulfillment a sklady pro e‑shopy](https://asterionsoft.cz/#obory): Vratka bez čísla objednávky nebo dotaz na stav zásilky už nemusí čekat na člověka, který to dohledá ručně. Od 39 000 Kč (pilot).
+- [Objednávky z e‑mailu rovnou do ERP — Velkoobchod, distribuce a spedice](https://asterionsoft.cz/#obory): Objednávky v PDF, Excelu nebo textu e‑mailu se přepíšou do ERP samy. Obchodník řeší jen nejasné řádky. Od 39 000 Kč (typicky).
+- [Předvýběr kandidátů — Personální agentury](https://asterionsoft.cz/#obory): Desítky životopisů na pozici seřazené podle požadavků, s krátkým odůvodněním. Rozhoduje vždy recruiter. Od 45 000 Kč (typicky).
+- [AI pro advokátní kanceláře — Menší advokátní kanceláře](https://asterionsoft.cz/#obory): Vyhledávání ve vlastních smlouvách, vzorech a podáních s odkazem na zdroj. Přístup jen ke spisům, ke kterým má uživatel právo. Od 35 000 Kč (pilot).
+- [Produktový obsah ve velkém — E‑shopy](https://asterionsoft.cz/#obory): Popisky, překlady a vizuály pro stovky produktů najednou, rovnou ve feedu. Na stejných stavebních blocích, na kterých běží Studijo. Od 25 000 Kč (nastavení).
 
 ## Firemní školení AI
 
 - [AI Start (3 hodiny)](https://asterionsoft.cz/#skoleni): ChatGPT / Claude, prompting, práce s dokumenty, research a shrnutí, bezpečnost a limity.
 - [AI Prakticky (1 den)](https://asterionsoft.cz/#skoleni): Pracovní use‑cases, automatizace rutiny, tvorba vlastních workflow, Q&A nad agendou firmy.
 - [Automation Workshop (1 den)](https://asterionsoft.cz/#skoleni): Mapování procesů, výběr vhodné automatizace, návrh řešení a roadmapa implementace.
+- [AI gramotnost podle AI Actu (3 hodiny)](https://asterionsoft.cz/#skoleni): Povinnost podle čl. 4 AI Actu, pravidla pro firemní data, rizika a limity AI, záznam o proškolení.
 
 ## Reference
 
@@ -50,6 +68,26 @@ Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uži
 ### Pro koho je firemní školení AI?
 
 Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů.
+
+### Kam putují naše data?
+
+Řešení navrhujeme tak, aby data zůstala v EU a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých podmínek data k tréninku nepoužívá. Hosting a přístupová práva popíšeme v návrhu řešení.
+
+### Funguje to s naším systémem?
+
+Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.
+
+### Co když AI udělá chybu?
+
+U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh nebo předvyplněný záznam a člověk ho potvrdí. Nejisté případy systém označí a každá akce se zaznamená, takže je dohledatelné, co se stalo a proč.
+
+### Kolik stojí provoz po spuštění?
+
+Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušálu za provoz a ladění od 4 900 Kč měsíčně. Odhad provozních nákladů dostanete předem jako součást návrhu řešení.
+
+### Týká se nás AI Act?
+
+Povinnost zajistit dostatečnou AI gramotnost lidí, kteří s AI pracují, platí od února 2025 pro firmy, které AI používají. Pomůže s ní školení AI gramotnosti. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.
 
 ### Mám jen nápad, ne hotové zadání. Je to problém?
 

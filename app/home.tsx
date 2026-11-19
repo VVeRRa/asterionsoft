@@ -2,27 +2,41 @@
 
 import { useEffect, useState } from "react";
 import serviceDefinitions from "./services.json";
+import industryDefinitions from "./industries.json";
 import { locales, localePaths, type Locale } from "./locales";
 import type { Messages } from "./messages";
 import InquiryForm, { type ServiceOption } from "./inquiry-form";
 
 type Service = (typeof serviceDefinitions)[number] & Messages["services"][number];
+type Industry = (typeof industryDefinitions)[number] & Messages["industries"][number];
 type Category = "all" | "ai" | "dev" | "consulting";
+/** Obsah modálního detailu – služba z katalogu, nebo oborové řešení s rozsahem a modelovým příkladem. */
+type Detail = { name: string; price: string; description: string; formValue: string; scope?: string[]; example?: string };
+
+/** Podíl času, který automatizace typicky ušetří (cíl pilotu) – pro kalkulačku úspory. */
+const savingShare = 2 / 3;
 
 /** Hodnoty `formValue` školení – ukládají se česky, stejně jako služby. */
 const trainings = [
   { value: "Firemní školení — AI Start", name: () => "AI Start" },
   { value: "Firemní školení — AI Prakticky", name: (t: Messages) => t.practicalTraining },
   { value: "Firemní školení — Automation Workshop", name: () => "Automation Workshop" },
+  { value: "Firemní školení — AI gramotnost (AI Act)", name: (t: Messages) => t.aiLiteracyTraining },
 ];
 
 export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
   const services: Service[] = serviceDefinitions.map((definition, index) => ({ ...definition, ...t.services[index] }));
   const [filter, setFilter] = useState<Category>("all");
-  const [detail, setDetail] = useState<Service | null>(null);
+  const industries: Industry[] = industryDefinitions.map((definition, index) => ({ ...definition, ...t.industries[index] }));
+  const [detail, setDetail] = useState<Detail | null>(null);
+  const [calc, setCalc] = useState({ cases: 60, minutes: 30, rate: 600 });
+  const number = new Intl.NumberFormat(locale, { maximumFractionDigits: 0 });
+  const hoursNow = (calc.cases * calc.minutes) / 60;
+  const hoursSaved = hoursNow * savingShare;
   const [pickedService, setPickedService] = useState("");
   const serviceOptions: ServiceOption[] = [
     ...services.map((service) => ({ label: service.name, value: service.formValue })),
+    ...industries.map((industry) => ({ label: `${industry.audience} — ${industry.name}`, value: industry.formValue })),
     ...trainings.map((training) => ({ label: `${t.trainingLabel} — ${training.name(t)}`, value: training.value })),
   ];
 
@@ -50,6 +64,7 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
             </a>
             <nav className="nav-links">
               <a href="#sluzby">{t.servicesNav}</a>
+              <a href="#obory">{t.industriesNav}</a>
               <a href="#reference">{t.references}</a>
               <a href="#skoleni">{t.trainingNav}</a>
               <a href="#o-nas">{t.aboutNav}</a>
@@ -149,6 +164,63 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
             </div>
           </section>
 
+          <section id="obory">
+            <div className="container">
+              <div className="section-head">
+                <div>
+                  <div className="eyebrow">{t.industriesLabel}</div>
+                  <h2>{t.industriesTitle}</h2>
+                </div>
+                <p>{t.industriesBody}</p>
+              </div>
+
+              <div className="services-grid">
+                {industries.map((industry) => (
+                  <article className="service-card industry-card" key={industry.formValue}>
+                    <span className="industry-audience">{industry.audience}</span>
+                    <h3>{industry.name}</h3>
+                    <p>{industry.description}</p>
+                    <div className="chips">
+                      {industry.chips.map((chip) => <span className="chip" key={chip}>{chip}</span>)}
+                    </div>
+                    <div className="service-bottom">
+                      <div className="price"><small>{industry.priceLabel}</small><strong>{industry.price}</strong></div>
+                      <button type="button" className="text-link" onClick={() => setDetail(industry)}>{t.exampleLink}</button>
+                    </div>
+                  </article>
+                ))}
+              </div>
+
+              <div className="calculator" id="kalkulacka">
+                <div>
+                  <div className="eyebrow">{t.calcLabel}</div>
+                  <h3>{t.calcTitle}</h3>
+                  <p>{t.calcBody}</p>
+                </div>
+                <div className="calc-body">
+                  <div className="calc-inputs">
+                    <label><span>{t.calcCases}</span>
+                      <input type="number" min="0" step="1" inputMode="numeric" value={calc.cases}
+                        onChange={(event) => setCalc({ ...calc, cases: Math.max(0, Number(event.target.value) || 0) })} /></label>
+                    <label><span>{t.calcMinutes}</span>
+                      <input type="number" min="0" step="1" inputMode="numeric" value={calc.minutes}
+                        onChange={(event) => setCalc({ ...calc, minutes: Math.max(0, Number(event.target.value) || 0) })} /></label>
+                    <label><span>{t.calcRate} ({t.calcCurrency})</span>
+                      <input type="number" min="0" step="50" inputMode="numeric" value={calc.rate}
+                        onChange={(event) => setCalc({ ...calc, rate: Math.max(0, Number(event.target.value) || 0) })} /></label>
+                  </div>
+                  <div className="calc-results" aria-live="polite">
+                    <div className="stat"><span>{t.calcHoursNow}</span><strong>{number.format(hoursNow)} {t.calcPerMonth}</strong></div>
+                    <div className="stat calc-highlight"><span>{t.calcSaved}</span>
+                      <strong>{number.format(hoursSaved)} {t.calcPerMonth}</strong>
+                      <span>≈ {number.format(hoursSaved * calc.rate * 12)} {t.calcCurrency} {t.calcPerYear}</span></div>
+                  </div>
+                  <button type="button" className="btn btn-primary" onClick={() => pickService("Automatizace firemního procesu")}>{t.calcCta}</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section id="reference">
             <div className="container">
               <div className="section-head">
@@ -215,7 +287,14 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                   <ul><li>{t.processMapping}</li><li>{t.selectAutomation}</li><li>{t.solutionDesign}</li><li>{t.implementationPlan}</li></ul>
                   <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — Automation Workshop")}>{t.request}</button>
                 </div>
+                <div className="training-card">
+                  <span className="duration">{t.threeHours}</span>
+                  <h3>{t.aiLiteracyTraining}</h3>
+                  <ul><li>{t.aiLiteracyDuty}</li><li>{t.aiLiteracyRules}</li><li>{t.aiLiteracyLimits}</li><li>{t.aiLiteracyRecord}</li></ul>
+                  <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — AI gramotnost (AI Act)")}>{t.request}</button>
+                </div>
               </div>
+              <p className="training-note">{t.trainingIndustryNote}</p>
             </div>
           </section>
 
@@ -293,6 +372,26 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                   <p>{t.trainingAnswer}</p>
                 </details>
                 <details className="faq-item">
+                  <summary>{t.dataQuestion}</summary>
+                  <p>{t.dataAnswer}</p>
+                </details>
+                <details className="faq-item">
+                  <summary>{t.systemsQuestion}</summary>
+                  <p>{t.systemsAnswer}</p>
+                </details>
+                <details className="faq-item">
+                  <summary>{t.mistakesQuestion}</summary>
+                  <p>{t.mistakesAnswer}</p>
+                </details>
+                <details className="faq-item">
+                  <summary>{t.runningQuestion}</summary>
+                  <p>{t.runningAnswer}</p>
+                </details>
+                <details className="faq-item">
+                  <summary>{t.aiActQuestion}</summary>
+                  <p>{t.aiActAnswer}</p>
+                </details>
+                <details className="faq-item">
                   <summary>{t.ideaQuestion}</summary>
                   <p>{t.ideaAnswer}</p>
                 </details>
@@ -339,13 +438,29 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
               <button className="modal-close" onClick={() => setDetail(null)} aria-label={t.close}>×</button>
             </div>
             <p>{detail?.description}</p>
-            <h3>{t.deliverable}</h3>
-            <ul>
-              <li>{t.deliverableGoal}</li>
-              <li>{t.deliverableScope}</li>
-              <li>{t.deliverableResult}</li>
-              <li>{t.deliverableFollowUp}</li>
-            </ul>
+            {detail?.scope ? (
+              <>
+                <h3>{t.scopeLabel}</h3>
+                <ul>{detail.scope.map((item) => <li key={item}>{item}</li>)}</ul>
+              </>
+            ) : (
+              <>
+                <h3>{t.deliverable}</h3>
+                <ul>
+                  <li>{t.deliverableGoal}</li>
+                  <li>{t.deliverableScope}</li>
+                  <li>{t.deliverableResult}</li>
+                  <li>{t.deliverableFollowUp}</li>
+                </ul>
+              </>
+            )}
+            {detail?.example && (
+              <div className="example-box">
+                <span className="badge badge-orange">{t.exampleLabel}</span>
+                <p>{detail.example}</p>
+                <small>{t.exampleNote}</small>
+              </div>
+            )}
             <button className="btn btn-primary" onClick={() => { if (detail) pickService(detail.formValue); setDetail(null); }}>{t.requestService}</button>
           </div>
         </div>

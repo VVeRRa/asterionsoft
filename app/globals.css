@@ -183,7 +183,8 @@
       -webkit-mask-image:linear-gradient(180deg, transparent, #000 22%, #000 78%, transparent); mask-image:linear-gradient(180deg, transparent, #000 22%, #000 78%, transparent);
     }
     .training-card { backdrop-filter:blur(0.375rem); -webkit-backdrop-filter:blur(0.375rem); }
-    .training-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.125rem; }
+    .training-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.125rem; }
+    .training-note { color:var(--muted); margin:1.25rem 0 0; }
     .training-card { border:0.0625rem solid var(--line); border-radius:1.25rem; padding:1.375rem; background:rgba(255,255,255,.025); }
     .training-card h3 { margin:0 0 0.5rem; font-size:1.375rem; }
     .training-card .duration { color:var(--accent-2); font-size:0.8125rem; font-weight:700; }
@@ -226,6 +227,31 @@
     .modal-head { display:flex; justify-content:space-between; gap:1.25rem; align-items:start; }
     .modal-close { border:0.0625rem solid var(--line); background:rgba(255,255,255,.04); color:white; border-radius:0.625rem; width:2.25rem; height:2.25rem; cursor:pointer; }
     .modal-card p, .modal-card li { color:var(--muted); }
+    .example-box { margin:1.25rem 0; padding:1rem 1.125rem; border-radius:1rem; border:0.0625rem solid rgba(255,138,61,.28); background:rgba(255,138,61,.06); }
+    .example-box p { margin:0.75rem 0 0.5rem; color:var(--text); }
+    .example-box small { color:var(--muted); }
+
+    /* Oborová řešení a kalkulačka úspory */
+    .industry-card { min-height:0; }
+    .industry-audience { color:var(--accent-2); font-size:0.8125rem; font-weight:700; margin-bottom:0.5rem; }
+    .calculator {
+      display:grid; grid-template-columns:.9fr 1.1fr; gap:1.875rem; margin-top:2.125rem; padding:1.875rem;
+      border:0.0625rem solid var(--line); border-radius:1.75rem;
+      background:linear-gradient(135deg, rgba(124,92,255,.12), rgba(49,215,198,.06));
+    }
+    .calculator h3 { margin:0.5rem 0 0.625rem; font-size:2rem; letter-spacing:-.035em; line-height:1.1; }
+    .calculator p { color:var(--muted); margin:0; }
+    .calc-body { display:flex; flex-direction:column; gap:1rem; align-items:start; }
+    .calc-inputs { display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem; width:100%; }
+    .calc-inputs label { display:flex; flex-direction:column; gap:0.375rem; font-size:0.8125rem; color:var(--muted); }
+    .calc-inputs input {
+      width:100%; padding:0.75rem 0.875rem; border-radius:0.75rem; border:0.0625rem solid var(--line);
+      background:rgba(255,255,255,.04); color:var(--text); font-size:1.125rem; font-weight:700;
+    }
+    .calc-inputs input:focus { outline:none; border-color:var(--accent); background:rgba(124,92,255,.08); }
+    .calc-results { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; width:100%; }
+    .calc-results .stat strong { font-size:1.5rem; margin:0.25rem 0; }
+    .calc-highlight { border-color:rgba(49,215,198,.35); background:rgba(49,215,198,.07); }
 
 
     /* Poptávkový formulář */
@@ -307,6 +333,7 @@
       .hero-grid, .case-study, .about-grid, .cta-box { grid-template-columns:1fr; }
       .field-row { grid-template-columns:1fr; }
       .services-grid, .training-grid { grid-template-columns:1fr 1fr; }
+      .calculator { grid-template-columns:1fr; }
       .strip-grid { grid-template-columns:1fr 1fr; }
       .strip-item:nth-child(2) { border-right:0; }
       .nav-links > a:not(.nav-cta) { display:none; }
@@ -321,7 +348,7 @@
     @media (max-width: 40em) {
       .container { width:min(100% - 1.5rem, var(--max)); }
       .hero { padding-top:3.625rem; }
-      .services-grid, .training-grid, .stats, .strip-grid { grid-template-columns:1fr; }
+      .services-grid, .training-grid, .stats, .strip-grid, .calc-inputs, .calc-results { grid-template-columns:1fr; }
       .strip-item { border-right:0; border-bottom:0.0625rem solid var(--line); }
       .strip-item:last-child { border-bottom:0; }
       .section-head { align-items:start; flex-direction:column; }

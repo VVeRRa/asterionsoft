@@ -127,6 +127,43 @@
   "deliverableFollowUp": "auf Wunsch anschließende Umsetzung oder langfristige Zusammenarbeit.",
   "requestService": "Diese Leistung anfragen",
   "language": "Sprache der Website",
+  "industriesNav": "Für Branchen",
+  "industriesLabel": "Branchenlösungen",
+  "industriesTitle": "Konkrete Szenarien für Ihre Branche",
+  "industriesBody": "Jede Lösung beginnt mit einem Pilotprojekt auf Ihren historischen Daten. Wir messen den Zeitaufwand vorher und nachher, und wenn sich die Einsparung nicht bestätigt, machen wir nicht weiter.",
+  "audienceLabel": "Für wen",
+  "scopeLabel": "Was enthalten ist",
+  "exampleLink": "Modellbeispiel →",
+  "exampleLabel": "Modellbeispiel",
+  "exampleNote": "Ein illustratives Beispiel für ein typisches Unternehmen der Branche, kein konkreter Kunde. Die Zahlen sind eine Schätzung, die das Pilotprojekt überprüft.",
+  "calcLabel": "Einsparungsrechner",
+  "calcTitle": "Was kostet Sie die manuelle Arbeit heute?",
+  "calcBody": "Geben Sie an, wie oft sich die Aufgabe wiederholt und wie lange sie dauert. Die Berechnung geht davon aus, dass die Automatisierung etwa zwei Drittel der Zeit einspart, das typische Ziel eines Pilotprojekts.",
+  "calcCases": "Fälle pro Monat",
+  "calcMinutes": "Minuten pro Fall",
+  "calcRate": "Stundenkosten pro Person",
+  "calcCurrency": "CZK",
+  "calcHoursNow": "Manuelle Arbeit heute",
+  "calcSaved": "Geschätzte Einsparung",
+  "calcPerMonth": "Std. pro Monat",
+  "calcPerYear": "pro Jahr",
+  "calcCta": "Mit Ihren Daten besprechen",
+  "aiLiteracyTraining": "KI-Kompetenz (AI Act)",
+  "aiLiteracyDuty": "Pflicht nach Art. 4 AI Act",
+  "aiLiteracyRules": "Regeln für Unternehmensdaten",
+  "aiLiteracyLimits": "Risiken und Grenzen von KI",
+  "aiLiteracyRecord": "Schulungsnachweis",
+  "trainingIndustryNote": "KI in der Praxis bieten wir auch als Branchenversion an, zum Beispiel für Steuerberatungskanzleien, Anwaltskanzleien oder Onlineshops.",
+  "dataQuestion": "Wohin gehen unsere Daten?",
+  "dataAnswer": "Wir gestalten Lösungen so, dass die Daten in der EU bleiben und die KI nur mit dem arbeitet, was sie für die Aufgabe braucht. Wir nutzen Business-APIs von KI-Modellen, deren Anbieter die Daten laut eigenen Bedingungen nicht zum Training verwenden. Hosting und Zugriffsrechte beschreiben wir im Lösungsvorschlag.",
+  "systemsQuestion": "Funktioniert das mit unserem System?",
+  "systemsAnswer": "Meistens ja. Wir binden uns über API, Datei-Export und -Import oder ein gemeinsames E-Mail-Postfach an, ob ERP, Buchhaltungsprogramm, Onlineshop oder gemeinsames Laufwerk. Im Erstgespräch prüfen wir, welche Anbindungsmöglichkeiten Ihr System bietet.",
+  "mistakesQuestion": "Was, wenn die KI einen Fehler macht?",
+  "mistakesAnswer": "Deshalb entscheidet bei wichtigen Schritten ein Mensch. Die KI bereitet eine Unterlage, einen Vorschlag oder einen vorausgefüllten Datensatz vor, und ein Mensch bestätigt ihn. Unsichere Fälle markiert das System, und jede Aktion wird protokolliert, sodass nachvollziehbar ist, was passiert ist und warum.",
+  "runningQuestion": "Was kostet der Betrieb nach dem Start?",
+  "runningAnswer": "Der Betrieb besteht aus nutzungsabhängigen Gebühren für die KI-Modelle und einer optionalen Pauschale für Betrieb und Optimierung ab 4.900 CZK pro Monat. Eine Schätzung der Betriebskosten erhalten Sie vorab als Teil des Lösungsvorschlags.",
+  "aiActQuestion": "Betrifft uns der AI Act?",
+  "aiActAnswer": "Seit Februar 2025 müssen Unternehmen, die KI einsetzen, für ausreichende KI-Kompetenz der Menschen sorgen, die damit arbeiten. Dabei hilft eine Schulung zur KI-Kompetenz. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
   "services": [
     {
       "name": "KI-Audit für Unternehmen",
@@ -196,6 +233,208 @@
         "Backend"
       ],
       "priceLabel": "Beratung"
+    },
+    {
+      "name": "Anbindung an ChatGPT und Claude (MCP)",
+      "price": "ab 40.000 CZK",
+      "description": "Ein eigener MCP-Server für Ihr ERP, CRM oder Ihre Dokumente. Mitarbeitende stellen Fragen und vergeben Aufgaben direkt aus ChatGPT oder Claude, mit Zugriffsrechten und Aktionsprotokoll.",
+      "title": "Anbindung an ChatGPT und Claude",
+      "chips": [
+        "MCP",
+        "ERP / CRM",
+        "Zugriffsrechte"
+      ],
+      "priceLabel": "typischer Einstiegspreis"
+    },
+    {
+      "name": "KI-Funktionen für Ihre Anwendung",
+      "price": "ab 60.000 CZK",
+      "description": "Generierung von Text, Bildern, Sprache oder Video direkt in Ihrem Produkt. Mehrere Modelle, asynchrone Aufgaben, Guthaben und Preis vorab, genau wie in Studijo.",
+      "title": "KI-Funktionen für Ihre Anwendung",
+      "chips": [
+        "Multi-Modell",
+        "asynchrone Jobs",
+        "Abrechnung"
+      ],
+      "priceLabel": "typischer Einstiegspreis"
+    },
+    {
+      "name": "Interner Kurs aus Unternehmensdokumenten",
+      "price": "ab 20.000 CZK",
+      "description": "Aus Handbüchern und Richtlinien entsteht ein Onboarding-Kurs mit Lektionen, Bildern und vertonten Erklärungen.",
+      "title": "Interner Kurs aus Dokumenten",
+      "chips": [
+        "Onboarding",
+        "Voiceover",
+        "E-Learning"
+      ],
+      "priceLabel": "typischer Einstiegspreis"
+    },
+    {
+      "name": "Betrieb und Optimierung von KI-Lösungen",
+      "price": "ab 4.900 CZK/Monat",
+      "description": "Überwachung, Prompt-Anpassungen, Umstieg auf neue Modelle und Kontrolle der API-Kosten. Einmal im Monat ein Bericht, was die Lösung eingespart hat.",
+      "title": "Betrieb und Optimierung von KI",
+      "chips": [
+        "Monitoring",
+        "Kosten",
+        "Bericht"
+      ],
+      "priceLabel": "Pauschale"
+    }
+  ],
+  "industries": [
+    {
+      "name": "Anfrage → Auftragskarte",
+      "audience": "Auftragsfertigung und CNC",
+      "description": "Anfragen kommen per E-Mail mit Zeichnungen als PDF und STEP. Die KI erstellt daraus eine Auftragskarte, die der Techniker nur noch prüft und kalkuliert.",
+      "scope": [
+        "Material, Stückzahl, Termin und Anhangsliste",
+        "fehlende Angaben und Vorschlag für eine Rückfrage",
+        "Suche nach ähnlichen früheren Kalkulationen",
+        "Übergabe ins ERP"
+      ],
+      "price": "ab 39.000 CZK",
+      "priceLabel": "Pilotprojekt",
+      "chips": [
+        "Zeichnungen",
+        "ERP",
+        "Pilot auf Ihren Daten"
+      ],
+      "example": "Eine Werkstatt mit 15 Mitarbeitenden erhält rund 60 Anfragen im Monat, jede mit E-Mail und mehreren Zeichnungen. Der Techniker braucht heute etwa 30 Minuten, um die Unterlagen aufzubereiten, und bei einem Drittel muss er beim Kunden nachfragen. Nach der Einführung erhält er eine fertige Karte mit einer Liste fehlender Angaben und Verweisen auf ähnliche frühere Aufträge. Ziel des Pilotprojekts ist, die Vorbereitung auf 10 Minuten zu verkürzen, also rund 20 Stunden im Monat zu sparen und Kunden schneller zu antworten."
+    },
+    {
+      "name": "Belegfluss ohne Mahnungen",
+      "audience": "Buchhaltungs- und Steuerberatungskanzleien",
+      "description": "Weniger Suchen nach Anhängen und weniger manuelle Erinnerungen vor dem Abschluss. Wir beginnen mit einem kurzen Audit, das berechnet, wie viele Stunden Sie das heute kostet.",
+      "scope": [
+        "Audit des Belegflusses mit beziffertem Einsparpotenzial",
+        "Vollständigkeitsprüfung der Mandantenordner",
+        "Erinnerungen mit konkreter Liste fehlender Belege",
+        "Auslesen von Rechnungen und Zuordnen von Zahlungen"
+      ],
+      "price": "ab 14.900 CZK",
+      "priceLabel": "Audit",
+      "chips": [
+        "Audit",
+        "Datenextraktion",
+        "Erinnerungen"
+      ],
+      "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Das Audit zeigt, wo diese Zeit verloren geht. Die Automatisierung prüft dann jede Woche die Mandantenordner und schickt jedem Mandanten eine genaue Liste dessen, was fehlt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
+    },
+    {
+      "name": "Schadensmeldungen im Griff",
+      "audience": "Hausverwaltungen und Eigentümergemeinschaften",
+      "description": "Meldungen per E-Mail oder Formular werden automatisch dem Haus, der Schadensart und dem Techniker zugeordnet. Der Verwaltungsbeirat erhält eine Übersicht, ohne dass jemand sie manuell schreibt.",
+      "scope": [
+        "Eingang der Meldungen über die bestehende E-Mail oder das Formular",
+        "Hinweis auf Duplikate",
+        "Aufgaben für Techniker und Informationen für Bewohner",
+        "Monatsübersicht für den Beirat und Auswertung wiederkehrender Schäden"
+      ],
+      "price": "ab 45.000 CZK",
+      "priceLabel": "typischer Einstiegspreis",
+      "chips": [
+        "E-Mail",
+        "Aufgaben",
+        "Übersichten für den Beirat"
+      ],
+      "example": "Eine Verwaltung mit 40 Häusern erhält rund 150 Meldungen im Monat per E-Mail und Telefon. Denselben Schaden melden oft mehrere Bewohner, und die Beiräte fragen immer wieder nach dem Stand. Nach der Einführung werden Meldungen automatisch zugeordnet, Duplikate zusammengeführt und der Beirat erhält eine Monatsübersicht. Ziel sind weniger Statusanfragen und eine Reparaturplanung auf Basis von Daten zu wiederkehrenden Schäden."
+    },
+    {
+      "name": "Retouren und Ausnahmen im Fulfillment",
+      "audience": "Fulfillment und Lager für Onlineshops",
+      "description": "Eine Retoure ohne Bestellnummer oder eine Frage zum Sendungsstatus muss nicht mehr warten, bis jemand sie manuell nachverfolgt.",
+      "scope": [
+        "Suche nach möglichen Bestellungen anhand verfügbarer Angaben",
+        "vorbereiteter Fall zur Prüfung",
+        "Übergabe des bestätigten Status an den Onlineshop",
+        "Antwortvorschlag für den Kunden nach den Regeln des Auftraggebers"
+      ],
+      "price": "ab 39.000 CZK",
+      "priceLabel": "Pilotprojekt",
+      "chips": [
+        "Retouren",
+        "Shop-Integration",
+        "Support"
+      ],
+      "example": "Ein Lager für 25 Onlineshops bearbeitet rund 800 Retouren im Monat, etwa 120 davon kommen ohne Bestellnummer. Jede davon sucht heute jemand 10–15 Minuten lang heraus. Das System schlägt anhand von Name, Adresse und Paketinhalt die wahrscheinlichsten Bestellungen vor, und ein Mensch bestätigt nur noch. Ziel sind 2–3 Minuten pro Retoure, also eine Einsparung von rund 18 Stunden im Monat."
+    },
+    {
+      "name": "Bestellungen aus der E-Mail direkt ins ERP",
+      "audience": "Großhandel, Distribution und Spedition",
+      "description": "Bestellungen als PDF, Excel oder E-Mail-Text werden automatisch ins ERP übernommen. Der Vertrieb kümmert sich nur um unklare Positionen.",
+      "scope": [
+        "Auslesen von Positionen, Mengen und Kunde",
+        "Abgleich mit Katalog und Preisliste",
+        "Anlegen der Bestellung im ERP",
+        "bei Speditionen Übernahme von Transportaufträgen und Unterlagen für den CMR-Frachtbrief"
+      ],
+      "price": "ab 39.000 CZK",
+      "priceLabel": "typischer Einstiegspreis",
+      "chips": [
+        "PDF",
+        "ERP",
+        "Katalog"
+      ],
+      "example": "Ein Distributor erhält 300 Bestellungen im Monat per E-Mail. Das Abtippen einer Bestellung dauert 5–10 Minuten, und gelegentlich wird eine Artikelnummer verwechselt. Nach der Einführung wird die Bestellung automatisch im ERP angelegt, und der Vertrieb prüft nur die Positionen, die das System nicht sicher zuordnen kann. Ziel ist, über 80 % der Bestellungen ohne manuelles Abtippen zu verarbeiten und rund 30 Stunden im Monat zu sparen."
+    },
+    {
+      "name": "Vorauswahl von Kandidaten",
+      "audience": "Personalagenturen",
+      "description": "Dutzende Lebensläufe pro Stelle, nach Anforderungen sortiert und kurz begründet. Die Entscheidung trifft immer der Recruiter.",
+      "scope": [
+        "Sortieren und Zusammenfassen von Lebensläufen",
+        "Abgleich mit offenen Stellen",
+        "Vorschlag für eine persönliche Ansprache und Anbindung an das ATS",
+        "Dokumentation, warum ein Kandidat empfohlen wurde (AI Act)"
+      ],
+      "price": "ab 45.000 CZK",
+      "priceLabel": "typischer Einstiegspreis",
+      "chips": [
+        "ATS",
+        "DSGVO",
+        "AI Act"
+      ],
+      "example": "Eine Agentur mit 6 Recruitern erhält pro Stelle 80–150 Lebensläufe, und die erste Sichtung kostet einen Recruiter einen halben Tag. Das System sortiert die Kandidaten nach den Anforderungen und schreibt zu jedem zwei Sätze, warum er passt oder nicht. Der Recruiter beginnt mit einer kurzen Liste und entscheidet über jeden Kandidaten selbst. Ziel ist eine erste Sichtung in einer Stunde statt in einem halben Tag."
+    },
+    {
+      "name": "KI für Anwaltskanzleien",
+      "audience": "Kleinere Anwaltskanzleien",
+      "description": "Suche in eigenen Verträgen, Mustern und Schriftsätzen mit Quellenangabe. Zugriff nur auf Akten, für die der Nutzer berechtigt ist.",
+      "scope": [
+        "interner Assistent für Muster und Archiv",
+        "erster Dokumententwurf aus einer Vorlage",
+        "Mandantenaufnahme mit Prüfung im Handelsregister ARES",
+        "Zugriffsrechte je Akte"
+      ],
+      "price": "ab 35.000 CZK",
+      "priceLabel": "Pilotprojekt",
+      "chips": [
+        "Verträge",
+        "Vertraulichkeit",
+        "Quellen"
+      ],
+      "example": "Eine Kanzlei mit 10 Anwälten hat Tausende Verträge und Muster auf einem gemeinsamen Laufwerk. Ein Associate sucht heute bis zu einer Stunde nach einem passenden Muster oder einer früheren Lösung für eine ähnliche Klausel. Der Assistent antwortet mit Verweis auf das konkrete Dokument und erstellt einen ersten Entwurf aus der Vorlage. Ziel ist eine Recherche in Minuten und Zugriff nur auf Akten, für die der Nutzer berechtigt ist."
+    },
+    {
+      "name": "Produktinhalte in großem Umfang",
+      "audience": "Onlineshops",
+      "description": "Beschreibungen, Übersetzungen und Visuals für Hunderte Produkte auf einmal, direkt im Feed. Auf denselben Bausteinen, auf denen Studijo läuft.",
+      "scope": [
+        "Sammelbeschreibungen aus Parametern und Fotos",
+        "Übersetzungen ins Slowakische, Polnische, Deutsche und Ungarische",
+        "Anpassung des Feeds für Preisvergleiche und Google",
+        "einheitlicher Markenton"
+      ],
+      "price": "ab 25.000 CZK",
+      "priceLabel": "Einrichtung",
+      "chips": [
+        "Feed",
+        "Übersetzungen",
+        "Studijo"
+      ],
+      "example": "Ein Onlineshop mit 2.000 Produkten möchte in der Slowakei und in Polen verkaufen. Manuelle Beschreibungen und Übersetzungen würden Hunderte Arbeitsstunden oder eine teure Agentur bedeuten. Die Sammelgenerierung erstellt Beschreibungen und Übersetzungen in einheitlichem Ton, und das Team prüft sie in Chargen. Ziel ist der komplette Katalog in drei Sprachen innerhalb weniger Wochen."
     }
   ]
 }

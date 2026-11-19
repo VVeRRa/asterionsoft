@@ -45,5 +45,36 @@
       "consulting",
       "dev"
     ]
+  },
+  {
+    "formValue": "Napojení na ChatGPT a Claude (MCP)",
+    "icon": "/img/icon-ai-asistent.webp",
+    "categories": [
+      "ai",
+      "dev"
+    ]
+  },
+  {
+    "formValue": "AI funkce do vaší aplikace",
+    "icon": "/img/icon-webova-aplikace.webp",
+    "categories": [
+      "ai",
+      "dev"
+    ]
+  },
+  {
+    "formValue": "Interní kurz z firemních dokumentů",
+    "icon": "/img/icon-ai-audit.webp",
+    "categories": [
+      "ai"
+    ]
+  },
+  {
+    "formValue": "Provoz a ladění AI řešení",
+    "icon": "/img/icon-automatizace.webp",
+    "categories": [
+      "ai",
+      "consulting"
+    ]
   }
 ]
