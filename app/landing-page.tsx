@@ -1,10 +1,13 @@
 import Home from "./home";
-import { localePaths } from "./locales";
+import { localePaths, type Locale } from "./locales";
+import type { Messages } from "./messages";
 import structuredData from "./structured-data.json";
 
-const faqTopics = ["audit", "assistant", "process", "contact", "excel", "training", "idea"];
+const faqTopics = ["audit", "assistant", "process", "contact", "excel", "training", "idea"] as const;
 
-function schemaFor(locale, messages) {
+type LandingPageProps = { locale: Locale; messages: Messages };
+
+function schemaFor(locale: Locale, messages: Messages) {
   if (locale === "cs") return structuredData;
 
   const url = "https://asterionsoft.cz" + localePaths[locale];
@@ -19,8 +22,8 @@ function schemaFor(locale, messages) {
           ...node,
           "@id": url + "#sluzby",
           name: messages.catalog,
-          itemListElement: node.itemListElement.map((offer, index) => {
-            const item = messages.services[index];
+          itemListElement: node.itemListElement?.map((offer, index) => {
+            const item = messages.services[index] as Messages["services"][number] | undefined;
             const price = offer.priceSpecification;
             return {
               ...offer,
@@ -42,8 +45,8 @@ function schemaFor(locale, messages) {
           inLanguage: locale,
           mainEntity: faqTopics.map((topic) => ({
             "@type": "Question",
-            name: messages[topic + "Question"],
-            acceptedAnswer: { "@type": "Answer", text: messages[topic + "Answer"] },
+            name: messages[`${topic}Question`],
+            acceptedAnswer: { "@type": "Answer", text: messages[`${topic}Answer`] },
           })),
         };
       case "SoftwareApplication":
@@ -55,7 +58,7 @@ function schemaFor(locale, messages) {
   return { ...structuredData, "@graph": graph };
 }
 
-export default function LandingPage({ locale, messages }) {
+export default function LandingPage({ locale, messages }: LandingPageProps) {
   return (
     <>
       <script

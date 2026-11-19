@@ -1,6 +1,10 @@
+import type { ReactNode } from "react";
+import type { Locale } from "./locales";
 import "./globals.css";
 
-export default function Document({ locale, children }) {
+type DocumentProps = { locale: Locale; children: ReactNode };
+
+export default function Document({ locale, children }: DocumentProps) {
   return (
     <html lang={locale}>
       <head>

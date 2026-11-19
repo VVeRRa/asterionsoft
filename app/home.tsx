@@ -3,29 +3,40 @@
 import Script from "next/script";
 import { useEffect, useState } from "react";
 import serviceDefinitions from "./services.json";
-import { locales, localePaths } from "./locales";
+import { locales, localePaths, type Locale } from "./locales";
+import type { Messages } from "./messages";
 
-export default function Home({ locale, t }) {
-  const services = serviceDefinitions.map((definition, index) => ({ ...definition, ...t.services[index] }));
-  const [filter, setFilter] = useState("all");
-  const [detail, setDetail] = useState(null);
-  const [picked, setPicked] = useState(null);
+type Service = (typeof serviceDefinitions)[number] & Messages["services"][number];
+type Category = "all" | "ai" | "dev" | "consulting";
+type PickedService = { name: string; formValue: string };
+
+declare global {
+  interface Window {
+    jotformEmbedHandler?: (selector: string, origin: string) => void;
+  }
+}
+
+export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
+  const services: Service[] = serviceDefinitions.map((definition, index) => ({ ...definition, ...t.services[index] }));
+  const [filter, setFilter] = useState<Category>("all");
+  const [detail, setDetail] = useState<Service | null>(null);
+  const [picked, setPicked] = useState<PickedService | null>(null);
   const formUrl = new URL("https://form.jotform.com/262923259893067");
   if (locale !== "cs") formUrl.searchParams.set("language", locale);
   if (picked) formUrl.searchParams.set("sluzba", picked.formValue);
 
   useEffect(() => {
     if (!detail) return;
-    const handleEscape = (event) => {
+    const handleEscape = (event: KeyboardEvent) => {
       if (event.key === "Escape") setDetail(null);
     };
     document.addEventListener("keydown", handleEscape);
     return () => document.removeEventListener("keydown", handleEscape);
   }, [detail]);
 
-  function pickService(name, formValue) {
+  function pickService(name: string, formValue: string) {
     setPicked({ name, formValue });
-    document.getElementById("poptavka").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("poptavka")?.scrollIntoView({ behavior: "smooth" });
   }
 
   return (
@@ -118,7 +129,7 @@ export default function Home({ locale, t }) {
               </div>
 
               <div className="services-grid" id="servicesGrid">
-                {services.filter((service) => filter === "all" || service.categories.includes(filter))
+                {services.filter((service) => filter === "all" || (service.categories as string[]).includes(filter))
                   .map((service) => (
                     <article className="service-card" key={service.formValue}>
                       <img className="service-icon" src={service.icon} width="96" height="96" alt="" loading="lazy" decoding="async" />
@@ -338,12 +349,12 @@ export default function Home({ locale, t }) {
               <li>{t.deliverableResult}</li>
               <li>{t.deliverableFollowUp}</li>
             </ul>
-            <button className="btn btn-primary" onClick={() => { pickService(detail.name, detail.formValue); setDetail(null); }}>{t.requestService}</button>
+            <button className="btn btn-primary" onClick={() => { if (detail) pickService(detail.name, detail.formValue); setDetail(null); }}>{t.requestService}</button>
           </div>
         </div>
       <Script
         src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"
-        onReady={() => window.jotformEmbedHandler("iframe[id='jotform']", "https://form.jotform.com/")}
+        onReady={() => window.jotformEmbedHandler?.("iframe[id='jotform']", "https://form.jotform.com/")}
       />
     </>
   );
