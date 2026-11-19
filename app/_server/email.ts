@@ -73,14 +73,22 @@ async function send(email: Email): Promise<boolean> {
     console.error("Chybí RESEND_API_KEY nebo INQUIRY_FROM_EMAIL, e-mail se neodeslal.");
     return false;
   }
-  const response = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-    body: JSON.stringify({ from, to: [email.to], reply_to: email.replyTo, subject: email.subject, html: email.html, text: email.text }),
-    cache: "no-store",
-  });
-  if (!response.ok) console.error("Resend odmítl e-mail:", response.status, await response.text());
-  return response.ok;
+  // Chyba jednoho e-mailu (např. testovací odesílatel onboarding@resend.dev smí psát
+  // jen na adresu účtu) nesmí shodit odeslání formuláře ani druhý e-mail.
+  try {
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ from, to: [email.to], reply_to: email.replyTo, subject: email.subject, html: email.html, text: email.text }),
+      cache: "no-store",
+      signal: AbortSignal.timeout(10_000),
+    });
+    if (!response.ok) console.error(`Resend odmítl e-mail pro ${email.to}:`, response.status, await response.text());
+    return response.ok;
+  } catch (error) {
+    console.error(`Odeslání e-mailu pro ${email.to} přes Resend selhalo:`, error);
+    return false;
+  }
 }
 
 /** Upozornění majiteli – vždy česky, odpověď jde rovnou zákazníkovi. */
