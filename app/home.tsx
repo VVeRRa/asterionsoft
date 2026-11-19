@@ -6,6 +6,7 @@ import industryDefinitions from "./industries.json";
 import { locales, localePaths, type Locale } from "./locales";
 import type { Messages } from "./messages";
 import InquiryForm, { type ServiceOption } from "./inquiry-form";
+import { revealStyle, useReveal } from "./reveal";
 
 type Service = (typeof serviceDefinitions)[number] & Messages["services"][number];
 type Industry = (typeof industryDefinitions)[number] & Messages["industries"][number];
@@ -39,6 +40,8 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
     ...industries.map((industry) => ({ label: `${industry.audience} — ${industry.name}`, value: industry.formValue })),
     ...trainings.map((training) => ({ label: `${t.trainingLabel} — ${training.name(t)}`, value: training.value })),
   ];
+
+  useReveal([filter]);
 
   useEffect(() => {
     if (!detail) return;
@@ -146,8 +149,8 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
 
               <div className="services-grid" id="servicesGrid">
                 {services.filter((service) => filter === "all" || (service.categories as string[]).includes(filter))
-                  .map((service) => (
-                    <article className="service-card" key={service.formValue}>
+                  .map((service, index) => (
+                    <article className="service-card reveal" key={service.formValue} style={revealStyle(index)}>
                       <img className="service-icon" src={service.icon} width="96" height="96" alt="" loading="lazy" decoding="async" />
                       <h3>{service.title}</h3>
                       <p>{service.description}</p>
@@ -175,8 +178,8 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
               </div>
 
               <div className="services-grid">
-                {industries.map((industry) => (
-                  <article className="service-card industry-card" key={industry.formValue}>
+                {industries.map((industry, index) => (
+                  <article className="service-card industry-card reveal" key={industry.formValue} style={revealStyle(index)}>
                     <span className="industry-audience">{industry.audience}</span>
                     <h3>{industry.name}</h3>
                     <p>{industry.description}</p>
@@ -191,7 +194,7 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                 ))}
               </div>
 
-              <div className="calculator" id="kalkulacka">
+              <div className="calculator reveal" id="kalkulacka">
                 <div>
                   <div className="eyebrow">{t.calcLabel}</div>
                   <h3>{t.calcTitle}</h3>
@@ -231,7 +234,7 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                 <p>{t.workIntro}</p>
               </div>
 
-              <div className="case-study">
+              <div className="case-study reveal">
                 <div className="case-visual">
                   <div className="browserbar"><span className="dot"></span><span className="dot"></span><span className="dot"></span></div>
                   <div className="fake-ui">
@@ -269,25 +272,25 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
                 <p>{t.trainingIntro}</p>
               </div>
               <div className="training-grid">
-                <div className="training-card">
+                <div className="training-card reveal" style={revealStyle(0, 4)}>
                   <span className="duration">{t.threeHours}</span>
                   <h3>AI Start</h3>
                   <ul><li>ChatGPT / Claude</li><li>{t.prompting}</li><li>{t.research}</li><li>{t.safety}</li></ul>
                   <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — AI Start")}>{t.request}</button>
                 </div>
-                <div className="training-card">
+                <div className="training-card reveal" style={revealStyle(1, 4)}>
                   <span className="duration">{t.oneDay}</span>
                   <h3>{t.practicalTraining}</h3>
                   <ul><li>{t.workExamples}</li><li>{t.routine}</li><li>{t.workflows}</li><li>{t.trainingQuestions}</li></ul>
                   <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — AI Prakticky")}>{t.request}</button>
                 </div>
-                <div className="training-card">
+                <div className="training-card reveal" style={revealStyle(2, 4)}>
                   <span className="duration">{t.oneDay}</span>
                   <h3>Automation Workshop</h3>
                   <ul><li>{t.processMapping}</li><li>{t.selectAutomation}</li><li>{t.solutionDesign}</li><li>{t.implementationPlan}</li></ul>
                   <button className="btn btn-secondary" onClick={() => pickService("Firemní školení — Automation Workshop")}>{t.request}</button>
                 </div>
-                <div className="training-card">
+                <div className="training-card reveal" style={revealStyle(3, 4)}>
                   <span className="duration">{t.threeHours}</span>
                   <h3>{t.aiLiteracyTraining}</h3>
                   <ul><li>{t.aiLiteracyDuty}</li><li>{t.aiLiteracyRules}</li><li>{t.aiLiteracyLimits}</li><li>{t.aiLiteracyRecord}</li></ul>
