@@ -1,6 +1,8 @@
 # Asterion Software
 
-Web Asterion Software v Next.js 16. Vyžaduje Node.js 20.9 nebo novější.
+A multilingual Next.js 16 website for Asterion Software. Requires Node.js 20.9 or later.
+
+## Local development
 
 ```sh
 git clone https://github.com/VVeRRa/asterionsoft.git
@@ -9,8 +11,14 @@ npm ci
 npm run dev
 ```
 
-Lokální web běží na http://localhost:3000. Příkaz `npm run build` vytvoří statický export ve složce `out/`. Publikuje se obsah této složky včetně `_next/`. Pro náhled na vlastní doméně slouží přiložený `CNAME`; produkční doména se nastavuje u hostingu.
+Open [http://localhost:3000](http://localhost:3000).
 
-Čeština je na `/`, angličtina na `/en/` a němčina na `/de/`. Překlady webu a karet služeb jsou v `app/messages/`. Společná metadata jsou v `app/metadata.js` a veřejné soubory v `public/`.
+## Build and deploy
 
-Poptávkový formulář hostuje Jotform. Pro zobrazení jeho polí v angličtině a němčině přidejte překlady v editoru Jotformu. Web už předává požadovaný jazyk parametrem `language`. Hodnoty pole `sluzba` zůstávají česky, aby odpovídaly stávajícímu formuláři.
+Run `npm run build` to generate the static site in `out/`. Publish the entire contents, including `_next/`. Configure the production domain with your hosting provider. The export includes the project's `CNAME`.
+
+## Content and translations
+
+Czech is served at `/`, English at `/en/`, and German at `/de/`. Website copy and service card translations live in `app/messages/`. Metadata is defined in `app/metadata.js`, and public assets live in `public/`.
+
+Jotform hosts the enquiry form. Add English and German field translations in the Jotform editor. The site passes the selected language via the `language` parameter. The values sent in the `sluzba` field remain in Czech to match the existing form.
