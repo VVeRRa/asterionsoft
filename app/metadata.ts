@@ -1,4 +1,5 @@
-import { localePaths } from "./locales";
+import type { Metadata } from "next";
+import { localePaths, type Locale } from "./locales";
 
 const czech = {
   "title": "Asterion Software — AI, automatizace a vývoj aplikací na míru",
@@ -37,11 +38,13 @@ const czech = {
   "icons": {
     "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%233b82f6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial, sans-serif' font-size='38' font-weight='800' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E"
   }
-};
+} satisfies Metadata;
 
 
 const origin = "https://asterionsoft.cz";
-const localized = {
+type Translation = { title: string; description: string; openGraphLocale: string };
+
+const localized: Partial<Record<Locale, Translation>> = {
   en: {
     title: "Asterion Software — AI, Automation, and Custom Application Development",
     description: "Asterion Software, s.r.o. — AI audits, business process automation, internal AI assistants, custom web applications, Java and Spring consulting, and AI training for businesses.",
@@ -54,7 +57,7 @@ const localized = {
   },
 };
 
-export function metadataFor(locale) {
+export function metadataFor(locale: Locale): Metadata {
   const translation = localized[locale];
   const url = origin + localePaths[locale];
   const languages = Object.fromEntries(
