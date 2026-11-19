@@ -1,6 +1,6 @@
-import "./globals.css";
+import { localePaths } from "./locales";
 
-export const metadata = {
+const czech = {
   "title": "Asterion Software — AI, automatizace a vývoj aplikací na míru",
   "description": "Asterion Software, s.r.o. — AI audit, automatizace firemních procesů, interní AI asistenti, webové aplikace na míru, Java/Spring konzultace a firemní školení AI.",
   "alternates": {
@@ -39,16 +39,46 @@ export const metadata = {
   }
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="cs">
-      <head>
-        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-      </head>
-      <body>{children}</body>
-    </html>
+
+const origin = "https://asterionsoft.cz";
+const localized = {
+  en: {
+    title: "Asterion Software — AI, Automation, and Custom Application Development",
+    description: "Asterion Software, s.r.o. — AI audits, business process automation, internal AI assistants, custom web applications, Java and Spring consulting, and AI training for businesses.",
+    openGraphLocale: "en_GB",
+  },
+  de: {
+    title: "Asterion Software — KI, Automatisierung und individuelle Anwendungsentwicklung",
+    description: "Asterion Software, s.r.o. — KI-Audits, Automatisierung von Geschäftsprozessen, interne KI-Assistenten, individuelle Webanwendungen, Java- und Spring-Beratung und KI-Schulungen für Unternehmen.",
+    openGraphLocale: "de_DE",
+  },
+};
+
+export function metadataFor(locale) {
+  const translation = localized[locale];
+  const url = origin + localePaths[locale];
+  const languages = Object.fromEntries(
+    Object.entries(localePaths).map(([language, path]) => [language, origin + path]),
   );
+
+  return {
+    ...czech,
+    title: translation?.title ?? czech.title,
+    description: translation?.description ?? czech.description,
+    alternates: { canonical: url, languages: { ...languages, "x-default": languages.cs } },
+    openGraph: {
+      ...czech.openGraph,
+      ...(translation && {
+        title: translation.title,
+        description: translation.description,
+        locale: translation.openGraphLocale,
+        images: czech.openGraph.images.map((image) => ({ ...image, alt: translation.title })),
+      }),
+      url,
+    },
+    twitter: {
+      ...czech.twitter,
+      ...(translation && { title: translation.title, description: translation.description }),
+    },
+  };
 }
