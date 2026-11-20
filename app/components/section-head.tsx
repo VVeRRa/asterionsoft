@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 
 type Props = { label: ReactNode; title: ReactNode; children?: ReactNode };
 
-/** Hlavička sekce: štítek (eyebrow) a nadpis vlevo, úvodní odstavec vpravo. */
+/** Section header: eyebrow label and title on the left, intro paragraph on the right. */
 export default function SectionHead({ label, title, children }: Props) {
   return (
     <div className="section-head">

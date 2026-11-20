@@ -1,4 +1,4 @@
 import czech from "./messages/cs.json";
 
-/** Struktura překladů – všechny jazyky musí odpovídat české verzi. */
+/** Translation structure – every language must match the Czech version. */
 export type Messages = typeof czech;

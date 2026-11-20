@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
-// Stránky se dál předgenerují staticky; bez `output: "export"` ale Vercel
-// může spustit i serverovou API route pro poptávkový formulář.
+// Pages are still prerendered statically; without `output: "export"`, though, Vercel
+// can also run the server API route for the inquiry form.
 const config: NextConfig = { trailingSlash: true };
 
 export default config;

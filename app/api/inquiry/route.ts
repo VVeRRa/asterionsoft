@@ -18,7 +18,7 @@ function json(body: Record<string, unknown>, status = 200) {
 function hashIp(request: Request): string | null {
   const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || request.headers.get("x-real-ip");
   if (!ip) return null;
-  // IP se neukládá, jen její solený hash pro omezení počtu odeslání.
+  // The IP is not stored, only its salted hash for rate limiting.
   const salt = process.env.INQUIRY_IP_SALT ?? process.env.SUPABASE_URL ?? "asterion";
   return createHash("sha256").update(`${salt}:${ip}`).digest("hex").slice(0, 32);
 }
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     return json({ ok: false, error: "validation", field: "form" }, 400);
   }
 
-  // Botům odpovíme úspěchem, ať nezkoušejí jiné varianty.
+  // Bots get a success response so they don't try other variants.
   if (looksLikeBot(form)) return json({ ok: true });
 
   const parsed = parseInquiry(form);
@@ -65,8 +65,8 @@ export async function POST(request: Request) {
   const notification = await sendOwnerNotification(inquiry, classification, stored.ok ? stored.id : null);
   const notified = notification.ok;
 
-  // Poptávka se nesmí ztratit: když se neuložila ani neodeslala, ať to zákazník ví.
-  // Kódy příčin (např. not_configured, http_404_42P01) neobsahují tajné údaje a usnadní ladění.
+  // An inquiry must not get lost: if it was neither saved nor sent, the customer should know.
+  // Reason codes (e.g. not_configured, http_404_42P01) contain no secrets and make debugging easier.
   if (!stored.ok && !notified) {
     const details = { store: stored.reason, notify: notification.reason };
     console.error("Poptávka se neuložila ani neodeslala:", details);

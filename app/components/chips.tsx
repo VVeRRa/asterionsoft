@@ -1,4 +1,4 @@
-/** Řada štítků (chips) – v kartách služeb i v přehledu technologií. */
+/** A row of chips – used in service cards and in the tech stack list. */
 export default function Chips({ items, className = "chips" }: { items: string[]; className?: string }) {
   return (
     <div className={className}>

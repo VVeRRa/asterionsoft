@@ -5,7 +5,7 @@ import structuredData from "./structured-data.json";
 import { faqTopics } from "./faq-topics";
 
 
-/** Jednotky cen ve structured-data.json (česky) → překlad pro ostatní jazyky. */
+/** Price units in structured-data.json (Czech) → translations for the other languages. */
 const unitTexts: Record<string, Record<Exclude<Locale, "cs">, string>> = {
   hodina: { en: "hour", de: "Stunde" },
   "měsíc": { en: "month", de: "Monat" },

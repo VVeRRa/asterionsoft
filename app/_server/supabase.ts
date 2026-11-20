@@ -2,16 +2,16 @@ import type { Classification } from "./classify";
 import type { Inquiry } from "./inquiry";
 
 /**
- * Minimální klient pro Supabase REST (PostgREST). Volá se jen ze serveru se
- * service-role (secret) klíčem; tabulka má zapnuté RLS bez politik, takže
- * veřejný (anon) klíč do ní nemůže číst ani zapisovat.
+ * Minimal client for Supabase REST (PostgREST). Called only from the server with
+ * the service-role (secret) key; the table has RLS enabled with no policies, so
+ * the public (anon) key can neither read nor write it.
  */
 function config() {
   const url = process.env.SUPABASE_URL;
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!url || !key) return null;
   const headers: Record<string, string> = { apikey: key, "Content-Type": "application/json" };
-  // Starší klíče jsou JWT a patří i do Authorization; nové sb_secret_… klíče ne.
+  // Legacy keys are JWTs and also go into Authorization; new sb_secret_… keys don't.
   if (key.startsWith("eyJ")) headers.Authorization = `Bearer ${key}`;
   return { endpoint: `${url.replace(/\/$/, "")}/rest/v1/inquiries`, headers };
 }
@@ -20,7 +20,7 @@ export function supabaseConfigured(): boolean {
   return config() !== null;
 }
 
-/** Počet poptávek ze stejné (hashované) IP za posledních `minutes` minut. */
+/** Number of inquiries from the same (hashed) IP in the last `minutes` minutes. */
 export async function recentInquiryCount(ipHash: string, minutes: number): Promise<number> {
   const supabase = config();
   if (!supabase) return 0;
@@ -35,7 +35,7 @@ export async function recentInquiryCount(ipHash: string, minutes: number): Promi
   return total ? Number(total) || 0 : 0;
 }
 
-/** Výsledek uložení; `reason` je krátký kód bez citlivých údajů (jde i do odpovědi API). */
+/** Save result; `reason` is a short code without sensitive data (also returned by the API). */
 export type StoreResult = { ok: true; id: string } | { ok: false; reason: string };
 
 async function errorCode(response: Response): Promise<string> {

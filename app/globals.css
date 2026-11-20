@@ -83,12 +83,12 @@
     }
     .eyebrow-dot { width:0.5rem; height:0.5rem; border-radius:50%; background:var(--success); box-shadow:0 0 0 0.375rem rgba(103,232,162,.08); }
     h1 { margin:1.375rem 0 1.25rem; font-size:clamp(2.875rem,7vw,5.125rem); line-height:1.14; letter-spacing:-.055em; max-width:53.125rem; overflow-wrap:break-word; }
-    /* Němčina má dlouhá složená slova („Anwendungsentwicklung“), nadpis je proto menší, aby se vešel vedle katalogu. */
+    /* German has long compound words (“Anwendungsentwicklung”), so the heading is smaller to fit next to the catalog. */
     :lang(de) h1 { font-size:clamp(1.875rem,4vw,3.375rem); }
     .gradient-text { background:linear-gradient(90deg,#fff, #a9bfff 45%, #82f0e6); -webkit-background-clip:text; background-clip:text; color:transparent;
-      /* background-clip:text maluje jen uvnitř boxu spanu. Záporný letter-spacing ho zužuje,
-         takže čárka nad posledním „í“ přečnívá doprava ven a ořízne se. Padding box rozšíří,
-         záporný margin vrátí rozložení textu beze změny. */
+      /* background-clip:text paints only inside the span's box. Negative letter-spacing narrows it,
+         so the accent over the last “í” sticks out to the right and gets clipped. The padding widens the box,
+         the negative margin keeps the text layout unchanged. */
       padding-inline-end:.12em; margin-inline-end:-.12em; }
     .hero p { color:var(--muted); font-size:1.1875rem; max-width:45rem; }
     .hero-actions { display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:1.875rem; }
@@ -149,7 +149,7 @@
     .chips { display:flex; flex-wrap:wrap; gap:0.4375rem; margin-bottom:1.125rem; }
     .chip { font-size:0.6875rem; padding:0.375rem 0.5rem; border-radius:62.4375rem; border:0.0625rem solid var(--line); color:#c7d0e6; }
     .service-bottom { display:flex; justify-content:space-between; align-items:end; gap:1rem; margin-top:auto; }
-    /* Cena i odkaz drží na jednom řádku vedle sebe; popisky odkazů jsou ve všech jazycích krátké. */
+    /* Price and link stay side by side on one line; link labels are short in every language. */
     .price strong, .service-bottom .text-link { white-space:nowrap; }
     .price small { color:var(--muted); display:block; }
     .price strong { font-size:1.25rem; }
@@ -234,7 +234,7 @@
     .example-box p { margin:0.75rem 0 0.5rem; color:var(--text); }
     .example-box small { color:var(--muted); }
 
-    /* Oborová řešení a kalkulačka úspory */
+    /* Industry solutions and savings calculator */
     .industry-card { min-height:0; }
     .industry-audience { color:var(--accent-2); font-size:0.8125rem; font-weight:700; margin-bottom:0.5rem; }
     .calculator {
@@ -257,7 +257,7 @@
     .calc-highlight { border-color:rgba(49,215,198,.35); background:rgba(49,215,198,.07); }
 
 
-    /* Poptávkový formulář */
+    /* Inquiry form */
     .inquiry-form, .inquiry-success {
       display:flex; flex-direction:column; gap:0.875rem; padding:1.5rem; border-radius:1.25rem;
       border:0.0625rem solid var(--line); background:rgba(11,16,32,.55);
@@ -312,7 +312,7 @@
     .faq-item[open] summary::after { content:"−"; }
     .faq-item p { margin:0; padding:0 1.25rem 1.125rem; color:var(--muted); }
 
-    /* Oranžový akcent */
+    /* Orange accent */
     ::selection { background:var(--accent-3); color:#0b1020; }
     .accent-dot { color:var(--accent-3); -webkit-text-fill-color:var(--accent-3); }
     .badge-orange { background:rgba(255,138,61,.14); color:#ffc29a; border-color:rgba(255,138,61,.32); }
@@ -330,12 +330,12 @@
     .cta-box::before { content:""; position:absolute; z-index:-1; width:32.5rem; height:32.5rem; left:-11.25rem; bottom:-15rem; border-radius:50%; background:radial-gradient(circle, rgba(255,138,61,.32), transparent 65%); pointer-events:none; }
     .nav-cta { transition:box-shadow .2s ease; }
     .nav-cta:hover { box-shadow:0 0 0 0.1875rem rgba(255,138,61,.45); }
-    /* Tmavý text tlačítka musí přebít obecné .nav-links a:hover { color:white } (jinak bílé na bílém). */
+    /* The dark button text must override the generic .nav-links a:hover { color:white } (otherwise white on white). */
     .nav-links .nav-cta, .nav-links .nav-cta:hover, .nav-links .nav-cta:focus, .nav-links .nav-cta:active { color:#0b1020; }
     .nav-cta:focus-visible { outline:none; box-shadow:0 0 0 0.1875rem rgba(255,138,61,.75); }
 
 
-    /* Animace karet: jen transform a opacity, aby to běželo plynule i na slabších zařízeních. */
+    /* Card animations: only transform and opacity, so they stay smooth on weaker devices. */
     .service-card, .training-card { position:relative; transition:transform .25s cubic-bezier(.2,.7,.3,1); }
     .service-card::after, .training-card::after {
       content:""; position:absolute; inset:-0.0625rem; border-radius:inherit; pointer-events:none;
@@ -350,13 +350,13 @@
       .service-card:hover .service-icon { transform:translateY(-0.1875rem) scale(1.04); }
     }
 
-    /* Celá karta otevírá detail: tlačítko „Detail“/„Příklad“ se roztáhne přes kartu (jeden ovládací prvek, funguje i z klávesnice). */
+    /* The whole card opens the detail: the “Detail”/“Example” button is stretched over the card (one control, keyboard accessible too). */
     .service-card { cursor:pointer; }
     .service-card .text-link::before { content:""; position:absolute; inset:0; border-radius:var(--radius); z-index:1; }
     .service-card .text-link:focus-visible { outline:none; }
     .service-card .text-link:focus-visible::before { outline:0.125rem solid var(--accent-3); outline-offset:0.1875rem; }
 
-    /* Postupný náběh při scrollu – skrytý stav platí, až když ho zapne skript (bez JS je vše vidět). */
+    /* Staggered reveal on scroll – the hidden state applies only once the script enables it (without JS everything is visible). */
     .reveal {
       --reveal-delay:calc(var(--reveal-index, 0) * 90ms);
       transition:opacity .55s ease var(--reveal-delay), translate .55s cubic-bezier(.2,.7,.3,1) var(--reveal-delay), transform .25s cubic-bezier(.2,.7,.3,1);
@@ -370,10 +370,11 @@
     }
 
     @media (max-width: 57.5em) {
-      .hero-grid, .case-study, .about-grid, .cta-box { grid-template-columns:1fr; }
-      .field-row { grid-template-columns:1fr; }
+      /* minmax(0,…): the column must not grow to fit the longest word or widget, otherwise the page overflows sideways. */
+      .hero-grid, .case-study, .about-grid, .cta-box { grid-template-columns:minmax(0,1fr); }
+      .field-row { grid-template-columns:minmax(0,1fr); }
       .services-grid, .training-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-      .calculator { grid-template-columns:1fr; }
+      .calculator { grid-template-columns:minmax(0,1fr); }
       .strip-grid { grid-template-columns:1fr 1fr; }
       .strip-item:nth-child(2) { border-right:0; }
     }
@@ -391,7 +392,7 @@
       .strip-item { border-right:0; border-bottom:0.0625rem solid var(--line); }
       .strip-item:last-child { border-bottom:0; }
       .section-head { align-items:start; flex-direction:column; }
-      .fake-ui { grid-template-columns:1fr; }
+      .fake-ui { grid-template-columns:minmax(0,1fr); }
       .fake-side { display:none; }
       .footer-inner { flex-direction:column; }
     }
@@ -414,16 +415,22 @@
 }
 
 
-/* Úzké telefony (~360 px): menší odsazení a cena, aby se cena s odkazem vešly na jeden řádek. */
+/* Narrow phones (~360 px): smaller padding and price so the price and link fit on one line. */
 @media (max-width: 25em) {
+  /* On narrow screens long German words (Anwendungsentwicklung) break with a hyphen instead of mid-word. */
+  h1 { hyphens:auto; -webkit-hyphens:auto; }
   .service-card { padding:1.125rem; }
   .price strong { font-size:1.0625rem; }
 }
 
-/* Burger menu: na desktopu je .nav-menu jen průhledný obal (display: contents), takže odkazy
-   zůstávají přímo v řádku navigace. Pod 57.5em se schová a otevírá se tlačítkem jako panel pod lištou. */
+/* Burger menu: on desktop .nav-menu is just a transparent wrapper (display: contents), so the links
+   stay directly in the nav row. Below 57.5em it is hidden and opens from the button as a panel under the bar. */
 .nav-menu { display: contents; }
-.nav-toggle { display: none; }
+.nav-toggle, .nav-cta-menu { display: none; }
+/* Desktop order: links, inquiry, languages (languages are inside .nav-menu, the inquiry button outside it). */
+.nav-cta-bar { order: 1; }
+.nav-menu .language-switch { order: 2; }
+.nav-toggle { order: 3; }
 
 @media (max-width: 57.5em) {
   .nav-toggle {
@@ -459,12 +466,18 @@
 }
 @media (max-width: 40em) {
   .nav-menu { padding-inline: 0.75rem; }
+  .nav-cta-bar { display: none; }
+  .nav-menu .nav-cta-menu { display: block; }
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { transition: none; }
 }
 
-/* Detail služby na mobilu: tlačítko poptávky zarovnané úplně doprava. */
+/* Service detail on mobile: the inquiry button aligned fully to the right. */
 @media (max-width: 40em) {
   .modal-cta { display: flex; width: fit-content; margin-left: auto; }
 }
+
+/* Safety net: even if something overflows the viewport width, the page must not scroll sideways.
+   clip (unlike hidden) doesn't create a scroll container, so the sticky header keeps working. */
+html, body { overflow-x: clip; }

@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { locales, localePaths, type Locale } from "../locales";
 import type { Messages } from "../messages";
 
-/** Šířka, pod kterou se navigace schová do burger menu – stejná hranice jako v globals.css. */
+/** Width below which the navigation collapses into the burger menu – same breakpoint as in globals.css. */
 const mobileQuery = "(max-width: 57.5em)";
 
 export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages }) {
@@ -46,7 +46,7 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
     };
   }, [open]);
 
-  // Klik na odkaz v menu (sekce, poptávka, jazyk) menu zavře.
+  // Clicking any link in the menu (section, inquiry, language) closes it.
   function handleMenuClick(event: React.MouseEvent) {
     if ((event.target as HTMLElement).closest("a")) setOpen(false);
   }
@@ -59,13 +59,10 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
           <span>Asterion Software</span>
         </a>
         <nav className="nav-links" aria-label={t.menuLabel}>
-          <button type="button" className="nav-toggle" ref={toggleRef} aria-expanded={open} aria-controls="hlavni-menu"
-            aria-label={open ? t.menuClose : t.menuOpen} onClick={() => setOpen(!open)}>
-            <span className="nav-toggle-bars" aria-hidden="true"></span>
-          </button>
           <div className="nav-menu" id="hlavni-menu" onClick={handleMenuClick}>
             {links.map(([href, label]) => <a key={href} href={href}>{label}</a>)}
-            <a className="nav-cta" href="#poptavka">{t.contactNav}</a>
+            {/* On phones the inquiry button doesn't fit in the bar, so it lives in the menu. */}
+            <a className="nav-cta nav-cta-menu" href="#poptavka">{t.contactNav}</a>
             <div className="language-switch" role="group" aria-label={t.language}>
               {locales.map((language) => (
                 <a key={language} href={localePaths[language]} hrefLang={language} lang={language}
@@ -75,6 +72,11 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
               ))}
             </div>
           </div>
+          <a className="nav-cta nav-cta-bar" href="#poptavka" onClick={() => setOpen(false)}>{t.contactNav}</a>
+          <button type="button" className="nav-toggle" ref={toggleRef} aria-expanded={open} aria-controls="hlavni-menu"
+            aria-label={open ? t.menuClose : t.menuOpen} onClick={() => setOpen(!open)}>
+            <span className="nav-toggle-bars" aria-hidden="true"></span>
+          </button>
         </nav>
       </div>
     </header>

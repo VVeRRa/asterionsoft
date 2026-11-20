@@ -24,10 +24,10 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
   const [pickedService, setPickedService] = useState("");
   const closeDetail = useCallback(() => setDetail(null), []);
 
-  // Filtr vykreslí nové karty služeb, proto se při jeho změně znovu hledají prvky k odhalení.
+  // The filter renders new service cards, so reveal targets are collected again whenever it changes.
   useReveal([filter]);
 
-  /** Předvyplní službu v poptávkovém formuláři a sjede k němu. */
+  /** Preselects the service in the inquiry form and scrolls to it. */
   function pickService(formValue: string) {
     setPickedService(formValue);
     document.getElementById("poptavka")?.scrollIntoView({ behavior: "smooth" });

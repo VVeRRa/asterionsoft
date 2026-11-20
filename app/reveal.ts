@@ -2,16 +2,16 @@
 
 import { useEffect, type CSSProperties } from "react";
 
-/** Pořadí karty ve sloupci mřížky – podle něj CSS zpozdí její objevení (postupný náběh po řádcích). */
+/** The card's column index in the grid – CSS delays its reveal by it (staggered per row). */
 export function revealStyle(index: number, columns = 3): CSSProperties {
   return { "--reveal-index": index % columns } as CSSProperties;
 }
 
 /**
- * Prvky s třídou `reveal` plynule ukáže, jakmile vjedou do okna (IntersectionObserver, bez knihovny).
- * Co je vidět už při načtení, se ukáže hned bez animace, aby nic neproblikávalo. Při omezeném
- * pohybu (prefers-reduced-motion) nebo bez IntersectionObserveru se ukáže všechno rovnou.
- * `deps` spustí kontrolu znovu, třeba když filtr vykreslí nové karty.
+ * Fades in `.reveal` elements once they scroll into view (IntersectionObserver, no library).
+ * Whatever is visible on load is shown right away without animation, so nothing flickers. With
+ * reduced motion (prefers-reduced-motion) or without IntersectionObserver everything is shown at once.
+ * `deps` re-runs the check, e.g. when the filter renders new cards.
  */
 export function useReveal(deps: unknown[] = []) {
   useEffect(() => {
@@ -25,7 +25,7 @@ export function useReveal(deps: unknown[] = []) {
     }
 
     if (!root.classList.contains("reveal-ready")) {
-      // První spuštění: co je už na obrazovce, ukázat hned, a teprve pak zapnout skrytý výchozí stav.
+      // First run: show what's already on screen immediately, and only then enable the hidden default state.
       pending.filter((element) => element.getBoundingClientRect().top < window.innerHeight).forEach(show);
       root.classList.add("reveal-ready");
     }

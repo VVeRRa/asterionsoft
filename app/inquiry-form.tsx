@@ -18,6 +18,9 @@ declare global {
 
 const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
+/** The “normal” Turnstile widget is a fixed 300 px wide; narrower forms (small phones) get the compact size. */
+const turnstileWidth = 300;
+
 const fieldErrors: Record<string, ErrorKey> = { name: "errorName", email: "errorEmail", message: "errorMessage" };
 
 type Props = {
@@ -35,7 +38,15 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
   const [error, setError] = useState<ErrorKey | null>(null);
   const [startedAt, setStartedAt] = useState(0);
 
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const [turnstileSize, setTurnstileSize] = useState<"normal" | "compact">("normal");
+
   useEffect(() => setStartedAt(Date.now()), []);
+  // The size must be set before the script loads (lazyOnload); Turnstile reads it only when rendering the widget.
+  useEffect(() => {
+    const width = turnstileRef.current?.clientWidth ?? turnstileWidth;
+    if (width < turnstileWidth) setTurnstileSize("compact");
+  }, []);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -121,7 +132,8 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
 
       {turnstileSiteKey && (
         <>
-          <div className="cf-turnstile" data-sitekey={turnstileSiteKey} data-theme="dark" data-language={locale} />
+          <div className="cf-turnstile" ref={turnstileRef} data-sitekey={turnstileSiteKey} data-theme="dark"
+            data-language={locale} data-size={turnstileSize} />
           <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="lazyOnload" />
         </>
       )}

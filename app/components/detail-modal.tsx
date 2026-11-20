@@ -11,7 +11,7 @@ type Props = {
   onRequest: (formValue: string) => void;
 };
 
-/** Modální detail služby nebo oborového řešení. Zavírá se křížkem, klikem mimo kartu a klávesou Escape. */
+/** Detail modal for a service or industry solution. Closes via the × button, a click outside the card, or Escape. */
 export default function DetailModal({ t, detail, onClose, onRequest }: Props) {
   useEffect(() => {
     if (!detail) return;
