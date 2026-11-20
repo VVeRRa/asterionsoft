@@ -62,7 +62,7 @@ export async function POST(request: Request) {
 
   const classification = await classifyInquiry(inquiry);
   const stored = await storeInquiry(inquiry, classification, { ipHash, userAgent: request.headers.get("user-agent") });
-  const notification = await sendOwnerNotification(inquiry, classification, stored.ok ? stored.id : null);
+  const notification = await sendOwnerNotification(inquiry, classification, stored.ok ? { id: stored.id } : { error: stored.reason });
   const notified = notification.ok;
 
   // An inquiry must not get lost: if it was neither saved nor sent, the customer should know.
