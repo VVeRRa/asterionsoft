@@ -99,7 +99,10 @@ async function send(email: Email): Promise<SendResult> {
 }
 
 /** Notification to the owner – always in Czech; replying goes straight to the customer. */
-export function sendOwnerNotification(inquiry: Inquiry, classification: Classification, inquiryId: string | null) {
+/** Where the inquiry ended up in Supabase: its id, or the reason code why storing failed. */
+export type StorageOutcome = { id: string } | { error: string };
+
+export function sendOwnerNotification(inquiry: Inquiry, classification: Classification, storage: StorageOutcome) {
   const to = process.env.INQUIRY_NOTIFY_EMAIL;
   if (!to) {
     console.error("Chybí INQUIRY_NOTIFY_EMAIL, upozornění se neodeslalo.");
@@ -119,7 +122,9 @@ export function sendOwnerNotification(inquiry: Inquiry, classification: Classifi
     ["Shrnutí", classification.summary],
     ["Další krok", classification.suggested_next_step],
     ["Klasifikace", classification.classified_by === "ai" ? "AI (Claude)" : "pravidla"],
-    ["ID v Supabase", inquiryId],
+    "id" in storage
+      ? ["ID v Supabase", storage.id]
+      : ["Supabase", `NEULOŽENO – ${storage.error} (podrobnosti ve Vercel Logs)`],
   ];
   const filled = rows.filter((row): row is [string, string] => Boolean(row[1]));
   const table = filled

@@ -6,14 +6,34 @@ import type { Inquiry } from "./inquiry";
  * the service-role (secret) key; the table has RLS enabled with no policies, so
  * the public (anon) key can neither read nor write it.
  */
+/**
+ * Accepts the usual ways people paste the project URL: with `/rest/v1` or
+ * another path appended, without `https://`, or even the dashboard URL
+ * (supabase.com/dashboard/project/<ref>). PostgREST answers a wrong path with
+ * 404 PGRST125, so we always reduce it to https://<ref>.supabase.co.
+ */
+export function normalizeSupabaseUrl(raw: string): string | null {
+  const value = raw.trim();
+  if (!value) return null;
+  let parsed: URL;
+  try {
+    parsed = new URL(/^https?:\/\//i.test(value) ? value : `https://${value}`);
+  } catch {
+    return null;
+  }
+  const dashboardRef = /\/project\/([a-z0-9]{20})(?:\/|$)/i.exec(parsed.pathname)?.[1];
+  if (parsed.hostname.endsWith("supabase.com") && dashboardRef) return `https://${dashboardRef}.supabase.co`;
+  return parsed.origin;
+}
+
 function config() {
-  const url = process.env.SUPABASE_URL;
+  const url = normalizeSupabaseUrl(process.env.SUPABASE_URL ?? "");
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
   if (!url || !key) return null;
   const headers: Record<string, string> = { apikey: key, "Content-Type": "application/json" };
   // Legacy keys are JWTs and also go into Authorization; new sb_secret_… keys don't.
   if (key.startsWith("eyJ")) headers.Authorization = `Bearer ${key}`;
-  return { endpoint: `${url.replace(/\/$/, "")}/rest/v1/inquiries`, headers };
+  return { endpoint: `${url}/rest/v1/inquiries`, headers };
 }
 
 export function supabaseConfigured(): boolean {
