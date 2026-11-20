@@ -8,10 +8,10 @@ export type Industry = (typeof industryDefinitions)[number] & Messages["industri
 export type Category = "all" | "ai" | "dev" | "consulting";
 export const categories: Category[] = ["all", "ai", "dev", "consulting"];
 
-/** Obsah modálního detailu – služba z katalogu, nebo oborové řešení s rozsahem a modelovým příkladem. */
+/** Detail modal content – a catalog service, or an industry solution with scope and a sample case. */
 export type Detail = { name: string; price: string; description: string; formValue: string; scope?: string[]; example?: string };
 
-/** Firemní školení. Hodnoty `value` (formValue) se ukládají česky, stejně jako služby. */
+/** Corporate trainings. `value` (formValue) is stored in Czech, same as services. */
 export const trainings = [
   {
     value: "Firemní školení — AI Start",
@@ -39,7 +39,7 @@ export const trainings = [
   },
 ];
 
-/** Spojí neměnné definice (ikona, kategorie, formValue) s přeloženými texty. */
+/** Merges the fixed definitions (icon, categories, formValue) with the translated texts. */
 export function catalogFor(t: Messages) {
   const services: Service[] = serviceDefinitions.map((definition, index) => ({ ...definition, ...t.services[index] }));
   const industries: Industry[] = industryDefinitions.map((definition, index) => ({ ...definition, ...t.industries[index] }));

@@ -1,6 +1,6 @@
 import { isLocale, type Locale } from "../locales";
 
-/** Poptávka po validaci – jen to, co uživatel vyplnil. */
+/** Validated inquiry – only what the user filled in. */
 export type Inquiry = {
   locale: Locale;
   name: string;
@@ -51,8 +51,8 @@ export function parseInquiry(form: FormData): ValidationResult {
 }
 
 /**
- * Levná ochrana proti botům: skryté pole, které člověk nevidí, a minimální doba
- * mezi zobrazením a odesláním formuláře.
+ * Cheap bot protection: a hidden field humans don't see, and a minimum time
+ * between showing and submitting the form.
  */
 export function looksLikeBot(form: FormData): boolean {
   const honeypot = form.get("website");

@@ -1,4 +1,4 @@
-/** Kontaktní a firemní údaje – na stránce se opakují v kontaktech, sekci O nás i v patičce. */
+/** Contact and company details – repeated on the page in contacts, the About section and the footer. */
 export const company = {
   name: "Asterion Software, s.r.o.",
   companyId: "10736697",

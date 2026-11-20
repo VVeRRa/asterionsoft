@@ -11,14 +11,14 @@ type Props = {
   price: string;
   linkLabel: string;
   onOpen: () => void;
-  /** Obsah nad nadpisem – ikona služby nebo cílová skupina oborového řešení. */
+  /** Content above the title – a service icon or the audience of an industry solution. */
   top?: ReactNode;
   className?: string;
 };
 
 /**
- * Karta nabídky (služba z katalogu i oborové řešení). Celá karta je klikací: odkaz „Detail“
- * se přes CSS roztáhne na celou plochu (`.service-card .text-link::before`).
+ * Offer card (a catalog service or an industry solution). The whole card is clickable: the “Detail”
+ * link is stretched over the card via CSS (`.service-card .text-link::before`).
  */
 export default function OfferCard({ index, title, description, chips, priceLabel, price, linkLabel, onOpen, top, className }: Props) {
   return (

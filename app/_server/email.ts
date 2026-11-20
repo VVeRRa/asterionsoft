@@ -64,7 +64,7 @@ function layout(content: string): string {
 <div style="max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:28px;border:1px solid #e3e7f0">${content}</div></body></html>`;
 }
 
-/** Výsledek odeslání; `reason` je krátký kód bez citlivých údajů. */
+/** Send result; `reason` is a short code without sensitive data. */
 export type SendResult = { ok: true } | { ok: false; reason: string };
 
 type Email = { to: string; subject: string; html: string; text: string; replyTo: string };
@@ -76,8 +76,8 @@ async function send(email: Email): Promise<SendResult> {
     console.error("Chybí RESEND_API_KEY nebo INQUIRY_FROM_EMAIL, e-mail se neodeslal.");
     return { ok: false, reason: "not_configured" };
   }
-  // Chyba jednoho e-mailu (např. testovací odesílatel onboarding@resend.dev smí psát
-  // jen na adresu účtu) nesmí shodit odeslání formuláře ani druhý e-mail.
+  // A failure of one e-mail (e.g. the onboarding@resend.dev test sender may only write
+  // to the account's address) must not break the form submission or the other e-mail.
   try {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -98,7 +98,7 @@ async function send(email: Email): Promise<SendResult> {
   }
 }
 
-/** Upozornění majiteli – vždy česky, odpověď jde rovnou zákazníkovi. */
+/** Notification to the owner – always in Czech; replying goes straight to the customer. */
 export function sendOwnerNotification(inquiry: Inquiry, classification: Classification, inquiryId: string | null) {
   const to = process.env.INQUIRY_NOTIFY_EMAIL;
   if (!to) {
@@ -133,7 +133,7 @@ export function sendOwnerNotification(inquiry: Inquiry, classification: Classifi
   return send({ to, subject, html, text, replyTo: inquiry.email });
 }
 
-/** Automatická odpověď zákazníkovi v jazyce, ve kterém poptávku poslal. */
+/** Auto-reply to the customer in the language they sent the inquiry in. */
 export function sendAutoReply(inquiry: Inquiry) {
   const copy = autoReply[inquiry.locale];
   const replyTo = process.env.INQUIRY_NOTIFY_EMAIL ?? process.env.INQUIRY_FROM_EMAIL ?? "";

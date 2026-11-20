@@ -3,7 +3,7 @@
 import { useState, type ReactNode } from "react";
 import type { Messages } from "../messages";
 
-/** Podíl času, který automatizace typicky ušetří (cíl pilotu). */
+/** Share of time automation typically saves (the pilot's target). */
 const savingShare = 2 / 3;
 
 type Inputs = { cases: number; minutes: number; rate: number };
