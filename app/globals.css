@@ -473,9 +473,24 @@
   .nav-toggle-bars, .nav-toggle-bars::before, .nav-toggle-bars::after { transition: none; }
 }
 
-/* Service detail on mobile: the inquiry button aligned fully to the right. */
+/* Mobile: primary ("positive") call-to-action buttons sit on the right edge, consistently across the page.
+   The hero keeps its button pair left-aligned under the headline. */
 @media (max-width: 40em) {
-  .modal-cta { display: flex; width: fit-content; margin-left: auto; }
+  .modal-cta, .calc-body > .btn, .case-copy > .btn, .training-card > .btn {
+    display: flex; width: fit-content; margin-left: auto;
+  }
+  .calc-body > .btn { align-self: flex-end; }
+  .form-actions { flex-direction: column; align-items: stretch; }
+  .form-actions .btn { align-self: flex-end; }
+
+  /* Studijo on mobile: the browser mockup frame added two extra nested boxes inside the case-study card.
+     Drop the frame, the fake browser bar and the duplicate heading so only the two preview messages remain. */
+  .case-visual { min-height: 0; padding: 0; border: 0; background: none; }
+  .browserbar, .fake-main h4 { display: none; }
+  .fake-main { padding: 0; border: 0; background: none; }
+  .fake-message { font-size: 0.875rem; }
+  .fake-message:last-child { margin-bottom: 0; }
+  .case-study { padding: 1.25rem; }
 }
 
 /* Safety net: even if something overflows the viewport width, the page must not scroll sideways.
