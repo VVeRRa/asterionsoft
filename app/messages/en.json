@@ -77,7 +77,7 @@
   "faqTitle": "What clients ask us",
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
   "auditQuestion": "How much does an AI audit cost?",
-  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do a short paid AI audit for CZK 5,000–10,000: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution.",
+  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution. If you then order the implementation, we deduct the audit price from it.",
   "assistantQuestion": "How much does an AI assistant cost?",
   "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
@@ -170,12 +170,12 @@
   "services": [
     {
       "name": "AI process audit",
-      "price": "CZK 5,000–10,000",
-      "description": "We map your current process, tools and volumes, check the integration options and propose a fixed-price automation. For simple projects, a free consultation is enough.",
+      "price": "from CZK 14,900",
+      "description": "We map your current process, tools and volumes, check the integration options and propose a fixed-price automation. If you then order the implementation, we deduct the audit price from it.",
       "title": "AI process audit",
       "chips": [
         "free consultation",
-        "fixed-price offer"
+        "deducted from implementation"
       ],
       "priceLabel": "for complex projects"
     },
@@ -499,8 +499,8 @@
       },
       {
         "title": "AI process audit",
-        "price": "CZK 5,000–10,000",
-        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. Simple ones get an offer straight away."
+        "price": "from CZK 14,900",
+        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. If you order the implementation, we deduct the audit price."
       },
       {
         "title": "Implementation",

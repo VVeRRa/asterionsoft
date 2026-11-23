@@ -77,7 +77,7 @@
   "faqTitle": "Na co se klienti ptají",
   "faqIntro": "Nenašli jste odpověď? Napište nebo zavolejte na +420 604 257 866.",
   "auditQuestion": "Kolik stojí AI audit?",
-  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme krátký placený AI audit za 5 000–10 000 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou.",
+  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme.",
   "assistantQuestion": "Kolik stojí AI asistent?",
   "assistantAnswer": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
   "processQuestion": "Jak probíhá spolupráce?",
@@ -170,12 +170,12 @@
   "services": [
     {
       "name": "AI audit procesů",
-      "price": "5 000–10 000 Kč",
-      "description": "Zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme automatizaci s pevnou cenou. U jednoduchého zadání stačí konzultace zdarma.",
+      "price": "od 14 900 Kč",
+      "description": "Zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme automatizaci s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme.",
       "title": "AI audit procesů",
       "chips": [
         "konzultace zdarma",
-        "pevná nabídka"
+        "odečte se z realizace"
       ],
       "priceLabel": "u složitějších zadání"
     },
@@ -499,8 +499,8 @@
       },
       {
         "title": "AI audit procesů",
-        "price": "5 000–10 000 Kč",
-        "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. U jednoduchého rovnou nabídka."
+        "price": "od 14 900 Kč",
+        "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. Při objednání realizace cenu auditu odečteme."
       },
       {
         "title": "Implementace",

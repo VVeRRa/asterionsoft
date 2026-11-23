@@ -80,13 +80,12 @@
           "itemOffered": {
             "@type": "Service",
             "name": "AI audit procesů",
-            "description": "Zmapování postupu, nástrojů a objemů, ověření napojení a návrh automatizace s pevnou cenou."
+            "description": "Zmapování postupu, nástrojů a objemů, ověření napojení a návrh automatizace s pevnou cenou; cena auditu se odečte od realizace."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 5000,
-            "priceCurrency": "CZK",
-            "maxPrice": 10000
+            "minPrice": 14900,
+            "priceCurrency": "CZK"
           }
         },
         {
@@ -338,7 +337,7 @@
           "name": "Kolik stojí AI audit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme krátký placený AI audit za 5 000–10 000 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou."
+            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme."
           }
         },
         {
