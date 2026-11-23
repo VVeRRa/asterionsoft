@@ -8,14 +8,13 @@
   "heroTitle": "KI, Automatisierung und Anwendungsentwicklung",
   "heroAudience": "für Unternehmen",
   "heroLead": "Software-Dienstleistungen für Ihren Bedarf.",
-  "heroBody": "Sagen Sie uns, was Sie lösen möchten. Wir bieten KI-Audits, Automatisierung, individuelle Webanwendungen, LLM-Integrationen und Schulungen.",
+  "heroBody": "Sagen Sie uns, was Sie lösen möchten. Wir bieten Prozessanalysen, individuelle Automatisierung, Webanwendungen, LLM-Integrationen und Schulungen.",
   "browse": "Leistungen ansehen ↓",
   "ownBrief": "Projekt besprechen",
   "catalogAlt": "Auszug aus dem Leistungskatalog",
   "catalog": "Leistungskatalog",
   "catalogBadge": "ohne Warenkorb :)",
-  "analysisDelivery": "Analyse + Umsetzung",
-  "javaScope": "Architektur, Performance, Altsysteme",
+  "analysisDelivery": "Festpreis",
   "seniorTitle": "Erfahrene Entwickler",
   "seniorBody": "Erfahrene Entwickler übernehmen Ihr Projekt direkt.",
   "practicalTitle": "KI in der Praxis",
@@ -76,12 +75,12 @@
   "faqLabel": "Häufig gestellte Fragen",
   "faqTitle": "Was Kunden uns fragen",
   "faqIntro": "Noch Fragen? Schreiben Sie uns oder rufen Sie uns unter +420 604 257 866 an.",
-  "auditQuestion": "Was kostet ein KI-Audit?",
-  "auditAnswer": "Ein KI-Audit kostet ab 14.900 CZK und dauert ein bis zwei Tage. Wir prüfen Ihre Abläufe, erkennen Zeit- und Kosteneinsparpotenziale und liefern einen Bericht mit Empfehlungen und nächsten Schritten.",
+  "auditQuestion": "Was kostet eine Prozessanalyse?",
+  "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst eine kurze bezahlte Analyse für 5.000–10.000 CZK: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Lösung zum Festpreis vor.",
   "assistantQuestion": "Was kostet ein interner KI-Assistent für Unternehmensdokumente?",
   "assistantAnswer": "Ein Pilotprojekt kostet ab 35.000 CZK. Der Endpreis hängt vor allem von Anzahl und Art der Datenquellen, den nötigen Integrationen und den Zugriffsrechten ab. Der Assistent beantwortet Fragen anhand Ihrer Dokumentation und nennt seine Quellen.",
   "processQuestion": "Wie läuft die Zusammenarbeit ab?",
-  "processAnswer": "Wir beginnen mit einem kurzen, unverbindlichen Gespräch, um Ihr Ziel zu klären. Danach schlagen wir eine Lösung und einen Umfang mit klar definiertem Ergebnis vor. Nach der Lieferung können wir die Umsetzung erweitern oder langfristig zusammenarbeiten.",
+  "processAnswer": "Wir beginnen mit einem kostenlosen Erstgespräch. Eine einfache Automatisierung bieten wir direkt zum Festpreis an, bei einer komplexeren machen wir zuerst eine kurze bezahlte Analyse. Jedes Angebot nennt, was Sie erhalten, was nicht enthalten ist und wie wir prüfen, dass die Automatisierung funktioniert. Nach der Übergabe können Sie eine Pauschale für Überwachung und Betrieb wählen.",
   "contactQuestion": "Wer ist während des Projekts mein Ansprechpartner?",
   "contactAnswer": "Sie sprechen direkt mit dem erfahrenen Entwickler, der Ihre Lösung entwirft und umsetzt. So lassen sich Fragen schnell klären und Details direkt abstimmen.",
   "excelQuestion": "Können Sie unsere Excel-Tabelle in eine Anwendung umwandeln?",
@@ -124,21 +123,21 @@
   "menuClose": "Menü schließen",
   "menuLabel": "Hauptmenü",
   "deliverable": "Typischer Ablauf",
-  "deliverableGoal": "ein kurzes Erstgespräch zur Klärung Ihrer Ziele,",
-  "deliverableScope": "ein Vorschlag für Lösung und Umfang,",
-  "deliverableResult": "ein klar definiertes Ergebnis,",
-  "deliverableFollowUp": "auf Wunsch anschließende Umsetzung oder langfristige Zusammenarbeit.",
+  "deliverableGoal": "ein kostenloses Erstgespräch zur Klärung Ihrer Ziele,",
+  "deliverableScope": "bei komplexeren Vorhaben eine kurze bezahlte Analyse,",
+  "deliverableResult": "ein Festpreis für einen klar abgegrenzten Umfang und die Übergabe auf Ihren Daten,",
+  "deliverableFollowUp": "auf Wunsch eine Pauschale für Überwachung und Betrieb.",
   "requestService": "Diese Leistung anfragen",
   "language": "Sprache der Website",
   "industriesNav": "Für Branchen",
   "industriesLabel": "Branchenlösungen",
   "industriesTitle": "Konkrete Szenarien für Ihre Branche",
-  "industriesBody": "Jede Lösung beginnt mit einem Pilotprojekt auf Ihren historischen Daten. Wir messen den Zeitaufwand vorher und nachher, und wenn sich die Einsparung nicht bestätigt, machen wir nicht weiter.",
+  "industriesBody": "Wir beginnen mit einem kostenlosen Erstgespräch. Danach erhalten Sie einen Festpreis für einen klar abgegrenzten Umfang, bei komplexeren Vorhaben nach einer kurzen bezahlten Analyse. Wir messen den Zeitaufwand vorher und nachher, damit die Einsparung keine bloße Schätzung bleibt.",
   "audienceLabel": "Für wen",
   "scopeLabel": "Was enthalten ist",
   "exampleLink": "Modellbeispiel →",
   "exampleLabel": "Modellbeispiel",
-  "exampleNote": "Ein illustratives Beispiel für ein typisches Unternehmen der Branche, kein konkreter Kunde. Die Zahlen sind eine Schätzung, die das Pilotprojekt überprüft.",
+  "exampleNote": "Ein illustratives Beispiel für ein typisches Unternehmen der Branche, kein konkreter Kunde. Die Zahlen sind eine Schätzung, die tatsächliche Einsparung messen wir bei Ihnen.",
   "calcLabel": "Einsparungsrechner",
   "calcTitle": "Was kostet Sie die manuelle Arbeit heute?",
   "calcBody": "Geben Sie an, wie oft sich die Aufgabe wiederholt und wie lange sie dauert. Die Berechnung geht davon aus, dass die Automatisierung etwa zwei Drittel der Zeit einspart, das typische Ziel eines Pilotprojekts.",
@@ -160,36 +159,36 @@
   "dataQuestion": "Wohin gehen unsere Daten?",
   "dataAnswer": "Wir gestalten Lösungen so, dass die Daten in der EU bleiben und die KI nur mit dem arbeitet, was sie für die Aufgabe braucht. Wir nutzen Business-APIs von KI-Modellen, deren Anbieter die Daten laut eigenen Bedingungen nicht zum Training verwenden. Hosting und Zugriffsrechte beschreiben wir im Lösungsvorschlag.",
   "systemsQuestion": "Funktioniert das mit unserem System?",
-  "systemsAnswer": "Meistens ja. Wir binden uns über API, Datei-Export und -Import oder ein gemeinsames E-Mail-Postfach an, ob ERP, Buchhaltungsprogramm, Onlineshop oder gemeinsames Laufwerk. Im Erstgespräch prüfen wir, welche Anbindungsmöglichkeiten Ihr System bietet.",
+  "systemsAnswer": "Meistens ja. Wir binden uns über API, Datei-Export und -Import oder ein gemeinsames E-Mail-Postfach an, ob ERP, Buchhaltungsprogramm, Onlineshop oder gemeinsames Laufwerk. Sie bleiben bei Ihren Werkzeugen, ein neues fügen wir nur dort hinzu, wo es wirklich Arbeit spart. Im Erstgespräch prüfen wir, welche Anbindungsmöglichkeiten Ihr System bietet.",
   "mistakesQuestion": "Was, wenn die KI einen Fehler macht?",
   "mistakesAnswer": "Deshalb entscheidet bei wichtigen Schritten ein Mensch. Die KI bereitet eine Unterlage, einen Vorschlag oder einen vorausgefüllten Datensatz vor, und ein Mensch bestätigt ihn. Unsichere Fälle markiert das System, und jede Aktion wird protokolliert, sodass nachvollziehbar ist, was passiert ist und warum.",
   "runningQuestion": "Was kostet der Betrieb nach dem Start?",
-  "runningAnswer": "Der Betrieb besteht aus nutzungsabhängigen Gebühren für die KI-Modelle und einer optionalen Pauschale für Betrieb und Optimierung ab 4.900 CZK pro Monat. Eine Schätzung der Betriebskosten erhalten Sie vorab als Teil des Lösungsvorschlags.",
+  "runningAnswer": "Die Pauschale ist optional und kostet ab 1.000 CZK pro Monat und Automatisierung, je nach KI-Nutzung und Anzahl der Anbindungen. Sie deckt Überwachung und Betrieb ab: Kontrolle, dass die Automatisierung läuft, Fehlermeldungen, Hosting, Backups, KI-Gebühren und die Behebung von Fehlern auf unserer Seite mit Reaktion innerhalb von 2 Werktagen. Änderungen, etwa ein neues Kontoauszugsformat oder neue Funktionen, kalkulieren wir separat. Lizenzen fremder Werkzeuge zahlen Sie direkt an deren Anbieter.",
   "aiActQuestion": "Betrifft uns der AI Act?",
   "aiActAnswer": "Seit Februar 2025 müssen Unternehmen, die KI einsetzen, für ausreichende KI-Kompetenz der Menschen sorgen, die damit arbeiten. Dabei hilft eine Schulung zur KI-Kompetenz. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
   "services": [
     {
-      "name": "KI-Audit für Unternehmen",
-      "price": "ab 14.900 CZK",
-      "description": "Wir zeigen, wo KI und Automatisierung Zeit sparen, Kosten senken oder Ihr Team entlasten können.",
-      "title": "KI-Audit für Unternehmen",
+      "name": "Prozessanalyse",
+      "price": "5.000–10.000 CZK",
+      "description": "Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Automatisierung zum Festpreis vor. Bei einfachen Vorhaben reicht ein kostenloses Gespräch.",
+      "title": "Prozessanalyse",
       "chips": [
-        "1–2 Tage",
-        "Bericht und Umsetzungsplan"
+        "kostenloses Erstgespräch",
+        "Festpreisangebot"
       ],
-      "priceLabel": "Richtpreis"
+      "priceLabel": "bei komplexeren Vorhaben"
     },
     {
       "name": "Automatisierung von Geschäftsprozessen",
-      "price": "nach Angebot",
-      "description": "Bestehen Ihre Abläufe aus E-Mails, Excel-Tabellen und manuellem Kopieren? Wir entwerfen und bauen einen einfacheren Ablauf.",
+      "price": "Festpreis",
+      "description": "Bestehen Ihre Abläufe aus E-Mails, Excel-Tabellen und manuellem Kopieren? Wir bauen eine individuelle Automatisierung aus Ihren vorhandenen Werkzeugen, APIs, KI oder eigenem Code.",
       "title": "Prozessautomatisierung",
       "chips": [
         "Integrationen",
         "API",
         "LLM"
       ],
-      "priceLabel": "je nach Umfang"
+      "priceLabel": "nach Erstgespräch"
     },
     {
       "name": "Interner KI-Assistent",
@@ -225,17 +224,6 @@
         "Datenmodell"
       ],
       "priceLabel": "typischer Einstiegspreis"
-    },
-    {
-      "name": "Java- und Spring-Beratung",
-      "price": "ab 2.500 CZK/Std.",
-      "description": "Architektur, Performance, Code-Reviews, Altsysteme, Integrationen und Fehlerbehebung im Produktivbetrieb.",
-      "title": "Java- und Spring-Beratung",
-      "chips": [
-        "Review durch erfahrene Entwickler",
-        "Backend"
-      ],
-      "priceLabel": "Beratung"
     },
     {
       "name": "Anbindung an ChatGPT und Claude (MCP)",
@@ -274,14 +262,14 @@
       "priceLabel": "typischer Einstiegspreis"
     },
     {
-      "name": "Betrieb und Optimierung von KI-Lösungen",
-      "price": "ab 4.900 CZK/Monat",
-      "description": "Überwachung, Prompt-Anpassungen, Umstieg auf neue Modelle und Kontrolle der API-Kosten. Einmal im Monat ein Bericht, was die Lösung eingespart hat.",
-      "title": "Betrieb und Optimierung von KI",
+      "name": "Überwachung und Betrieb von Automatisierungen",
+      "price": "ab 1.000 CZK/Monat",
+      "description": "Wir prüfen, dass die Automatisierung läuft, melden Fehler und beheben sie auf unserer Seite. Hosting, Backups und KI-Gebühren inklusive, Änderungen kalkulieren wir separat.",
+      "title": "Überwachung und Betrieb",
       "chips": [
         "Monitoring",
-        "Kosten",
-        "Bericht"
+        "Backups",
+        "Reaktion in 2 Tagen"
       ],
       "priceLabel": "Pauschale"
     }
@@ -307,23 +295,23 @@
       "example": "Eine Werkstatt mit 15 Mitarbeitenden erhält rund 60 Anfragen im Monat, jede mit E-Mail und mehreren Zeichnungen. Der Techniker braucht heute etwa 30 Minuten, um die Unterlagen aufzubereiten, und bei einem Drittel muss er beim Kunden nachfragen. Nach der Einführung erhält er eine fertige Karte mit einer Liste fehlender Angaben und Verweisen auf ähnliche frühere Aufträge. Ziel des Pilotprojekts ist, die Vorbereitung auf 10 Minuten zu verkürzen, also rund 20 Stunden im Monat zu sparen und Kunden schneller zu antworten."
     },
     {
-      "name": "Belegfluss ohne Mahnungen",
+      "name": "Belege unter Kontrolle",
       "audience": "Buchhaltungs- und Steuerberatungskanzleien",
-      "description": "Weniger Suchen nach Anhängen und weniger manuelle Erinnerungen vor dem Abschluss. Wir beginnen mit einem kurzen Audit, das berechnet, wie viele Stunden Sie das heute kostet.",
+      "description": "Die Automatisierung gleicht den Kontoauszug mit den Belegen der Mandanten ab und erstellt eine Liste der fehlenden Belege samt Entwurf einer Erinnerung. Die Buchhaltung gibt sie nur frei und bleibt in ihrem Buchhaltungsprogramm.",
       "scope": [
-        "Audit des Belegflusses mit beziffertem Einsparpotenzial",
-        "Vollständigkeitsprüfung der Mandantenordner",
-        "Erinnerungen mit konkreter Liste fehlender Belege",
-        "Auslesen von Rechnungen und Zuordnen von Zahlungen"
+        "Abgleich der Kontobewegungen mit den Belegen im Buchhaltungsprogramm",
+        "Liste fehlender Belege für jeden Mandanten",
+        "Entwurf einer Erinnerungs-E-Mail, freigegeben mit einem Klick",
+        "Nutzung der Werkzeuge, die die Kanzlei schon bezahlt"
       ],
-      "price": "ab 14.900 CZK",
-      "priceLabel": "Audit",
+      "price": "ab 35.000 CZK",
+      "priceLabel": "Festpreis",
       "chips": [
-        "Audit",
-        "Datenextraktion",
-        "Erinnerungen"
+        "Kontoauszug",
+        "Erinnerungen zur Freigabe",
+        "Ihr Buchhaltungsprogramm"
       ],
-      "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Das Audit zeigt, wo diese Zeit verloren geht. Die Automatisierung prüft dann jede Woche die Mandantenordner und schickt jedem Mandanten eine genaue Liste dessen, was fehlt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
+      "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Die Automatisierung gleicht jede Woche die Bewegungen auf den Konten der Mandanten mit den Belegen im Buchhaltungsprogramm ab. Die Buchhaltung erhält für jeden Mandanten eine Liste fehlender Belege und einen fertigen E-Mail-Entwurf, den sie nur freigibt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
     },
     {
       "name": "Schadensmeldungen im Griff",

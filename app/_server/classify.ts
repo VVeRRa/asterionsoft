@@ -28,19 +28,18 @@ export type Classification = z.infer<typeof ClassificationSchema> & { classified
 
 /** `formValue` values from services.json and trainings → category. */
 const categoryByService: Record<string, (typeof serviceCategories)[number]> = {
-  "AI audit firmy": "ai_audit",
+  "Analýza procesu": "ai_audit",
   "Automatizace firemního procesu": "process_automation",
   "Interní AI asistent": "ai_assistant",
   "Webová aplikace na míru": "web_app",
   "Excel → aplikace": "excel_to_app",
-  "Java / Spring konzultace": "java_consulting",
   "Napojení na ChatGPT a Claude (MCP)": "ai_assistant",
   "AI funkce do vaší aplikace": "web_app",
   "Interní kurz z firemních dokumentů": "training",
-  "Provoz a ladění AI řešení": "process_automation",
+  "Provoz a dohled automatizací": "process_automation",
   // Industry solutions (industries.json)
   "Obor: zpracování poptávek (výroba, CNC)": "process_automation",
-  "Obor: oběh dokladů (účetní kanceláře)": "process_automation",
+  "Obor: podklady pod kontrolou (účetní kanceláře)": "process_automation",
   "Obor: hlášení závad (správa domů, SVJ)": "process_automation",
   "Obor: vratky a výjimky (fulfillment)": "process_automation",
   "Obor: objednávky do ERP (velkoobchod, spedice)": "process_automation",
@@ -81,7 +80,7 @@ export function classifyByRules(inquiry: Inquiry): Classification {
   };
 }
 
-const systemPrompt = `Třídíš poptávky z webu Asterion Software, malého českého studia, které dělá AI audity, automatizaci firemních procesů, interní AI asistenty, webové aplikace na míru, převod Excelu na aplikace, Java/Spring konzultace a firemní školení AI.
+const systemPrompt = `Třídíš poptávky z webu Asterion Software, malého českého studia, které dělá analýzy procesů, automatizace na míru, interní AI asistenty, webové aplikace na míru, převod Excelu na aplikace, Java/Spring konzultace a firemní školení AI.
 
 Z poptávky urči:
 - service_category: službu, o kterou zákazník nejspíš stojí ("other", pokud nesedí žádná),

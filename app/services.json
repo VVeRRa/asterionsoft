@@ -1,6 +1,6 @@
 [
   {
-    "formValue": "AI audit firmy",
+    "formValue": "Analýza procesu",
     "icon": "/img/icon-ai-audit.webp",
     "categories": [
       "ai",
@@ -39,14 +39,6 @@
     ]
   },
   {
-    "formValue": "Java / Spring konzultace",
-    "icon": "/img/icon-java-spring.webp",
-    "categories": [
-      "consulting",
-      "dev"
-    ]
-  },
-  {
     "formValue": "Napojení na ChatGPT a Claude (MCP)",
     "icon": "/img/icon-ai-asistent.webp",
     "categories": [
@@ -70,7 +62,7 @@
     ]
   },
   {
-    "formValue": "Provoz a ladění AI řešení",
+    "formValue": "Provoz a dohled automatizací",
     "icon": "/img/icon-automatizace.webp",
     "categories": [
       "ai",

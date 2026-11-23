@@ -3,7 +3,7 @@ import type { Classification } from "./classify";
 import type { Inquiry } from "./inquiry";
 
 const categoryLabels: Record<Classification["service_category"], string> = {
-  ai_audit: "AI audit",
+  ai_audit: "Analýza procesu",
   process_automation: "Automatizace procesu",
   ai_assistant: "Interní AI asistent",
   web_app: "Webová aplikace",
