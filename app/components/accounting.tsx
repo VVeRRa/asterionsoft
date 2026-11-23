@@ -16,8 +16,8 @@ type Props = {
 export default function Accounting({ t, industry, onOpen, onRequest }: Props) {
   const a = t.accounting;
   return (
-    <section id="ucetni" className="accounting">
-      <div className="container">
+    <div id="ucetni" className="accounting">
+      <div className="accounting-inner">
         <SectionHead label={a.label} title={a.title}>{a.intro}</SectionHead>
 
         <div className="accounting-grid">
@@ -65,6 +65,6 @@ export default function Accounting({ t, industry, onOpen, onRequest }: Props) {
           <button type="button" className="btn btn-secondary" onClick={() => onOpen(industry)}>{a.example}</button>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

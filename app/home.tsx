@@ -6,7 +6,6 @@ import type { Locale } from "./locales";
 import type { Messages } from "./messages";
 import { useReveal } from "./reveal";
 import About from "./components/about";
-import Accounting from "./components/accounting";
 import Contact from "./components/contact";
 import DetailModal from "./components/detail-modal";
 import Faq from "./components/faq";
@@ -40,7 +39,6 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
 
       <main id="top">
         <Hero t={t} />
-        <Accounting t={t} industry={industries[0]} onOpen={setDetail} onRequest={pickService} />
         <ServiceCatalog t={t} services={services} filter={filter} onFilterChange={setFilter} onOpen={setDetail} />
         <Industries locale={locale} t={t} industries={industries} onOpen={setDetail} onRequest={pickService} />
         <References t={t} />

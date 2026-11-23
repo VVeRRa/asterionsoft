@@ -1,5 +1,6 @@
 import type { Detail, Industry } from "../catalog";
 import type { Messages } from "../messages";
+import Accounting from "./accounting";
 import OfferCard from "./offer-card";
 import SavingsCalculator from "./savings-calculator";
 import SectionHead from "./section-head";
@@ -17,6 +18,8 @@ export default function Industries({ locale, t, industries, onOpen, onRequest }:
     <section id="obory">
       <div className="container">
         <SectionHead label={t.industriesLabel} title={t.industriesTitle}>{t.industriesBody}</SectionHead>
+
+        <Accounting t={t} industry={industries[0]} onOpen={onOpen} onRequest={onRequest} />
 
         <div className="services-grid">
           {industries.map((industry, index) => (

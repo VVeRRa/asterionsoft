@@ -12,9 +12,9 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
   const headerRef = useRef<HTMLElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
   const links = [
-    ["#ucetni", t.accountingNav],
     ["#sluzby", t.servicesNav],
     ["#obory", t.industriesNav],
+    ["#ucetni", t.accountingNav],
     ["#reference", t.references],
     ["#skoleni", t.trainingNav],
     ["#o-nas", t.aboutNav],
