@@ -78,8 +78,8 @@
   "faqIntro": "Nenašli jste odpověď? Napište nebo zavolejte na +420 604 257 866.",
   "auditQuestion": "Kolik stojí analýza procesu?",
   "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme krátkou placenou analýzu za 5 000–10 000 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou.",
-  "assistantQuestion": "Kolik stojí interní AI asistent nad firemními dokumenty?",
-  "assistantAnswer": "Pilotní verze interního AI asistenta stojí od 35 000 Kč. Výsledná cena závisí hlavně na počtu a typu zdrojů dat, potřebných integracích a nastavení přístupových práv. Asistent odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
+  "assistantQuestion": "Kolik stojí AI asistent?",
+  "assistantAnswer": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
   "processQuestion": "Jak probíhá spolupráce?",
   "processAnswer": "Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátkou placenou analýzu. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.",
   "contactQuestion": "S kým budu během projektu komunikovat?",
@@ -192,10 +192,10 @@
       "priceLabel": "po konzultaci"
     },
     {
-      "name": "Interní AI asistent",
+      "name": "Pokročilý interní AI asistent",
       "price": "od 35 000 Kč",
       "description": "Chat nad firemní dokumentací, know‑how a daty. S důrazem na přístupová práva a dohledatelnost zdrojů.",
-      "title": "Interní AI asistent",
+      "title": "Pokročilý AI asistent",
       "chips": [
         "RAG",
         "dokumenty",
@@ -204,14 +204,37 @@
       "priceLabel": "pilot"
     },
     {
+      "name": "Jednoduchý interní AI asistent",
+      "price": "od 9 000 Kč",
+      "description": "Asistent pro zaměstnance, který odpovídá z podkladů, které mu předáte, třeba ze směrnic, ceníku nebo návodů. Bez napojení na firemní systémy, takže je rychle nasazený.",
+      "title": "Jednoduchý AI asistent",
+      "chips": [
+        "vaše podklady",
+        "rychlé nasazení"
+      ],
+      "priceLabel": "jednoduchá verze"
+    },
+    {
+      "name": "AI asistent na webu",
+      "price": "od 9 000 Kč",
+      "description": "Chat na vašem webu, který návštěvníkům odpovídá na časté dotazy o službách, cenách a postupu z podkladů, které mu dáte.",
+      "title": "AI asistent na webu",
+      "chips": [
+        "web",
+        "časté dotazy",
+        "vaše podklady"
+      ],
+      "priceLabel": "jednoduchá verze"
+    },
+    {
       "name": "Webová aplikace na míru",
       "price": "od 80 000 Kč",
       "description": "MVP, interní systém nebo zákaznický portál. Backend, databáze, integrace i nasazení.",
       "title": "Webová aplikace na míru",
       "chips": [
-        "Java",
-        "Spring Boot",
-        "cloud"
+        "návrh na míru",
+        "integrace",
+        "nasazení a provoz"
       ],
       "priceLabel": "MVP"
     },

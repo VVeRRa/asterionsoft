@@ -101,12 +101,38 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Interní AI asistent",
+            "name": "Pokročilý interní AI asistent",
             "description": "Chat nad firemní dokumentací a daty (RAG) s přístupovými právy a citací zdrojů."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 35000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Jednoduchý interní AI asistent",
+            "description": "Asistent pro zaměstnance, který odpovídá z podkladů, které mu předáte, třeba ze směrnic, ceníku nebo návodů. Bez napojení na firemní systémy, takže je rychle nasazený."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 9000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI asistent na webu",
+            "description": "Chat na vašem webu, který návštěvníkům odpovídá na časté dotazy o službách, cenách a postupu z podkladů, které mu dáte."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 9000,
             "priceCurrency": "CZK"
           }
         },
@@ -317,10 +343,10 @@
         },
         {
           "@type": "Question",
-          "name": "Kolik stojí interní AI asistent nad firemními dokumenty?",
+          "name": "Kolik stojí AI asistent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pilotní verze interního AI asistenta stojí od 35 000 Kč. Výsledná cena závisí hlavně na počtu a typu zdrojů dat, potřebných integracích a nastavení přístupových práv. Asistent odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
+            "text": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
           }
         },
         {

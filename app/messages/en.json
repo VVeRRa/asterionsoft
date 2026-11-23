@@ -78,8 +78,8 @@
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
   "auditQuestion": "How much does a process analysis cost?",
   "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do a short paid analysis for CZK 5,000–10,000: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution.",
-  "assistantQuestion": "How much does an internal AI assistant for company documents cost?",
-  "assistantAnswer": "A pilot starts at CZK 35,000. The final price depends mainly on the number and type of data sources, required integrations and access permissions. The assistant answers questions using your documentation and cites its sources.",
+  "assistantQuestion": "How much does an AI assistant cost?",
+  "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
   "processAnswer": "We start with a free initial consultation. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid analysis. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
   "contactQuestion": "Who will I talk to during the project?",
@@ -192,10 +192,10 @@
       "priceLabel": "after consultation"
     },
     {
-      "name": "Internal AI assistant",
+      "name": "Advanced internal AI assistant",
       "price": "from CZK 35,000",
       "description": "A chat interface for company documentation, expertise and data, with access controls and traceable sources.",
-      "title": "Internal AI assistant",
+      "title": "Advanced AI assistant",
       "chips": [
         "RAG",
         "documents",
@@ -204,14 +204,37 @@
       "priceLabel": "pilot"
     },
     {
+      "name": "Simple internal AI assistant",
+      "price": "from CZK 9,000",
+      "description": "An assistant for your staff that answers from the materials you give it, such as policies, price lists or manuals. No connection to company systems, so it is quick to set up.",
+      "title": "Simple AI assistant",
+      "chips": [
+        "your materials",
+        "quick setup"
+      ],
+      "priceLabel": "simple version"
+    },
+    {
+      "name": "AI assistant for your website",
+      "price": "from CZK 9,000",
+      "description": "A chat on your website that answers visitors’ common questions about your services, prices and process from the materials you give it.",
+      "title": "Website AI assistant",
+      "chips": [
+        "website",
+        "FAQs",
+        "your materials"
+      ],
+      "priceLabel": "simple version"
+    },
+    {
       "name": "Custom web application",
       "price": "from CZK 80,000",
       "description": "An MVP, internal system or customer portal, including the backend, database, integrations and deployment.",
       "title": "Custom web application",
       "chips": [
-        "Java",
-        "Spring Boot",
-        "cloud"
+        "custom design",
+        "integrations",
+        "deployment and operation"
       ],
       "priceLabel": "MVP"
     },

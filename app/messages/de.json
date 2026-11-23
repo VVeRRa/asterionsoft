@@ -78,8 +78,8 @@
   "faqIntro": "Noch Fragen? Schreiben Sie uns oder rufen Sie uns unter +420 604 257 866 an.",
   "auditQuestion": "Was kostet eine Prozessanalyse?",
   "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst eine kurze bezahlte Analyse für 5.000–10.000 CZK: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Lösung zum Festpreis vor.",
-  "assistantQuestion": "Was kostet ein interner KI-Assistent für Unternehmensdokumente?",
-  "assistantAnswer": "Ein Pilotprojekt kostet ab 35.000 CZK. Der Endpreis hängt vor allem von Anzahl und Art der Datenquellen, den nötigen Integrationen und den Zugriffsrechten ab. Der Assistent beantwortet Fragen anhand Ihrer Dokumentation und nennt seine Quellen.",
+  "assistantQuestion": "Was kostet ein KI-Assistent?",
+  "assistantAnswer": "Ein einfacher Assistent, der nur aus den Unterlagen antwortet, die Sie ihm geben, kostet ab 9.000 CZK, ob intern für Ihr Team oder auf der Website für Besucher. Ein erweiterter interner Assistent über Firmendokumentation und Daten hat ein Pilotprojekt ab 35.000 CZK. Der Preis hängt vor allem von Anzahl und Art der Datenquellen, Integrationen und Zugriffsrechten ab. Er antwortet auf Basis Ihrer Dokumentation und nennt seine Quellen.",
   "processQuestion": "Wie läuft die Zusammenarbeit ab?",
   "processAnswer": "Wir beginnen mit einem kostenlosen Erstgespräch. Eine einfache Automatisierung bieten wir direkt zum Festpreis an, bei einer komplexeren machen wir zuerst eine kurze bezahlte Analyse. Jedes Angebot nennt, was Sie erhalten, was nicht enthalten ist und wie wir prüfen, dass die Automatisierung funktioniert. Nach der Übergabe können Sie eine Pauschale für Überwachung und Betrieb wählen.",
   "contactQuestion": "Wer ist während des Projekts mein Ansprechpartner?",
@@ -192,10 +192,10 @@
       "priceLabel": "nach Erstgespräch"
     },
     {
-      "name": "Interner KI-Assistent",
+      "name": "Erweiterter interner KI-Assistent",
       "price": "ab 35.000 CZK",
       "description": "Ein Chat für Unternehmensdokumentation, Fachwissen und Daten mit Zugriffsrechten und nachvollziehbaren Quellen.",
-      "title": "Interner KI-Assistent",
+      "title": "Erweiterter KI-Assistent",
       "chips": [
         "RAG",
         "Dokumente",
@@ -204,14 +204,37 @@
       "priceLabel": "Pilotprojekt"
     },
     {
+      "name": "Einfacher interner KI-Assistent",
+      "price": "ab 9.000 CZK",
+      "description": "Ein Assistent für Ihr Team, der aus den Unterlagen antwortet, die Sie ihm geben, etwa Richtlinien, Preislisten oder Anleitungen. Ohne Anbindung an Firmensysteme und daher schnell eingerichtet.",
+      "title": "Einfacher KI-Assistent",
+      "chips": [
+        "Ihre Unterlagen",
+        "schnell eingerichtet"
+      ],
+      "priceLabel": "einfache Version"
+    },
+    {
+      "name": "KI-Assistent für Ihre Website",
+      "price": "ab 9.000 CZK",
+      "description": "Ein Chat auf Ihrer Website, der Besuchern häufige Fragen zu Leistungen, Preisen und Ablauf aus den Unterlagen beantwortet, die Sie ihm geben.",
+      "title": "KI-Assistent für die Website",
+      "chips": [
+        "Website",
+        "häufige Fragen",
+        "Ihre Unterlagen"
+      ],
+      "priceLabel": "einfache Version"
+    },
+    {
       "name": "Individuelle Webanwendung",
       "price": "ab 80.000 CZK",
       "description": "Ein MVP, internes System oder Kundenportal mit Backend, Datenbank, Integrationen und Bereitstellung.",
       "title": "Individuelle Webanwendung",
       "chips": [
-        "Java",
-        "Spring Boot",
-        "Cloud"
+        "individueller Entwurf",
+        "Integrationen",
+        "Bereitstellung und Betrieb"
       ],
       "priceLabel": "MVP"
     },

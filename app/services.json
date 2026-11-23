@@ -24,6 +24,21 @@
     ]
   },
   {
+    "formValue": "Jednoduchý interní AI asistent",
+    "icon": "/img/icon-ai-asistent.webp",
+    "categories": [
+      "ai"
+    ]
+  },
+  {
+    "formValue": "AI asistent na webu",
+    "icon": "/img/icon-ai-asistent.webp",
+    "categories": [
+      "ai",
+      "dev"
+    ]
+  },
+  {
     "formValue": "Webová aplikace na míru",
     "icon": "/img/icon-webova-aplikace.webp",
     "categories": [

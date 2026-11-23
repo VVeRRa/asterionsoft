@@ -31,6 +31,8 @@ const categoryByService: Record<string, (typeof serviceCategories)[number]> = {
   "Analýza procesu": "ai_audit",
   "Automatizace firemního procesu": "process_automation",
   "Interní AI asistent": "ai_assistant",
+  "Jednoduchý interní AI asistent": "ai_assistant",
+  "AI asistent na webu": "ai_assistant",
   "Webová aplikace na míru": "web_app",
   "Excel → aplikace": "excel_to_app",
   "Napojení na ChatGPT a Claude (MCP)": "ai_assistant",

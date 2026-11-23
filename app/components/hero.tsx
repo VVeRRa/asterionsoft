@@ -4,7 +4,7 @@ export default function Hero({ t }: { t: Messages }) {
   const preview = [
     { service: t.industries[0], meta: t.industries[0].priceLabel },
     { service: t.services[0], meta: t.services[0].chips[0] },
-    { service: t.services[8], meta: t.services[8].priceLabel },
+    { service: t.services[10], meta: t.services[10].priceLabel },
   ];
   const highlights = [
     [t.seniorTitle, t.seniorBody],
