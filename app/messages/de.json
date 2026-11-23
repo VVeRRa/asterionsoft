@@ -26,7 +26,7 @@
   "deliveryBody": "Architektur, Backend, Integrationen und Betrieb.",
   "servicesLabel": "Unser Angebot",
   "servicesTitle": "Wobei wir Sie unterstützen",
-  "servicesBody": "Jede Leistung hat ein klares Ergebnis. Für individuelle Anliegen nutzen Sie das Anfrageformular unten.",
+  "servicesBody": "Jede Leistung hat ein klares Ergebnis. Die Preise sind Richtwerte, verbindlich ist der Preis im Angebot, und eine Anfrage verpflichtet Sie zu nichts. Für individuelle Anliegen nutzen Sie das Anfrageformular unten.",
   "all": "Alle",
   "ai": "KI",
   "dev": "Entwicklung",
@@ -105,6 +105,7 @@
     "serviceGeneral": "Allgemeine Frage / noch unklar",
     "message": "Beschreiben Sie Ihre Situation",
     "messagePlaceholder": "Was erledigen Sie heute manuell, was bremst Sie aus, oder welche Idee möchten Sie besprechen…",
+    "messageHint": "Bitte beschreiben Sie Ihr Anliegen allgemein, ohne Buchhaltungsbelege, Passwörter oder personenbezogene Daten Ihrer Kunden.",
     "submit": "Anfrage senden",
     "sending": "Wird gesendet…",
     "successTitle": "Vielen Dank, Ihre Anfrage ist angekommen.",
@@ -116,7 +117,8 @@
     "errorCaptcha": "Die Spam-Prüfung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "errorRate": "Sie haben mehrere Anfragen hintereinander gesendet. Bitte versuchen Sie es später oder rufen Sie an.",
     "errorServer": "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie +420 604 257 866 an.",
-    "privacy": "Ich verwende Ihre Angaben nur, um auf Ihre Anfrage zu antworten."
+    "privacy": "Wir verwenden Ihre Angaben zur Bearbeitung Ihrer Anfrage und gegebenenfalls zur Vereinbarung eines Auftrags. Mehr in der",
+    "privacyLink": "Datenschutzerklärung"
   },
   "detailLabel": "Leistungsdetails",
   "close": "Schließen",
@@ -130,6 +132,13 @@
   "deliverableFollowUp": "auf Wunsch eine Pauschale für Überwachung und Betrieb.",
   "requestService": "Diese Leistung anfragen",
   "language": "Sprache der Website",
+  "legal": {
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "effective": "Gültig ab",
+    "back": "Zurück zur Startseite",
+    "registry": "eingetragen im Handelsregister beim Stadtgericht Prag, Aktenzeichen"
+  },
   "industriesNav": "Für Branchen",
   "industriesLabel": "Branchenlösungen",
   "industriesTitle": "Konkrete Szenarien für Ihre Branche",
@@ -152,13 +161,13 @@
   "calcPerYear": "pro Jahr",
   "calcCta": "Mit Ihren Daten besprechen",
   "aiLiteracyTraining": "KI-Kompetenz (AI Act)",
-  "aiLiteracyDuty": "Pflicht nach Art. 4 AI Act",
+  "aiLiteracyDuty": "Anforderungen nach Art. 4 AI Act",
   "aiLiteracyRules": "Regeln für Unternehmensdaten",
   "aiLiteracyLimits": "Risiken und Grenzen von KI",
   "aiLiteracyRecord": "Schulungsnachweis",
   "trainingIndustryNote": "KI in der Praxis bieten wir auch als Branchenversion an, zum Beispiel für Steuerberatungskanzleien, Anwaltskanzleien oder Onlineshops.",
   "dataQuestion": "Wohin gehen unsere Daten?",
-  "dataAnswer": "Wir gestalten Lösungen so, dass die Daten in der EU bleiben und die KI nur mit dem arbeitet, was sie für die Aufgabe braucht. Wir nutzen Business-APIs von KI-Modellen, deren Anbieter die Daten laut eigenen Bedingungen nicht zum Training verwenden. Hosting und Zugriffsrechte beschreiben wir im Lösungsvorschlag.",
+  "dataAnswer": "Wir gestalten Lösungen so, dass die Daten nach Möglichkeit in der EU bleiben und die KI nur mit dem arbeitet, was sie für die Aufgabe braucht. Wir nutzen Business-APIs von KI-Modellen, deren Anbieter die Daten laut ihren aktuellen Bedingungen nicht zum Training verwenden. Wo die Daten gespeichert werden, welches Modell und welchen Tarif wir nutzen und wer Zugriff auf die Daten hat, legen wir konkret im Angebot fest.",
   "systemsQuestion": "Funktioniert das mit unserem System?",
   "systemsAnswer": "Meistens ja. Wir binden uns über API, Datei-Export und -Import oder ein gemeinsames E-Mail-Postfach an, ob ERP, Buchhaltungsprogramm, Onlineshop oder gemeinsames Laufwerk. Sie bleiben bei Ihren Werkzeugen, ein neues fügen wir nur dort hinzu, wo es wirklich Arbeit spart. Im Erstgespräch prüfen wir, welche Anbindungsmöglichkeiten Ihr System bietet.",
   "mistakesQuestion": "Was, wenn die KI einen Fehler macht?",
@@ -166,7 +175,7 @@
   "runningQuestion": "Was kostet der Betrieb nach dem Start?",
   "runningAnswer": "Die Pauschale ist optional und kostet ab 1.000 CZK pro Monat und Automatisierung, je nach KI-Nutzung und Anzahl der Anbindungen. Sie deckt Überwachung und Betrieb ab: Kontrolle, dass die Automatisierung läuft, Fehlermeldungen, Hosting, Backups, KI-Gebühren und die Behebung von Fehlern auf unserer Seite mit Reaktion innerhalb von 2 Werktagen. Änderungen, etwa ein neues Kontoauszugsformat oder neue Funktionen, kalkulieren wir separat. Lizenzen fremder Werkzeuge zahlen Sie direkt an deren Anbieter.",
   "aiActQuestion": "Betrifft uns der AI Act?",
-  "aiActAnswer": "Seit Februar 2025 müssen Unternehmen, die KI einsetzen, für ausreichende KI-Kompetenz der Menschen sorgen, die damit arbeiten. Dabei hilft eine Schulung zur KI-Kompetenz. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
+  "aiActAnswer": "Nach Art. 4 AI Act sollen Unternehmen, die KI einsetzen, Maßnahmen ergreifen, um die KI-Kompetenz der Menschen zu fördern, die damit arbeiten. Eine Schulung zur KI-Kompetenz ist eine solche Maßnahme und hilft, diese Anforderung zu erfüllen. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
   "services": [
     {
       "name": "KI-Prozessaudit",
@@ -293,7 +302,7 @@
       "chips": [
         "Monitoring",
         "Backups",
-        "Reaktion in 2 Tagen"
+        "Reaktion in 2 Werktagen"
       ],
       "priceLabel": "Pauschale"
     }
@@ -395,25 +404,6 @@
       "example": "Ein Distributor erhält 300 Bestellungen im Monat per E-Mail. Das Abtippen einer Bestellung dauert 5–10 Minuten, und gelegentlich wird eine Artikelnummer verwechselt. Nach der Einführung wird die Bestellung automatisch im ERP angelegt, und der Vertrieb prüft nur die Positionen, die das System nicht sicher zuordnen kann. Ziel ist, über 80 % der Bestellungen ohne manuelles Abtippen zu verarbeiten und rund 30 Stunden im Monat zu sparen."
     },
     {
-      "name": "Vorauswahl von Kandidaten",
-      "audience": "Personalagenturen",
-      "description": "Dutzende Lebensläufe pro Stelle, nach Anforderungen sortiert und kurz begründet. Die Entscheidung trifft immer der Recruiter.",
-      "scope": [
-        "Sortieren und Zusammenfassen von Lebensläufen",
-        "Abgleich mit offenen Stellen",
-        "Vorschlag für eine persönliche Ansprache und Anbindung an das ATS",
-        "Dokumentation, warum ein Kandidat empfohlen wurde (AI Act)"
-      ],
-      "price": "ab 45.000 CZK",
-      "priceLabel": "typischer Einstiegspreis",
-      "chips": [
-        "ATS",
-        "DSGVO",
-        "AI Act"
-      ],
-      "example": "Eine Agentur mit 6 Recruitern erhält pro Stelle 80–150 Lebensläufe, und die erste Sichtung kostet einen Recruiter einen halben Tag. Das System sortiert die Kandidaten nach den Anforderungen und schreibt zu jedem zwei Sätze, warum er passt oder nicht. Der Recruiter beginnt mit einer kurzen Liste und entscheidet über jeden Kandidaten selbst. Ziel ist eine erste Sichtung in einer Stunde statt in einem halben Tag."
-    },
-    {
       "name": "KI für Anwaltskanzleien",
       "audience": "Kleinere Anwaltskanzleien",
       "description": "Suche in eigenen Verträgen, Mustern und Schriftsätzen mit Quellenangabe. Zugriff nur auf Akten, für die der Nutzer berechtigt ist.",
@@ -488,7 +478,7 @@
       "Sie bleiben in Ihrem Buchhaltungsprogramm. Ein neues Werkzeug fügen wir nur hinzu, wo es wirklich Arbeit spart, und richten es selbst ein.",
       "Mandanten installieren und sortieren nichts. Sie schicken den Beleg per E-Mail oder fotografieren ihn.",
       "KI liest und schlägt vor, die Buchhaltung entscheidet. Unsichere Werte werden markiert, nie erraten.",
-      "Die Daten jedes Mandanten sind getrennt und nachvollziehbar, Verarbeitung in der EU mit Auftragsverarbeitungsvertrag."
+      "Die Daten jedes Mandanten sind getrennt und nachvollziehbar. Wir schließen mit Ihnen einen Auftragsverarbeitungsvertrag und nennen im Angebot, wo die Daten verarbeitet werden."
     ],
     "pricingTitle": "Ablauf und Preise",
     "pricing": [

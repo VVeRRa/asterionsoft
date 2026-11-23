@@ -48,7 +48,7 @@ export default function Home({ locale, t }: { locale: Locale; t: Messages }) {
         <Contact locale={locale} t={t} options={serviceOptions} service={pickedService} onServiceChange={setPickedService} />
       </main>
 
-      <SiteFooter t={t} />
+      <SiteFooter locale={locale} t={t} />
 
       <DetailModal t={t} detail={detail} onClose={closeDetail} onRequest={pickService} />
     </>

@@ -2,6 +2,7 @@
 
 import Script from "next/script";
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { legalPaths } from "./legal/paths";
 import type { Locale } from "./locales";
 import type { Messages } from "./messages";
 
@@ -16,6 +17,8 @@ declare global {
   }
 }
 
+// Turnstile sends browser and device data to Cloudflare, so the privacy policy (app/legal/privacy.ts) lists it.
+// If the key is removed, remove Cloudflare from the policy too.
 const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 /** The “normal” Turnstile widget is a fixed 300 px wide; narrower forms (small phones) get the compact size. */
@@ -127,7 +130,9 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
       </label>
       <label className="field">
         <span>{f.message}</span>
-        <textarea name="message" required minLength={10} maxLength={5000} rows={5} placeholder={f.messagePlaceholder} />
+        <textarea name="message" required minLength={10} maxLength={5000} rows={5} placeholder={f.messagePlaceholder}
+          aria-describedby="inquiry-message-hint" />
+        <small className="field-hint" id="inquiry-message-hint">{f.messageHint}</small>
       </label>
 
       {turnstileSiteKey && (
@@ -144,7 +149,7 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
         <button type="submit" className="btn btn-primary" disabled={status === "sending"}>
           {status === "sending" ? f.sending : f.submit}
         </button>
-        <small>{f.privacy}</small>
+        <small>{f.privacy}{" "}<a href={legalPaths.privacy[locale]}>{f.privacyLink}</a>.</small>
       </div>
     </form>
   );
