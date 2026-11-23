@@ -9,7 +9,7 @@
   "heroTitle": "AI, automatizace a vývoj aplikací",
   "heroAudience": "pro firmy",
   "heroLead": "Software služby trochu jinak.",
-  "heroBody": "Vyberte si konkrétní problém, který chcete vyřešit. Od analýzy procesu a automatizace na míru po vývoj webové aplikace, integraci LLM nebo firemní školení.",
+  "heroBody": "Vyberte si konkrétní problém, který chcete vyřešit. Od AI auditu a automatizace na míru po vývoj webové aplikace, integraci LLM nebo firemní školení.",
   "browse": "Prohlédnout služby ↓",
   "ownBrief": "Mám vlastní zadání",
   "catalogAlt": "Ukázka katalogu služeb",
@@ -76,12 +76,12 @@
   "faqLabel": "Časté otázky",
   "faqTitle": "Na co se klienti ptají",
   "faqIntro": "Nenašli jste odpověď? Napište nebo zavolejte na +420 604 257 866.",
-  "auditQuestion": "Kolik stojí analýza procesu?",
-  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme krátkou placenou analýzu za 5 000–10 000 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou.",
+  "auditQuestion": "Kolik stojí AI audit?",
+  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme krátký placený AI audit za 5 000–10 000 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou.",
   "assistantQuestion": "Kolik stojí AI asistent?",
   "assistantAnswer": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
   "processQuestion": "Jak probíhá spolupráce?",
-  "processAnswer": "Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátkou placenou analýzu. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.",
+  "processAnswer": "Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.",
   "contactQuestion": "S kým budu během projektu komunikovat?",
   "contactAnswer": "Přímo se seniorním vývojářem, který řešení navrhuje a staví. Mezi vámi a vývojem není žádná obchodní ani projektová mezivrstva, takže otázky se řeší rychle a bez tichých telefonů.",
   "excelQuestion": "Můžete převést firemní Excel na aplikaci?",
@@ -125,7 +125,7 @@
   "menuLabel": "Hlavní menu",
   "deliverable": "Typický výstup",
   "deliverableGoal": "úvodní konzultace zdarma a upřesnění cíle,",
-  "deliverableScope": "u složitějšího zadání krátká placená analýza,",
+  "deliverableScope": "u složitějšího zadání krátký placený AI audit,",
   "deliverableResult": "pevná cena pro jasně vymezený rozsah a předání na vašich datech,",
   "deliverableFollowUp": "volitelně paušál za dohled a provoz.",
   "requestService": "Poptat tuto službu",
@@ -133,7 +133,7 @@
   "industriesNav": "Pro obory",
   "industriesLabel": "Řešení pro obory",
   "industriesTitle": "Konkrétní scénáře pro váš obor",
-  "industriesBody": "Začínáme úvodní konzultací zdarma. Pak dostanete pevnou cenu pro jasně vymezený rozsah, u složitějšího zadání po krátké placené analýze. Čas před nasazením a po něm změříme, aby úspora nebyla jen odhad.",
+  "industriesBody": "Začínáme úvodní konzultací zdarma. Pak dostanete pevnou cenu pro jasně vymezený rozsah, u složitějšího zadání po krátkém placeném AI auditu. Čas před nasazením a po něm změříme, aby úspora nebyla jen odhad.",
   "audienceLabel": "Pro koho",
   "scopeLabel": "Co obsahuje",
   "exampleLink": "Modelový příklad →",
@@ -169,10 +169,10 @@
   "aiActAnswer": "Povinnost zajistit dostatečnou AI gramotnost lidí, kteří s AI pracují, platí od února 2025 pro firmy, které AI používají. Pomůže s ní školení AI gramotnosti. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.",
   "services": [
     {
-      "name": "Analýza procesu",
+      "name": "AI audit procesů",
       "price": "5 000–10 000 Kč",
       "description": "Zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme automatizaci s pevnou cenou. U jednoduchého zadání stačí konzultace zdarma.",
-      "title": "Analýza procesu",
+      "title": "AI audit procesů",
       "chips": [
         "konzultace zdarma",
         "pevná nabídka"
@@ -498,7 +498,7 @@
         "body": "Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete."
       },
       {
-        "title": "Analýza procesu",
+        "title": "AI audit procesů",
         "price": "5 000–10 000 Kč",
         "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. U jednoduchého rovnou nabídka."
       },

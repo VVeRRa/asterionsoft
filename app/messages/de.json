@@ -9,7 +9,7 @@
   "heroTitle": "KI, Automatisierung und Anwendungsentwicklung",
   "heroAudience": "für Unternehmen",
   "heroLead": "Software-Dienstleistungen für Ihren Bedarf.",
-  "heroBody": "Sagen Sie uns, was Sie lösen möchten. Wir bieten Prozessanalysen, individuelle Automatisierung, Webanwendungen, LLM-Integrationen und Schulungen.",
+  "heroBody": "Sagen Sie uns, was Sie lösen möchten. Wir bieten KI-Audits, individuelle Automatisierung, Webanwendungen, LLM-Integrationen und Schulungen.",
   "browse": "Leistungen ansehen ↓",
   "ownBrief": "Projekt besprechen",
   "catalogAlt": "Auszug aus dem Leistungskatalog",
@@ -76,12 +76,12 @@
   "faqLabel": "Häufig gestellte Fragen",
   "faqTitle": "Was Kunden uns fragen",
   "faqIntro": "Noch Fragen? Schreiben Sie uns oder rufen Sie uns unter +420 604 257 866 an.",
-  "auditQuestion": "Was kostet eine Prozessanalyse?",
-  "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst eine kurze bezahlte Analyse für 5.000–10.000 CZK: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Lösung zum Festpreis vor.",
+  "auditQuestion": "Was kostet ein KI-Audit?",
+  "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst ein kurzes bezahltes KI-Audit für 5.000–10.000 CZK: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Lösung zum Festpreis vor.",
   "assistantQuestion": "Was kostet ein KI-Assistent?",
   "assistantAnswer": "Ein einfacher Assistent, der nur aus den Unterlagen antwortet, die Sie ihm geben, kostet ab 9.000 CZK, ob intern für Ihr Team oder auf der Website für Besucher. Ein erweiterter interner Assistent über Firmendokumentation und Daten hat ein Pilotprojekt ab 35.000 CZK. Der Preis hängt vor allem von Anzahl und Art der Datenquellen, Integrationen und Zugriffsrechten ab. Er antwortet auf Basis Ihrer Dokumentation und nennt seine Quellen.",
   "processQuestion": "Wie läuft die Zusammenarbeit ab?",
-  "processAnswer": "Wir beginnen mit einem kostenlosen Erstgespräch. Eine einfache Automatisierung bieten wir direkt zum Festpreis an, bei einer komplexeren machen wir zuerst eine kurze bezahlte Analyse. Jedes Angebot nennt, was Sie erhalten, was nicht enthalten ist und wie wir prüfen, dass die Automatisierung funktioniert. Nach der Übergabe können Sie eine Pauschale für Überwachung und Betrieb wählen.",
+  "processAnswer": "Wir beginnen mit einem kostenlosen Erstgespräch. Eine einfache Automatisierung bieten wir direkt zum Festpreis an, bei einer komplexeren machen wir zuerst ein kurzes bezahltes KI-Audit. Jedes Angebot nennt, was Sie erhalten, was nicht enthalten ist und wie wir prüfen, dass die Automatisierung funktioniert. Nach der Übergabe können Sie eine Pauschale für Überwachung und Betrieb wählen.",
   "contactQuestion": "Wer ist während des Projekts mein Ansprechpartner?",
   "contactAnswer": "Sie sprechen direkt mit dem erfahrenen Entwickler, der Ihre Lösung entwirft und umsetzt. So lassen sich Fragen schnell klären und Details direkt abstimmen.",
   "excelQuestion": "Können Sie unsere Excel-Tabelle in eine Anwendung umwandeln?",
@@ -125,7 +125,7 @@
   "menuLabel": "Hauptmenü",
   "deliverable": "Typischer Ablauf",
   "deliverableGoal": "ein kostenloses Erstgespräch zur Klärung Ihrer Ziele,",
-  "deliverableScope": "bei komplexeren Vorhaben eine kurze bezahlte Analyse,",
+  "deliverableScope": "bei komplexeren Vorhaben ein kurzes bezahltes KI-Audit,",
   "deliverableResult": "ein Festpreis für einen klar abgegrenzten Umfang und die Übergabe auf Ihren Daten,",
   "deliverableFollowUp": "auf Wunsch eine Pauschale für Überwachung und Betrieb.",
   "requestService": "Diese Leistung anfragen",
@@ -133,7 +133,7 @@
   "industriesNav": "Für Branchen",
   "industriesLabel": "Branchenlösungen",
   "industriesTitle": "Konkrete Szenarien für Ihre Branche",
-  "industriesBody": "Wir beginnen mit einem kostenlosen Erstgespräch. Danach erhalten Sie einen Festpreis für einen klar abgegrenzten Umfang, bei komplexeren Vorhaben nach einer kurzen bezahlten Analyse. Wir messen den Zeitaufwand vorher und nachher, damit die Einsparung keine bloße Schätzung bleibt.",
+  "industriesBody": "Wir beginnen mit einem kostenlosen Erstgespräch. Danach erhalten Sie einen Festpreis für einen klar abgegrenzten Umfang, bei komplexeren Vorhaben nach einem kurzen bezahlten KI-Audit. Wir messen den Zeitaufwand vorher und nachher, damit die Einsparung keine bloße Schätzung bleibt.",
   "audienceLabel": "Für wen",
   "scopeLabel": "Was enthalten ist",
   "exampleLink": "Modellbeispiel →",
@@ -169,10 +169,10 @@
   "aiActAnswer": "Seit Februar 2025 müssen Unternehmen, die KI einsetzen, für ausreichende KI-Kompetenz der Menschen sorgen, die damit arbeiten. Dabei hilft eine Schulung zur KI-Kompetenz. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
   "services": [
     {
-      "name": "Prozessanalyse",
+      "name": "KI-Prozessaudit",
       "price": "5.000–10.000 CZK",
       "description": "Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Automatisierung zum Festpreis vor. Bei einfachen Vorhaben reicht ein kostenloses Gespräch.",
-      "title": "Prozessanalyse",
+      "title": "KI-Prozessaudit",
       "chips": [
         "kostenloses Erstgespräch",
         "Festpreisangebot"
@@ -498,7 +498,7 @@
         "body": "Wir finden den Ablauf, der Sie am meisten unnötige Zeit kostet, und prüfen, mit welchem Programm Sie arbeiten."
       },
       {
-        "title": "Prozessanalyse",
+        "title": "KI-Prozessaudit",
         "price": "5.000–10.000 CZK",
         "body": "Nur bei komplexeren Vorhaben, wenn Anbindungen geprüft oder der Ablauf erfasst werden muss. Bei einfachen gibt es direkt ein Angebot."
       },

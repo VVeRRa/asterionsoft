@@ -9,7 +9,7 @@
   "heroTitle": "AI, automation and application development",
   "heroAudience": "for businesses",
   "heroLead": "Software services built around your needs.",
-  "heroBody": "Tell us what you want to solve. We offer process analysis, custom automation, custom web apps, LLM integration and team training.",
+  "heroBody": "Tell us what you want to solve. We offer AI audits, custom automation, custom web apps, LLM integration and team training.",
   "browse": "Explore services ↓",
   "ownBrief": "Discuss my project",
   "catalogAlt": "Service catalogue preview",
@@ -76,12 +76,12 @@
   "faqLabel": "Frequently asked questions",
   "faqTitle": "What clients ask us",
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
-  "auditQuestion": "How much does a process analysis cost?",
-  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do a short paid analysis for CZK 5,000–10,000: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution.",
+  "auditQuestion": "How much does an AI audit cost?",
+  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do a short paid AI audit for CZK 5,000–10,000: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution.",
   "assistantQuestion": "How much does an AI assistant cost?",
   "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
-  "processAnswer": "We start with a free initial consultation. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid analysis. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
+  "processAnswer": "We start with a free initial consultation. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid AI audit. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
   "contactQuestion": "Who will I talk to during the project?",
   "contactAnswer": "You speak directly with the senior developer who designs and builds your solution, so questions can be resolved quickly and details stay clear.",
   "excelQuestion": "Can you turn our Excel spreadsheet into an app?",
@@ -125,7 +125,7 @@
   "menuLabel": "Main menu",
   "deliverable": "What to expect",
   "deliverableGoal": "a free initial consultation to clarify your goals,",
-  "deliverableScope": "a short paid analysis for more complex projects,",
+  "deliverableScope": "a short paid AI audit for more complex projects,",
   "deliverableResult": "a fixed price for a clearly defined scope and handover on your data,",
   "deliverableFollowUp": "an optional flat fee for monitoring and operation.",
   "requestService": "Enquire about this service",
@@ -133,7 +133,7 @@
   "industriesNav": "By Industry",
   "industriesLabel": "Industry solutions",
   "industriesTitle": "Concrete use cases for your industry",
-  "industriesBody": "We start with a free initial consultation. You then get a fixed price for a clearly defined scope, after a short paid analysis for more complex projects. We measure the time before and after so the savings aren’t just an estimate.",
+  "industriesBody": "We start with a free initial consultation. You then get a fixed price for a clearly defined scope, after a short paid AI audit for more complex projects. We measure the time before and after so the savings aren’t just an estimate.",
   "audienceLabel": "Who it’s for",
   "scopeLabel": "What’s included",
   "exampleLink": "See example →",
@@ -169,10 +169,10 @@
   "aiActAnswer": "Since February 2025, companies that use AI must ensure sufficient AI literacy among the people who work with it. AI literacy training helps you meet this duty. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
   "services": [
     {
-      "name": "Process analysis",
+      "name": "AI process audit",
       "price": "CZK 5,000–10,000",
       "description": "We map your current process, tools and volumes, check the integration options and propose a fixed-price automation. For simple projects, a free consultation is enough.",
-      "title": "Process analysis",
+      "title": "AI process audit",
       "chips": [
         "free consultation",
         "fixed-price offer"
@@ -498,7 +498,7 @@
         "body": "We find the process that costs you the most unnecessary time and check which software you use."
       },
       {
-        "title": "Process analysis",
+        "title": "AI process audit",
         "price": "CZK 5,000–10,000",
         "body": "Only for more complex projects, when integrations need checking or the process needs mapping. Simple ones get an offer straight away."
       },

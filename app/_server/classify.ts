@@ -28,7 +28,7 @@ export type Classification = z.infer<typeof ClassificationSchema> & { classified
 
 /** `formValue` values from services.json and trainings → category. */
 const categoryByService: Record<string, (typeof serviceCategories)[number]> = {
-  "Analýza procesu": "ai_audit",
+  "AI audit procesů": "ai_audit",
   "Automatizace firemního procesu": "process_automation",
   "Interní AI asistent": "ai_assistant",
   "Jednoduchý interní AI asistent": "ai_assistant",
@@ -82,7 +82,7 @@ export function classifyByRules(inquiry: Inquiry): Classification {
   };
 }
 
-const systemPrompt = `Třídíš poptávky z webu Asterion Software, malého českého studia, které dělá analýzy procesů, automatizace na míru, interní AI asistenty, webové aplikace na míru, převod Excelu na aplikace, Java/Spring konzultace a firemní školení AI.
+const systemPrompt = `Třídíš poptávky z webu Asterion Software, malého českého studia, které dělá AI audity procesů, automatizace na míru, interní AI asistenty, webové aplikace na míru, převod Excelu na aplikace, Java/Spring konzultace a firemní školení AI.
 
 Z poptávky urči:
 - service_category: službu, o kterou zákazník nejspíš stojí ("other", pokud nesedí žádná),
