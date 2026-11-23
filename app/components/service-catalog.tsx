@@ -29,7 +29,7 @@ export default function ServiceCatalog({ t, services, filter, onFilterChange, on
         <div className="services-grid" id="servicesGrid">
           {visible.map((service, index) => (
             <OfferCard key={service.formValue} index={index} title={service.title} description={service.description}
-              chips={service.chips} priceLabel={service.priceLabel} price={service.price}
+              chips={service.chips} priceLabel={service.priceLabel} price={service.price} vatNote={t.vatExcluded}
               linkLabel={t.details} onOpen={() => onOpen(service)}
               top={<img className="service-icon" src={service.icon} width="96" height="96" alt="" loading="lazy" decoding="async" />} />
           ))}

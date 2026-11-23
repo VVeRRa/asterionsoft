@@ -23,7 +23,7 @@ export default function Industries({ locale, t, industries, onOpen, onRequest }:
           {industries.map((industry, index) => (
             <OfferCard key={industry.formValue} index={index} className="industry-card" title={industry.name}
               description={industry.description} chips={industry.chips} priceLabel={industry.priceLabel}
-              price={industry.price} linkLabel={t.exampleLink} onOpen={() => onOpen(industry)}
+              price={industry.price} vatNote={t.vatExcluded} linkLabel={t.exampleLink} onOpen={() => onOpen(industry)}
               top={<span className="industry-audience">{industry.audience}</span>} />
           ))}
         </div>

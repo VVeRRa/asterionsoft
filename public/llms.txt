@@ -6,7 +6,7 @@ Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Tec
 
 ## Služby
 
-Ceny jsou orientační, závazná je cena v nabídce. Finální cena závisí na rozsahu.
+Ceny jsou orientační a bez DPH, závazná je cena v nabídce. Finální cena závisí na rozsahu.
 
 - [AI audit firmy](https://asterionsoft.cz/#sluzby): Analýza procesů, kde AI nebo automatizace reálně šetří čas a náklady. Délka 1–2 dny, výstup report a roadmapa. Od 14 900 Kč.
 - [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Workflow plné e‑mailů, Excelů a ručního kopírování převedené na automatizovaný proces (integrace, API, LLM). Cena individuálně podle rozsahu.

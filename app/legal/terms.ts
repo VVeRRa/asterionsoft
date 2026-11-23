@@ -26,7 +26,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "3. Ceny a platby" },
       {
         type: "p",
-        text: "Ceny „od“ na webu jsou orientační. Závazná je cena v nabídce, která také uvádí, zda se k ní připočítává DPH. Konzultace a balíčky konzultací se platí předem na fakturu se splatností 7 dní. Termín je potvrzen až po připsání platby. U implementací platí platební kalendář z nabídky, obvykle záloha a doplatek po předání.",
+        text: "Ceny jsou uvedeny bez DPH, DPH připočteme podle platných předpisů. Ceny „od“ na webu jsou orientační, závazná je cena v nabídce. Konzultace a balíčky konzultací se platí předem na fakturu se splatností 7 dní. Termín je potvrzen až po připsání platby. U implementací platí platební kalendář z nabídky, obvykle záloha a doplatek po předání.",
       },
 
       { type: "h2", text: "4. AI audit procesů" },
@@ -121,7 +121,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "3. Prices and payment" },
       {
         type: "p",
-        text: "Prices marked “from” on the website are indicative. The binding price is the one in the offer, which also states whether VAT is added to it. Consultations and consultation packages are paid in advance by invoice due within 7 days. A date is confirmed once the payment is received. For implementations, the payment schedule in the offer applies, usually a deposit and the balance after handover.",
+        text: "Prices are stated excluding VAT, which we add in accordance with applicable law. Prices marked “from” on the website are indicative; the binding price is the one in the offer. Consultations and consultation packages are paid in advance by invoice due within 7 days. A date is confirmed once the payment is received. For implementations, the payment schedule in the offer applies, usually a deposit and the balance after handover.",
       },
 
       { type: "h2", text: "4. AI process audit" },
@@ -216,7 +216,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "3. Preise und Zahlung" },
       {
         type: "p",
-        text: "„Ab“-Preise auf der Website sind Richtwerte. Verbindlich ist der Preis im Angebot, das auch angibt, ob Umsatzsteuer hinzukommt. Beratungen und Beratungspakete werden im Voraus per Rechnung mit einem Zahlungsziel von 7 Tagen bezahlt. Ein Termin ist erst nach Zahlungseingang bestätigt. Bei Umsetzungen gilt der Zahlungsplan aus dem Angebot, in der Regel eine Anzahlung und die Restzahlung nach Übergabe.",
+        text: "Die Preise verstehen sich zuzüglich Umsatzsteuer nach den geltenden Vorschriften. „Ab“-Preise auf der Website sind Richtwerte, verbindlich ist der Preis im Angebot. Beratungen und Beratungspakete werden im Voraus per Rechnung mit einem Zahlungsziel von 7 Tagen bezahlt. Ein Termin ist erst nach Zahlungseingang bestätigt. Bei Umsetzungen gilt der Zahlungsplan aus dem Angebot, in der Regel eine Anzahlung und die Restzahlung nach Übergabe.",
       },
 
       { type: "h2", text: "4. KI-Prozessaudit" },
