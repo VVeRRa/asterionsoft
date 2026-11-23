@@ -1,4 +1,5 @@
 {
+  "accountingNav": "Für Kanzleien",
   "servicesNav": "Leistungen",
   "trainingNav": "KI-Schulungen",
   "references": "Referenzen",
@@ -276,25 +277,6 @@
   ],
   "industries": [
     {
-      "name": "Anfrage → Auftragskarte",
-      "audience": "Auftragsfertigung und CNC",
-      "description": "Anfragen kommen per E-Mail mit Zeichnungen als PDF und STEP. Die KI erstellt daraus eine Auftragskarte, die der Techniker nur noch prüft und kalkuliert.",
-      "scope": [
-        "Material, Stückzahl, Termin und Anhangsliste",
-        "fehlende Angaben und Vorschlag für eine Rückfrage",
-        "Suche nach ähnlichen früheren Kalkulationen",
-        "Übergabe ins ERP"
-      ],
-      "price": "ab 39.000 CZK",
-      "priceLabel": "Pilotprojekt",
-      "chips": [
-        "Zeichnungen",
-        "ERP",
-        "Pilot auf Ihren Daten"
-      ],
-      "example": "Eine Werkstatt mit 15 Mitarbeitenden erhält rund 60 Anfragen im Monat, jede mit E-Mail und mehreren Zeichnungen. Der Techniker braucht heute etwa 30 Minuten, um die Unterlagen aufzubereiten, und bei einem Drittel muss er beim Kunden nachfragen. Nach der Einführung erhält er eine fertige Karte mit einer Liste fehlender Angaben und Verweisen auf ähnliche frühere Aufträge. Ziel des Pilotprojekts ist, die Vorbereitung auf 10 Minuten zu verkürzen, also rund 20 Stunden im Monat zu sparen und Kunden schneller zu antworten."
-    },
-    {
       "name": "Belege unter Kontrolle",
       "audience": "Buchhaltungs- und Steuerberatungskanzleien",
       "description": "Die Automatisierung gleicht den Kontoauszug mit den Belegen der Mandanten ab und erstellt eine Liste der fehlenden Belege samt Entwurf einer Erinnerung. Die Buchhaltung gibt sie nur frei und bleibt in ihrem Buchhaltungsprogramm.",
@@ -312,6 +294,25 @@
         "Ihr Buchhaltungsprogramm"
       ],
       "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Die Automatisierung gleicht jede Woche die Bewegungen auf den Konten der Mandanten mit den Belegen im Buchhaltungsprogramm ab. Die Buchhaltung erhält für jeden Mandanten eine Liste fehlender Belege und einen fertigen E-Mail-Entwurf, den sie nur freigibt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
+    },
+    {
+      "name": "Anfrage → Auftragskarte",
+      "audience": "Auftragsfertigung und CNC",
+      "description": "Anfragen kommen per E-Mail mit Zeichnungen als PDF und STEP. Die KI erstellt daraus eine Auftragskarte, die der Techniker nur noch prüft und kalkuliert.",
+      "scope": [
+        "Material, Stückzahl, Termin und Anhangsliste",
+        "fehlende Angaben und Vorschlag für eine Rückfrage",
+        "Suche nach ähnlichen früheren Kalkulationen",
+        "Übergabe ins ERP"
+      ],
+      "price": "ab 39.000 CZK",
+      "priceLabel": "Pilotprojekt",
+      "chips": [
+        "Zeichnungen",
+        "ERP",
+        "Pilot auf Ihren Daten"
+      ],
+      "example": "Eine Werkstatt mit 15 Mitarbeitenden erhält rund 60 Anfragen im Monat, jede mit E-Mail und mehreren Zeichnungen. Der Techniker braucht heute etwa 30 Minuten, um die Unterlagen aufzubereiten, und bei einem Drittel muss er beim Kunden nachfragen. Nach der Einführung erhält er eine fertige Karte mit einer Liste fehlender Angaben und Verweisen auf ähnliche frühere Aufträge. Ziel des Pilotprojekts ist, die Vorbereitung auf 10 Minuten zu verkürzen, also rund 20 Stunden im Monat zu sparen und Kunden schneller zu antworten."
     },
     {
       "name": "Schadensmeldungen im Griff",
@@ -427,5 +428,81 @@
       ],
       "example": "Ein Onlineshop mit 2.000 Produkten möchte in der Slowakei und in Polen verkaufen. Manuelle Beschreibungen und Übersetzungen würden Hunderte Arbeitsstunden oder eine teure Agentur bedeuten. Die Sammelgenerierung erstellt Beschreibungen und Übersetzungen in einheitlichem Ton, und das Team prüft sie in Chargen. Ziel ist der komplette Katalog in drei Sprachen innerhalb weniger Wochen."
     }
-  ]
+  ],
+  "accounting": {
+    "label": "Buchhaltungs- und Steuerberatungskanzleien",
+    "title": "Belege unter Kontrolle",
+    "intro": "Vor dem Abschluss kostet nicht das Buchen die meiste Zeit, sondern das Suchen fehlender Belege und das Erinnern der Mandanten. Diese Arbeit übernimmt die Automatisierung, und Sie bleiben in Ihrem Buchhaltungsprogramm.",
+    "problemTitle": "Wo heute die Zeit verloren geht",
+    "problems": [
+      "manueller Abgleich des Kontoauszugs mit den Belegen, Mandant für Mandant",
+      "E-Mails und Anrufe an Mandanten, was noch fehlt, und dann noch einmal",
+      "Belege verstreut in E-Mails, Fotos und gemeinsamen Ordnern",
+      "der Überblick, wer schon geliefert hat, nur im Kopf oder in Excel",
+      "der Abschluss zieht sich, weil die letzten Belege in letzter Minute kommen"
+    ],
+    "stepsTitle": "So funktioniert es",
+    "steps": [
+      {
+        "title": "Wir laden die Kontobewegungen",
+        "body": "Aus dem Kontoauszug oder über eine Bankanbindung, jede Woche oder vor dem Abschluss."
+      },
+      {
+        "title": "Wir gleichen sie mit den Belegen ab",
+        "body": "Im Buchhaltungsprogramm oder in einem Werkzeug, das Sie schon nutzen."
+      },
+      {
+        "title": "Wir erstellen Liste und Erinnerung",
+        "body": "Für jeden Mandanten eine genaue Liste fehlender Belege und einen E-Mail-Entwurf."
+      },
+      {
+        "title": "Die Buchhaltung gibt frei",
+        "body": "Mit einem Klick. Ohne Freigabe geht nichts an den Mandanten."
+      }
+    ],
+    "principlesTitle": "Was gleich bleibt",
+    "principles": [
+      "Sie bleiben in Ihrem Buchhaltungsprogramm. Ein neues Werkzeug fügen wir nur hinzu, wo es wirklich Arbeit spart, und richten es selbst ein.",
+      "Mandanten installieren und sortieren nichts. Sie schicken den Beleg per E-Mail oder fotografieren ihn.",
+      "KI liest und schlägt vor, die Buchhaltung entscheidet. Unsichere Werte werden markiert, nie erraten.",
+      "Die Daten jedes Mandanten sind getrennt und nachvollziehbar, Verarbeitung in der EU mit Auftragsverarbeitungsvertrag."
+    ],
+    "pricingTitle": "Ablauf und Preise",
+    "pricing": [
+      {
+        "title": "Erstgespräch",
+        "price": "kostenlos",
+        "body": "Wir finden den Ablauf, der Sie am meisten unnötige Zeit kostet, und prüfen, mit welchem Programm Sie arbeiten."
+      },
+      {
+        "title": "Prozessanalyse",
+        "price": "5.000–10.000 CZK",
+        "body": "Nur bei komplexeren Vorhaben, wenn Anbindungen geprüft oder der Ablauf erfasst werden muss. Bei einfachen gibt es direkt ein Angebot."
+      },
+      {
+        "title": "Umsetzung",
+        "price": "ab 35.000 CZK",
+        "body": "Festpreis für einen klar abgegrenzten Umfang. Das Angebot nennt, was Sie erhalten, was nicht enthalten ist und wie wir die Funktion prüfen."
+      },
+      {
+        "title": "Betrieb",
+        "price": "ab 1.000 CZK/Monat",
+        "body": "Optional. Wir prüfen, dass die Automatisierung läuft, und beheben Fehler auf unserer Seite. Änderungen kalkulieren wir separat."
+      }
+    ],
+    "firstOrder": "Das erste Projekt ist bewusst klein: ein Ablauf, ein Buchhaltungsprogramm und eine kleinere Gruppe von Mandanten. Den Zeitaufwand für Erinnerungen messen wir vorher und nachher, damit die Einsparung keine bloße Schätzung bleibt.",
+    "moreTitle": "Was wir in Ihrer Kanzlei noch automatisieren",
+    "moreIntro": "Jede Kanzlei arbeitet anders. Im Erstgespräch fragen wir nach jeder manuellen Arbeit, nicht nur nach Erinnerungen.",
+    "more": [
+      "Sammeln und Auslesen von Belegen aus E-Mails und Fotos",
+      "Jahreserklärungen und Unterlagen dafür",
+      "Prüfungen vor der Umsatzsteuermeldung (unzuverlässige Zahler, veröffentlichte Konten)",
+      "Import ins Buchhaltungsprogramm, auch ohne fertigen Konnektor",
+      "Fristenkalender und Erinnerungen an Mandanten",
+      "Lohnunterlagen von Mandanten",
+      "Kanzleiübersicht und Stand der Abschlüsse"
+    ],
+    "cta": "Kostenloses Erstgespräch vereinbaren",
+    "example": "Beispiel einer Kanzlei ansehen"
+  }
 }

@@ -1,4 +1,5 @@
 {
+  "accountingNav": "Pro účetní",
   "servicesNav": "Služby",
   "trainingNav": "Školení AI",
   "references": "Reference",
@@ -276,25 +277,6 @@
   ],
   "industries": [
     {
-      "name": "Poptávka → karta zakázky",
-      "audience": "Zakázková výroba a CNC",
-      "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení.",
-      "scope": [
-        "materiál, počet kusů, termín a seznam příloh",
-        "chybějící údaje a návrh doplňujícího dotazu",
-        "dohledání podobných historických kalkulací",
-        "předání do ERP"
-      ],
-      "price": "od 39 000 Kč",
-      "priceLabel": "pilot",
-      "chips": [
-        "výkresy",
-        "ERP",
-        "pilot na datech"
-      ],
-      "example": "Dílna s 15 lidmi dostává asi 60 poptávek měsíčně, každou s e‑mailem a několika výkresy. Technik dnes stráví přípravou podkladů zhruba 30 minut a u třetiny se musí zákazníka doptávat. Po nasazení dostane hotovou kartu se seznamem chybějících údajů a odkazem na podobné starší zakázky. Cíl pilotu je zkrátit přípravu na 10 minut, tedy ušetřit kolem 20 hodin měsíčně a odpovídat zákazníkům dřív."
-    },
-    {
       "name": "Podklady pod kontrolou",
       "audience": "Účetní a daňové kanceláře",
       "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu.",
@@ -312,6 +294,25 @@
         "váš účetní program"
       ],
       "example": "Kancelář s 8 účetními a 120 klienty tráví před každou měsíční uzávěrkou asi 2 dny dohledáváním chybějících dokladů a psaním upomínek. Automatizace každý týden porovná pohyby na účtech klientů s doklady v účetním programu. Účetní dostane pro každého klienta seznam chybějících dokladů a hotový návrh e‑mailu, který jen schválí. Cíl je dostat urgence ze 2 dnů na půl dne měsíčně."
+    },
+    {
+      "name": "Poptávka → karta zakázky",
+      "audience": "Zakázková výroba a CNC",
+      "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení.",
+      "scope": [
+        "materiál, počet kusů, termín a seznam příloh",
+        "chybějící údaje a návrh doplňujícího dotazu",
+        "dohledání podobných historických kalkulací",
+        "předání do ERP"
+      ],
+      "price": "od 39 000 Kč",
+      "priceLabel": "pilot",
+      "chips": [
+        "výkresy",
+        "ERP",
+        "pilot na datech"
+      ],
+      "example": "Dílna s 15 lidmi dostává asi 60 poptávek měsíčně, každou s e‑mailem a několika výkresy. Technik dnes stráví přípravou podkladů zhruba 30 minut a u třetiny se musí zákazníka doptávat. Po nasazení dostane hotovou kartu se seznamem chybějících údajů a odkazem na podobné starší zakázky. Cíl pilotu je zkrátit přípravu na 10 minut, tedy ušetřit kolem 20 hodin měsíčně a odpovídat zákazníkům dřív."
     },
     {
       "name": "Hlášení závad pod kontrolou",
@@ -427,5 +428,81 @@
       ],
       "example": "E‑shop se 2 000 produkty chce začít prodávat na Slovensku a v Polsku. Ruční popisky a překlady by znamenaly stovky hodin práce nebo drahou agenturu. Hromadné generování připraví popisky a překlady v jednotném tónu a tým je kontroluje po dávkách. Cíl je mít celý katalog ve třech jazycích během několika týdnů."
     }
-  ]
+  ],
+  "accounting": {
+    "label": "Účetní a daňové kanceláře",
+    "title": "Podklady pod kontrolou",
+    "intro": "Před uzávěrkou nejvíc času nespotřebuje účtování, ale dohledávání chybějících dokladů a urgování klientů. Tuhle práci převezme automatizace a vy zůstanete ve svém účetním programu.",
+    "problemTitle": "Kde dnes mizí čas",
+    "problems": [
+      "ruční porovnávání bankovního výpisu s doklady, klient po klientovi",
+      "e‑maily a telefonáty klientům, co ještě chybí, a pak znovu",
+      "doklady roztroušené v e‑mailech, fotkách a sdílených složkách",
+      "přehled, kdo už poslal a kdo ne, jen v hlavě nebo v Excelu",
+      "uzávěrka se natahuje, protože poslední doklady chodí na poslední chvíli"
+    ],
+    "stepsTitle": "Jak to funguje",
+    "steps": [
+      {
+        "title": "Načteme pohyby z banky",
+        "body": "Z výpisu nebo napojení banky, každý týden nebo před uzávěrkou."
+      },
+      {
+        "title": "Porovnáme je s doklady",
+        "body": "V účetním programu nebo v nástroji, který už používáte."
+      },
+      {
+        "title": "Připravíme seznam a urgenci",
+        "body": "Pro každého klienta přesný seznam chybějících dokladů a návrh e‑mailu."
+      },
+      {
+        "title": "Účetní schválí",
+        "body": "Jedním kliknutím. Bez schválení účetní se klientovi nic neodešle."
+      }
+    ],
+    "principlesTitle": "Co se nemění",
+    "principles": [
+      "Zůstáváte ve svém účetním programu. Nový nástroj přidáme jen tam, kde práci opravdu ubere, a nastavíme ho my.",
+      "Klient nic neinstaluje ani netřídí. Doklad jen pošle e‑mailem nebo vyfotí.",
+      "AI čte a navrhuje, rozhoduje účetní. Nejisté hodnoty se označí, nikdy se nedomýšlejí.",
+      "Data každého klienta jsou oddělená a dohledatelná, zpracování v EU a se smlouvou o zpracování osobních údajů."
+    ],
+    "pricingTitle": "Jak spolupráce probíhá a kolik stojí",
+    "pricing": [
+      {
+        "title": "Konzultace",
+        "price": "zdarma",
+        "body": "Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete."
+      },
+      {
+        "title": "Analýza procesu",
+        "price": "5 000–10 000 Kč",
+        "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. U jednoduchého rovnou nabídka."
+      },
+      {
+        "title": "Implementace",
+        "price": "od 35 000 Kč",
+        "body": "Pevná cena pro jasně vymezený rozsah. Nabídka říká, co dostanete, co v ceně není a jak ověříme, že vše funguje."
+      },
+      {
+        "title": "Provoz",
+        "price": "od 1 000 Kč/měs.",
+        "body": "Volitelně. Hlídáme, že automatizace běží, a opravíme chybu na naší straně. Úpravy naceníme zvlášť."
+      }
+    ],
+    "firstOrder": "První zakázka je záměrně malá: jeden proces, jeden účetní program a menší skupina klientů. Čas strávený urgencemi změříme před nasazením a po něm, aby úspora nebyla jen odhad.",
+    "moreTitle": "Co dalšího v kanceláři zautomatizujeme",
+    "moreIntro": "Každá kancelář pracuje jinak. Na konzultaci se ptáme na jakoukoli ruční práci, nejen na urgence.",
+    "more": [
+      "sběr a vytěžení dokladů z e‑mailu a fotek",
+      "roční agenda a podklady k přiznání",
+      "kontroly před podáním DPH (nespolehliví plátci, zveřejněné účty)",
+      "import do účetního programu i bez hotového konektoru",
+      "kalendář povinností a připomínky klientům",
+      "mzdové podklady od klientů",
+      "přehled kanceláře a stav uzávěrek"
+    ],
+    "cta": "Domluvit konzultaci zdarma",
+    "example": "Modelový příklad kanceláře"
+  }
 }

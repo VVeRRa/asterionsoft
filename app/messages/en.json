@@ -1,4 +1,5 @@
 {
+  "accountingNav": "For accountants",
   "servicesNav": "Services",
   "trainingNav": "AI Training",
   "references": "Our Work",
@@ -276,25 +277,6 @@
   ],
   "industries": [
     {
-      "name": "Enquiry → job card",
-      "audience": "Contract manufacturing and CNC",
-      "description": "Enquiries arrive by email with drawings in PDF and STEP. AI turns them into a job card, and the engineer just reviews and prices it.",
-      "scope": [
-        "material, quantity, deadline and list of attachments",
-        "missing details and a draft follow-up question",
-        "lookup of similar past quotes",
-        "handover to the ERP"
-      ],
-      "price": "from CZK 39,000",
-      "priceLabel": "pilot",
-      "chips": [
-        "drawings",
-        "ERP",
-        "pilot on your data"
-      ],
-      "example": "A 15-person workshop receives about 60 enquiries a month, each with an email and several drawings. Today an engineer spends roughly 30 minutes preparing each one and has to follow up with the customer on a third of them. After rollout, they get a ready job card with a list of missing details and links to similar past jobs. The pilot target is to cut preparation to 10 minutes, saving around 20 hours a month and getting back to customers sooner."
-    },
-    {
       "name": "Client documents under control",
       "audience": "Accounting and tax firms",
       "description": "The automation compares bank statements with client documents and prepares a list of what is missing, with a draft reminder. The accountant just approves it and keeps working in their accounting software.",
@@ -312,6 +294,25 @@
         "your accounting software"
       ],
       "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. Every week, the automation compares transactions on the clients’ accounts with documents in the accounting software. The accountant gets a list of missing documents for each client and a ready draft email to approve. The goal is to cut chasing from 2 days to half a day a month."
+    },
+    {
+      "name": "Enquiry → job card",
+      "audience": "Contract manufacturing and CNC",
+      "description": "Enquiries arrive by email with drawings in PDF and STEP. AI turns them into a job card, and the engineer just reviews and prices it.",
+      "scope": [
+        "material, quantity, deadline and list of attachments",
+        "missing details and a draft follow-up question",
+        "lookup of similar past quotes",
+        "handover to the ERP"
+      ],
+      "price": "from CZK 39,000",
+      "priceLabel": "pilot",
+      "chips": [
+        "drawings",
+        "ERP",
+        "pilot on your data"
+      ],
+      "example": "A 15-person workshop receives about 60 enquiries a month, each with an email and several drawings. Today an engineer spends roughly 30 minutes preparing each one and has to follow up with the customer on a third of them. After rollout, they get a ready job card with a list of missing details and links to similar past jobs. The pilot target is to cut preparation to 10 minutes, saving around 20 hours a month and getting back to customers sooner."
     },
     {
       "name": "Fault reports under control",
@@ -427,5 +428,81 @@
       ],
       "example": "An e‑shop with 2,000 products wants to start selling in Slovakia and Poland. Writing descriptions and translations by hand would mean hundreds of hours of work or an expensive agency. Bulk generation produces descriptions and translations in a consistent tone, and the team reviews them in batches. The goal is to have the entire catalogue in three languages within a few weeks."
     }
-  ]
+  ],
+  "accounting": {
+    "label": "Accounting and tax firms",
+    "title": "Client documents under control",
+    "intro": "Before month-end, most of the time goes not into bookkeeping but into tracking down missing documents and chasing clients. Automation takes over that work while you keep using your accounting software.",
+    "problemTitle": "Where the time goes today",
+    "problems": [
+      "manually matching bank statements against documents, client by client",
+      "emails and phone calls to clients about what is still missing, then again",
+      "documents scattered across emails, photos and shared folders",
+      "keeping track of who has sent what only in your head or in Excel",
+      "the close drags on because the last documents arrive at the last minute"
+    ],
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "We load bank transactions",
+        "body": "From the statement or a bank connection, every week or before the close."
+      },
+      {
+        "title": "We match them against documents",
+        "body": "In your accounting software or in a tool you already use."
+      },
+      {
+        "title": "We prepare a list and a reminder",
+        "body": "For each client, an exact list of missing documents and a draft email."
+      },
+      {
+        "title": "The accountant approves",
+        "body": "With one click. Nothing goes to the client without the accountant’s approval."
+      }
+    ],
+    "principlesTitle": "What stays the same",
+    "principles": [
+      "You keep your accounting software. We add a new tool only where it really saves work, and we set it up.",
+      "Clients install and sort nothing. They just email or photograph the document.",
+      "AI reads and suggests, the accountant decides. Uncertain values are flagged, never guessed.",
+      "Each client’s data is kept separate and traceable, processed in the EU under a data processing agreement."
+    ],
+    "pricingTitle": "How we work together and what it costs",
+    "pricing": [
+      {
+        "title": "Consultation",
+        "price": "free",
+        "body": "We find the process that costs you the most unnecessary time and check which software you use."
+      },
+      {
+        "title": "Process analysis",
+        "price": "CZK 5,000–10,000",
+        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. Simple ones get an offer straight away."
+      },
+      {
+        "title": "Implementation",
+        "price": "from CZK 35,000",
+        "body": "A fixed price for a clearly defined scope. The offer states what you get, what is not included and how we verify that it works."
+      },
+      {
+        "title": "Operation",
+        "price": "from CZK 1,000/month",
+        "body": "Optional. We check that the automation runs and fix errors on our side. Changes are quoted separately."
+      }
+    ],
+    "firstOrder": "The first project is deliberately small: one process, one accounting system and a small group of clients. We measure the time spent chasing documents before and after, so the savings aren’t just an estimate.",
+    "moreTitle": "What else we can automate in your firm",
+    "moreIntro": "Every firm works differently. In the consultation, we ask about any manual work, not just reminders.",
+    "more": [
+      "collecting and extracting documents from email and photos",
+      "annual tax returns and supporting documents",
+      "checks before filing VAT (unreliable payers, published bank accounts)",
+      "imports into your accounting software, even without a ready-made connector",
+      "a calendar of deadlines and reminders to clients",
+      "payroll inputs from clients",
+      "a firm overview and status of month-end closes"
+    ],
+    "cta": "Book a free consultation",
+    "example": "See an illustrative firm"
+  }
 }

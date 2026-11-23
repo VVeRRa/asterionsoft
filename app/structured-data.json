@@ -201,12 +201,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Poptávka → karta zakázky – Zakázková výroba a CNC",
-            "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení."
+            "name": "Podklady pod kontrolou – Účetní a daňové kanceláře",
+            "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 39000,
+            "minPrice": 35000,
             "priceCurrency": "CZK"
           }
         },
@@ -214,12 +214,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Podklady pod kontrolou – Účetní a daňové kanceláře",
-            "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu."
+            "name": "Poptávka → karta zakázky – Zakázková výroba a CNC",
+            "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 35000,
+            "minPrice": 39000,
             "priceCurrency": "CZK"
           }
         },
