@@ -175,9 +175,9 @@
       "title": "AI process audit",
       "chips": [
         "free consultation",
-        "deducted from implementation"
+        "fixed-price offer"
       ],
-      "priceLabel": "for complex projects"
+      "priceLabel": "deducted from implementation"
     },
     {
       "name": "Business process automation",
