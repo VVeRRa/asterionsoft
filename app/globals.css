@@ -498,7 +498,7 @@
 html, body { overflow-x: clip; }
 
 /* Featured accounting use case */
-.accounting { position:relative; margin-bottom:4rem; padding-bottom:3.5rem; border-bottom:0.0625rem solid var(--line); scroll-margin-top:5rem; }
+.accounting { position:relative; margin:4rem 0; padding:3.5rem 0 0; border-top:0.0625rem solid var(--line); scroll-margin-top:5rem; }
 .accounting-inner { display:grid; grid-template-columns:minmax(0,1fr); gap:1.125rem; }
 .accounting .section-head { margin-bottom:0.875rem; }
 .accounting-grid { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:1.125rem; }

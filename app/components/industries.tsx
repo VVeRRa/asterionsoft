@@ -19,8 +19,6 @@ export default function Industries({ locale, t, industries, onOpen, onRequest }:
       <div className="container">
         <SectionHead label={t.industriesLabel} title={t.industriesTitle}>{t.industriesBody}</SectionHead>
 
-        <Accounting t={t} industry={industries[0]} onOpen={onOpen} onRequest={onRequest} />
-
         <div className="services-grid">
           {industries.map((industry, index) => (
             <OfferCard key={industry.formValue} index={index} className="industry-card" title={industry.name}
@@ -29,6 +27,8 @@ export default function Industries({ locale, t, industries, onOpen, onRequest }:
               top={<span className="industry-audience">{industry.audience}</span>} />
           ))}
         </div>
+
+        <Accounting t={t} industry={industries[0]} onOpen={onOpen} onRequest={onRequest} />
 
         <SavingsCalculator locale={locale} t={t} onRequest={onRequest} />
       </div>
