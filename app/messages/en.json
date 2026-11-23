@@ -26,7 +26,7 @@
   "deliveryBody": "Architecture, backend, integrations and operations.",
   "servicesLabel": "Service catalogue",
   "servicesTitle": "What we can help you with",
-  "servicesBody": "Each service has a clear deliverable. For a custom request, use the general enquiry form below.",
+  "servicesBody": "Each service has a clear deliverable. Prices are indicative; the binding price is the one in the offer, and sending an enquiry commits you to nothing. For a custom request, use the general enquiry form below.",
   "all": "All",
   "ai": "AI",
   "dev": "Development",
@@ -105,6 +105,7 @@
     "serviceGeneral": "General question / not sure yet",
     "message": "Describe your situation",
     "messagePlaceholder": "What do you handle manually today, what slows you down, or what idea would you like to discuss…",
+    "messageHint": "Please describe your situation in general terms, without accounting records, passwords or your clients’ personal data.",
     "submit": "Send enquiry",
     "sending": "Sending…",
     "successTitle": "Thank you, your enquiry has arrived.",
@@ -116,7 +117,8 @@
     "errorCaptcha": "The spam check failed. Please try again.",
     "errorRate": "You’ve sent several enquiries in a row. Please try again later or give us a call.",
     "errorServer": "Your enquiry could not be sent. Please try again or call +420 604 257 866.",
-    "privacy": "I’ll only use your details to reply to your enquiry."
+    "privacy": "We use your details to handle your enquiry and, if relevant, to agree on a project. See our",
+    "privacyLink": "privacy policy"
   },
   "detailLabel": "Service details",
   "close": "Close",
@@ -130,6 +132,13 @@
   "deliverableFollowUp": "an optional flat fee for monitoring and operation.",
   "requestService": "Enquire about this service",
   "language": "Website language",
+  "legal": {
+    "privacy": "Privacy policy",
+    "terms": "Terms of business",
+    "effective": "Effective from",
+    "back": "Back to the home page",
+    "registry": "registered in the Commercial Register kept by the Municipal Court in Prague, file"
+  },
   "industriesNav": "By Industry",
   "industriesLabel": "Industry solutions",
   "industriesTitle": "Concrete use cases for your industry",
@@ -152,13 +161,13 @@
   "calcPerYear": "per year",
   "calcCta": "Discuss it using your data",
   "aiLiteracyTraining": "AI literacy (AI Act)",
-  "aiLiteracyDuty": "duty under Art. 4 of the AI Act",
+  "aiLiteracyDuty": "Art. 4 AI Act requirements",
   "aiLiteracyRules": "rules for company data",
   "aiLiteracyLimits": "AI risks and limitations",
   "aiLiteracyRecord": "training record",
   "trainingIndustryNote": "We can also tailor Practical AI to your industry, for example for accounting firms, law firms or e‑shops.",
   "dataQuestion": "Where does our data go?",
-  "dataAnswer": "We design solutions so that data stays in the EU and the AI only works with what it needs for the task. We use business API access to AI models whose providers, under their terms, do not use the data for training. Hosting and access permissions are described in the solution proposal.",
+  "dataAnswer": "We design solutions to keep data in the EU wherever possible and to let the AI work only with what it needs for the task. We use business API access to AI models whose providers, under their current terms, do not use the data for training. Where the data will be stored, which model and plan we use and who will have access to the data are set out specifically in the offer.",
   "systemsQuestion": "Will it work with our system?",
   "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. You keep your tools, and we add a new one only where it really saves work. During the initial consultation, we check which integration options your system offers.",
   "mistakesQuestion": "What if the AI makes a mistake?",
@@ -166,7 +175,7 @@
   "runningQuestion": "How much does it cost to run after launch?",
   "runningAnswer": "The flat fee is optional and starts at CZK 1,000/month per automation, depending on AI usage and the number of integrations. It covers monitoring and operation: checking that the automation runs, error alerts, hosting, backups, AI fees and fixing errors on our side, with a response within 2 business days. Changes, such as a new bank statement format or new features, are quoted separately. Licences for third-party tools are paid directly to their vendors.",
   "aiActQuestion": "Does the AI Act apply to us?",
-  "aiActAnswer": "Since February 2025, companies that use AI must ensure sufficient AI literacy among the people who work with it. AI literacy training helps you meet this duty. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
+  "aiActAnswer": "Under Art. 4 of the AI Act, companies that use AI are to take measures to support AI literacy among the people who work with it. AI literacy training is one such measure and helps you meet this requirement. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
   "services": [
     {
       "name": "AI process audit",
@@ -293,7 +302,7 @@
       "chips": [
         "monitoring",
         "backups",
-        "2-day response"
+        "2-business-day response"
       ],
       "priceLabel": "flat fee"
     }
@@ -395,25 +404,6 @@
       "example": "A distributor receives 300 orders a month by email. Entering one takes 5–10 minutes, and product codes occasionally get mixed up. After rollout, the order is created in the ERP automatically and sales staff only check lines the system cannot match with confidence. The goal is to process over 80% of orders without manual entry and save around 30 hours a month."
     },
     {
-      "name": "Candidate pre-screening",
-      "audience": "Recruitment agencies",
-      "description": "Dozens of CVs per position, ranked against the requirements with a short rationale. The recruiter always makes the decision.",
-      "scope": [
-        "sorting and summarising CVs",
-        "matching to open positions",
-        "draft personalised outreach and ATS integration",
-        "a record of why each candidate was recommended (AI Act)"
-      ],
-      "price": "from CZK 45,000",
-      "priceLabel": "typical starting price",
-      "chips": [
-        "ATS",
-        "GDPR",
-        "AI Act"
-      ],
-      "example": "An agency with 6 recruiters receives 80–150 CVs per position, and the first screening takes a recruiter half a day. The system ranks candidates against the requirements and writes two sentences on why each one is or isn’t a fit. The recruiter starts from a shortlist and decides on every candidate personally. The goal is a first screening in an hour instead of half a day."
-    },
-    {
       "name": "AI for law firms",
       "audience": "Smaller law firms",
       "description": "Search across your own contracts, templates and filings, with links to sources. Users only see the case files they have access to.",
@@ -488,7 +478,7 @@
       "You keep your accounting software. We add a new tool only where it really saves work, and we set it up.",
       "Clients install and sort nothing. They just email or photograph the document.",
       "AI reads and suggests, the accountant decides. Uncertain values are flagged, never guessed.",
-      "Each client’s data is kept separate and traceable, processed in the EU under a data processing agreement."
+      "Each client’s data is kept separate and traceable. We sign a data processing agreement with you and state in the offer where the data is processed."
     ],
     "pricingTitle": "How we work together and what it costs",
     "pricing": [

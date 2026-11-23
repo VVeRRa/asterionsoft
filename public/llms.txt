@@ -6,7 +6,7 @@ Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Tec
 
 ## Služby
 
-Ceny jsou orientační, bez DPH; finální cena závisí na rozsahu.
+Ceny jsou orientační, závazná je cena v nabídce. Finální cena závisí na rozsahu.
 
 - [AI audit firmy](https://asterionsoft.cz/#sluzby): Analýza procesů, kde AI nebo automatizace reálně šetří čas a náklady. Délka 1–2 dny, výstup report a roadmapa. Od 14 900 Kč.
 - [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Workflow plné e‑mailů, Excelů a ručního kopírování převedené na automatizovaný proces (integrace, API, LLM). Cena individuálně podle rozsahu.
@@ -28,7 +28,6 @@ Každé řešení začíná pilotem na historických datech klienta; měří se 
 - [Hlášení závad pod kontrolou — Správa domů a SVJ](https://asterionsoft.cz/#obory): Hlášení z e‑mailu nebo formuláře se samo zařadí k domu, typu závady a technikovi. Výbor SVJ dostane přehled bez ručního psaní. Od 45 000 Kč (typicky).
 - [Vratky a výjimky ve fulfillmentu — Fulfillment a sklady pro e‑shopy](https://asterionsoft.cz/#obory): Vratka bez čísla objednávky nebo dotaz na stav zásilky už nemusí čekat na člověka, který to dohledá ručně. Od 39 000 Kč (pilot).
 - [Objednávky z e‑mailu rovnou do ERP — Velkoobchod, distribuce a spedice](https://asterionsoft.cz/#obory): Objednávky v PDF, Excelu nebo textu e‑mailu se přepíšou do ERP samy. Obchodník řeší jen nejasné řádky. Od 39 000 Kč (typicky).
-- [Předvýběr kandidátů — Personální agentury](https://asterionsoft.cz/#obory): Desítky životopisů na pozici seřazené podle požadavků, s krátkým odůvodněním. Rozhoduje vždy recruiter. Od 45 000 Kč (typicky).
 - [AI pro advokátní kanceláře — Menší advokátní kanceláře](https://asterionsoft.cz/#obory): Vyhledávání ve vlastních smlouvách, vzorech a podáních s odkazem na zdroj. Přístup jen ke spisům, ke kterým má uživatel právo. Od 35 000 Kč (pilot).
 - [Produktový obsah ve velkém — E‑shopy](https://asterionsoft.cz/#obory): Popisky, překlady a vizuály pro stovky produktů najednou, rovnou ve feedu. Na stejných stavebních blocích, na kterých běží Studijo. Od 25 000 Kč (nastavení).
 
@@ -37,7 +36,7 @@ Každé řešení začíná pilotem na historických datech klienta; měří se 
 - [AI Start (3 hodiny)](https://asterionsoft.cz/#skoleni): ChatGPT / Claude, prompting, práce s dokumenty, research a shrnutí, bezpečnost a limity.
 - [AI Prakticky (1 den)](https://asterionsoft.cz/#skoleni): Pracovní use‑cases, automatizace rutiny, tvorba vlastních workflow, Q&A nad agendou firmy.
 - [Automation Workshop (1 den)](https://asterionsoft.cz/#skoleni): Mapování procesů, výběr vhodné automatizace, návrh řešení a roadmapa implementace.
-- [AI gramotnost podle AI Actu (3 hodiny)](https://asterionsoft.cz/#skoleni): Povinnost podle čl. 4 AI Actu, pravidla pro firemní data, rizika a limity AI, záznam o proškolení.
+- [AI gramotnost podle AI Actu (3 hodiny)](https://asterionsoft.cz/#skoleni): Požadavky čl. 4 AI Actu, pravidla pro firemní data, rizika a limity AI, záznam o proškolení.
 
 ## Reference
 
@@ -71,7 +70,7 @@ Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutno
 
 ### Kam putují naše data?
 
-Řešení navrhujeme tak, aby data zůstala v EU a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých podmínek data k tréninku nepoužívá. Hosting a přístupová práva popíšeme v návrhu řešení.
+Řešení navrhujeme tak, aby data zůstala v EU, kde to jde, a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých aktuálních podmínek data k tréninku nepoužívá. Kde budou data uložená, jaký model a tarif použijeme a kdo k datům bude mít přístup, uvedeme konkrétně v nabídce.
 
 ### Funguje to s naším systémem?
 
@@ -87,7 +86,7 @@ Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušál
 
 ### Týká se nás AI Act?
 
-Povinnost zajistit dostatečnou AI gramotnost lidí, kteří s AI pracují, platí od února 2025 pro firmy, které AI používají. Pomůže s ní školení AI gramotnosti. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.
+Firmy, které AI používají, mají podle čl. 4 AI Actu přijmout opatření na podporu AI gramotnosti lidí, kteří s AI pracují. Školení AI gramotnosti je jedním z nich a pomůže tento požadavek naplnit. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.
 
 ### Mám jen nápad, ne hotové zadání. Je to problém?
 
@@ -96,6 +95,13 @@ Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavole
 ## Kontakt
 
 - Poptávka: formulář na [asterionsoft.cz/#poptavka](https://asterionsoft.cz/#poptavka)
+- E-mail: postmaster@asterionsoft.cz
 - Telefon: +420 604 257 866
 - Sídlo: Bělehradská 858/23, 120 00 Praha 2
 - IČ: 10736697, DIČ: CZ10736697
+- Zapsána v obchodním rejstříku vedeném Městským soudem v Praze, sp. zn. C 347537
+
+## Právní informace
+
+- [Zásady ochrany osobních údajů](https://asterionsoft.cz/ochrana-osobnich-udaju/)
+- [Obchodní podmínky](https://asterionsoft.cz/obchodni-podminky/)

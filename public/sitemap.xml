@@ -21,4 +21,46 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/"/>
   </url>
+  <url>
+    <loc>https://asterionsoft.cz/ochrana-osobnich-udaju/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+  </url>
+  <url>
+    <loc>https://asterionsoft.cz/en/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+  </url>
+  <url>
+    <loc>https://asterionsoft.cz/de/datenschutz/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/datenschutz/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/ochrana-osobnich-udaju/"/>
+  </url>
+  <url>
+    <loc>https://asterionsoft.cz/obchodni-podminky/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/obchodni-podminky/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/agb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/obchodni-podminky/"/>
+  </url>
+  <url>
+    <loc>https://asterionsoft.cz/en/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/obchodni-podminky/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/agb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/obchodni-podminky/"/>
+  </url>
+  <url>
+    <loc>https://asterionsoft.cz/de/agb/</loc>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://asterionsoft.cz/obchodni-podminky/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asterionsoft.cz/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://asterionsoft.cz/de/agb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://asterionsoft.cz/obchodni-podminky/"/>
+  </url>
 </urlset>

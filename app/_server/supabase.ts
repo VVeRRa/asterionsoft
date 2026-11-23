@@ -59,14 +59,12 @@ export async function recentInquiryCount(ipHash: string, minutes: number): Promi
 export type StoreResult = { ok: true; id: string } | { ok: false; reason: string };
 
 async function errorCode(response: Response): Promise<string> {
+  // The error body can contain the whole failing row (name, e-mail, message), so only the code is logged.
   const body = await response.text();
-  console.error("Uložení poptávky do Supabase selhalo:", response.status, body);
-  try {
-    const parsed = JSON.parse(body) as { code?: string };
-    return parsed.code ? `http_${response.status}_${parsed.code}` : `http_${response.status}`;
-  } catch {
-    return `http_${response.status}`;
-  }
+  let code = "";
+  try { code = (JSON.parse(body) as { code?: string }).code ?? ""; } catch {}
+  console.error("Uložení poptávky do Supabase selhalo:", response.status, code);
+  return code ? `http_${response.status}_${code}` : `http_${response.status}`;
 }
 
 export async function storeInquiry(

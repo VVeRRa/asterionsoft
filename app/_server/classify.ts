@@ -45,7 +45,6 @@ const categoryByService: Record<string, (typeof serviceCategories)[number]> = {
   "Obor: hlášení závad (správa domů, SVJ)": "process_automation",
   "Obor: vratky a výjimky (fulfillment)": "process_automation",
   "Obor: objednávky do ERP (velkoobchod, spedice)": "process_automation",
-  "Obor: předvýběr kandidátů (personální agentury)": "process_automation",
   "Obor: AI pro advokátní kanceláře": "ai_assistant",
   "Obor: produktový obsah (e-shopy)": "process_automation",
 };

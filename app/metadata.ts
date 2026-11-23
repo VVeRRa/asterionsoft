@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import { localePaths, type Locale } from "./locales";
+import { legalDocs } from "./legal/docs";
+import { legalPaths } from "./legal/paths";
+import type { LegalKind } from "./legal/types";
+import { localePaths, locales, type Locale } from "./locales";
 
 const czech = {
   "title": "Asterion Software — AI, automatizace a vývoj aplikací na míru",
@@ -83,5 +86,23 @@ export function metadataFor(locale: Locale): Metadata {
       ...czech.twitter,
       ...(translation && { title: translation.title, description: translation.description }),
     },
+  };
+}
+
+/** Metadata for a legal page: its own title, description, canonical URL and language alternates. */
+export function legalMetadataFor(kind: LegalKind, locale: Locale): Metadata {
+  const base = metadataFor(locale);
+  const { title: docTitle, description } = legalDocs[kind][locale];
+  const title = `${docTitle} | Asterion Software`;
+  const url = origin + legalPaths[kind][locale];
+  const languages = Object.fromEntries(locales.map((language) => [language, origin + legalPaths[kind][language]]));
+
+  return {
+    ...base,
+    title,
+    description,
+    alternates: { canonical: url, languages: { ...languages, "x-default": languages.cs } },
+    openGraph: { ...czech.openGraph, ...base.openGraph, title, description, url },
+    twitter: { ...czech.twitter, ...base.twitter, title, description },
   };
 }
