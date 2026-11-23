@@ -79,8 +79,8 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "AI audit firmy",
-            "description": "Analýza procesů, kde AI nebo automatizace šetří čas a náklady; report a roadmapa."
+            "name": "AI audit procesů",
+            "description": "Zmapování postupu, nástrojů a objemů, ověření napojení a návrh automatizace s pevnou cenou; cena auditu se odečte od realizace."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
@@ -93,19 +93,45 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Automatizace firemního procesu",
-            "description": "Návrh a implementace automatizace workflow, integrace přes API a LLM."
+            "description": "Automatizace workflow na míru z existujících nástrojů, API, AI nebo vlastního kódu za pevnou cenu."
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Interní AI asistent",
+            "name": "Pokročilý interní AI asistent",
             "description": "Chat nad firemní dokumentací a daty (RAG) s přístupovými právy a citací zdrojů."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 35000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Jednoduchý interní AI asistent",
+            "description": "Asistent pro zaměstnance, který odpovídá z podkladů, které mu předáte, třeba ze směrnic, ceníku nebo návodů. Bez napojení na firemní systémy, takže je rychle nasazený."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 9000,
+            "priceCurrency": "CZK"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI asistent na webu",
+            "description": "Chat na vašem webu, který návštěvníkům odpovídá na časté dotazy o službách, cenách a postupu z podkladů, které mu dáte."
+          },
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 9000,
             "priceCurrency": "CZK"
           }
         },
@@ -133,20 +159,6 @@
             "@type": "PriceSpecification",
             "minPrice": 45000,
             "priceCurrency": "CZK"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Java / Spring konzultace",
-            "description": "Architektura, výkon, code review, legacy systémy a integrace."
-          },
-          "priceSpecification": {
-            "@type": "PriceSpecification",
-            "minPrice": 2500,
-            "priceCurrency": "CZK",
-            "unitText": "hodina"
           }
         },
         {
@@ -192,12 +204,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Provoz a ladění AI řešení",
-            "description": "Měsíční dohled, úpravy promptů, přechod na nové modely a hlídání nákladů na API."
+            "name": "Provoz a dohled automatizací",
+            "description": "Volitelný měsíční paušál za dohled a provoz: monitoring, upozornění na chybu, hosting, zálohy a poplatky za AI."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 4900,
+            "minPrice": 1000,
             "priceCurrency": "CZK",
             "unitText": "měsíc"
           }
@@ -214,12 +226,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Poptávka → karta zakázky – Zakázková výroba a CNC",
-            "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení."
+            "name": "Podklady pod kontrolou – Účetní a daňové kanceláře",
+            "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 39000,
+            "minPrice": 35000,
             "priceCurrency": "CZK"
           }
         },
@@ -227,12 +239,12 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Oběh dokladů bez urgencí – Účetní a daňové kanceláře",
-            "description": "Méně dohledávání příloh a ručních upomínek před uzávěrkou. Začínáme krátkým auditem, který spočítá, kolik hodin vás to dnes stojí."
+            "name": "Poptávka → karta zakázky – Zakázková výroba a CNC",
+            "description": "Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
-            "minPrice": 14900,
+            "minPrice": 39000,
             "priceCurrency": "CZK"
           }
         },
@@ -322,18 +334,18 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Kolik stojí AI audit firmy?",
+          "name": "Kolik stojí AI audit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "AI audit firmy stojí od 14 900 Kč a trvá 1–2 dny. Projdeme vaše procesy, najdeme místa, kde AI nebo automatizace reálně šetří čas či náklady, a výstupem je report s doporučeními a roadmapou dalších kroků."
+            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme."
           }
         },
         {
           "@type": "Question",
-          "name": "Kolik stojí interní AI asistent nad firemními dokumenty?",
+          "name": "Kolik stojí AI asistent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pilotní verze interního AI asistenta stojí od 35 000 Kč. Výsledná cena závisí hlavně na počtu a typu zdrojů dat, potřebných integracích a nastavení přístupových práv. Asistent odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
+            "text": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
           }
         },
         {
@@ -341,7 +353,7 @@
           "name": "Jak probíhá spolupráce?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Začínáme krátkou nezávaznou konzultací, kde upřesníme cíl. Pak navrhneme řešení a rozsah s jasně definovaným výstupem. Po dodání můžeme navázat další implementací nebo dlouhodobou spoluprací."
+            "text": "Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz."
           }
         },
         {
@@ -381,7 +393,7 @@
           "name": "Funguje to s naším systémem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí."
+            "text": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí."
           }
         },
         {
@@ -397,7 +409,7 @@
           "name": "Kolik stojí provoz po spuštění?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušálu za provoz a ladění od 4 900 Kč měsíčně. Odhad provozních nákladů dostanete předem jako součást návrhu řešení."
+            "text": "Paušál je volitelný a stojí od 1 000 Kč měsíčně za automatizaci, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, hosting, zálohy, poplatky za AI a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu. Licence cizích nástrojů platíte jejich dodavateli přímo."
           }
         },
         {

@@ -1,4 +1,5 @@
 {
+  "accountingNav": "For accountants",
   "servicesNav": "Services",
   "trainingNav": "AI Training",
   "references": "Our Work",
@@ -8,14 +9,13 @@
   "heroTitle": "AI, automation and application development",
   "heroAudience": "for businesses",
   "heroLead": "Software services built around your needs.",
-  "heroBody": "Tell us what you want to solve. We offer AI audits, automation, custom web apps, LLM integration and team training.",
+  "heroBody": "Tell us what you want to solve. We offer AI audits, custom automation, custom web apps, LLM integration and team training.",
   "browse": "Explore services ↓",
   "ownBrief": "Discuss my project",
   "catalogAlt": "Service catalogue preview",
   "catalog": "Service catalogue",
   "catalogBadge": "no checkout :)",
-  "analysisDelivery": "analysis + implementation",
-  "javaScope": "architecture, performance, legacy systems",
+  "analysisDelivery": "fixed price",
   "seniorTitle": "Senior developers",
   "seniorBody": "Senior developers handle your work directly.",
   "practicalTitle": "Practical AI",
@@ -77,11 +77,11 @@
   "faqTitle": "What clients ask us",
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
   "auditQuestion": "How much does an AI audit cost?",
-  "auditAnswer": "An AI audit starts at CZK 14,900 and takes one to two days. We review your processes, identify where AI or automation can save time or money, and provide a report with recommendations and next steps.",
-  "assistantQuestion": "How much does an internal AI assistant for company documents cost?",
-  "assistantAnswer": "A pilot starts at CZK 35,000. The final price depends mainly on the number and type of data sources, required integrations and access permissions. The assistant answers questions using your documentation and cites its sources.",
+  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution. If you then order the implementation, we deduct the audit price from it.",
+  "assistantQuestion": "How much does an AI assistant cost?",
+  "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
-  "processAnswer": "We start with a short, no-obligation consultation to clarify your goals. We then propose a solution, a scope and a clear deliverable. After delivery, we can help with further implementation or work with you longer term.",
+  "processAnswer": "We start with a free initial consultation. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid AI audit. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
   "contactQuestion": "Who will I talk to during the project?",
   "contactAnswer": "You speak directly with the senior developer who designs and builds your solution, so questions can be resolved quickly and details stay clear.",
   "excelQuestion": "Can you turn our Excel spreadsheet into an app?",
@@ -124,21 +124,21 @@
   "menuClose": "Close menu",
   "menuLabel": "Main menu",
   "deliverable": "What to expect",
-  "deliverableGoal": "a short initial consultation to clarify your goals,",
-  "deliverableScope": "a proposed solution and scope,",
-  "deliverableResult": "a clearly defined deliverable,",
-  "deliverableFollowUp": "the option to continue with implementation or long-term support.",
+  "deliverableGoal": "a free initial consultation to clarify your goals,",
+  "deliverableScope": "a short paid AI audit for more complex projects,",
+  "deliverableResult": "a fixed price for a clearly defined scope and handover on your data,",
+  "deliverableFollowUp": "an optional flat fee for monitoring and operation.",
   "requestService": "Enquire about this service",
   "language": "Website language",
   "industriesNav": "By Industry",
   "industriesLabel": "Industry solutions",
   "industriesTitle": "Concrete use cases for your industry",
-  "industriesBody": "Every solution starts with a pilot on your historical data. We measure the time before and after, and if the savings don’t materialise, we stop there.",
+  "industriesBody": "We start with a free initial consultation. You then get a fixed price for a clearly defined scope, after a short paid AI audit for more complex projects. We measure the time before and after so the savings aren’t just an estimate.",
   "audienceLabel": "Who it’s for",
   "scopeLabel": "What’s included",
   "exampleLink": "See example →",
   "exampleLabel": "Illustrative example",
-  "exampleNote": "An illustrative example of a typical company in the industry, not a specific client. The figures are estimates that the pilot will verify.",
+  "exampleNote": "An illustrative example of a typical company in the industry, not a specific client. The figures are estimates; we measure the real savings at your company.",
   "calcLabel": "Savings calculator",
   "calcTitle": "How much does manual work cost you today?",
   "calcBody": "Enter how often the task comes up and how long it takes. The calculation assumes automation saves roughly two thirds of the time, which is a typical pilot target.",
@@ -160,42 +160,42 @@
   "dataQuestion": "Where does our data go?",
   "dataAnswer": "We design solutions so that data stays in the EU and the AI only works with what it needs for the task. We use business API access to AI models whose providers, under their terms, do not use the data for training. Hosting and access permissions are described in the solution proposal.",
   "systemsQuestion": "Will it work with our system?",
-  "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. During the initial consultation, we check which integration options your system offers.",
+  "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. You keep your tools, and we add a new one only where it really saves work. During the initial consultation, we check which integration options your system offers.",
   "mistakesQuestion": "What if the AI makes a mistake?",
   "mistakesAnswer": "That’s why a person makes the call on important steps. The AI prepares the groundwork, a draft or a pre-filled record, and a person confirms it. The system flags uncertain cases and logs every action, so you can always trace what happened and why.",
   "runningQuestion": "How much does it cost to run after launch?",
-  "runningAnswer": "Running costs consist of usage-based AI model fees and an optional flat fee for operation and tuning, from CZK 4,900/month. You get an estimate of running costs up front as part of the solution proposal.",
+  "runningAnswer": "The flat fee is optional and starts at CZK 1,000/month per automation, depending on AI usage and the number of integrations. It covers monitoring and operation: checking that the automation runs, error alerts, hosting, backups, AI fees and fixing errors on our side, with a response within 2 business days. Changes, such as a new bank statement format or new features, are quoted separately. Licences for third-party tools are paid directly to their vendors.",
   "aiActQuestion": "Does the AI Act apply to us?",
   "aiActAnswer": "Since February 2025, companies that use AI must ensure sufficient AI literacy among the people who work with it. AI literacy training helps you meet this duty. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
   "services": [
     {
-      "name": "Business AI audit",
+      "name": "AI process audit",
       "price": "from CZK 14,900",
-      "description": "We identify where AI and automation can save time, lower costs or help your team work more effectively.",
-      "title": "Business AI audit",
+      "description": "We map your current process, tools and volumes, check the integration options and propose a fixed-price automation. If you then order the implementation, we deduct the audit price from it.",
+      "title": "AI process audit",
       "chips": [
-        "1–2 days",
-        "report and roadmap"
+        "free consultation",
+        "fixed-price offer"
       ],
-      "priceLabel": "starting price"
+      "priceLabel": "deducted from implementation"
     },
     {
       "name": "Business process automation",
-      "price": "custom quote",
-      "description": "Do your workflows rely on email, Excel and manual copying? We design and build a simpler process.",
+      "price": "fixed price",
+      "description": "Do your workflows rely on email, Excel and manual copying? We build custom automation from the tools you already use, APIs, AI or our own code.",
       "title": "Process automation",
       "chips": [
         "integrations",
         "API",
         "LLM"
       ],
-      "priceLabel": "depending on scope"
+      "priceLabel": "after consultation"
     },
     {
-      "name": "Internal AI assistant",
+      "name": "Advanced internal AI assistant",
       "price": "from CZK 35,000",
       "description": "A chat interface for company documentation, expertise and data, with access controls and traceable sources.",
-      "title": "Internal AI assistant",
+      "title": "Advanced AI assistant",
       "chips": [
         "RAG",
         "documents",
@@ -204,14 +204,37 @@
       "priceLabel": "pilot"
     },
     {
+      "name": "Simple internal AI assistant",
+      "price": "from CZK 9,000",
+      "description": "An assistant for your staff that answers from the materials you give it, such as policies, price lists or manuals. No connection to company systems, so it is quick to set up.",
+      "title": "Simple AI assistant",
+      "chips": [
+        "your materials",
+        "quick setup"
+      ],
+      "priceLabel": "simple version"
+    },
+    {
+      "name": "AI assistant for your website",
+      "price": "from CZK 9,000",
+      "description": "A chat on your website that answers visitors’ common questions about your services, prices and process from the materials you give it.",
+      "title": "Website AI assistant",
+      "chips": [
+        "website",
+        "FAQs",
+        "your materials"
+      ],
+      "priceLabel": "simple version"
+    },
+    {
       "name": "Custom web application",
       "price": "from CZK 80,000",
       "description": "An MVP, internal system or customer portal, including the backend, database, integrations and deployment.",
       "title": "Custom web application",
       "chips": [
-        "Java",
-        "Spring Boot",
-        "cloud"
+        "custom design",
+        "integrations",
+        "deployment and operation"
       ],
       "priceLabel": "MVP"
     },
@@ -225,17 +248,6 @@
         "data model"
       ],
       "priceLabel": "typical starting price"
-    },
-    {
-      "name": "Java and Spring consulting",
-      "price": "from CZK 2,500/h",
-      "description": "Architecture, performance, code reviews, legacy systems, integrations and production troubleshooting.",
-      "title": "Java and Spring consulting",
-      "chips": [
-        "senior review",
-        "backend"
-      ],
-      "priceLabel": "consulting"
     },
     {
       "name": "ChatGPT and Claude integration (MCP)",
@@ -274,19 +286,38 @@
       "priceLabel": "typical starting price"
     },
     {
-      "name": "AI solution operation and tuning",
-      "price": "from CZK 4,900/month",
-      "description": "Monitoring, prompt adjustments, migration to new models and API cost control. A monthly report on what the solution has saved.",
-      "title": "AI operation and tuning",
+      "name": "Automation monitoring and operation",
+      "price": "from CZK 1,000/month",
+      "description": "We check that the automation runs, alert you to errors and fix them on our side. Hosting, backups and AI fees included; changes are quoted separately.",
+      "title": "Monitoring and operation",
       "chips": [
         "monitoring",
-        "costs",
-        "report"
+        "backups",
+        "2-day response"
       ],
       "priceLabel": "flat fee"
     }
   ],
   "industries": [
+    {
+      "name": "Client documents under control",
+      "audience": "Accounting and tax firms",
+      "description": "The automation compares bank statements with client documents and prepares a list of what is missing, with a draft reminder. The accountant just approves it and keeps working in their accounting software.",
+      "scope": [
+        "matching account transactions against documents in your accounting software",
+        "a list of missing documents for each client",
+        "a draft reminder email the accountant approves with one click",
+        "using the tools the firm already pays for"
+      ],
+      "price": "from CZK 35,000",
+      "priceLabel": "fixed price",
+      "chips": [
+        "bank statements",
+        "reminders for approval",
+        "your accounting software"
+      ],
+      "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. Every week, the automation compares transactions on the clients’ accounts with documents in the accounting software. The accountant gets a list of missing documents for each client and a ready draft email to approve. The goal is to cut chasing from 2 days to half a day a month."
+    },
     {
       "name": "Enquiry → job card",
       "audience": "Contract manufacturing and CNC",
@@ -305,25 +336,6 @@
         "pilot on your data"
       ],
       "example": "A 15-person workshop receives about 60 enquiries a month, each with an email and several drawings. Today an engineer spends roughly 30 minutes preparing each one and has to follow up with the customer on a third of them. After rollout, they get a ready job card with a list of missing details and links to similar past jobs. The pilot target is to cut preparation to 10 minutes, saving around 20 hours a month and getting back to customers sooner."
-    },
-    {
-      "name": "Document flow without chasing",
-      "audience": "Accounting and tax firms",
-      "description": "Less hunting for attachments and fewer manual reminders before month-end. We start with a short audit that calculates how many hours this costs you today.",
-      "scope": [
-        "document flow audit with quantified savings",
-        "completeness checks of client folders",
-        "reminders with a specific list of missing documents",
-        "invoice data extraction and payment matching"
-      ],
-      "price": "from CZK 14,900",
-      "priceLabel": "audit",
-      "chips": [
-        "audit",
-        "data extraction",
-        "reminders"
-      ],
-      "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. The audit shows where that time goes. The automation then checks client folders every week and sends each client an exact list of what is missing. The goal is to cut chasing from 2 days to half a day a month."
     },
     {
       "name": "Fault reports under control",
@@ -439,5 +451,81 @@
       ],
       "example": "An e‑shop with 2,000 products wants to start selling in Slovakia and Poland. Writing descriptions and translations by hand would mean hundreds of hours of work or an expensive agency. Bulk generation produces descriptions and translations in a consistent tone, and the team reviews them in batches. The goal is to have the entire catalogue in three languages within a few weeks."
     }
-  ]
+  ],
+  "accounting": {
+    "label": "Accounting and tax firms",
+    "title": "Client documents under control",
+    "intro": "Before month-end, most of the time goes not into bookkeeping but into tracking down missing documents and chasing clients. Automation takes over that work while you keep using your accounting software.",
+    "problemTitle": "Where the time goes today",
+    "problems": [
+      "manually matching bank statements against documents, client by client",
+      "emails and phone calls to clients about what is still missing, then again",
+      "documents scattered across emails, photos and shared folders",
+      "keeping track of who has sent what only in your head or in Excel",
+      "the close drags on because the last documents arrive at the last minute"
+    ],
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "We load bank transactions",
+        "body": "From the statement or a bank connection, every week or before the close."
+      },
+      {
+        "title": "We match them against documents",
+        "body": "In your accounting software or in a tool you already use."
+      },
+      {
+        "title": "We prepare a list and a reminder",
+        "body": "For each client, an exact list of missing documents and a draft email."
+      },
+      {
+        "title": "The accountant approves",
+        "body": "With one click. Nothing goes to the client without the accountant’s approval."
+      }
+    ],
+    "principlesTitle": "What stays the same",
+    "principles": [
+      "You keep your accounting software. We add a new tool only where it really saves work, and we set it up.",
+      "Clients install and sort nothing. They just email or photograph the document.",
+      "AI reads and suggests, the accountant decides. Uncertain values are flagged, never guessed.",
+      "Each client’s data is kept separate and traceable, processed in the EU under a data processing agreement."
+    ],
+    "pricingTitle": "How we work together and what it costs",
+    "pricing": [
+      {
+        "title": "Consultation",
+        "price": "free",
+        "body": "We find the process that costs you the most unnecessary time and check which software you use."
+      },
+      {
+        "title": "AI process audit",
+        "price": "from CZK 14,900",
+        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. If you order the implementation, we deduct the audit price."
+      },
+      {
+        "title": "Implementation",
+        "price": "from CZK 35,000",
+        "body": "A fixed price for a clearly defined scope. The offer states what you get, what is not included and how we verify that it works."
+      },
+      {
+        "title": "Operation",
+        "price": "from CZK 1,000/month",
+        "body": "Optional. We check that the automation runs and fix errors on our side. Changes are quoted separately."
+      }
+    ],
+    "firstOrder": "The first project is deliberately small: one process, one accounting system and a small group of clients. We measure the time spent chasing documents before and after, so the savings aren’t just an estimate.",
+    "moreTitle": "What else we can automate in your firm",
+    "moreIntro": "Every firm works differently. In the consultation, we ask about any manual work, not just reminders.",
+    "more": [
+      "collecting and extracting documents from email and photos",
+      "annual tax returns and supporting documents",
+      "checks before filing VAT (unreliable payers, published bank accounts)",
+      "imports into your accounting software, even without a ready-made connector",
+      "a calendar of deadlines and reminders to clients",
+      "payroll inputs from clients",
+      "a firm overview and status of month-end closes"
+    ],
+    "cta": "Book a free consultation",
+    "example": "See an illustrative firm"
+  }
 }

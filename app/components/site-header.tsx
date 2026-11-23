@@ -14,6 +14,7 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
   const links = [
     ["#sluzby", t.servicesNav],
     ["#obory", t.industriesNav],
+    ["#ucetni", t.accountingNav],
     ["#reference", t.references],
     ["#skoleni", t.trainingNav],
     ["#o-nas", t.aboutNav],

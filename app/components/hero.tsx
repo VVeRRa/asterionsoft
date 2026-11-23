@@ -2,9 +2,9 @@ import type { Messages } from "../messages";
 
 export default function Hero({ t }: { t: Messages }) {
   const preview = [
-    { service: t.services[0], meta: t.services[0].chips[0] },
-    { service: t.services[1], meta: t.analysisDelivery },
-    { service: t.services[5], meta: t.javaScope },
+    { service: t.industries[0], meta: t.industries[0].priceLabel },
+    { service: t.services[0], meta: t.services[0].priceLabel },
+    { service: t.services[10], meta: t.services[10].priceLabel },
   ];
   const highlights = [
     [t.seniorTitle, t.seniorBody],

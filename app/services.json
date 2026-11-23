@@ -1,6 +1,6 @@
 [
   {
-    "formValue": "AI audit firmy",
+    "formValue": "AI audit procesů",
     "icon": "/img/icon-ai-audit.webp",
     "categories": [
       "ai",
@@ -24,6 +24,21 @@
     ]
   },
   {
+    "formValue": "Jednoduchý interní AI asistent",
+    "icon": "/img/icon-ai-asistent.webp",
+    "categories": [
+      "ai"
+    ]
+  },
+  {
+    "formValue": "AI asistent na webu",
+    "icon": "/img/icon-ai-asistent.webp",
+    "categories": [
+      "ai",
+      "dev"
+    ]
+  },
+  {
     "formValue": "Webová aplikace na míru",
     "icon": "/img/icon-webova-aplikace.webp",
     "categories": [
@@ -36,14 +51,6 @@
     "categories": [
       "dev",
       "consulting"
-    ]
-  },
-  {
-    "formValue": "Java / Spring konzultace",
-    "icon": "/img/icon-java-spring.webp",
-    "categories": [
-      "consulting",
-      "dev"
     ]
   },
   {
@@ -70,7 +77,7 @@
     ]
   },
   {
-    "formValue": "Provoz a ladění AI řešení",
+    "formValue": "Provoz a dohled automatizací",
     "icon": "/img/icon-automatizace.webp",
     "categories": [
       "ai",
