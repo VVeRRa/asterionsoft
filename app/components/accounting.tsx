@@ -48,6 +48,7 @@ export default function Accounting({ t, industry, onOpen, onRequest }: Props) {
               <span className="accounting-tile-step">{index + 1}</span>
               <strong>{tile.title}</strong>
               <span className="accounting-tile-price">{tile.price}</span>
+              {/\d/.test(tile.price) && <small className="accounting-tile-vat">{t.vatExcluded}</small>}
               <p>{tile.body}</p>
             </div>
           ))}

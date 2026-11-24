@@ -9,7 +9,8 @@ export default function SiteFooter({ locale, t }: { locale: Locale; t: Messages 
     <footer>
       <div className="container footer-inner">
         <div className="footer-company">
-          <div>{`© 2026 ${company.name} · `}{t.companyId}{`: ${company.companyId} · ${company.address}`}</div>
+          <div>{`© 2026 ${company.name} · `}{t.companyId}{`: ${company.companyId} · `}{t.vatId}{`: ${company.vatId}`}</div>
+          <div>{company.address}</div>
           <div>{`${t.legal.registry} ${company.registryFile}`}</div>
         </div>
         <div className="footer-links">

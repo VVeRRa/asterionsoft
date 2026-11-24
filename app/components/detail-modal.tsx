@@ -31,7 +31,7 @@ export default function DetailModal({ t, detail, onClose, onRequest }: Props) {
           <div>
             <span className="badge">{t.detailLabel}</span>
             <h2 id="modalTitle" style={{ margin: "0.75rem 0 0.375rem" }}>{detail?.name}</h2>
-            <strong>{detail?.price}</strong>
+            <strong>{detail?.price}</strong>{detail && <small className="modal-vat">{t.vatExcluded}</small>}
           </div>
           <button className="modal-close" onClick={onClose} aria-label={t.close}>×</button>
         </div>

@@ -62,7 +62,7 @@ export const privacy: Record<Locale, LegalDoc> = {
             "Fakturace a účetnictví",
             "fakturační údaje, platby",
             "právní povinnost (písm. c) podle zákona o účetnictví a daňových předpisů",
-            "po dobu stanovenou těmito předpisy: účetní doklady 5 let od konce účetního období, u plátce DPH daňové doklady 10 let",
+            "po dobu stanovenou těmito předpisy: účetní doklady 5 let od konce účetního období, daňové doklady k DPH 10 let",
           ],
           [
             "Záznam konzultace, jen na vaši žádost",
@@ -222,7 +222,7 @@ export const privacy: Record<Locale, LegalDoc> = {
             "Invoicing and accounting",
             "billing details, payments",
             "legal obligation (point c) under Czech accounting and tax laws",
-            "for the periods set by these laws: accounting records 5 years from the end of the accounting period, tax documents of a VAT payer 10 years",
+            "for the periods set by these laws: accounting records 5 years from the end of the accounting period, VAT documents 10 years",
           ],
           [
             "Recording of a consultation, only at your request",
@@ -382,7 +382,7 @@ export const privacy: Record<Locale, LegalDoc> = {
             "Rechnungsstellung und Buchhaltung",
             "Rechnungsdaten, Zahlungen",
             "rechtliche Verpflichtung (lit. c) nach tschechischem Buchhaltungs- und Steuerrecht",
-            "für die gesetzlich vorgeschriebene Dauer: Buchungsbelege 5 Jahre ab Ende des Geschäftsjahres, Steuerbelege eines Umsatzsteuerpflichtigen 10 Jahre",
+            "für die gesetzlich vorgeschriebene Dauer: Buchungsbelege 5 Jahre ab Ende des Geschäftsjahres, Umsatzsteuerbelege 10 Jahre",
           ],
           [
             "Aufzeichnung einer Beratung, nur auf Ihren Wunsch",

@@ -85,7 +85,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 14900,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -106,7 +107,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 35000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -119,7 +121,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 9000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -132,7 +135,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 9000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -145,7 +149,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 80000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -158,7 +163,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 45000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -171,7 +177,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 40000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -184,7 +191,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 60000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -197,7 +205,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 20000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -211,7 +220,8 @@
             "@type": "PriceSpecification",
             "minPrice": 1000,
             "priceCurrency": "CZK",
-            "unitText": "měsíc"
+            "unitText": "měsíc",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -232,7 +242,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 35000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -245,7 +256,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 39000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -258,7 +270,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 45000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -271,7 +284,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 39000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -284,7 +298,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 39000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -297,7 +312,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 35000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         },
         {
@@ -310,7 +326,8 @@
           "priceSpecification": {
             "@type": "PriceSpecification",
             "minPrice": 25000,
-            "priceCurrency": "CZK"
+            "priceCurrency": "CZK",
+            "valueAddedTaxIncluded": false
           }
         }
       ]
@@ -324,7 +341,7 @@
           "name": "Kolik stojí AI audit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme."
+            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme."
           }
         },
         {
@@ -332,7 +349,7 @@
           "name": "Kolik stojí AI asistent?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
+            "text": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč bez DPH, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč bez DPH. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje."
           }
         },
         {
@@ -356,7 +373,7 @@
           "name": "Můžete převést firemní Excel na aplikaci?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč podle složitosti datového modelu a workflow."
+            "text": "Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč bez DPH podle složitosti datového modelu a workflow."
           }
         },
         {
@@ -396,7 +413,7 @@
           "name": "Kolik stojí provoz po spuštění?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Paušál je volitelný a stojí od 1 000 Kč měsíčně za automatizaci, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, hosting, zálohy, poplatky za AI a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu. Licence cizích nástrojů platíte jejich dodavateli přímo."
+            "text": "Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, hosting, zálohy, poplatky za AI a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu. Licence cizích nástrojů platíte jejich dodavateli přímo."
           }
         },
         {
