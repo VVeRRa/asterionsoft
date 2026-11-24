@@ -9,12 +9,12 @@ import type { LegalDoc } from "./types";
 export const terms: Record<Locale, LegalDoc> = {
   cs: {
     title: "Obchodní podmínky",
-    description: "Obchodní podmínky společnosti Asterion Software, s.r.o. pro analýzy, implementace, konzultace a školení.",
+    description: "Obchodní podmínky společnosti Asterion Software s.r.o. pro analýzy, implementace, konzultace a školení.",
     blocks: [
       { type: "h2", text: "1. Kdo jsme a pro koho podmínky platí" },
       {
         type: "p",
-        text: "Poskytovatelem je Asterion Software, s.r.o., IČO 10736697, Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, sp. zn. C 347537 (dále „Asterion“). Služby poskytujeme výhradně podnikatelům pro jejich podnikání a právnickým osobám, například společenstvím vlastníků jednotek nebo spolkům, pro jejich činnost (dále „klient“). Spotřebitelům služby neposkytujeme. Klient při objednávce uvede IČO a potvrdí, že objednává v rámci svého podnikání nebo činnosti.",
+        text: "Poskytovatelem je Asterion Software s.r.o., IČO 10736697, Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, sp. zn. C 347537 (dále „Asterion“). Služby poskytujeme výhradně podnikatelům pro jejich podnikání a právnickým osobám, například společenstvím vlastníků jednotek nebo spolkům, pro jejich činnost (dále „klient“). Spotřebitelům služby neposkytujeme. Klient při objednávce uvede IČO a potvrdí, že objednává v rámci svého podnikání nebo činnosti.",
       },
 
       { type: "h2", text: "2. Uzavření smlouvy" },
@@ -100,7 +100,7 @@ export const terms: Record<Locale, LegalDoc> = {
 
   en: {
     title: "Terms of business",
-    description: "Terms of business of Asterion Software, s.r.o. for analyses, implementations, consultations and training.",
+    description: "Terms of business of Asterion Software s.r.o. for analyses, implementations, consultations and training.",
     blocks: [
       {
         type: "p",
@@ -109,7 +109,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "1. Who we are and who these terms apply to" },
       {
         type: "p",
-        text: "The provider is Asterion Software, s.r.o., company ID 10736697, Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, file C 347537 (“Asterion”). We provide services exclusively to entrepreneurs for their business and to legal entities, such as owners’ associations or clubs, for their activities (the “client”). We do not provide services to consumers. When ordering, the client states its company ID and confirms that it orders as part of its business or activity.",
+        text: "The provider is Asterion Software s.r.o., company ID 10736697, Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, file C 347537 (“Asterion”). We provide services exclusively to entrepreneurs for their business and to legal entities, such as owners’ associations or clubs, for their activities (the “client”). We do not provide services to consumers. When ordering, the client states its company ID and confirms that it orders as part of its business or activity.",
       },
 
       { type: "h2", text: "2. Conclusion of a contract" },
@@ -195,7 +195,7 @@ export const terms: Record<Locale, LegalDoc> = {
 
   de: {
     title: "Allgemeine Geschäftsbedingungen",
-    description: "Allgemeine Geschäftsbedingungen der Asterion Software, s.r.o. für Analysen, Umsetzungen, Beratungen und Schulungen.",
+    description: "Allgemeine Geschäftsbedingungen der Asterion Software s.r.o. für Analysen, Umsetzungen, Beratungen und Schulungen.",
     blocks: [
       {
         type: "p",
@@ -204,7 +204,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "1. Wer wir sind und für wen die Bedingungen gelten" },
       {
         type: "p",
-        text: "Anbieter ist die Asterion Software, s.r.o., Id.-Nr. 10736697, Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Aktenzeichen C 347537 („Asterion“). Wir erbringen Leistungen ausschließlich an Unternehmer für ihr Unternehmen und an juristische Personen, etwa Eigentümergemeinschaften oder Vereine, für ihre Tätigkeit („Kunde“). Verbrauchern bieten wir keine Leistungen an. Bei der Bestellung gibt der Kunde seine Id.-Nr. an und bestätigt, dass er im Rahmen seines Unternehmens oder seiner Tätigkeit bestellt.",
+        text: "Anbieter ist die Asterion Software s.r.o., Id.-Nr. 10736697, Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Aktenzeichen C 347537 („Asterion“). Wir erbringen Leistungen ausschließlich an Unternehmer für ihr Unternehmen und an juristische Personen, etwa Eigentümergemeinschaften oder Vereine, für ihre Tätigkeit („Kunde“). Verbrauchern bieten wir keine Leistungen an. Bei der Bestellung gibt der Kunde seine Id.-Nr. an und bestätigt, dass er im Rahmen seines Unternehmens oder seiner Tätigkeit bestellt.",
       },
 
       { type: "h2", text: "2. Vertragsschluss" },

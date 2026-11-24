@@ -1,6 +1,6 @@
 /** Contact and company details – repeated on the page in contacts, the About section, the footer and the legal pages. */
 export const company = {
-  name: "Asterion Software, s.r.o.",
+  name: "Asterion Software s.r.o.",
   companyId: "10736697",
   vatId: "CZ10736697",
   address: "Bělehradská 858/23, 120 00 Praha 2",

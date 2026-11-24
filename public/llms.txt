@@ -1,6 +1,6 @@
 # Asterion Software
 
-> Asterion Software, s.r.o. je malé české softwarové studio z Prahy. Dodává AI audity, automatizaci firemních procesů, interní AI asistenty, webové aplikace na míru, Java/Spring konzultace a praktická firemní školení AI. Klient komunikuje přímo se seniorním vývojářem, bez obchodní mezivrstvy. Zakladatel: Jan Marcis ([LinkedIn](https://www.linkedin.com/in/jan-marcis-b8335111/)). Autor a provozovatel AI platformy Studijo.
+> Asterion Software s.r.o. je malé české softwarové studio z Prahy. Dodává AI audity, automatizaci firemních procesů, interní AI asistenty, webové aplikace na míru, Java/Spring konzultace a praktická firemní školení AI. Klient komunikuje přímo se seniorním vývojářem, bez obchodní mezivrstvy. Zakladatel: Jan Marcis ([LinkedIn](https://www.linkedin.com/in/jan-marcis-b8335111/)). Autor a provozovatel AI platformy Studijo.
 
 Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Technologie: Java, Spring Boot, PostgreSQL, Docker, Azure, LLM API (GPT, Claude, Gemini), RAG, AI workflow.
 

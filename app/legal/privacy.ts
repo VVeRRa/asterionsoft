@@ -11,12 +11,12 @@ import type { LegalDoc } from "./types";
 export const privacy: Record<Locale, LegalDoc> = {
   cs: {
     title: "Zásady ochrany osobních údajů",
-    description: "Jak Asterion Software, s.r.o. zpracovává osobní údaje z poptávek, zakázek a konzultací.",
+    description: "Jak Asterion Software s.r.o. zpracovává osobní údaje z poptávek, zakázek a konzultací.",
     blocks: [
       { type: "h2", text: "Kdo vaše údaje zpracovává" },
       {
         type: "p",
-        text: "Správcem osobních údajů je Asterion Software, s.r.o., IČO 10736697, se sídlem Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 347537. Ve věcech osobních údajů nám pište na {email} nebo volejte +420 604 257 866. Pověřence pro ochranu osobních údajů jsme nejmenovali, zákon to po nás nevyžaduje.",
+        text: "Správcem osobních údajů je Asterion Software s.r.o., IČO 10736697, se sídlem Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 347537. Ve věcech osobních údajů nám pište na {email} nebo volejte +420 604 257 866. Pověřence pro ochranu osobních údajů jsme nejmenovali, zákon to po nás nevyžaduje.",
       },
       {
         type: "p",
@@ -167,7 +167,7 @@ export const privacy: Record<Locale, LegalDoc> = {
 
   en: {
     title: "Privacy policy",
-    description: "How Asterion Software, s.r.o. processes personal data from enquiries, projects and consultations.",
+    description: "How Asterion Software s.r.o. processes personal data from enquiries, projects and consultations.",
     blocks: [
       {
         type: "p",
@@ -176,7 +176,7 @@ export const privacy: Record<Locale, LegalDoc> = {
       { type: "h2", text: "Who processes your data" },
       {
         type: "p",
-        text: "The controller is Asterion Software, s.r.o., company ID 10736697, registered office Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, section C, file 347537. For anything related to personal data, write to {email} or call +420 604 257 866. We have not appointed a data protection officer, as the law does not require one for us.",
+        text: "The controller is Asterion Software s.r.o., company ID 10736697, registered office Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, section C, file 347537. For anything related to personal data, write to {email} or call +420 604 257 866. We have not appointed a data protection officer, as the law does not require one for us.",
       },
       {
         type: "p",
@@ -327,7 +327,7 @@ export const privacy: Record<Locale, LegalDoc> = {
 
   de: {
     title: "Datenschutzerklärung",
-    description: "Wie die Asterion Software, s.r.o. personenbezogene Daten aus Anfragen, Aufträgen und Beratungen verarbeitet.",
+    description: "Wie die Asterion Software s.r.o. personenbezogene Daten aus Anfragen, Aufträgen und Beratungen verarbeitet.",
     blocks: [
       {
         type: "p",
@@ -336,7 +336,7 @@ export const privacy: Record<Locale, LegalDoc> = {
       { type: "h2", text: "Wer Ihre Daten verarbeitet" },
       {
         type: "p",
-        text: "Verantwortlicher ist die Asterion Software, s.r.o., Id.-Nr. 10736697, Sitz Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Abteilung C, Einlage 347537. Bei Fragen zum Datenschutz schreiben Sie an {email} oder rufen Sie +420 604 257 866 an. Einen Datenschutzbeauftragten haben wir nicht benannt, da das Gesetz dies für uns nicht vorschreibt.",
+        text: "Verantwortlicher ist die Asterion Software s.r.o., Id.-Nr. 10736697, Sitz Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Abteilung C, Einlage 347537. Bei Fragen zum Datenschutz schreiben Sie an {email} oder rufen Sie +420 604 257 866 an. Einen Datenschutzbeauftragten haben wir nicht benannt, da das Gesetz dies für uns nicht vorschreibt.",
       },
       {
         type: "p",
