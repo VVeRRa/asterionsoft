@@ -32,7 +32,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "4. AI audit procesů" },
       {
         type: "p",
-        text: "Cenu auditu odečteme od ceny implementace, pokud klient objedná implementaci navrženou v auditu do 60 dní od předání výstupu auditu. Výstup auditu může klient využít i bez další spolupráce s námi.",
+        text: "Cenu auditu odečteme od ceny implementace, pokud klient do 60 dní od předání výstupu auditu písemně přijme naši nabídku na realizaci, tedy e-mailem nebo podpisem smlouvy. Výstup auditu může klient využít i bez další spolupráce s námi.",
       },
 
       { type: "h2", text: "5. Konzultace na dálku a školení" },
@@ -127,7 +127,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "4. AI process audit" },
       {
         type: "p",
-        text: "We deduct the price of the audit from the price of the implementation if the client orders the implementation proposed in the audit within 60 days of receiving the audit output. The client may use the audit output without any further cooperation with us.",
+        text: "We deduct the price of the audit from the price of the implementation if, within 60 days of receiving the audit output, the client accepts our offer for the implementation in writing, by email or by signing a contract. The client may use the audit output without any further cooperation with us.",
       },
 
       { type: "h2", text: "5. Remote consultations and training" },
@@ -222,7 +222,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "4. KI-Prozessaudit" },
       {
         type: "p",
-        text: "Den Preis des Audits rechnen wir auf den Preis der Umsetzung an, wenn der Kunde die im Audit vorgeschlagene Umsetzung innerhalb von 60 Tagen nach Übergabe des Auditergebnisses bestellt. Das Auditergebnis kann der Kunde auch ohne weitere Zusammenarbeit mit uns nutzen.",
+        text: "Den Preis des Audits rechnen wir auf den Preis der Umsetzung an, wenn der Kunde innerhalb von 60 Tagen nach Übergabe des Auditergebnisses unser Angebot für die Umsetzung schriftlich annimmt, per E-Mail oder durch Unterzeichnung eines Vertrags. Das Auditergebnis kann der Kunde auch ohne weitere Zusammenarbeit mit uns nutzen.",
       },
 
       { type: "h2", text: "5. Online-Beratungen und Schulungen" },
