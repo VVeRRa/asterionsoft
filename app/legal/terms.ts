@@ -81,7 +81,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Práva k výsledkům" },
       {
         type: "p",
-        text: "Po zaplacení ceny získá klient k dílu nevýhradní, časově neomezenou licenci pro vlastní potřebu, pokud nabídka nestanoví jinak. Obecné knihovny, šablony a know-how Asterionu zůstávají Asterionu a můžeme je použít i jinde.",
+        text: "Po zaplacení celé ceny získá klient k dílu nevýhradní, časově a územně neomezenou licenci pro své podnikání nebo činnost, včetně práva dílo upravovat nebo nechat upravit jiným dodavatelem, pokud nabídka nebo smlouva nestanoví jinak. Obecné knihovny, šablony a nástroje použité v díle, a to i ty, které vzniknou během zakázky, nejsou předmětem výhradních práv klienta. Práva k nim zůstávají jejich nositelům (Asterionu nebo jeho dodavatelům), kteří je smějí dál používat. Klient k nim získává licenci v rozsahu potřebném k užívání díla, včetně jeho úprav jiným dodavatelem.",
       },
 
       { type: "h2", text: "11. Mlčenlivost a reference" },
@@ -176,7 +176,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Rights to the results" },
       {
         type: "p",
-        text: "Once the price is paid, the client receives a non-exclusive licence to the work, unlimited in time, for its own use, unless the offer states otherwise. Asterion’s general libraries, templates and know-how remain Asterion’s and we may use them elsewhere.",
+        text: "Once the full price is paid, the client receives a non-exclusive licence to the work, unlimited in time and territory, for its business or activity, including the right to modify the work or have it modified by another supplier, unless the offer or contract states otherwise. General libraries, templates and tools used in the work, including those created during the engagement, are not subject to the client’s exclusive rights. The rights to them remain with their holders (Asterion or its suppliers), who may continue to use them. The client receives a licence to them to the extent needed to use the work, including its modification by another supplier.",
       },
 
       { type: "h2", text: "11. Confidentiality and references" },
@@ -271,7 +271,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Rechte an den Ergebnissen" },
       {
         type: "p",
-        text: "Nach Zahlung des Preises erhält der Kunde eine nicht ausschließliche, zeitlich unbegrenzte Lizenz am Werk für den eigenen Bedarf, sofern das Angebot nichts anderes bestimmt. Allgemeine Bibliotheken, Vorlagen und Know-how von Asterion bleiben bei Asterion und dürfen auch anderweitig verwendet werden.",
+        text: "Nach Zahlung des vollständigen Preises erhält der Kunde eine nicht ausschließliche, zeitlich und räumlich unbegrenzte Lizenz am Werk für seine Geschäftstätigkeit oder Tätigkeit, einschließlich des Rechts, das Werk zu ändern oder von einem anderen Anbieter ändern zu lassen, sofern das Angebot oder der Vertrag nichts anderes bestimmt. Allgemeine Bibliotheken, Vorlagen und Werkzeuge, die im Werk verwendet werden, auch solche, die während des Auftrags entstehen, sind nicht Gegenstand ausschließlicher Rechte des Kunden. Die Rechte daran bleiben bei ihren Inhabern (Asterion oder seinen Zulieferern), die sie weiter verwenden dürfen. Der Kunde erhält daran eine Lizenz in dem Umfang, der für die Nutzung des Werks erforderlich ist, einschließlich seiner Änderung durch einen anderen Anbieter.",
       },
 
       { type: "h2", text: "11. Vertraulichkeit und Referenzen" },
