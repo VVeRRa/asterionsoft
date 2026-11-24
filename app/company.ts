@@ -7,7 +7,7 @@ export const company = {
   /** Commercial register file number (Městský soud v Praze, section C, insert 347537). */
   registryFile: "C 347537",
   director: "Jan Marcis",
-  email: "postmaster@asterionsoft.cz",
+  email: "info@asterionsoft.cz",
   phone: "+420 604 257 866",
   phoneHref: "tel:+420604257866",
   studioUrl: "https://studijo.io",
