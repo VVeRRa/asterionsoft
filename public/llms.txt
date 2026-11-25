@@ -6,7 +6,7 @@ Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Tec
 
 ## Jak spolupráce probíhá
 
-1. Úvodní konzultace zdarma: upřesníme cíl a ověříme, s jakými systémy pracujete.
+1. Krátký úvodní hovor zdarma: upřesníme cíl a ověříme, s jakými systémy pracujete.
 2. Jednoduché zadání naceníme rovnou pevnou cenou. U složitějšího zadání nejdřív placený AI audit od 14 900 Kč bez DPH: písemná zpráva s doporučením a odhadem ceny a úspory, potom pevná nabídka pro ověřený rozsah. Pokud klient nabídku písemně přijme do 60 dnů od předání zprávy, cena auditu se od realizace odečte.
 3. Realizace za pevnou cenu pro jasně vymezený rozsah.
 4. Volitelně měsíční paušál za dohled a provoz od 1 000 Kč bez DPH (u služby Podklady pod kontrolou od 1 500 Kč). Které náklady na hosting a AI paušál pokrývá a které služby klient hradí přímo, uvádí nabídka. Úpravy se nacení zvlášť.
@@ -16,7 +16,7 @@ Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Tec
 Ceny jsou orientační a bez DPH, závazná je cena v nabídce. Finální cena závisí na rozsahu.
 
 - [AI audit procesů](https://asterionsoft.cz/#sluzby): Zmapujeme postup, ověříme napojení a dostanete písemnou zprávu s odhadem ceny a úspory. Pro ověřený rozsah pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme. Od 14 900 Kč (odečet při přijetí nabídky).
-- [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Máte workflow plné e‑mailů, Excelů a copy‑paste? Postavíme automatizaci na míru z nástrojů, které už máte, API, AI nebo vlastního kódu. Pevná cena (po konzultaci).
+- [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Máte workflow plné e‑mailů, Excelů a copy‑paste? Postavíme automatizaci na míru z nástrojů, které už máte, API, AI nebo vlastního kódu. Pevná cena (po úvodním hovoru).
 - [Pokročilý interní AI asistent](https://asterionsoft.cz/#sluzby): Chat nad firemní dokumentací, know‑how a daty. S důrazem na přístupová práva a dohledatelnost zdrojů. Od 35 000 Kč (pilot).
 - [Jednoduchý interní AI asistent](https://asterionsoft.cz/#sluzby): Asistent pro zaměstnance, který odpovídá z podkladů, které mu předáte, třeba ze směrnic, ceníku nebo návodů. Bez napojení na firemní systémy, takže je rychle nasazený. Od 9 000 Kč (jednoduchá verze).
 - [AI asistent na webu](https://asterionsoft.cz/#sluzby): Chat na vašem webu, který návštěvníkům odpovídá na časté dotazy o službách, cenách a postupu z podkladů, které mu dáte. Od 9 000 Kč (jednoduchá verze).
@@ -31,7 +31,7 @@ Ceny jsou orientační a bez DPH, závazná je cena v nabídce. Finální cena z
 
 [Podklady pod kontrolou](https://asterionsoft.cz/#ucetni): Automatizace porovná bankovní výpis s doklady klientů a připraví seznam plateb, ke kterým nenašla odpovídající doklad, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu.
 
-- Konzultace (zdarma): Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete.
+- Úvodní hovor (zdarma): Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete.
 - AI audit procesů (od 14 900 Kč): Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. Dostanete zprávu s odhadem ceny a pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme.
 - Implementace (od 35 000 Kč): Pevná cena pro jasně vymezený rozsah. Nabídka říká, co dostanete, co v ceně není a jak ověříme, že vše funguje.
 - Provoz (od 1 500 Kč/měs.): Volitelně. Hlídáme, že automatizace běží, a opravíme chybu na naší straně. Co z hostingu a AI paušál pokrývá, uvedeme v nabídce. Úpravy naceníme zvlášť.
@@ -62,7 +62,7 @@ Modelové příklady na webu jsou ilustrativní, ne konkrétní klienti. Čas p�
 
 ### Kolik stojí AI audit?
 
-U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.
+U jednoduché automatizace stačí krátký úvodní hovor zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.
 
 ### Kolik stojí AI asistent?
 
@@ -70,7 +70,7 @@ Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, st
 
 ### Jak probíhá spolupráce?
 
-Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.
+Začínáme krátkým úvodním hovorem zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.
 
 ### S kým budu během projektu komunikovat?
 
@@ -90,7 +90,7 @@ Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutno
 
 ### Funguje to s naším systémem?
 
-Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.
+Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodním hovoru ověříme, jaké možnosti napojení váš systém nabízí.
 
 ### Co když AI udělá chybu?
 

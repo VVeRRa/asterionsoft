@@ -78,11 +78,11 @@
   "faqTitle": "Na co se klienti ptají",
   "faqIntro": "Nenašli jste odpověď? Napište nebo zavolejte na +420 604 257 866.",
   "auditQuestion": "Kolik stojí AI audit?",
-  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.",
+  "auditAnswer": "U jednoduché automatizace stačí krátký úvodní hovor zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.",
   "assistantQuestion": "Kolik stojí AI asistent?",
   "assistantAnswer": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč bez DPH, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč bez DPH. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
   "processQuestion": "Jak probíhá spolupráce?",
-  "processAnswer": "Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.",
+  "processAnswer": "Začínáme krátkým úvodním hovorem zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.",
   "contactQuestion": "S kým budu během projektu komunikovat?",
   "contactAnswer": "Přímo se seniorním vývojářem, který řešení navrhuje a staví. Mezi vámi a vývojem není žádná obchodní ani projektová mezivrstva, takže otázky se řeší rychle a bez tichých telefonů.",
   "excelQuestion": "Můžete převést firemní Excel na aplikaci?",
@@ -127,7 +127,7 @@
   "menuClose": "Zavřít menu",
   "menuLabel": "Hlavní menu",
   "deliverable": "Typický výstup",
-  "deliverableGoal": "úvodní konzultace zdarma a upřesnění cíle,",
+  "deliverableGoal": "krátký úvodní hovor zdarma a upřesnění cíle,",
   "deliverableScope": "u složitějšího zadání krátký placený AI audit,",
   "deliverableResult": "pevná cena pro jasně vymezený rozsah a předání na vašich datech,",
   "deliverableFollowUp": "volitelně paušál za dohled a provoz.",
@@ -143,7 +143,7 @@
   "industriesNav": "Pro obory",
   "industriesLabel": "Řešení pro obory",
   "industriesTitle": "Konkrétní scénáře pro váš obor",
-  "industriesBody": "Začínáme úvodní konzultací zdarma. Pak dostanete pevnou cenu pro jasně vymezený rozsah, u složitějšího zadání po krátkém placeném AI auditu. Čas před nasazením a po něm změříme, aby úspora nebyla jen odhad.",
+  "industriesBody": "Začínáme krátkým úvodním hovorem zdarma. Pak dostanete pevnou cenu pro jasně vymezený rozsah, u složitějšího zadání po krátkém placeném AI auditu. Čas před nasazením a po něm změříme, aby úspora nebyla jen odhad.",
   "audienceLabel": "Pro koho",
   "scopeLabel": "Co obsahuje",
   "exampleLink": "Modelový příklad →",
@@ -170,7 +170,7 @@
   "dataQuestion": "Kam putují naše data?",
   "dataAnswer": "Řešení navrhujeme tak, aby data zůstala v EU, kde to jde, a AI pracovala jen s tím, co k úkolu potřebuje. Používáme firemní API rozhraní AI modelů, u kterých poskytovatel podle svých aktuálních podmínek data k tréninku nepoužívá. Kde budou data uložená, jaký model a tarif použijeme a kdo k datům bude mít přístup, uvedeme konkrétně v nabídce.",
   "systemsQuestion": "Funguje to s naším systémem?",
-  "systemsAnswer": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.",
+  "systemsAnswer": "Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodním hovoru ověříme, jaké možnosti napojení váš systém nabízí.",
   "mistakesQuestion": "Co když AI udělá chybu?",
   "mistakesAnswer": "U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh nebo předvyplněný záznam a člověk ho potvrdí. Nejisté případy systém označí a každá akce se zaznamená, takže je dohledatelné, co se stalo a proč.",
   "runningQuestion": "Kolik stojí provoz po spuštění?",
@@ -199,7 +199,7 @@
         "API",
         "LLM"
       ],
-      "priceLabel": "po konzultaci"
+      "priceLabel": "po úvodním hovoru"
     },
     {
       "name": "Pokročilý interní AI asistent",
@@ -484,7 +484,7 @@
     "pricingTitle": "Jak spolupráce probíhá a kolik stojí",
     "pricing": [
       {
-        "title": "Konzultace",
+        "title": "Úvodní hovor",
         "price": "zdarma",
         "body": "Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete."
       },
@@ -506,7 +506,7 @@
     ],
     "firstOrder": "První zakázka je záměrně malá: jeden proces, jeden účetní program a menší skupina klientů. Čas strávený urgencemi změříme před nasazením a po něm, aby úspora nebyla jen odhad.",
     "moreTitle": "Co dalšího v kanceláři zautomatizujeme",
-    "moreIntro": "Každá kancelář pracuje jinak. Na konzultaci se ptáme na jakoukoli ruční práci, nejen na urgence.",
+    "moreIntro": "Každá kancelář pracuje jinak. Na úvodním hovoru se ptáme na jakoukoli ruční práci, nejen na urgence.",
     "more": [
       "sběr a vytěžení dokladů z e‑mailu a fotek",
       "roční agenda a podklady k přiznání",
@@ -516,7 +516,7 @@
       "mzdové podklady od klientů",
       "přehled kanceláře a stav uzávěrek"
     ],
-    "cta": "Domluvit konzultaci zdarma",
+    "cta": "Domluvit úvodní hovor zdarma",
     "example": "Modelový příklad kanceláře"
   }
 }

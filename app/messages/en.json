@@ -78,11 +78,11 @@
   "faqTitle": "What clients ask us",
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
   "auditQuestion": "How much does an AI audit cost?",
-  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900 excl. VAT: we map your current process, tools and volumes, check the integration options and give you a written report with recommendations and a cost and savings estimate. For the verified scope, we then prepare a fixed-price offer. If you accept it in writing within 60 days of receiving the report, we deduct the audit price from the implementation.",
+  "auditAnswer": "For a simple automation, a short free introductory call is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900 excl. VAT: we map your current process, tools and volumes, check the integration options and give you a written report with recommendations and a cost and savings estimate. For the verified scope, we then prepare a fixed-price offer. If you accept it in writing within 60 days of receiving the report, we deduct the audit price from the implementation.",
   "assistantQuestion": "How much does an AI assistant cost?",
   "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000 excl. VAT, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000 excl. VAT. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
-  "processAnswer": "We start with a free initial consultation. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid AI audit. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
+  "processAnswer": "We start with a short free introductory call. A simple automation gets a fixed price straight away; for a more complex one, we first do a short paid AI audit. Every offer states what you get, what is not included and how we verify that the automation works. After handover, you can choose a flat fee for monitoring and operation.",
   "contactQuestion": "Who will I talk to during the project?",
   "contactAnswer": "You speak directly with the senior developer who designs and builds your solution, so questions can be resolved quickly and details stay clear.",
   "excelQuestion": "Can you turn our Excel spreadsheet into an app?",
@@ -127,7 +127,7 @@
   "menuClose": "Close menu",
   "menuLabel": "Main menu",
   "deliverable": "What to expect",
-  "deliverableGoal": "a free initial consultation to clarify your goals,",
+  "deliverableGoal": "a short free introductory call to clarify your goals,",
   "deliverableScope": "a short paid AI audit for more complex projects,",
   "deliverableResult": "a fixed price for a clearly defined scope and handover on your data,",
   "deliverableFollowUp": "an optional flat fee for monitoring and operation.",
@@ -143,7 +143,7 @@
   "industriesNav": "By Industry",
   "industriesLabel": "Industry solutions",
   "industriesTitle": "Concrete use cases for your industry",
-  "industriesBody": "We start with a free initial consultation. You then get a fixed price for a clearly defined scope, after a short paid AI audit for more complex projects. We measure the time before and after so the savings aren’t just an estimate.",
+  "industriesBody": "We start with a short free introductory call. You then get a fixed price for a clearly defined scope, after a short paid AI audit for more complex projects. We measure the time before and after so the savings aren’t just an estimate.",
   "audienceLabel": "Who it’s for",
   "scopeLabel": "What’s included",
   "exampleLink": "See example →",
@@ -170,7 +170,7 @@
   "dataQuestion": "Where does our data go?",
   "dataAnswer": "We design solutions to keep data in the EU wherever possible and to let the AI work only with what it needs for the task. We use business API access to AI models whose providers, under their current terms, do not use the data for training. Where the data will be stored, which model and plan we use and who will have access to the data are set out specifically in the offer.",
   "systemsQuestion": "Will it work with our system?",
-  "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. You keep your tools, and we add a new one only where it really saves work. During the initial consultation, we check which integration options your system offers.",
+  "systemsAnswer": "Usually, yes. We connect via API, file export and import, or a shared mailbox, whether it’s an ERP, accounting software, an e‑shop or a shared drive. You keep your tools, and we add a new one only where it really saves work. During the introductory call, we check which integration options your system offers.",
   "mistakesQuestion": "What if the AI makes a mistake?",
   "mistakesAnswer": "That’s why a person makes the call on important steps. The AI prepares the groundwork, a draft or a pre-filled record, and a person confirms it. The system flags uncertain cases and logs every action, so you can always trace what happened and why.",
   "runningQuestion": "How much does it cost to run after launch?",
@@ -199,7 +199,7 @@
         "API",
         "LLM"
       ],
-      "priceLabel": "after consultation"
+      "priceLabel": "after the intro call"
     },
     {
       "name": "Advanced internal AI assistant",
@@ -484,7 +484,7 @@
     "pricingTitle": "How we work together and what it costs",
     "pricing": [
       {
-        "title": "Consultation",
+        "title": "Intro call",
         "price": "free",
         "body": "We find the process that costs you the most unnecessary time and check which software you use."
       },
@@ -506,7 +506,7 @@
     ],
     "firstOrder": "The first project is deliberately small: one process, one accounting system and a small group of clients. We measure the time spent chasing documents before and after, so the savings aren’t just an estimate.",
     "moreTitle": "What else we can automate in your firm",
-    "moreIntro": "Every firm works differently. In the consultation, we ask about any manual work, not just reminders.",
+    "moreIntro": "Every firm works differently. In the intro call, we ask about any manual work, not just reminders.",
     "more": [
       "collecting and extracting documents from email and photos",
       "annual tax returns and supporting documents",
@@ -516,7 +516,7 @@
       "payroll inputs from clients",
       "a firm overview and status of month-end closes"
     ],
-    "cta": "Book a free consultation",
+    "cta": "Book a free intro call",
     "example": "See an illustrative firm"
   }
 }
