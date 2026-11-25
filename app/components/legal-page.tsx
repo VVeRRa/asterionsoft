@@ -1,5 +1,4 @@
 import { Fragment, type ReactNode } from "react";
-import { company } from "../company";
 import { legalDocs } from "../legal/docs";
 import { legalEffectiveDate, legalPaths } from "../legal/paths";
 import type { LegalBlock, LegalKind } from "../legal/types";
@@ -8,6 +7,7 @@ import type { Messages } from "../messages";
 import czech from "../messages/cs.json";
 import english from "../messages/en.json";
 import german from "../messages/de.json";
+import ProtectedEmail from "./protected-email";
 import SiteFooter from "./site-footer";
 
 const messages: Record<Locale, Messages> = { cs: czech, en: english, de: german };
@@ -22,7 +22,7 @@ function renderInline(text: string): ReactNode[] {
     parts.push(text.slice(last, match.index));
     const [whole, label, href] = match;
     if (whole === "{email}") {
-      parts.push(<a key={match.index} href={`mailto:${company.email}`}>{company.email}</a>);
+      parts.push(<ProtectedEmail key={match.index} />);
     } else {
       const external = href.startsWith("http");
       parts.push(

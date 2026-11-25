@@ -95,7 +95,7 @@ Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavole
 ## Kontakt
 
 - Poptávka: formulář na [asterionsoft.cz/#poptavka](https://asterionsoft.cz/#poptavka)
-- E-mail: info@asterionsoft.cz
+- E-mail: info (zavináč) asterionsoft.cz
 - Telefon: +420 604 257 866
 - Sídlo: Bělehradská 858/23, 120 00 Praha 2
 - IČ: 10736697, DIČ: CZ10736697
