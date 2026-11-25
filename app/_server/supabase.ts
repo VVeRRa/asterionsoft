@@ -46,10 +46,18 @@ export async function recentInquiryCount(ipHash: string, minutes: number): Promi
   if (!supabase) return 0;
   const since = new Date(Date.now() - minutes * 60_000).toISOString();
   const query = new URLSearchParams({ select: "id", ip_hash: `eq.${ipHash}`, created_at: `gte.${since}`, limit: "1" });
-  const response = await fetch(`${supabase.endpoint}?${query}`, {
-    headers: { ...supabase.headers, Prefer: "count=exact" },
-    cache: "no-store",
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${supabase.endpoint}?${query}`, {
+      headers: { ...supabase.headers, Prefer: "count=exact" },
+      cache: "no-store",
+      signal: AbortSignal.timeout(2_000),
+    });
+  } catch {
+    // Like an unsuccessful HTTP response, an unavailable count must allow the email fallback to run.
+    console.error("Počet nedávných poptávek v Supabase se nepodařilo načíst.");
+    return 0;
+  }
   if (!response.ok) return 0;
   const total = response.headers.get("content-range")?.split("/")[1];
   return total ? Number(total) || 0 : 0;
@@ -75,9 +83,8 @@ export async function storeInquiry(
   const supabase = config();
   if (!supabase) return { ok: false, reason: "not_configured" };
   const { classified_by, service_category, urgency, summary, is_spam, ...rest } = classification;
-  let response: Response;
   try {
-    response = await fetch(`${supabase.endpoint}?select=id`, {
+    const response = await fetch(`${supabase.endpoint}?select=id`, {
       method: "POST",
       headers: { ...supabase.headers, Prefer: "return=representation" },
       body: JSON.stringify({
@@ -95,13 +102,16 @@ export async function storeInquiry(
       cache: "no-store",
       signal: AbortSignal.timeout(10_000),
     });
+    if (!response.ok) return { ok: false, reason: await errorCode(response) };
+    const rows: unknown = await response.json();
+    const id = Array.isArray(rows) ? rows[0]?.id : undefined;
+    return typeof id === "string" && id.trim() ? { ok: true, id } : { ok: false, reason: "no_row" };
   } catch (error) {
-    console.error("Supabase není dostupný (zkontrolujte SUPABASE_URL):", error);
-    return { ok: false, reason: "network" };
+    // The body can fail after headers arrive. Only a confirmed ID lets the owner email omit the inquiry text.
+    const reason = error instanceof SyntaxError ? "invalid_response" : "network";
+    console.error("Supabase nepotvrdil uložení poptávky:", reason);
+    return { ok: false, reason };
   }
-  if (!response.ok) return { ok: false, reason: await errorCode(response) };
-  const rows = (await response.json()) as { id: string }[];
-  return rows[0] ? { ok: true, id: rows[0].id } : { ok: false, reason: "no_row" };
 }
 
 export async function markInquiry(id: string, fields: { notified_at?: string; auto_replied_at?: string }) {
