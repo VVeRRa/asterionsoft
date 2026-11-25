@@ -8,7 +8,7 @@ export const company = {
   registryFile: "C 347537",
   director: "Jan Marcis",
   /** Contact e-mail split in two so the full address never sits in the page source; ProtectedEmail joins it in the browser. */
-  emailUser: "postmaster",
+  emailUser: "info",
   emailDomain: "asterionsoft.cz",
   phone: "+420 604 257 866",
   phoneHref: "tel:+420604257866",
