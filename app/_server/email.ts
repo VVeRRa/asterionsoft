@@ -32,7 +32,7 @@ const autoReply: Record<Locale, { subject: string; greeting: (name: string) => s
       "děkujeme za vaši poptávku. Přečtu si ji a do jednoho pracovního dne se vám ozvu s návrhem dalšího kroku.",
       "Pokud chcete něco doplnit, stačí odpovědět na tento e-mail. Spěcháte? Zavolejte na +420 604 257 866.",
     ],
-    signoff: "S pozdravem\nJan Marcis\nAsterion Software, s.r.o.",
+    signoff: "S pozdravem\nJan Marcis\nAsterion Software s.r.o.",
   },
   en: {
     subject: "Thank you for your enquiry – Asterion Software",
@@ -41,7 +41,7 @@ const autoReply: Record<Locale, { subject: string; greeting: (name: string) => s
       "thank you for getting in touch. I’ll read your enquiry and get back to you within one business day with a suggested next step.",
       "If you’d like to add anything, simply reply to this email. In a hurry? Call +420 604 257 866.",
     ],
-    signoff: "Best regards\nJan Marcis\nAsterion Software, s.r.o.",
+    signoff: "Best regards\nJan Marcis\nAsterion Software s.r.o.",
   },
   de: {
     subject: "Vielen Dank für Ihre Anfrage – Asterion Software",
@@ -50,7 +50,7 @@ const autoReply: Record<Locale, { subject: string; greeting: (name: string) => s
       "vielen Dank für Ihre Anfrage. Ich lese sie sorgfältig und melde mich innerhalb eines Werktags mit einem Vorschlag für den nächsten Schritt.",
       "Möchten Sie etwas ergänzen, antworten Sie einfach auf diese E-Mail. Eilt es? Rufen Sie uns an: +420 604 257 866.",
     ],
-    signoff: "Mit freundlichen Grüßen\nJan Marcis\nAsterion Software, s.r.o.",
+    signoff: "Mit freundlichen Grüßen\nJan Marcis\nAsterion Software s.r.o.",
   },
 };
 

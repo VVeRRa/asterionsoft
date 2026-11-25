@@ -6,7 +6,7 @@ import { localePaths, locales, type Locale } from "./locales";
 
 const czech = {
   "title": "Asterion Software — AI, automatizace a vývoj aplikací na míru",
-  "description": "Asterion Software, s.r.o. — AI audit procesů, automatizace na míru, interní AI asistenti, webové aplikace na míru a firemní školení AI.",
+  "description": "Asterion Software s.r.o. — AI audit procesů, automatizace na míru, interní AI asistenti, webové aplikace na míru a firemní školení AI.",
   "alternates": {
     "canonical": "https://asterionsoft.cz/"
   },
@@ -50,12 +50,12 @@ type Translation = { title: string; description: string; openGraphLocale: string
 const localized: Partial<Record<Locale, Translation>> = {
   en: {
     title: "Asterion Software — AI, Automation, and Custom Application Development",
-    description: "Asterion Software, s.r.o. — AI audits, custom business process automation, internal AI assistants, custom web applications and AI training for businesses.",
+    description: "Asterion Software s.r.o. — AI audits, custom business process automation, internal AI assistants, custom web applications and AI training for businesses.",
     openGraphLocale: "en_GB",
   },
   de: {
     title: "Asterion Software — KI, Automatisierung und individuelle Anwendungsentwicklung",
-    description: "Asterion Software, s.r.o. — KI-Audits, individuelle Automatisierung von Geschäftsprozessen, interne KI-Assistenten, individuelle Webanwendungen und KI-Schulungen für Unternehmen.",
+    description: "Asterion Software s.r.o. — KI-Audits, individuelle Automatisierung von Geschäftsprozessen, interne KI-Assistenten, individuelle Webanwendungen und KI-Schulungen für Unternehmen.",
     openGraphLocale: "de_DE",
   },
 };

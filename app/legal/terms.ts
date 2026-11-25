@@ -9,12 +9,12 @@ import type { LegalDoc } from "./types";
 export const terms: Record<Locale, LegalDoc> = {
   cs: {
     title: "Obchodní podmínky",
-    description: "Obchodní podmínky společnosti Asterion Software, s.r.o. pro analýzy, implementace, konzultace a školení.",
+    description: "Obchodní podmínky společnosti Asterion Software s.r.o. pro analýzy, implementace, konzultace a školení.",
     blocks: [
       { type: "h2", text: "1. Kdo jsme a pro koho podmínky platí" },
       {
         type: "p",
-        text: "Poskytovatelem je Asterion Software, s.r.o., IČO 10736697, Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, sp. zn. C 347537 (dále „Asterion“). Služby poskytujeme výhradně podnikatelům pro jejich podnikání a právnickým osobám, například společenstvím vlastníků jednotek nebo spolkům, pro jejich činnost (dále „klient“). Spotřebitelům služby neposkytujeme. Klient při objednávce uvede IČO a potvrdí, že objednává v rámci svého podnikání nebo činnosti.",
+        text: "Poskytovatelem je Asterion Software s.r.o., IČO 10736697, Bělehradská 858/23, 120 00 Praha 2, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, sp. zn. C 347537 (dále „Asterion“). Služby poskytujeme výhradně podnikatelům pro jejich podnikání a právnickým osobám, například společenstvím vlastníků jednotek nebo spolkům, pro jejich činnost (dále „klient“). Spotřebitelům služby neposkytujeme. Klient při objednávce uvede IČO a potvrdí, že objednává v rámci svého podnikání nebo činnosti.",
       },
 
       { type: "h2", text: "2. Uzavření smlouvy" },
@@ -81,7 +81,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Práva k výsledkům" },
       {
         type: "p",
-        text: "Po zaplacení ceny získá klient k dílu nevýhradní, časově neomezenou licenci pro vlastní potřebu, pokud nabídka nestanoví jinak. Obecné knihovny, šablony a know-how Asterionu zůstávají Asterionu a můžeme je použít i jinde.",
+        text: "Po zaplacení celé ceny získá klient k dílu nevýhradní, časově a územně neomezenou licenci pro své podnikání nebo činnost, včetně práva dílo upravovat nebo nechat upravit jiným dodavatelem, pokud nabídka nebo smlouva nestanoví jinak. Obecné knihovny, šablony a nástroje použité v díle, a to i ty, které vzniknou během zakázky, nejsou předmětem výhradních práv klienta. Práva k nim zůstávají jejich nositelům (Asterionu nebo jeho dodavatelům), kteří je smějí dál používat. Klient k nim získává licenci v rozsahu potřebném k užívání díla, včetně jeho úprav jiným dodavatelem.",
       },
 
       { type: "h2", text: "11. Mlčenlivost a reference" },
@@ -100,7 +100,7 @@ export const terms: Record<Locale, LegalDoc> = {
 
   en: {
     title: "Terms of business",
-    description: "Terms of business of Asterion Software, s.r.o. for analyses, implementations, consultations and training.",
+    description: "Terms of business of Asterion Software s.r.o. for analyses, implementations, consultations and training.",
     blocks: [
       {
         type: "p",
@@ -109,7 +109,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "1. Who we are and who these terms apply to" },
       {
         type: "p",
-        text: "The provider is Asterion Software, s.r.o., company ID 10736697, Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, file C 347537 (“Asterion”). We provide services exclusively to entrepreneurs for their business and to legal entities, such as owners’ associations or clubs, for their activities (the “client”). We do not provide services to consumers. When ordering, the client states its company ID and confirms that it orders as part of its business or activity.",
+        text: "The provider is Asterion Software s.r.o., company ID 10736697, Bělehradská 858/23, 120 00 Prague 2, Czech Republic, registered in the Commercial Register kept by the Municipal Court in Prague, file C 347537 (“Asterion”). We provide services exclusively to entrepreneurs for their business and to legal entities, such as owners’ associations or clubs, for their activities (the “client”). We do not provide services to consumers. When ordering, the client states its company ID and confirms that it orders as part of its business or activity.",
       },
 
       { type: "h2", text: "2. Conclusion of a contract" },
@@ -176,7 +176,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Rights to the results" },
       {
         type: "p",
-        text: "Once the price is paid, the client receives a non-exclusive licence to the work, unlimited in time, for its own use, unless the offer states otherwise. Asterion’s general libraries, templates and know-how remain Asterion’s and we may use them elsewhere.",
+        text: "Once the full price is paid, the client receives a non-exclusive licence to the work, unlimited in time and territory, for its business or activity, including the right to modify the work or have it modified by another supplier, unless the offer or contract states otherwise. General libraries, templates and tools used in the work, including those created during the engagement, are not subject to the client’s exclusive rights. The rights to them remain with their holders (Asterion or its suppliers), who may continue to use them. The client receives a licence to them to the extent needed to use the work, including its modification by another supplier.",
       },
 
       { type: "h2", text: "11. Confidentiality and references" },
@@ -195,7 +195,7 @@ export const terms: Record<Locale, LegalDoc> = {
 
   de: {
     title: "Allgemeine Geschäftsbedingungen",
-    description: "Allgemeine Geschäftsbedingungen der Asterion Software, s.r.o. für Analysen, Umsetzungen, Beratungen und Schulungen.",
+    description: "Allgemeine Geschäftsbedingungen der Asterion Software s.r.o. für Analysen, Umsetzungen, Beratungen und Schulungen.",
     blocks: [
       {
         type: "p",
@@ -204,7 +204,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "1. Wer wir sind und für wen die Bedingungen gelten" },
       {
         type: "p",
-        text: "Anbieter ist die Asterion Software, s.r.o., Id.-Nr. 10736697, Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Aktenzeichen C 347537 („Asterion“). Wir erbringen Leistungen ausschließlich an Unternehmer für ihr Unternehmen und an juristische Personen, etwa Eigentümergemeinschaften oder Vereine, für ihre Tätigkeit („Kunde“). Verbrauchern bieten wir keine Leistungen an. Bei der Bestellung gibt der Kunde seine Id.-Nr. an und bestätigt, dass er im Rahmen seines Unternehmens oder seiner Tätigkeit bestellt.",
+        text: "Anbieter ist die Asterion Software s.r.o., Id.-Nr. 10736697, Bělehradská 858/23, 120 00 Prag 2, Tschechische Republik, eingetragen im Handelsregister beim Stadtgericht Prag, Aktenzeichen C 347537 („Asterion“). Wir erbringen Leistungen ausschließlich an Unternehmer für ihr Unternehmen und an juristische Personen, etwa Eigentümergemeinschaften oder Vereine, für ihre Tätigkeit („Kunde“). Verbrauchern bieten wir keine Leistungen an. Bei der Bestellung gibt der Kunde seine Id.-Nr. an und bestätigt, dass er im Rahmen seines Unternehmens oder seiner Tätigkeit bestellt.",
       },
 
       { type: "h2", text: "2. Vertragsschluss" },
@@ -271,7 +271,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "10. Rechte an den Ergebnissen" },
       {
         type: "p",
-        text: "Nach Zahlung des Preises erhält der Kunde eine nicht ausschließliche, zeitlich unbegrenzte Lizenz am Werk für den eigenen Bedarf, sofern das Angebot nichts anderes bestimmt. Allgemeine Bibliotheken, Vorlagen und Know-how von Asterion bleiben bei Asterion und dürfen auch anderweitig verwendet werden.",
+        text: "Nach Zahlung des vollständigen Preises erhält der Kunde eine nicht ausschließliche, zeitlich und räumlich unbegrenzte Lizenz am Werk für seine Geschäftstätigkeit oder Tätigkeit, einschließlich des Rechts, das Werk zu ändern oder von einem anderen Anbieter ändern zu lassen, sofern das Angebot oder der Vertrag nichts anderes bestimmt. Allgemeine Bibliotheken, Vorlagen und Werkzeuge, die im Werk verwendet werden, auch solche, die während des Auftrags entstehen, sind nicht Gegenstand ausschließlicher Rechte des Kunden. Die Rechte daran bleiben bei ihren Inhabern (Asterion oder seinen Zulieferern), die sie weiter verwenden dürfen. Der Kunde erhält daran eine Lizenz in dem Umfang, der für die Nutzung des Werks erforderlich ist, einschließlich seiner Änderung durch einen anderen Anbieter.",
       },
 
       { type: "h2", text: "11. Vertraulichkeit und Referenzen" },
