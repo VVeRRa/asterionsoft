@@ -220,14 +220,15 @@
     footer { padding:1.75rem 0 2.875rem; color:var(--muted); font-size:0.8125rem; }
     .footer-inner { display:flex; justify-content:space-between; gap:1.25rem; border-top:0.0625rem solid var(--line); padding-top:1.375rem; }
 
-    .modal {
-      position:fixed; inset:0; z-index:100; background:rgba(3,6,16,.72); backdrop-filter:blur(0.5rem);
-      display:none; align-items:center; justify-content:center; padding:1.25rem;
-    }
-    .modal.open { display:flex; }
     .modal-card {
-      width:min(45rem,100%); max-height:90vh; overflow:auto; background:#10172b;
+      width:min(45rem, calc(100% - 2.5rem)); max-width:none; max-height:min(90vh, calc(100% - 2.5rem));
+      margin:auto; overflow:auto; background:#10172b; color:var(--text);
       border:0.0625rem solid var(--line); border-radius:1.5rem; box-shadow:var(--shadow); padding:1.5rem;
+    }
+    .modal-card:modal { overscroll-behavior:contain; }
+    .modal-card::backdrop {
+      background:rgba(3,6,16,.72); -webkit-backdrop-filter:blur(0.5rem); backdrop-filter:blur(0.5rem);
+      overflow:hidden; overscroll-behavior:contain;
     }
     .modal-head { display:flex; justify-content:space-between; gap:1.25rem; align-items:start; }
     .modal-close { border:0.0625rem solid var(--line); background:rgba(255,255,255,.04); color:white; border-radius:0.625rem; width:2.25rem; height:2.25rem; cursor:pointer; }

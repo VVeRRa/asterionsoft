@@ -70,11 +70,11 @@ function layout(content: string): string {
 export type SendResult = { ok: true } | { ok: false; reason: string };
 
 /** `kind` is what gets logged instead of the recipient's address. */
-type Email = { kind: "owner" | "customer"; to: string; subject: string; html: string; text: string; replyTo: string };
+type Email = { kind: "owner" | "customer"; to: string; subject: string; html: string; text: string; replyTo?: string };
 
 async function send(email: Email): Promise<SendResult> {
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.INQUIRY_FROM_EMAIL;
+  const apiKey = process.env.RESEND_API_KEY?.trim();
+  const from = process.env.INQUIRY_FROM_EMAIL?.trim();
   if (!apiKey || !from) {
     console.error("Chybí RESEND_API_KEY nebo INQUIRY_FROM_EMAIL, e-mail se neodeslal.");
     return { ok: false, reason: "not_configured" };
@@ -85,7 +85,14 @@ async function send(email: Email): Promise<SendResult> {
     const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({ from, to: [email.to], reply_to: email.replyTo, subject: email.subject, html: email.html, text: email.text }),
+      body: JSON.stringify({
+        from,
+        to: [email.to],
+        ...(email.replyTo && { reply_to: email.replyTo }),
+        subject: email.subject,
+        html: email.html,
+        text: email.text,
+      }),
       cache: "no-store",
       signal: AbortSignal.timeout(10_000),
     });
@@ -118,7 +125,7 @@ function supabaseEditorUrl(): string | null {
  * text, so the inquiry is not lost.
  */
 export function sendOwnerNotification(inquiry: Inquiry, classification: Classification, storage: StorageOutcome) {
-  const to = process.env.INQUIRY_NOTIFY_EMAIL;
+  const to = process.env.INQUIRY_NOTIFY_EMAIL?.trim();
   if (!to) {
     console.error("Chybí INQUIRY_NOTIFY_EMAIL, upozornění se neodeslalo.");
     return Promise.resolve<SendResult>({ ok: false, reason: "not_configured" });
@@ -162,7 +169,7 @@ export function sendOwnerNotification(inquiry: Inquiry, classification: Classifi
 /** Auto-reply to the customer in the language they sent the inquiry in. */
 export function sendAutoReply(inquiry: Inquiry) {
   const copy = autoReply[inquiry.locale];
-  const replyTo = process.env.INQUIRY_NOTIFY_EMAIL ?? process.env.INQUIRY_FROM_EMAIL ?? "";
+  const replyTo = process.env.INQUIRY_NOTIFY_EMAIL?.trim() || process.env.INQUIRY_FROM_EMAIL?.trim();
   const html = layout(
     paragraph(copy.greeting(inquiry.name)) +
       copy.body.map(paragraph).join("") +

@@ -28,7 +28,7 @@ export function normalizeSupabaseUrl(raw: string): string | null {
 
 function config() {
   const url = normalizeSupabaseUrl(process.env.SUPABASE_URL ?? "");
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
   if (!url || !key) return null;
   const headers: Record<string, string> = { apikey: key, "Content-Type": "application/json" };
   // Legacy keys are JWTs and also go into Authorization; new sb_secret_… keys don't.
@@ -117,11 +117,16 @@ export async function storeInquiry(
 export async function markInquiry(id: string, fields: { notified_at?: string; auto_replied_at?: string }) {
   const supabase = config();
   if (!supabase || Object.keys(fields).length === 0) return;
-  const response = await fetch(`${supabase.endpoint}?id=eq.${encodeURIComponent(id)}`, {
-    method: "PATCH",
-    headers: { ...supabase.headers, Prefer: "return=minimal" },
-    body: JSON.stringify(fields),
-    cache: "no-store",
-  });
-  if (!response.ok) console.error("Aktualizace poptávky v Supabase selhala:", response.status);
+  try {
+    const response = await fetch(`${supabase.endpoint}?id=eq.${encodeURIComponent(id)}`, {
+      method: "PATCH",
+      headers: { ...supabase.headers, Prefer: "return=minimal" },
+      body: JSON.stringify(fields),
+      cache: "no-store",
+      signal: AbortSignal.timeout(5_000),
+    });
+    if (!response.ok) console.error("Aktualizace poptávky v Supabase selhala:", response.status);
+  } catch (error) {
+    console.error("Aktualizace poptávky v Supabase selhala:", error instanceof Error ? error.name : "unknown");
+  }
 }

@@ -59,9 +59,9 @@ const keywordRules: [RegExp, (typeof serviceCategories)[number]][] = [
   [/web|aplikac|portál|portal|mvp|e-?shop|app\b/i, "web_app"],
 ];
 
-const urgentPattern = /urgent|asap|spěch|naléhav|co nejdřív|ihned|hned|havári|nefunguje|výpadek|produkc|dringend|sofort|eilig|ausfall|down\b|immediately/i;
-const lowPattern = /nespěch|někdy|výhledově|příští rok|no rush|next year|not urgent|keine eile|nächstes jahr/i;
-const spamPattern = /\b(seo services?|backlinks?|crypto|casino|viagra|loan offer)\b|https?:\/\/\S+.*https?:\/\/\S+.*https?:\/\//i;
+const urgentPattern = /(?<!\b(?:not|non[- ]?)\s*)(?<!\p{L})urgent|\basap\b|(?<!\p{L})(?:spěch|naléhav|havári|nefunguje|výpadek)|co nejdřív|(?<!\bne\s+)(?<!\p{L})(?:ihned|hned)(?!\p{L})|(?<!\bnicht\s+)(?<!\p{L})(?:dringend|eilig)|(?<!\p{L})(?:sofort|ausfall|immediately)(?!\p{L})|\b(?:is|are|went|system|server|site|app|production)\s+down\b/iu;
+const lowPattern = /(?<!\p{L})nespěch|ne\s+hned|(?<!\p{L})(?:někdy|výhledově)(?!\p{L})|příští rok|no rush|next year|not\s+urgent|non-?urgent|keine eile|nicht\s+(?:dringend|eilig)|nächstes jahr/iu;
+const spamPattern = /\b(seo services?|backlinks?|crypto|casino|viagra|loan offer)\b|https?:\/\/\S+[\s\S]*https?:\/\/\S+[\s\S]*https?:\/\//i;
 
 export function classifyByRules(inquiry: Inquiry): Classification {
   const text = `${inquiry.service ?? ""}\n${inquiry.message}`;

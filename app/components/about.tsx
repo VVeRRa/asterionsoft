@@ -5,7 +5,7 @@ import Chips from "./chips";
 const stack = ["Java", "Spring Boot", "PostgreSQL", "Docker", "Azure", "LLM API", "RAG", "AI workflow"];
 
 const iconProps = {
-  className: "contact-ico", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor",
+  "aria-hidden": true, className: "contact-ico", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor",
   strokeWidth: "1.8", strokeLinecap: "round", strokeLinejoin: "round",
 } as const;
 

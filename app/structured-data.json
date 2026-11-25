@@ -335,6 +335,7 @@
     {
       "@type": "FAQPage",
       "@id": "https://asterionsoft.cz/#faq",
+      "inLanguage": "cs",
       "mainEntity": [
         {
           "@type": "Question",

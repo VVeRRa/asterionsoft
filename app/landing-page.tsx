@@ -29,16 +29,20 @@ function schemaFor(locale: Locale, messages: Messages) {
           "@id": url + "#sluzby",
           name: messages.catalog,
           itemListElement: node.itemListElement?.map((offer, index) => {
-            const services = messages.services.length;
-            const item = (index < services ? messages.services[index]
-              : messages.industries[index - services - 1]) as Messages["services"][number] | undefined;
+            const servicesCount = messages.services.length;
+            const service = index < servicesCount ? messages.services[index] : undefined;
+            const industry = index > servicesCount ? messages.industries[index - servicesCount - 1] : undefined;
+            const name = service ? service.name
+              : industry ? `${industry.name} – ${industry.audience}`
+              : messages.trainingNav;
+            const description = service?.description ?? industry?.description ?? messages.trainingIntro;
             const price = offer.priceSpecification;
             return {
               ...offer,
               itemOffered: {
                 ...offer.itemOffered,
-                name: item?.name ?? messages.trainingNav,
-                description: item?.description ?? messages.trainingIntro,
+                name,
+                description,
               },
               ...(price?.unitText && {
                 priceSpecification: { ...price, unitText: unitTexts[price.unitText]?.[locale] ?? price.unitText },
