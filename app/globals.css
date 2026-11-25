@@ -567,3 +567,6 @@ html, body { overflow-x: clip; }
   .legal-table td:last-child { border-bottom: 0; }
   .legal-table td::before { content: attr(data-label); display: block; color: var(--muted); font-size: 0.75rem; font-weight: 600; margin-bottom: 0.125rem; }
 }
+
+/* "@" of the contact e-mail before hydration, so the address is not plain text in the HTML (see protected-email.tsx). */
+.email-at::before { content: "@"; }

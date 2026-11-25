@@ -2,6 +2,7 @@ import { company } from "../company";
 import { legalPaths } from "../legal/paths";
 import type { Locale } from "../locales";
 import type { Messages } from "../messages";
+import ProtectedEmail from "./protected-email";
 
 /** Company identification required on business websites (§ 435 Civil Code, § 7 Business Corporations Act) and legal links. */
 export default function SiteFooter({ locale, t }: { locale: Locale; t: Messages }) {
@@ -14,7 +15,7 @@ export default function SiteFooter({ locale, t }: { locale: Locale; t: Messages 
           <div>{`${t.legal.registry} ${company.registryFile}`}</div>
         </div>
         <div className="footer-links">
-          <a href={`mailto:${company.email}`}>{company.email}</a>
+          <ProtectedEmail />
           <a href={company.phoneHref}>{company.phone}</a>
           <a href={legalPaths.privacy[locale]}>{t.legal.privacy}</a>
           <a href={legalPaths.terms[locale]}>{t.legal.terms}</a>

@@ -1,6 +1,6 @@
 /**
  * Legal page content. Text supports two inline forms, rendered by `components/legal-page.tsx`:
- * `[label](https://…)` for a link and `{email}` for the contact e-mail from `company.ts`.
+ * `[label](https://…)` for a link and `{email}` for the contact e-mail from `company.ts` (rendered by ProtectedEmail, never as plain text in the HTML).
  */
 export type LegalBlock =
   | { type: "h2"; text: string }
