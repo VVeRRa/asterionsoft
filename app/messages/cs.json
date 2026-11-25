@@ -78,7 +78,7 @@
   "faqTitle": "Na co se klienti ptají",
   "faqIntro": "Nenašli jste odpověď? Napište nebo zavolejte na +420 604 257 866.",
   "auditQuestion": "Kolik stojí AI audit?",
-  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme.",
+  "auditAnswer": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.",
   "assistantQuestion": "Kolik stojí AI asistent?",
   "assistantAnswer": "Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč bez DPH, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč bez DPH. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.",
   "processQuestion": "Jak probíhá spolupráce?",
@@ -88,12 +88,12 @@
   "excelQuestion": "Můžete převést firemní Excel na aplikaci?",
   "excelAnswer": "Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč bez DPH podle složitosti datového modelu a workflow.",
   "trainingQuestion": "Pro koho je firemní školení AI?",
-  "trainingAnswer": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů.",
+  "trainingAnswer": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích, Automation Workshop pro mapování procesů a tříhodinové školení AI gramotnosti podle AI Actu.",
   "ideaQuestion": "Mám jen nápad, ne hotové zadání. Je to problém?",
-  "ideaAnswer": "Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovím, zda je to vhodné zadání pro Asterion, a navrhnu další krok.",
+  "ideaAnswer": "Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovíme, zda je to vhodné zadání pro Asterion, a navrhneme další krok.",
   "contactLabel": "Obecná poptávka",
   "contactTitle": "Máte problém, ale nevíte, do které krabičky patří?",
-  "contactBody": "Popište situaci vlastními slovy. Odpovím, zda je to vhodné zadání pro Asterion, a navrhnu další krok.",
+  "contactBody": "Popište situaci vlastními slovy. Odpovíme, zda je to vhodné zadání pro Asterion, a navrhneme další krok.",
   "call": "Raději voláte?",
   "formTitle": "Poptávkový formulář Asterion Software",
   "form": {
@@ -110,7 +110,7 @@
     "submit": "Odeslat poptávku",
     "sending": "Odesílám…",
     "successTitle": "Děkujeme, poptávka dorazila.",
-    "successBody": "Na váš e-mail jsme poslali potvrzení. Ozvu se do jednoho pracovního dne.",
+    "successBody": "Na váš e-mail jsme poslali potvrzení. Ozveme se do jednoho pracovního dne.",
     "another": "Poslat další poptávku",
     "errorName": "Vyplňte prosím jméno.",
     "errorEmail": "Zkontrolujte prosím e-mailovou adresu.",
@@ -174,20 +174,20 @@
   "mistakesQuestion": "Co když AI udělá chybu?",
   "mistakesAnswer": "U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh nebo předvyplněný záznam a člověk ho potvrdí. Nejisté případy systém označí a každá akce se zaznamená, takže je dohledatelné, co se stalo a proč.",
   "runningQuestion": "Kolik stojí provoz po spuštění?",
-  "runningAnswer": "Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, hosting, zálohy, poplatky za AI a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu. Licence cizích nástrojů platíte jejich dodavateli přímo.",
+  "runningAnswer": "Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, u Podkladů pod kontrolou od 1 500 Kč, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, zálohy a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Předem uvedeme, které náklady na hosting a AI paušál pokrývá, v jakém objemu a které služby hradíte přímo. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu.",
   "aiActQuestion": "Týká se nás AI Act?",
   "aiActAnswer": "Firmy, které AI používají, mají podle čl. 4 AI Actu přijmout opatření na podporu AI gramotnosti lidí, kteří s AI pracují. Školení AI gramotnosti je jedním z nich a pomůže tento požadavek naplnit. Přísnější pravidla platí pro vysoce rizikové použití, například výběr zaměstnanců, a s tím počítáme už při návrhu řešení.",
   "services": [
     {
       "name": "AI audit procesů",
       "price": "od 14 900 Kč",
-      "description": "Zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme automatizaci s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme.",
+      "description": "Zmapujeme postup, ověříme napojení a dostanete písemnou zprávu s odhadem ceny a úspory. Pro ověřený rozsah pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme.",
       "title": "AI audit procesů",
       "chips": [
-        "konzultace zdarma",
+        "písemná zpráva",
         "pevná nabídka"
       ],
-      "priceLabel": "odečte se z realizace"
+      "priceLabel": "odečet při přijetí nabídky"
     },
     {
       "name": "Automatizace firemního procesu",
@@ -298,7 +298,7 @@
     {
       "name": "Provoz a dohled automatizací",
       "price": "od 1 000 Kč/měs.",
-      "description": "Hlídáme, že automatizace běží, upozorníme na chybu a na naší straně ji opravíme. Hosting, zálohy a poplatky za AI v ceně, úpravy naceníme zvlášť.",
+      "description": "Hlídáme, že automatizace běží, upozorníme na chybu a na naší straně ji opravíme. Které náklady na hosting a AI paušál pokrývá a v jakém objemu, uvedeme předem v nabídce. Úpravy naceníme zvlášť.",
       "title": "Provoz a dohled",
       "chips": [
         "monitoring",
@@ -312,10 +312,10 @@
     {
       "name": "Podklady pod kontrolou",
       "audience": "Účetní a daňové kanceláře",
-      "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu.",
+      "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam plateb, ke kterým nenašla odpovídající doklad, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu.",
       "scope": [
         "porovnání pohybů na účtu s doklady v účetním programu",
-        "seznam chybějících dokladů pro každého klienta",
+        "seznam plateb bez nalezeného dokladu pro každého klienta",
         "návrh urgence e‑mailem, který účetní schválí jedním kliknutím",
         "využití nástrojů, které už kancelář platí"
       ],
@@ -326,7 +326,7 @@
         "urgence ke schválení",
         "váš účetní program"
       ],
-      "example": "Kancelář s 8 účetními a 120 klienty tráví před každou měsíční uzávěrkou asi 2 dny dohledáváním chybějících dokladů a psaním upomínek. Automatizace každý týden porovná pohyby na účtech klientů s doklady v účetním programu. Účetní dostane pro každého klienta seznam chybějících dokladů a hotový návrh e‑mailu, který jen schválí. Cíl je dostat urgence ze 2 dnů na půl dne měsíčně."
+      "example": "Kancelář s 8 účetními a 120 klienty tráví před každou měsíční uzávěrkou asi 2 dny dohledáváním chybějících dokladů a psaním upomínek. Automatizace každý týden porovná pohyby na účtech klientů s doklady v účetním programu. Účetní dostane pro každého klienta seznam plateb, ke kterým automatizace nenašla doklad, a hotový návrh e‑mailu, který jen schválí. Cíl je dostat urgence ze 2 dnů na půl dne měsíčně."
     },
     {
       "name": "Poptávka → karta zakázky",
@@ -467,7 +467,7 @@
       },
       {
         "title": "Připravíme seznam a urgenci",
-        "body": "Pro každého klienta přesný seznam chybějících dokladů a návrh e‑mailu."
+        "body": "Pro každého klienta seznam plateb, ke kterým jsme nenašli odpovídající doklad, a návrh urgence ke schválení účetní."
       },
       {
         "title": "Účetní schválí",
@@ -491,7 +491,7 @@
       {
         "title": "AI audit procesů",
         "price": "od 14 900 Kč",
-        "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. Při objednání realizace cenu auditu odečteme."
+        "body": "Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. Dostanete zprávu s odhadem ceny a pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme."
       },
       {
         "title": "Implementace",
@@ -500,8 +500,8 @@
       },
       {
         "title": "Provoz",
-        "price": "od 1 000 Kč/měs.",
-        "body": "Volitelně. Hlídáme, že automatizace běží, a opravíme chybu na naší straně. Úpravy naceníme zvlášť."
+        "price": "od 1 500 Kč/měs.",
+        "body": "Volitelně. Hlídáme, že automatizace běží, a opravíme chybu na naší straně. Co z hostingu a AI paušál pokrývá, uvedeme v nabídce. Úpravy naceníme zvlášť."
       }
     ],
     "firstOrder": "První zakázka je záměrně malá: jeden proces, jeden účetní program a menší skupina klientů. Čas strávený urgencemi změříme před nasazením a po něm, aby úspora nebyla jen odhad.",

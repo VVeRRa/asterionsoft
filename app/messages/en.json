@@ -78,7 +78,7 @@
   "faqTitle": "What clients ask us",
   "faqIntro": "Still have a question? Send us a message or call +420 604 257 866.",
   "auditQuestion": "How much does an AI audit cost?",
-  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900 excl. VAT: we map your current process, tools and volumes, check the integration options and propose a fixed-price solution. If you then order the implementation, we deduct the audit price from it.",
+  "auditAnswer": "For a simple automation, a free initial consultation is enough and you then get a fixed-price offer straight away. For more complex projects, we first do an AI audit from CZK 14,900 excl. VAT: we map your current process, tools and volumes, check the integration options and give you a written report with recommendations and a cost and savings estimate. For the verified scope, we then prepare a fixed-price offer. If you accept it in writing within 60 days of receiving the report, we deduct the audit price from the implementation.",
   "assistantQuestion": "How much does an AI assistant cost?",
   "assistantAnswer": "A simple assistant that answers only from the materials you give it starts at CZK 9,000 excl. VAT, whether it is internal for staff or on your website for visitors. An advanced internal assistant over company documentation and data has a pilot from CZK 35,000 excl. VAT. Its price depends mainly on the number and type of data sources, integrations and access permissions. It answers using your documentation and cites its sources.",
   "processQuestion": "How do we work together?",
@@ -88,12 +88,12 @@
   "excelQuestion": "Can you turn our Excel spreadsheet into an app?",
   "excelAnswer": "Yes. We turn key spreadsheets and manual workflows into web apps with user accounts, permissions and change history. Projects typically start at CZK 45,000 excl. VAT, depending on the data model and workflow.",
   "trainingQuestion": "Who is the corporate AI training for?",
-  "trainingAnswer": "For employees who want to use AI in everyday work. We offer a three-hour AI Start course, a full-day Practical AI course based on your tasks, and an Automation Workshop for mapping processes.",
+  "trainingAnswer": "For employees who want to use AI in everyday work. We offer a three-hour AI Start course, a full-day Practical AI course based on your tasks, an Automation Workshop for mapping processes and a three-hour AI literacy course under the AI Act.",
   "ideaQuestion": "Can I get in touch with just an idea?",
-  "ideaAnswer": "Of course. Describe the situation in the form or give us a call. I’ll let you know whether we can help and suggest a next step.",
+  "ideaAnswer": "Of course. Describe the situation in the form or give us a call. We’ll let you know whether we can help and suggest a next step.",
   "contactLabel": "General enquiry",
   "contactTitle": "Have a problem you’d like to discuss?",
-  "contactBody": "Describe the situation in your own words. I’ll let you know whether we can help and suggest a next step.",
+  "contactBody": "Describe the situation in your own words. We’ll let you know whether we can help and suggest a next step.",
   "call": "Prefer to call?",
   "formTitle": "Asterion Software enquiry form",
   "form": {
@@ -110,7 +110,7 @@
     "submit": "Send enquiry",
     "sending": "Sending…",
     "successTitle": "Thank you, your enquiry has arrived.",
-    "successBody": "We’ve sent a confirmation to your email. I’ll get back to you within one business day.",
+    "successBody": "We’ve sent a confirmation to your email. We’ll get back to you within one business day.",
     "another": "Send another enquiry",
     "errorName": "Please enter your name.",
     "errorEmail": "Please check your email address.",
@@ -174,20 +174,20 @@
   "mistakesQuestion": "What if the AI makes a mistake?",
   "mistakesAnswer": "That’s why a person makes the call on important steps. The AI prepares the groundwork, a draft or a pre-filled record, and a person confirms it. The system flags uncertain cases and logs every action, so you can always trace what happened and why.",
   "runningQuestion": "How much does it cost to run after launch?",
-  "runningAnswer": "The flat fee is optional and starts at CZK 1,000/month excl. VAT per automation, depending on AI usage and the number of integrations. It covers monitoring and operation: checking that the automation runs, error alerts, hosting, backups, AI fees and fixing errors on our side, with a response within 2 business days. Changes, such as a new bank statement format or new features, are quoted separately. Licences for third-party tools are paid directly to their vendors.",
+  "runningAnswer": "The flat fee is optional and starts at CZK 1,000/month excl. VAT per automation (CZK 1,500 for Client documents under control), depending on AI usage and the number of integrations. It covers monitoring and operation: checking that the automation runs, error alerts, backups and fixing errors on our side, with a response within 2 business days. The offer states in advance which hosting and AI costs the fee covers, up to what volume, and which services you pay directly. Changes, such as a new bank statement format or new features, are quoted separately.",
   "aiActQuestion": "Does the AI Act apply to us?",
   "aiActAnswer": "Under Art. 4 of the AI Act, companies that use AI are to take measures to support AI literacy among the people who work with it. AI literacy training is one such measure and helps you meet this requirement. Stricter rules apply to high-risk uses, such as recruiting employees, and we take that into account from the solution design stage.",
   "services": [
     {
       "name": "AI process audit",
       "price": "from CZK 14,900",
-      "description": "We map your current process, tools and volumes, check the integration options and propose a fixed-price automation. If you then order the implementation, we deduct the audit price from it.",
+      "description": "We map the process, check integrations and give you a written report with a cost and savings estimate, then a fixed-price offer for the verified scope. Accept it in writing within 60 days and we deduct the audit price.",
       "title": "AI process audit",
       "chips": [
-        "free consultation",
+        "written report",
         "fixed-price offer"
       ],
-      "priceLabel": "deducted from implementation"
+      "priceLabel": "deducted when you accept the offer"
     },
     {
       "name": "Business process automation",
@@ -298,7 +298,7 @@
     {
       "name": "Automation monitoring and operation",
       "price": "from CZK 1,000/month",
-      "description": "We check that the automation runs, alert you to errors and fix them on our side. Hosting, backups and AI fees included; changes are quoted separately.",
+      "description": "We check that the automation runs, alert you to errors and fix them on our side. The offer states in advance which hosting and AI costs the fee covers and up to what volume. Changes are quoted separately.",
       "title": "Monitoring and operation",
       "chips": [
         "monitoring",
@@ -312,10 +312,10 @@
     {
       "name": "Client documents under control",
       "audience": "Accounting and tax firms",
-      "description": "The automation compares bank statements with client documents and prepares a list of what is missing, with a draft reminder. The accountant just approves it and keeps working in their accounting software.",
+      "description": "The automation compares bank statements with client documents and prepares a list of payments for which it found no matching document, with a draft reminder. The accountant just approves it and keeps working in their accounting software.",
       "scope": [
         "matching account transactions against documents in your accounting software",
-        "a list of missing documents for each client",
+        "a list of payments without a matching document for each client",
         "a draft reminder email the accountant approves with one click",
         "using the tools the firm already pays for"
       ],
@@ -326,7 +326,7 @@
         "reminders for approval",
         "your accounting software"
       ],
-      "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. Every week, the automation compares transactions on the clients’ accounts with documents in the accounting software. The accountant gets a list of missing documents for each client and a ready draft email to approve. The goal is to cut chasing from 2 days to half a day a month."
+      "example": "A firm with 8 accountants and 120 clients spends about 2 days before each month-end close tracking down missing documents and writing reminders. Every week, the automation compares transactions on the clients’ accounts with documents in the accounting software. The accountant gets a list of payments for which the automation found no document, plus a ready draft email, to approve. The goal is to cut chasing from 2 days to half a day a month."
     },
     {
       "name": "Enquiry → job card",
@@ -467,7 +467,7 @@
       },
       {
         "title": "We prepare a list and a reminder",
-        "body": "For each client, an exact list of missing documents and a draft email."
+        "body": "For each client, a list of payments for which we found no matching document, and a draft reminder for the accountant to approve."
       },
       {
         "title": "The accountant approves",
@@ -491,7 +491,7 @@
       {
         "title": "AI process audit",
         "price": "from CZK 14,900",
-        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. If you order the implementation, we deduct the audit price."
+        "body": "Only for more complex projects, when integrations need checking or the process needs mapping. You get a report with a cost estimate, then a fixed-price offer. If you accept it in writing within 60 days, we deduct the audit price."
       },
       {
         "title": "Implementation",
@@ -500,8 +500,8 @@
       },
       {
         "title": "Operation",
-        "price": "from CZK 1,000/month",
-        "body": "Optional. We check that the automation runs and fix errors on our side. Changes are quoted separately."
+        "price": "from CZK 1,500/month",
+        "body": "Optional. We check that the automation runs and fix errors on our side. The offer states which hosting and AI costs the fee covers. Changes are quoted separately."
       }
     ],
     "firstOrder": "The first project is deliberately small: one process, one accounting system and a small group of clients. We measure the time spent chasing documents before and after, so the savings aren’t just an estimate.",

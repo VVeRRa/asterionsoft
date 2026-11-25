@@ -80,7 +80,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "AI audit procesů",
-            "description": "Zmapování postupu, nástrojů a objemů, ověření napojení a návrh automatizace s pevnou cenou; cena auditu se odečte od realizace."
+            "description": "Zmapování postupu a ověření napojení; písemná zpráva s odhadem ceny a úspory, pak pevná nabídka pro ověřený rozsah. Při písemném přijetí nabídky do 60 dnů od předání zprávy se cena auditu odečte od realizace."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
@@ -214,7 +214,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Provoz a dohled automatizací",
-            "description": "Volitelný měsíční paušál za dohled a provoz: monitoring, upozornění na chybu, hosting, zálohy a poplatky za AI."
+            "description": "Volitelný měsíční paušál za dohled a provoz: monitoring, upozornění na chybu, zálohy a oprava chyb na naší straně. Které náklady na hosting a AI pokrývá, uvádí nabídka."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
@@ -237,7 +237,7 @@
           "itemOffered": {
             "@type": "Service",
             "name": "Podklady pod kontrolou – Účetní a daňové kanceláře",
-            "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam toho, co chybí, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu."
+            "description": "Automatizace porovná bankovní výpis s doklady klientů a připraví seznam plateb, ke kterým nenašla odpovídající doklad, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu."
           },
           "priceSpecification": {
             "@type": "PriceSpecification",
@@ -341,7 +341,7 @@
           "name": "Kolik stojí AI audit?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a navrhneme řešení s pevnou cenou. Když pak objednáte realizaci, cenu auditu od ní odečteme."
+            "text": "U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme."
           }
         },
         {
@@ -381,7 +381,7 @@
           "name": "Pro koho je firemní školení AI?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů."
+            "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích, Automation Workshop pro mapování procesů a tříhodinové školení AI gramotnosti podle AI Actu."
           }
         },
         {
@@ -413,7 +413,7 @@
           "name": "Kolik stojí provoz po spuštění?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, hosting, zálohy, poplatky za AI a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu. Licence cizích nástrojů platíte jejich dodavateli přímo."
+            "text": "Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, u Podkladů pod kontrolou od 1 500 Kč, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, zálohy a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Předem uvedeme, které náklady na hosting a AI paušál pokrývá, v jakém objemu a které služby hradíte přímo. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu."
           }
         },
         {
@@ -429,7 +429,7 @@
           "name": "Mám jen nápad, ne hotové zadání. Je to problém?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovím, zda je to vhodné zadání pro Asterion, a navrhnu další krok."
+            "text": "Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovíme, zda je to vhodné zadání pro Asterion, a navrhneme další krok."
           }
         }
       ]

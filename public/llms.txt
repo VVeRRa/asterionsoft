@@ -1,30 +1,46 @@
 # Asterion Software
 
-> Asterion Software s.r.o. je malé české softwarové studio z Prahy. Dodává AI audity, automatizaci firemních procesů, interní AI asistenty, webové aplikace na míru, Java/Spring konzultace a praktická firemní školení AI. Klient komunikuje přímo se seniorním vývojářem, bez obchodní mezivrstvy. Zakladatel: Jan Marcis ([LinkedIn](https://www.linkedin.com/in/jan-marcis-b8335111/)). Autor a provozovatel AI platformy Studijo.
+> Asterion Software s.r.o. je malé české softwarové studio z Prahy. Dodává AI audity, automatizaci firemních procesů, AI asistenty, webové aplikace na míru, napojení firemních dat na ChatGPT a Claude a praktická firemní školení AI. Klient komunikuje přímo se seniorním vývojářem, bez obchodní mezivrstvy. Zakladatel: Jan Marcis ([LinkedIn](https://www.linkedin.com/in/jan-marcis-b8335111/)). Autor a provozovatel AI platformy Studijo.
 
 Zaměření: B2B, malé a střední firmy v Česku. Komunikace v češtině. Technologie: Java, Spring Boot, PostgreSQL, Docker, Azure, LLM API (GPT, Claude, Gemini), RAG, AI workflow.
+
+## Jak spolupráce probíhá
+
+1. Úvodní konzultace zdarma: upřesníme cíl a ověříme, s jakými systémy pracujete.
+2. Jednoduché zadání naceníme rovnou pevnou cenou. U složitějšího zadání nejdřív placený AI audit od 14 900 Kč bez DPH: písemná zpráva s doporučením a odhadem ceny a úspory, potom pevná nabídka pro ověřený rozsah. Pokud klient nabídku písemně přijme do 60 dnů od předání zprávy, cena auditu se od realizace odečte.
+3. Realizace za pevnou cenu pro jasně vymezený rozsah.
+4. Volitelně měsíční paušál za dohled a provoz od 1 000 Kč bez DPH (u služby Podklady pod kontrolou od 1 500 Kč). Které náklady na hosting a AI paušál pokrývá a které služby klient hradí přímo, uvádí nabídka. Úpravy se nacení zvlášť.
 
 ## Služby
 
 Ceny jsou orientační a bez DPH, závazná je cena v nabídce. Finální cena závisí na rozsahu.
 
-- [AI audit firmy](https://asterionsoft.cz/#sluzby): Analýza procesů, kde AI nebo automatizace reálně šetří čas a náklady. Délka 1–2 dny, výstup report a roadmapa. Od 14 900 Kč.
-- [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Workflow plné e‑mailů, Excelů a ručního kopírování převedené na automatizovaný proces (integrace, API, LLM). Cena individuálně podle rozsahu.
-- [Interní AI asistent](https://asterionsoft.cz/#sluzby): Chat nad firemní dokumentací, know‑how a daty (RAG) s přístupovými právy a dohledatelností zdrojů. Pilot od 35 000 Kč.
-- [Webová aplikace na míru](https://asterionsoft.cz/#sluzby): MVP, interní systém nebo zákaznický portál — backend, databáze, integrace i nasazení. MVP od 80 000 Kč.
-- [Excel → aplikace](https://asterionsoft.cz/#sluzby): Kritická tabulka nebo ruční agenda převedená na webovou aplikaci s uživateli a historií změn. Typicky od 45 000 Kč.
-- [Java / Spring konzultace](https://asterionsoft.cz/#sluzby): Architektura, výkon, code review, legacy systémy, integrace a řešení problémů v produkci. Od 2 500 Kč/h.
-- [Napojení na ChatGPT a Claude (MCP)](https://asterionsoft.cz/#sluzby): Vlastní MCP server nad ERP, CRM nebo dokumenty, aby zaměstnanci pracovali s firemními daty přímo z ChatGPT nebo Claude, s právy a záznamem akcí. Od 40 000 Kč.
-- [AI funkce do vaší aplikace](https://asterionsoft.cz/#sluzby): Generování textu, obrázků, hlasu nebo videa v existujícím produktu — více modelů, asynchronní úlohy, kredity a cena předem. Od 60 000 Kč.
-- [Interní kurz z firemních dokumentů](https://asterionsoft.cz/#sluzby): Onboardingový kurz z manuálů a směrnic s lekcemi, obrázky a namluveným výkladem. Od 20 000 Kč.
-- [Provoz a ladění AI řešení](https://asterionsoft.cz/#sluzby): Měsíční dohled, úpravy promptů, přechod na nové modely, hlídání nákladů na API a report úspor. Od 4 900 Kč měsíčně.
+- [AI audit procesů](https://asterionsoft.cz/#sluzby): Zmapujeme postup, ověříme napojení a dostanete písemnou zprávu s odhadem ceny a úspory. Pro ověřený rozsah pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme. Od 14 900 Kč (odečet při přijetí nabídky).
+- [Automatizace firemního procesu](https://asterionsoft.cz/#sluzby): Máte workflow plné e‑mailů, Excelů a copy‑paste? Postavíme automatizaci na míru z nástrojů, které už máte, API, AI nebo vlastního kódu. Pevná cena (po konzultaci).
+- [Pokročilý interní AI asistent](https://asterionsoft.cz/#sluzby): Chat nad firemní dokumentací, know‑how a daty. S důrazem na přístupová práva a dohledatelnost zdrojů. Od 35 000 Kč (pilot).
+- [Jednoduchý interní AI asistent](https://asterionsoft.cz/#sluzby): Asistent pro zaměstnance, který odpovídá z podkladů, které mu předáte, třeba ze směrnic, ceníku nebo návodů. Bez napojení na firemní systémy, takže je rychle nasazený. Od 9 000 Kč (jednoduchá verze).
+- [AI asistent na webu](https://asterionsoft.cz/#sluzby): Chat na vašem webu, který návštěvníkům odpovídá na časté dotazy o službách, cenách a postupu z podkladů, které mu dáte. Od 9 000 Kč (jednoduchá verze).
+- [Webová aplikace na míru](https://asterionsoft.cz/#sluzby): MVP, interní systém nebo zákaznický portál. Backend, databáze, integrace i nasazení. Od 80 000 Kč (MVP).
+- [Excel → aplikace](https://asterionsoft.cz/#sluzby): Kritický Excel, tabulka nebo ruční agenda se změní v normální webovou aplikaci s uživateli a historií. Od 45 000 Kč (typicky).
+- [Napojení na ChatGPT a Claude (MCP)](https://asterionsoft.cz/#sluzby): Vlastní MCP server nad vaším ERP, CRM nebo dokumenty. Zaměstnanci se ptají a zadávají úkoly přímo z ChatGPT nebo Claude, s právy a záznamem akcí. Od 40 000 Kč (typicky).
+- [AI funkce do vaší aplikace](https://asterionsoft.cz/#sluzby): Generování textu, obrázků, hlasu nebo videa přímo ve vašem produktu. Více modelů, asynchronní úlohy, kredity a cena předem, stejně jako ve Studiju. Od 60 000 Kč (typicky).
+- [Interní kurz z firemních dokumentů](https://asterionsoft.cz/#sluzby): Z manuálů a směrnic vznikne onboardingový kurz s lekcemi, obrázky a namluveným výkladem. Od 20 000 Kč (typicky).
+- [Provoz a dohled automatizací](https://asterionsoft.cz/#sluzby): Hlídáme, že automatizace běží, upozorníme na chybu a na naší straně ji opravíme. Které náklady na hosting a AI paušál pokrývá a v jakém objemu, uvedeme předem v nabídce. Úpravy naceníme zvlášť. Od 1 000 Kč/měs. (paušál).
 
-## Řešení pro obory
+## Pro účetní a daňové kanceláře
 
-Každé řešení začíná pilotem na historických datech klienta; měří se čas před a po. Modelové příklady na webu jsou ilustrativní, ne konkrétní klienti.
+[Podklady pod kontrolou](https://asterionsoft.cz/#ucetni): Automatizace porovná bankovní výpis s doklady klientů a připraví seznam plateb, ke kterým nenašla odpovídající doklad, i s návrhem urgence. Účetní ji jen schválí a zůstává ve svém účetním programu.
+
+- Konzultace (zdarma): Najdeme proces, který vás stojí nejvíc zbytečného času, a ověříme, s jakým programem pracujete.
+- AI audit procesů (od 14 900 Kč): Jen u složitějšího zadání, když je potřeba ověřit napojení nebo zmapovat postup. Dostanete zprávu s odhadem ceny a pak pevnou nabídku. Když ji písemně přijmete do 60 dnů, cenu auditu odečteme.
+- Implementace (od 35 000 Kč): Pevná cena pro jasně vymezený rozsah. Nabídka říká, co dostanete, co v ceně není a jak ověříme, že vše funguje.
+- Provoz (od 1 500 Kč/měs.): Volitelně. Hlídáme, že automatizace běží, a opravíme chybu na naší straně. Co z hostingu a AI paušál pokrývá, uvedeme v nabídce. Úpravy naceníme zvlášť.
+
+## Řešení pro další obory
+
+Modelové příklady na webu jsou ilustrativní, ne konkrétní klienti. Čas před nasazením a po něm se měří u klienta.
 
 - [Poptávka → karta zakázky — Zakázková výroba a CNC](https://asterionsoft.cz/#obory): Poptávky chodí e‑mailem s výkresy v PDF a STEP. AI z nich připraví kartu zakázky a technik ji jen zkontroluje a nacení. Od 39 000 Kč (pilot).
-- [Oběh dokladů bez urgencí — Účetní a daňové kanceláře](https://asterionsoft.cz/#obory): Méně dohledávání příloh a ručních upomínek před uzávěrkou. Začínáme krátkým auditem, který spočítá, kolik hodin vás to dnes stojí. Od 14 900 Kč (audit).
 - [Hlášení závad pod kontrolou — Správa domů a SVJ](https://asterionsoft.cz/#obory): Hlášení z e‑mailu nebo formuláře se samo zařadí k domu, typu závady a technikovi. Výbor SVJ dostane přehled bez ručního psaní. Od 45 000 Kč (typicky).
 - [Vratky a výjimky ve fulfillmentu — Fulfillment a sklady pro e‑shopy](https://asterionsoft.cz/#obory): Vratka bez čísla objednávky nebo dotaz na stav zásilky už nemusí čekat na člověka, který to dohledá ručně. Od 39 000 Kč (pilot).
 - [Objednávky z e‑mailu rovnou do ERP — Velkoobchod, distribuce a spedice](https://asterionsoft.cz/#obory): Objednávky v PDF, Excelu nebo textu e‑mailu se přepíšou do ERP samy. Obchodník řeší jen nejasné řádky. Od 39 000 Kč (typicky).
@@ -44,17 +60,17 @@ Každé řešení začíná pilotem na historických datech klienta; měří se 
 
 ## Časté otázky
 
-### Kolik stojí AI audit firmy?
+### Kolik stojí AI audit?
 
-AI audit firmy stojí od 14 900 Kč a trvá 1–2 dny. Projdeme vaše procesy, najdeme místa, kde AI nebo automatizace reálně šetří čas či náklady, a výstupem je report s doporučeními a roadmapou dalších kroků.
+U jednoduché automatizace stačí úvodní konzultace zdarma a potom rovnou dostanete pevnou nabídku. U složitějšího zadání nejdřív uděláme AI audit od 14 900 Kč bez DPH: zmapujeme současný postup, nástroje a objemy, ověříme možnosti napojení a dostanete písemnou zprávu s doporučením a odhadem ceny a úspory. Pro ověřený rozsah pak připravíme pevnou nabídku. Pokud ji písemně přijmete do 60 dnů od předání zprávy, cenu auditu od realizace odečteme.
 
-### Kolik stojí interní AI asistent nad firemními dokumenty?
+### Kolik stojí AI asistent?
 
-Pilotní verze interního AI asistenta stojí od 35 000 Kč. Výsledná cena závisí hlavně na počtu a typu zdrojů dat, potřebných integracích a nastavení přístupových práv. Asistent odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.
+Jednoduchý asistent, který odpovídá jen z podkladů, které mu předáte, stojí od 9 000 Kč bez DPH, ať je interní pro zaměstnance, nebo na webu pro návštěvníky. Pokročilý interní asistent nad firemní dokumentací a daty má pilotní verzi od 35 000 Kč bez DPH. Jeho cena závisí hlavně na počtu a typu zdrojů dat, integracích a nastavení přístupových práv. Odpovídá nad vaší dokumentací a u odpovědí uvádí zdroje.
 
 ### Jak probíhá spolupráce?
 
-Začínáme krátkou nezávaznou konzultací, kde upřesníme cíl. Pak navrhneme řešení a rozsah s jasně definovaným výstupem. Po dodání můžeme navázat další implementací nebo dlouhodobou spoluprací.
+Začínáme úvodní konzultací zdarma. Jednoduchou automatizaci rovnou naceníme pevnou cenou, u složitější nejdřív uděláme krátký placený AI audit. Nabídka vždy říká, co dostanete, co v ceně není a jak ověříme, že automatizace funguje. Po předání si můžete zvolit paušál za dohled a provoz.
 
 ### S kým budu během projektu komunikovat?
 
@@ -62,11 +78,11 @@ Přímo se seniorním vývojářem, který řešení navrhuje a staví. Mezi vá
 
 ### Můžete převést firemní Excel na aplikaci?
 
-Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč podle složitosti datového modelu a workflow.
+Ano. Kritickou tabulku nebo ruční agendu převedeme na webovou aplikaci s uživateli, oprávněními a historií změn. Typicky od 45 000 Kč bez DPH podle složitosti datového modelu a workflow.
 
 ### Pro koho je firemní školení AI?
 
-Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů.
+Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích, Automation Workshop pro mapování procesů a tříhodinové školení AI gramotnosti podle AI Actu.
 
 ### Kam putují naše data?
 
@@ -74,7 +90,7 @@ Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutno
 
 ### Funguje to s naším systémem?
 
-Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.
+Většinou ano. Napojujeme se přes API, export a import souborů nebo sdílenou e-mailovou schránku, ať jde o ERP, účetní program, e-shop nebo sdílený disk. Zůstanete ve svých nástrojích a nový přidáme jen tam, kde práci opravdu ubere. Při úvodní konzultaci ověříme, jaké možnosti napojení váš systém nabízí.
 
 ### Co když AI udělá chybu?
 
@@ -82,7 +98,7 @@ U důležitých kroků proto rozhoduje člověk. AI připraví podklad, návrh n
 
 ### Kolik stojí provoz po spuštění?
 
-Provoz se skládá z poplatků za AI modely podle objemu a volitelného paušálu za provoz a ladění od 4 900 Kč měsíčně. Odhad provozních nákladů dostanete předem jako součást návrhu řešení.
+Paušál je volitelný a stojí od 1 000 Kč bez DPH měsíčně za automatizaci, u Podkladů pod kontrolou od 1 500 Kč, podle objemu AI a počtu napojení. Pokrývá dohled a provoz: hlídání, že automatizace běží, upozornění na chybu, zálohy a opravu chyby na naší straně s reakcí do 2 pracovních dnů. Předem uvedeme, které náklady na hosting a AI paušál pokrývá, v jakém objemu a které služby hradíte přímo. Úpravy, například změnu formátu výpisu nebo nové funkce, naceníme zvlášť podle rozsahu.
 
 ### Týká se nás AI Act?
 
@@ -90,7 +106,7 @@ Firmy, které AI používají, mají podle čl. 4 AI Actu přijmout opatření n
 
 ### Mám jen nápad, ne hotové zadání. Je to problém?
 
-Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovím, zda je to vhodné zadání pro Asterion, a navrhnu další krok.
+Není. Popište situaci vlastními slovy v poptávkovém formuláři nebo zavolejte. Odpovíme, zda je to vhodné zadání pro Asterion, a navrhneme další krok.
 
 ## Kontakt
 

@@ -78,7 +78,7 @@
   "faqTitle": "Was Kunden uns fragen",
   "faqIntro": "Noch Fragen? Schreiben Sie uns oder rufen Sie uns unter +420 604 257 866 an.",
   "auditQuestion": "Was kostet ein KI-Audit?",
-  "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst ein KI-Audit ab 14.900 CZK zzgl. MwSt.: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Lösung zum Festpreis vor. Beauftragen Sie danach die Umsetzung, rechnen wir den Auditpreis darauf an.",
+  "auditAnswer": "Bei einer einfachen Automatisierung reicht ein kostenloses Erstgespräch, danach erhalten Sie direkt ein Festpreisangebot. Bei komplexeren Vorhaben machen wir zuerst ein KI-Audit ab 14.900 CZK zzgl. MwSt.: Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten, und Sie erhalten einen schriftlichen Bericht mit Empfehlungen sowie einer Kosten- und Einsparungsschätzung. Für den geprüften Umfang erstellen wir dann ein Festpreisangebot. Nehmen Sie es innerhalb von 60 Tagen nach Übergabe des Berichts schriftlich an, rechnen wir den Auditpreis auf die Umsetzung an.",
   "assistantQuestion": "Was kostet ein KI-Assistent?",
   "assistantAnswer": "Ein einfacher Assistent, der nur aus den Unterlagen antwortet, die Sie ihm geben, kostet ab 9.000 CZK zzgl. MwSt., ob intern für Ihr Team oder auf der Website für Besucher. Ein erweiterter interner Assistent über Firmendokumentation und Daten hat ein Pilotprojekt ab 35.000 CZK zzgl. MwSt. Der Preis hängt vor allem von Anzahl und Art der Datenquellen, Integrationen und Zugriffsrechten ab. Er antwortet auf Basis Ihrer Dokumentation und nennt seine Quellen.",
   "processQuestion": "Wie läuft die Zusammenarbeit ab?",
@@ -88,12 +88,12 @@
   "excelQuestion": "Können Sie unsere Excel-Tabelle in eine Anwendung umwandeln?",
   "excelAnswer": "Ja. Wir machen aus wichtigen Tabellen und manuellen Abläufen Webanwendungen mit Benutzerkonten, Berechtigungen und Änderungsverlauf. Projekte kosten in der Regel ab 45.000 CZK zzgl. MwSt., abhängig von Datenmodell und Arbeitsablauf.",
   "trainingQuestion": "Für wen sind die KI-Firmenschulungen gedacht?",
-  "trainingAnswer": "Für Mitarbeitende, die KI im Arbeitsalltag einsetzen möchten. Wir bieten den dreistündigen Kurs AI Start, den ganztägigen Kurs KI in der Praxis mit Ihren Aufgaben und einen Automation Workshop zur Prozessaufnahme an.",
+  "trainingAnswer": "Für Mitarbeitende, die KI im Arbeitsalltag einsetzen möchten. Wir bieten den dreistündigen Kurs AI Start, den ganztägigen Kurs KI in der Praxis mit Ihren Aufgaben, einen Automation Workshop zur Prozessaufnahme und eine dreistündige Schulung zur KI-Kompetenz nach dem AI Act an.",
   "ideaQuestion": "Kann ich mich schon mit einer ersten Idee melden?",
-  "ideaAnswer": "Gerne. Beschreiben Sie Ihre Situation im Formular oder rufen Sie uns an. Ich sage Ihnen, ob wir helfen können, und schlage einen nächsten Schritt vor.",
+  "ideaAnswer": "Gerne. Beschreiben Sie Ihre Situation im Formular oder rufen Sie uns an. Wir sagen Ihnen, ob wir helfen können, und schlagen einen nächsten Schritt vor.",
   "contactLabel": "Allgemeine Anfrage",
   "contactTitle": "Möchten Sie ein Problem mit uns besprechen?",
-  "contactBody": "Beschreiben Sie Ihre Situation in eigenen Worten. Ich sage Ihnen, ob wir helfen können, und schlage einen nächsten Schritt vor.",
+  "contactBody": "Beschreiben Sie Ihre Situation in eigenen Worten. Wir sagen Ihnen, ob wir helfen können, und schlagen einen nächsten Schritt vor.",
   "call": "Möchten Sie lieber anrufen?",
   "formTitle": "Anfrageformular von Asterion Software",
   "form": {
@@ -110,7 +110,7 @@
     "submit": "Anfrage senden",
     "sending": "Wird gesendet…",
     "successTitle": "Vielen Dank, Ihre Anfrage ist angekommen.",
-    "successBody": "Wir haben Ihnen eine Bestätigung per E-Mail geschickt. Ich melde mich innerhalb eines Werktags.",
+    "successBody": "Wir haben Ihnen eine Bestätigung per E-Mail geschickt. Wir melden uns innerhalb eines Werktags.",
     "another": "Weitere Anfrage senden",
     "errorName": "Bitte geben Sie Ihren Namen ein.",
     "errorEmail": "Bitte prüfen Sie Ihre E-Mail-Adresse.",
@@ -174,20 +174,20 @@
   "mistakesQuestion": "Was, wenn die KI einen Fehler macht?",
   "mistakesAnswer": "Deshalb entscheidet bei wichtigen Schritten ein Mensch. Die KI bereitet eine Unterlage, einen Vorschlag oder einen vorausgefüllten Datensatz vor, und ein Mensch bestätigt ihn. Unsichere Fälle markiert das System, und jede Aktion wird protokolliert, sodass nachvollziehbar ist, was passiert ist und warum.",
   "runningQuestion": "Was kostet der Betrieb nach dem Start?",
-  "runningAnswer": "Die Pauschale ist optional und kostet ab 1.000 CZK zzgl. MwSt. pro Monat und Automatisierung, je nach KI-Nutzung und Anzahl der Anbindungen. Sie deckt Überwachung und Betrieb ab: Kontrolle, dass die Automatisierung läuft, Fehlermeldungen, Hosting, Backups, KI-Gebühren und die Behebung von Fehlern auf unserer Seite mit Reaktion innerhalb von 2 Werktagen. Änderungen, etwa ein neues Kontoauszugsformat oder neue Funktionen, kalkulieren wir separat. Lizenzen fremder Werkzeuge zahlen Sie direkt an deren Anbieter.",
+  "runningAnswer": "Die Pauschale ist optional und kostet ab 1.000 CZK zzgl. MwSt. pro Monat und Automatisierung (bei Belege unter Kontrolle ab 1.500 CZK), je nach KI-Nutzung und Anzahl der Anbindungen. Sie deckt Überwachung und Betrieb ab: Kontrolle, dass die Automatisierung läuft, Fehlermeldungen, Backups und die Behebung von Fehlern auf unserer Seite mit Reaktion innerhalb von 2 Werktagen. Welche Hosting- und KI-Kosten die Pauschale in welchem Umfang abdeckt und welche Dienste Sie direkt bezahlen, steht vorab im Angebot. Änderungen, etwa ein neues Kontoauszugsformat oder neue Funktionen, kalkulieren wir separat.",
   "aiActQuestion": "Betrifft uns der AI Act?",
   "aiActAnswer": "Nach Art. 4 AI Act sollen Unternehmen, die KI einsetzen, Maßnahmen ergreifen, um die KI-Kompetenz der Menschen zu fördern, die damit arbeiten. Eine Schulung zur KI-Kompetenz ist eine solche Maßnahme und hilft, diese Anforderung zu erfüllen. Strengere Regeln gelten für Hochrisiko-Anwendungen, etwa bei der Personalauswahl, und das berücksichtigen wir schon beim Lösungsentwurf.",
   "services": [
     {
       "name": "KI-Prozessaudit",
       "price": "ab 14.900 CZK",
-      "description": "Wir erfassen den aktuellen Ablauf, die Werkzeuge und Mengen, prüfen die Anbindungsmöglichkeiten und schlagen eine Automatisierung zum Festpreis vor. Beauftragen Sie danach die Umsetzung, rechnen wir den Auditpreis an.",
+      "description": "Wir erfassen den Ablauf, prüfen Anbindungen, und Sie erhalten einen schriftlichen Bericht mit Kosten- und Einsparungsschätzung, danach ein Festpreisangebot für den geprüften Umfang. Bei schriftlicher Annahme binnen 60 Tagen rechnen wir den Auditpreis an.",
       "title": "KI-Prozessaudit",
       "chips": [
-        "kostenloses Erstgespräch",
+        "schriftlicher Bericht",
         "Festpreisangebot"
       ],
-      "priceLabel": "wird bei Umsetzung angerechnet"
+      "priceLabel": "Anrechnung bei Annahme des Angebots"
     },
     {
       "name": "Automatisierung von Geschäftsprozessen",
@@ -298,7 +298,7 @@
     {
       "name": "Überwachung und Betrieb von Automatisierungen",
       "price": "ab 1.000 CZK/Monat",
-      "description": "Wir prüfen, dass die Automatisierung läuft, melden Fehler und beheben sie auf unserer Seite. Hosting, Backups und KI-Gebühren inklusive, Änderungen kalkulieren wir separat.",
+      "description": "Wir prüfen, dass die Automatisierung läuft, melden Fehler und beheben sie auf unserer Seite. Welche Hosting- und KI-Kosten die Pauschale in welchem Umfang abdeckt, steht vorab im Angebot. Änderungen kalkulieren wir separat.",
       "title": "Überwachung und Betrieb",
       "chips": [
         "Monitoring",
@@ -312,10 +312,10 @@
     {
       "name": "Belege unter Kontrolle",
       "audience": "Buchhaltungs- und Steuerberatungskanzleien",
-      "description": "Die Automatisierung gleicht den Kontoauszug mit den Belegen der Mandanten ab und erstellt eine Liste der fehlenden Belege samt Entwurf einer Erinnerung. Die Buchhaltung gibt sie nur frei und bleibt in ihrem Buchhaltungsprogramm.",
+      "description": "Die Automatisierung gleicht den Kontoauszug mit den Belegen der Mandanten ab und erstellt eine Liste der Zahlungen, zu denen sie keinen passenden Beleg gefunden hat, samt Entwurf einer Erinnerung. Die Buchhaltung gibt sie nur frei und bleibt in ihrem Buchhaltungsprogramm.",
       "scope": [
         "Abgleich der Kontobewegungen mit den Belegen im Buchhaltungsprogramm",
-        "Liste fehlender Belege für jeden Mandanten",
+        "Liste der Zahlungen ohne gefundenen Beleg für jeden Mandanten",
         "Entwurf einer Erinnerungs-E-Mail, freigegeben mit einem Klick",
         "Nutzung der Werkzeuge, die die Kanzlei schon bezahlt"
       ],
@@ -326,7 +326,7 @@
         "Erinnerungen zur Freigabe",
         "Ihr Buchhaltungsprogramm"
       ],
-      "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Die Automatisierung gleicht jede Woche die Bewegungen auf den Konten der Mandanten mit den Belegen im Buchhaltungsprogramm ab. Die Buchhaltung erhält für jeden Mandanten eine Liste fehlender Belege und einen fertigen E-Mail-Entwurf, den sie nur freigibt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
+      "example": "Eine Kanzlei mit 8 Buchhaltern und 120 Mandanten verbringt vor jedem Monatsabschluss etwa 2 Tage damit, fehlende Belege zu suchen und Erinnerungen zu schreiben. Die Automatisierung gleicht jede Woche die Bewegungen auf den Konten der Mandanten mit den Belegen im Buchhaltungsprogramm ab. Die Buchhaltung erhält für jeden Mandanten eine Liste der Zahlungen ohne gefundenen Beleg und einen fertigen E-Mail-Entwurf, den sie nur freigibt. Ziel ist, den Aufwand für Erinnerungen von 2 Tagen auf einen halben Tag pro Monat zu senken."
     },
     {
       "name": "Anfrage → Auftragskarte",
@@ -467,7 +467,7 @@
       },
       {
         "title": "Wir erstellen Liste und Erinnerung",
-        "body": "Für jeden Mandanten eine genaue Liste fehlender Belege und einen E-Mail-Entwurf."
+        "body": "Für jeden Mandanten eine Liste der Zahlungen, zu denen wir keinen passenden Beleg gefunden haben, und einen Erinnerungsentwurf zur Freigabe durch die Buchhaltung."
       },
       {
         "title": "Die Buchhaltung gibt frei",
@@ -491,7 +491,7 @@
       {
         "title": "KI-Prozessaudit",
         "price": "ab 14.900 CZK",
-        "body": "Nur bei komplexeren Vorhaben, wenn Anbindungen geprüft oder der Ablauf erfasst werden muss. Bei Beauftragung der Umsetzung rechnen wir den Auditpreis an."
+        "body": "Nur bei komplexeren Vorhaben, wenn Anbindungen geprüft oder der Ablauf erfasst werden muss. Sie erhalten einen Bericht mit Kostenschätzung, danach ein Festpreisangebot. Nehmen Sie es innerhalb von 60 Tagen schriftlich an, rechnen wir den Auditpreis an."
       },
       {
         "title": "Umsetzung",
@@ -500,8 +500,8 @@
       },
       {
         "title": "Betrieb",
-        "price": "ab 1.000 CZK/Monat",
-        "body": "Optional. Wir prüfen, dass die Automatisierung läuft, und beheben Fehler auf unserer Seite. Änderungen kalkulieren wir separat."
+        "price": "ab 1.500 CZK/Monat",
+        "body": "Optional. Wir prüfen, dass die Automatisierung läuft, und beheben Fehler auf unserer Seite. Welche Hosting- und KI-Kosten die Pauschale abdeckt, steht im Angebot. Änderungen kalkulieren wir separat."
       }
     ],
     "firstOrder": "Das erste Projekt ist bewusst klein: ein Ablauf, ein Buchhaltungsprogramm und eine kleinere Gruppe von Mandanten. Den Zeitaufwand für Erinnerungen messen wir vorher und nachher, damit die Einsparung keine bloße Schätzung bleibt.",
