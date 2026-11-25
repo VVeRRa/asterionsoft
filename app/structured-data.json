@@ -335,6 +335,7 @@
     {
       "@type": "FAQPage",
       "@id": "https://asterionsoft.cz/#faq",
+      "inLanguage": "cs",
       "mainEntity": [
         {
           "@type": "Question",
@@ -381,7 +382,7 @@
           "name": "Pro koho je firemní školení AI?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích a Automation Workshop pro mapování procesů."
+            "text": "Pro zaměstnance, kteří chtějí AI používat v běžné práci — bez nutnosti technického zázemí. Nabízíme tříhodinový AI Start, celodenní AI Prakticky na vašich pracovních situacích, celodenní Automation Workshop pro mapování procesů a tříhodinové školení AI gramotnosti podle AI Actu."
           }
         },
         {

@@ -55,7 +55,7 @@ export default function SiteHeader({ locale, t }: { locale: Locale; t: Messages 
   return (
     <header className={open ? "nav menu-open" : "nav"} ref={headerRef}>
       <div className="container nav-inner">
-        <a className="brand" href="#top" aria-label="Asterion Software">
+        <a className="brand" href="#top" aria-label="Asterion Software" onClick={() => setOpen(false)}>
           <span className="brand-mark"></span>
           <span>Asterion Software</span>
         </a>

@@ -24,16 +24,26 @@ function hashIp(request: Request): string | null {
 }
 
 async function verifyTurnstile(token: FormDataEntryValue | null, request: Request): Promise<boolean> {
-  const secret = process.env.TURNSTILE_SECRET_KEY;
+  const secret = process.env.TURNSTILE_SECRET_KEY?.trim();
   if (!secret) return true;
   if (typeof token !== "string" || !token) return false;
   const body = new URLSearchParams({ secret, response: token });
   const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim();
   if (ip) body.set("remoteip", ip);
-  const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body });
-  if (!response.ok) return false;
-  const result = (await response.json()) as { success?: boolean };
-  return result.success === true;
+  try {
+    const response = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
+      method: "POST",
+      body,
+      cache: "no-store",
+      signal: AbortSignal.timeout(5_000),
+    });
+    if (!response.ok) return false;
+    const result = (await response.json()) as { success?: boolean };
+    return result.success === true;
+  } catch (error) {
+    console.error("Ověření Cloudflare Turnstile selhalo:", error instanceof Error ? error.name : "unknown");
+    return false;
+  }
 }
 
 export async function POST(request: Request) {

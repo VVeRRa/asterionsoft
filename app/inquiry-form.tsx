@@ -13,7 +13,14 @@ type ErrorKey = "errorName" | "errorEmail" | "errorMessage" | "errorCaptcha" | "
 
 declare global {
   interface Window {
-    turnstile?: { reset: (widget?: string) => void };
+    turnstile?: {
+      render: (
+        container: HTMLElement,
+        options: { sitekey: string; theme?: "dark" | "light"; language?: string; size?: "normal" | "compact" },
+      ) => string;
+      reset: (widgetId?: string) => void;
+      remove: (widgetId: string) => void;
+    };
   }
 }
 
@@ -42,14 +49,41 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
   const [startedAt, setStartedAt] = useState(0);
 
   const turnstileRef = useRef<HTMLDivElement>(null);
-  const [turnstileSize, setTurnstileSize] = useState<"normal" | "compact">("normal");
+  const widgetIdRef = useRef<string | null>(null);
+  const [turnstileReady, setTurnstileReady] = useState(false);
+  const formVisible = status !== "success";
 
-  useEffect(() => setStartedAt(Date.now()), []);
-  // The size must be set before the script loads (lazyOnload); Turnstile reads it only when rendering the widget.
   useEffect(() => {
-    const width = turnstileRef.current?.clientWidth ?? turnstileWidth;
-    if (width < turnstileWidth) setTurnstileSize("compact");
+    setStartedAt(Date.now());
+    if (window.turnstile) setTurnstileReady(true);
   }, []);
+
+  // Selecting a service elsewhere on the page after submitting reopens the form with that service prefilled.
+  useEffect(() => {
+    if (service && status === "success") {
+      setStartedAt(Date.now());
+      setStatus("idle");
+    }
+  }, [service, status]);
+
+  // Explicit rendering keeps the widget working when the form remounts after "Send another enquiry".
+  useEffect(() => {
+    if (!turnstileSiteKey || !formVisible || !turnstileReady) return;
+    const container = turnstileRef.current;
+    if (!container || !window.turnstile) return;
+    const size = container.clientWidth > 0 && container.clientWidth < turnstileWidth ? "compact" : "normal";
+    const id = window.turnstile.render(container, {
+      sitekey: turnstileSiteKey,
+      theme: "dark",
+      language: locale,
+      size,
+    });
+    widgetIdRef.current = id;
+    return () => {
+      widgetIdRef.current = null;
+      window.turnstile?.remove(id);
+    };
+  }, [formVisible, locale, turnstileReady]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -71,23 +105,35 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
           : result.error === "rate" ? "errorRate"
           : "errorServer",
       );
-      window.turnstile?.reset();
+      if (widgetIdRef.current) window.turnstile?.reset(widgetIdRef.current);
       setStatus("idle");
     } catch {
+      if (widgetIdRef.current) window.turnstile?.reset(widgetIdRef.current);
       setError("errorServer");
       setStatus("idle");
     }
   }
 
+  const turnstileScript = turnstileSiteKey ? (
+    <Script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+      strategy="lazyOnload"
+      onLoad={() => setTurnstileReady(true)}
+    />
+  ) : null;
+
   if (status === "success") {
     return (
-      <div className="inquiry-success" role="status">
-        <strong>{f.successTitle}</strong>
-        <p>{f.successBody}</p>
-        <button type="button" className="btn btn-secondary" onClick={() => { setStartedAt(Date.now()); setStatus("idle"); }}>
-          {f.another}
-        </button>
-      </div>
+      <>
+        {turnstileScript}
+        <div className="inquiry-success" role="status">
+          <strong>{f.successTitle}</strong>
+          <p>{f.successBody}</p>
+          <button type="button" className="btn btn-secondary" onClick={() => { setStartedAt(Date.now()); setStatus("idle"); }}>
+            {f.another}
+          </button>
+        </div>
+      </>
     );
   }
 
@@ -95,6 +141,7 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
 
   return (
     <form ref={formRef} className="inquiry-form" aria-label={t.formTitle} onSubmit={handleSubmit} noValidate={false}>
+      {turnstileScript}
       <input type="hidden" name="locale" value={locale} />
       <input type="hidden" name="started_at" value={startedAt} />
       <div className="field-trap" aria-hidden="true">
@@ -135,13 +182,7 @@ export default function InquiryForm({ locale, t, options, service, onServiceChan
         <small className="field-hint" id="inquiry-message-hint">{f.messageHint}</small>
       </label>
 
-      {turnstileSiteKey && (
-        <>
-          <div className="cf-turnstile" ref={turnstileRef} data-sitekey={turnstileSiteKey} data-theme="dark"
-            data-language={locale} data-size={turnstileSize} />
-          <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" strategy="lazyOnload" />
-        </>
-      )}
+      {turnstileSiteKey && <div className="cf-turnstile" ref={turnstileRef} />}
 
       {error && <p className="form-error" role="alert">{f[error]}</p>}
 

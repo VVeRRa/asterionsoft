@@ -14,7 +14,7 @@ export default function Trainings({ t, onRequest }: { t: Messages; onRequest: (f
               <span className="duration">{training.duration(t)}</span>
               <h3>{training.name(t)}</h3>
               <ul>{training.topics(t).map((topic) => <li key={topic}>{topic}</li>)}</ul>
-              <button className="btn btn-secondary" onClick={() => onRequest(training.value)}>{t.request}</button>
+              <button type="button" className="btn btn-secondary" onClick={() => onRequest(training.value)}>{t.request}</button>
             </div>
           ))}
         </div>

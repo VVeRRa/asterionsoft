@@ -27,7 +27,7 @@ export default function Hero({ t }: { t: Messages }) {
             </div>
           </div>
 
-          <div className="hero-card" aria-label={t.catalogAlt}>
+          <div className="hero-card" role="group" aria-label={t.catalogAlt}>
             <div className="mini-top">
               <strong>{t.catalog}</strong>
               <span className="badge badge-orange">{t.catalogBadge}</span>
