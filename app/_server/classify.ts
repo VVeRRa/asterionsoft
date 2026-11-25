@@ -75,7 +75,7 @@ export function classifyByRules(inquiry: Inquiry): Classification {
     service_category,
     urgency,
     summary: firstLine + (inquiry.message.length > 200 ? "…" : ""),
-    suggested_next_step: "Ozvat se e-mailem nebo telefonem a domluvit úvodní konzultaci.",
+    suggested_next_step: "Ozvat se e-mailem nebo telefonem a domluvit krátký úvodní hovor.",
     is_spam: spamPattern.test(inquiry.message),
     classified_by: "rules",
   };

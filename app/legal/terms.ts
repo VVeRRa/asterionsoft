@@ -20,7 +20,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "2. Uzavření smlouvy" },
       {
         type: "p",
-        text: "Poptávka z webu ani konzultace zdarma smlouvu nezakládají. Smlouva vzniká potvrzením objednávky nebo nabídky e-mailem, případně podpisem samostatné smlouvy. Ujednání v nabídce nebo smlouvě mají přednost před těmito podmínkami.",
+        text: "Poptávka z webu ani úvodní hovor zdarma smlouvu nezakládají. Smlouva vzniká potvrzením objednávky nebo nabídky e-mailem, případně podpisem samostatné smlouvy. Ujednání v nabídce nebo smlouvě mají přednost před těmito podmínkami.",
       },
 
       { type: "h2", text: "3. Ceny a platby" },
@@ -115,7 +115,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "2. Conclusion of a contract" },
       {
         type: "p",
-        text: "Neither an enquiry from the website nor a free consultation creates a contract. A contract is concluded when an order or offer is confirmed by email, or when a separate contract is signed. Terms agreed in an offer or contract take precedence over these terms.",
+        text: "Neither an enquiry from the website nor a free introductory call creates a contract. A contract is concluded when an order or offer is confirmed by email, or when a separate contract is signed. Terms agreed in an offer or contract take precedence over these terms.",
       },
 
       { type: "h2", text: "3. Prices and payment" },
@@ -210,7 +210,7 @@ export const terms: Record<Locale, LegalDoc> = {
       { type: "h2", text: "2. Vertragsschluss" },
       {
         type: "p",
-        text: "Weder eine Anfrage über die Website noch eine kostenlose Beratung begründet einen Vertrag. Der Vertrag kommt durch Bestätigung der Bestellung oder des Angebots per E-Mail oder durch Unterzeichnung eines gesonderten Vertrags zustande. Vereinbarungen im Angebot oder Vertrag haben Vorrang vor diesen Bedingungen.",
+        text: "Weder eine Anfrage über die Website noch ein kostenloses Erstgespräch begründet einen Vertrag. Der Vertrag kommt durch Bestätigung der Bestellung oder des Angebots per E-Mail oder durch Unterzeichnung eines gesonderten Vertrags zustande. Vereinbarungen im Angebot oder Vertrag haben Vorrang vor diesen Bedingungen.",
       },
 
       { type: "h2", text: "3. Preise und Zahlung" },
